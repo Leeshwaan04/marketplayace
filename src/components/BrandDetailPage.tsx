@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import type { Brand } from '../types/brand'
 import { playSound } from '../utils/audio'
+import { sanitizeUrl, safeCopyText } from '../utils/security'
 import confetti from 'canvas-confetti'
 
 interface BrandDetailPageProps {
@@ -20,10 +21,12 @@ export const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand, onClose
 
   if (!brand) return null
 
-  const handleCopyCode = (code: string, bonus: number) => {
+  const handleCopyCode = async (code: string, bonus: number) => {
     playSound('coin')
-    navigator.clipboard?.writeText(code)
-    setCopiedCode(code)
+    const success = await safeCopyText(code)
+    if (success) {
+      setCopiedCode(code)
+    }
     onClaimCoupon(code, bonus)
     setTimeout(() => setCopiedCode(null), 2500)
   }
@@ -114,9 +117,9 @@ export const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand, onClose
 
               <div className="flex items-center space-x-2">
                 <a
-                  href={brand.website}
+                  href={sanitizeUrl(brand.website)}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-bold text-gray-200 bg-gray-900 hover:bg-gray-800 border border-gray-700 hover:border-gray-500 transition-all"
                 >
                   <span>Visit Official Site</span>

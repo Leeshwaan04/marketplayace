@@ -12,7 +12,9 @@ function getAudioContext(): AudioContext | null {
     }
   }
   if (audioCtx && audioCtx.state === 'suspended') {
-    audioCtx.resume()
+    audioCtx.resume().catch(() => {
+      // Ignored: expected when user has not yet interacted with page
+    })
   }
   return audioCtx
 }

@@ -1,7 +1,7 @@
 # ⚡ MARKETPLAYACE (`marketplayace.com`)
 
 > **The Play-First Commerce & Creator Exchange**  
-> Where items aren't just listed — they are experienced, unlocked, and played for.
+> Where items aren't just listed - they are experienced, unlocked, and played for.
 
 [![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=flat&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=flat&logo=vite)](https://vite.dev/)
@@ -15,7 +15,7 @@
 Traditional e-commerce is stuck in static grids of cards, boring search bars, and passive checkouts. **Marketplayace** turns commerce into an interactive, high-energy gaming experience:
 
 1. **🎯 Zero-Loss Reflex Mini-Games ("Play the Price")**:
-   Shoppers can test their precision timing on the **Reflex Bar** to hit the bullseye and slash up to **25%–35% off** any item before checkout.
+   Shoppers can test their precision timing on the **Reflex Bar** to hit the bullseye and slash up to **25% to 35% off** any item before checkout.
 2. **⏳ Dutch Reverse Auction Arena ("The Vault")**:
    Prices drop automatically every few seconds. Shoppers must decide: wait for an even cheaper price, or snag the item before another player beats them to it!
 3. **👥 Multiplayer Squad Co-Op Checkout**:
@@ -23,7 +23,7 @@ Traditional e-commerce is stuck in static grids of cards, boring search bars, an
 4. **🎰 Ace Drop Spinner & Daily Perks**:
    Interactive drop wheel with procedural Web Audio sound synthesis, awarding daily coupons, VIP discount codes, and store credits.
 5. **🛠️ Creator & Merchant Minting Terminal**:
-   Sellers don't just set fixed prices—they configure "Play Rules", discount tolerances, and dynamic drop parameters.
+   Sellers don't just set fixed prices - they configure "Play Rules", discount tolerances, and dynamic drop parameters.
 
 ---
 

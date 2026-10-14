@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onSpinReward, onExploreDrops }) => {
           </h1>
 
           <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-            Welcome to <strong className="text-white">marketplayace.com</strong> — the premier interactive exchange for gaming tech, streetwear, creator drops, and UGC mods. Slash prices with skill-based micro games, team up in squad carts, or grab live Dutch reverse auctions before anyone else.
+            Welcome to <strong className="text-white">marketplayace.com</strong> - the premier interactive exchange for gaming tech, streetwear, creator drops, and UGC mods. Slash prices with skill-based micro games, team up in squad carts, or grab live Dutch reverse auctions before anyone else.
           </p>
 
           {/* Value Badges */}
@@ -104,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({ onSpinReward, onExploreDrops }) => {
             <a
               href="https://github.com/Leeshwaan04/marketplayace"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl font-semibold text-gray-300 bg-gray-900/80 hover:bg-gray-800 border border-gray-700 hover:border-gray-500 transition-all cursor-pointer"
             >
               <span>GitHub Repository</span>

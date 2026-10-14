@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Users, Clock, Share2, CheckCircle2, UserPlus, Sparkles, ShoppingBag } from 'lucide-react'
 import type { SquadRoom, Product } from '../types'
 import { playSound } from '../utils/audio'
+import { safeCopyText } from '../utils/security'
 import confetti from 'canvas-confetti'
 
 interface SquadShoppingProps {
@@ -46,10 +47,12 @@ export const SquadShopping: React.FC<SquadShoppingProps> = ({ squadRooms, onJoin
     )
   }
 
-  const handleCopyLink = (roomId: string) => {
+  const handleCopyLink = async (roomId: string) => {
     playSound('click')
-    setCopiedId(roomId)
-    navigator.clipboard?.writeText(`https://marketplayace.com/squad/${roomId}`)
+    const success = await safeCopyText(`https://marketplayace.com/squad/${roomId}`)
+    if (success) {
+      setCopiedId(roomId)
+    }
     setTimeout(() => setCopiedId(null), 2500)
   }
 
@@ -66,7 +69,7 @@ export const SquadShopping: React.FC<SquadShoppingProps> = ({ squadRooms, onJoin
               </span>
             </div>
             <h2 className="text-2xl font-black text-white">
-              Squad Up. Slash 25%–30% Off as a Team.
+              Squad Up. Slash 25% to 30% Off as a Team.
             </h2>
             <p className="text-xs text-gray-300 max-w-xl">
               Don't buy alone. When 3 players group up for the same item within the countdown window, everyone unlocks the wholesale Ace tier!

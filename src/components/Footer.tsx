@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             <a
               href="https://github.com/Leeshwaan04/marketplayace"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="p-2 rounded-lg bg-gray-900 hover:bg-gray-800 text-gray-300 hover:text-white border border-gray-800 transition-colors inline-flex items-center"
               title="GitHub Repository"
             >

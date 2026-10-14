@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { PlusCircle, Sparkles, CheckCircle2, Zap } from 'lucide-react'
 import type { Product, Category, Rarity } from '../types'
 import { playSound } from '../utils/audio'
+import { sanitizeText, sanitizeUrl, validatePrice, validateDiscountPercent } from '../utils/security'
 import confetti from 'canvas-confetti'
 
 interface SellerStudioProps {
@@ -21,23 +22,28 @@ export const SellerStudio: React.FC<SellerStudioProps> = ({ onAddProduct }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!title) return
+    const cleanTitle = sanitizeText(title, 80)
+    const cleanTagline = sanitizeText(tagline, 120) || 'Custom verified drop on Marketplayace'
+    const cleanDescription = sanitizeText(description, 500) || 'Exclusive creator listing configured with zero-loss gameplay mechanics.'
+    const safePrice = validatePrice(Number(price), 1, 50000)
+    const safeMaxDiscount = validateDiscountPercent(Number(maxDiscountPercent), 40)
+    const safeImage = sanitizeUrl(image, 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80')
 
     const newProd: Product = {
       id: `prod-${Date.now()}`,
-      title,
-      tagline: tagline || 'Custom verified drop on Marketplayace',
+      title: cleanTitle,
+      tagline: cleanTagline,
       category,
       rarity,
-      price: Number(price),
-      originalPrice: Math.round(Number(price) * 1.25),
-      image,
+      price: safePrice,
+      originalPrice: Math.round(safePrice * 1.25),
+      image: safeImage,
       rating: 5.0,
       reviewsCount: 1,
       inStock: 10,
       spectators: 12,
-      maxDiscountPercent: Number(maxDiscountPercent),
-      description: description || 'Exclusive creator listing configured with zero-loss gameplay mechanics.',
+      maxDiscountPercent: safeMaxDiscount,
+      description: cleanDescription,
       features: ['Verified smart-escrow fulfillment', 'Direct creator support', 'Instant play challenge enabled'],
       playFactor: 'High Skill',
       seller: {

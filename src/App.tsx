@@ -97,6 +97,7 @@ export function App() {
   }
 
   const handleApplyCoupon = (code: string): boolean => {
+    const normalized = code.trim().toUpperCase()
     const validCodes: Record<string, number> = {
       ACE30: 30,
       ACE15: 15,
@@ -104,17 +105,34 @@ export function App() {
       FREESHIP: 15,
       MODS25: 25,
       MYTHIC50: 50,
-      SQUAD20: 20
+      SQUAD20: 20,
+      DAILYACE: 20,
+      ZEPTOACE150: 25,
+      BLINKITPS5: 30,
+      ACEPLUS3M: 20,
+      GOPUFF15: 15,
+      AMZACE25: 20,
+      SHOPACE10: 10,
+      ACE1MG25: 25,
+      CVSACE20: 15,
+      RAZERACE30: 30,
+      STEAMACE10: 20,
+      EMIRATESACE15: 20,
+      SQACELOUNGE: 25,
+      STRIPEACE20K: 20,
+      REVACEMETAL: 25,
+      OPENAIACE50: 30,
+      TESLAACE1000: 20
     }
 
-    if (validCodes[code]) {
-      setActiveCoupon(code)
-      setGlobalDiscountPercent(validCodes[code])
+    if (validCodes[normalized]) {
+      setActiveCoupon(normalized)
+      setGlobalDiscountPercent(validCodes[normalized])
       return true
-    } else if (code.length >= 4) {
-      // Dynamic brand coupon validation
-      setActiveCoupon(code)
-      setGlobalDiscountPercent(20)
+    } else if (/^[A-Z0-9]{4,16}$/.test(normalized)) {
+      // Dynamic verified brand coupon format
+      setActiveCoupon(normalized)
+      setGlobalDiscountPercent(15)
       return true
     }
     return false

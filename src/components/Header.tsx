@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
           <span className="hidden md:inline text-gray-600">|</span>
           <span className="hidden md:inline text-purple-300">
             <Sparkles className="w-3.5 h-3.5 text-purple-400 mr-1 inline" />
-            Play any product to slash 10%–35% off checkout
+            Play any product to slash 10% to 35% off checkout
           </span>
         </div>
 

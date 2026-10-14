@@ -470,3 +470,4 @@ export const MASTER_CATEGORIES: BrandCategoryMeta[] = [
     color: 'from-cyan-300 to-blue-400'
   }
 ]
+
