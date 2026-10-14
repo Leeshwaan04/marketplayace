@@ -63,3 +63,4 @@ export interface SquadRoom {
   expiresInSeconds: number
   squadDiscountPercent: number
 }
+

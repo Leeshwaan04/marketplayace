@@ -122,3 +122,4 @@ export function playSound(type: 'click' | 'win' | 'tick' | 'coin' | 'whistle' | 
     }
   }
 }
+

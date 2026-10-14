@@ -6,23 +6,27 @@ import { ProductModal } from './components/ProductModal'
 import { DropVault } from './components/DropVault'
 import { SquadShopping } from './components/SquadShopping'
 import { SellerStudio } from './components/SellerStudio'
+import { BrandDirectory } from './components/BrandDirectory'
+import { BrandDetailPage } from './components/BrandDetailPage'
 import { CartDrawer } from './components/CartDrawer'
 import { DailyPerkModal } from './components/DailyPerkModal'
 import { Footer } from './components/Footer'
 import { mockProducts, mockDutchDrops, mockSquadRooms } from './data/mockProducts'
 import type { Product, Category, CartItem, DutchDropItem } from './types'
+import type { Brand } from './types/brand'
 import { playSound } from './utils/audio'
-import { Flame, Users, PlusCircle, LayoutGrid, Sparkles } from 'lucide-react'
+import { Flame, Users, PlusCircle, LayoutGrid, Sparkles, Building2 } from 'lucide-react'
 
 export function App() {
   // State management
   const [products, setProducts] = useState<Product[]>(mockProducts)
   const [selectedCategory, setSelectedCategory] = useState<Category>('All')
   const [searchQuery, setSearchQuery] = useState('')
-  const [activeMarketTab, setActiveMarketTab] = useState<'floor' | 'vault' | 'squad' | 'studio'>('floor')
+  const [activeMarketTab, setActiveMarketTab] = useState<'floor' | 'brands' | 'vault' | 'squad' | 'studio'>('floor')
 
   // Modals & Drawers
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+  const [selectedBrand, setSelectedBrand] = useState<Brand | null>(null)
   const [modalMode, setModalMode] = useState<'view' | 'game'>('view')
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [isPerkModalOpen, setIsPerkModalOpen] = useState(false)
@@ -106,6 +110,11 @@ export function App() {
     if (validCodes[code]) {
       setActiveCoupon(code)
       setGlobalDiscountPercent(validCodes[code])
+      return true
+    } else if (code.length >= 4) {
+      // Dynamic brand coupon validation
+      setActiveCoupon(code)
+      setGlobalDiscountPercent(20)
       return true
     }
     return false
@@ -211,6 +220,24 @@ export function App() {
               <button
                 onClick={() => {
                   playSound('click')
+                  setActiveMarketTab('brands')
+                }}
+                className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                  activeMarketTab === 'brands'
+                    ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg'
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                <Building2 className="w-4 h-4 text-purple-300" />
+                <span>Brands Network (52 Sectors)</span>
+                <span className="text-[10px] bg-purple-500/30 text-purple-200 px-1.5 py-0.2 rounded-full font-mono">
+                  60k+
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  playSound('click')
                   setActiveMarketTab('vault')
                 }}
                 className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
@@ -220,7 +247,7 @@ export function App() {
                 }`}
               >
                 <Flame className="w-4 h-4 text-orange-400" />
-                <span>Dutch Vault Arena</span>
+                <span>Dutch Vault</span>
                 <span className="w-2 h-2 rounded-full bg-red-400 animate-ping" />
               </button>
 
@@ -251,7 +278,7 @@ export function App() {
                 }`}
               >
                 <PlusCircle className="w-4 h-4 text-purple-300" />
-                <span>Become an Ace (Mint)</span>
+                <span>Mint Listing</span>
               </button>
             </div>
 
@@ -314,6 +341,12 @@ export function App() {
             </div>
           )}
 
+          {activeMarketTab === 'brands' && (
+            <BrandDirectory
+              onSelectBrand={(brand) => setSelectedBrand(brand)}
+            />
+          )}
+
           {activeMarketTab === 'vault' && (
             <DropVault
               drops={mockDutchDrops}
@@ -342,6 +375,16 @@ export function App() {
         initialMode={modalMode}
         onClose={() => setSelectedProduct(null)}
         onAddToCart={handleAddToCart}
+      />
+
+      {/* Full Brand Details Dossier Modal */}
+      <BrandDetailPage
+        brand={selectedBrand}
+        onClose={() => setSelectedBrand(null)}
+        onClaimCoupon={(code, val) => {
+          setActiveCoupon(code)
+          setGlobalDiscountPercent(val)
+        }}
       />
 
       {/* Slide-out Cart Drawer with Simulated Checkout */}

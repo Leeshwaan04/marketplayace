@@ -262,3 +262,4 @@ export const mockSquadRooms: SquadRoom[] = [
     squadDiscountPercent: 30
   }
 ]
+

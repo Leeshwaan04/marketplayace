@@ -115,3 +115,4 @@ export const DailyPerkModal: React.FC<DailyPerkModalProps> = ({ isOpen, onClose,
     </div>
   )
 }
+
