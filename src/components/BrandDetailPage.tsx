@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import {
   X, CheckCircle2, Trophy, ExternalLink, MapPin,
-  Calendar, DollarSign, Tag, Copy, Sparkles, Zap, ArrowLeft
+  Calendar, DollarSign, Tag, Copy, Sparkles, Zap, ArrowLeft,
+  Smartphone, Star, ShieldCheck, Flame
 } from 'lucide-react'
 import type { Brand } from '../types/brand'
+import { BrandLogoBadge } from './BrandLogoBadge'
 import { playSound } from '../utils/audio'
 import { sanitizeUrl, safeCopyText } from '../utils/security'
 import confetti from 'canvas-confetti'
@@ -82,16 +84,20 @@ export const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand, onClose
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent" />
 
-            {/* Floating Brand Logo */}
-            <div className="absolute -bottom-8 left-6 sm:left-8 flex items-end space-x-4">
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-4 border-gray-950 bg-gray-900 shadow-2xl"
+            {/* Floating Brand Logo Badge */}
+            <div className="absolute -bottom-10 left-6 sm:left-8 flex items-end space-x-4">
+              <BrandLogoBadge
+                brand={brand}
+                size="xl"
+                className="border-4 border-gray-950 shadow-2xl"
               />
             </div>
 
-            <div className="absolute top-4 right-4">
+            {/* Floating Tier & Country Flags */}
+            <div className="absolute top-4 right-4 flex items-center space-x-2">
+              <span className="px-3 py-1 rounded-full text-xs font-black bg-gray-950/80 border border-gray-700 text-gray-200 backdrop-blur-md">
+                {brand.countryFlag} {brand.city}, {brand.country}
+              </span>
               <span className={`px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider border backdrop-blur-md shadow-lg ${
                 brand.tier === 'S-Tier'
                   ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
@@ -103,7 +109,7 @@ export const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand, onClose
           </div>
 
           {/* Profile Header Details */}
-          <div className="pt-10 px-6 sm:px-8 space-y-6">
+          <div className="pt-12 px-6 sm:px-8 space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center space-x-2">
@@ -111,20 +117,70 @@ export const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand, onClose
                   {brand.verified && (
                     <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0" />
                   )}
+                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-purple-950 border border-purple-500/40 text-purple-300 font-mono">
+                    {brand.countryCode}
+                  </span>
                 </div>
                 <p className="text-xs text-purple-400 font-semibold mt-0.5">{brand.subCategory}</p>
               </div>
 
               <div className="flex items-center space-x-2">
                 <a
-                  href={sanitizeUrl(brand.website)}
+                  href={sanitizeUrl(brand.officialLoginUrl || brand.website)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-bold text-gray-200 bg-gray-900 hover:bg-gray-800 border border-gray-700 hover:border-gray-500 transition-all"
+                  className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-bold text-gray-200 bg-gray-900 hover:bg-gray-800 border border-gray-700 hover:border-gray-500 transition-all cursor-pointer"
                 >
-                  <span>Visit Official Site</span>
+                  <span>Pre-Login Portal</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
+              </div>
+            </div>
+
+            {/* PRE-LOGIN SITE SHOWCASE & HERO HIGHLIGHTS */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-gray-900 via-gray-900/90 to-purple-950/40 border border-purple-500/30 shadow-xl space-y-4">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center space-x-2 text-xs font-bold text-purple-300 uppercase tracking-wider font-mono">
+                  <Flame className="w-4 h-4 text-pink-400" />
+                  <span>Pre-Login Experience & Customer Proposition</span>
+                </div>
+                {brand.appRating && (
+                  <div className="flex items-center space-x-3 text-xs font-mono bg-black/40 px-3 py-1 rounded-lg border border-gray-800">
+                    <span className="flex items-center space-x-1 text-amber-400 font-bold">
+                      <Star className="w-3.5 h-3.5 fill-current" />
+                      <span>iOS {brand.appRating.ios}</span>
+                    </span>
+                    <span className="text-gray-600">|</span>
+                    <span className="flex items-center space-x-1 text-emerald-400 font-bold">
+                      <Smartphone className="w-3.5 h-3.5" />
+                      <span>Android {brand.appRating.android}</span>
+                    </span>
+                    <span className="text-gray-600">|</span>
+                    <span className="text-gray-300 font-bold">{brand.appRating.downloads} Downloads</span>
+                  </div>
+                )}
+              </div>
+
+              <div className="space-y-1.5">
+                <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight leading-snug">
+                  "{brand.heroTagline}"
+                </h2>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  {brand.heroSubhead}
+                </p>
+              </div>
+
+              {/* Pre-Login Key Value Pillars */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+                {brand.preLoginHighlights.map((hl, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl bg-gray-950/70 border border-gray-800/80 flex items-center space-x-2.5"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span className="text-xs text-gray-200 font-medium">{hl}</span>
+                  </div>
+                ))}
               </div>
             </div>
 

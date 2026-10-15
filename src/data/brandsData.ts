@@ -1,6 +1,7 @@
 import type { Brand, BrandTier } from '../types/brand'
+import { MASTER_COUNTRIES } from './countriesData'
 
-// Flagship real-world brands across primary categories
+// Flagship real-world brands across primary global categories with realistic pre-login site content and visual assets
 export const FLAGSHIP_BRANDS: Brand[] = [
   // --- QUICK COMMERCE ---
   {
@@ -11,14 +12,34 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     bannerImage: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80',
     category: 'quick-commerce',
     subCategory: '10-Minute Groceries & Electronics',
-    headquarters: 'Mumbai, India',
+    headquarters: 'Mumbai, Maharashtra, India',
+    city: 'Mumbai',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#57007B',
+    brandTextColor: '#FFFFFF',
+    heroTagline: '10-Minute Grocery Delivery across India',
+    heroSubhead: 'Groceries, fresh farm produce, cosmetics, and electronics delivered in 10 minutes from your neighborhood dark store.',
+    preLoginHighlights: [
+      'Sub-10 Minute Delivery Guarantee',
+      'Zero Surge Pricing with Zepto Pass',
+      'Sub-second Dark Store Robotics',
+      '10,000+ Fresh SKU Product Drops'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.7,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://www.zeptonow.com',
     founded: 2021,
     valuationOrMarketCap: '$5.0 Billion',
     aceScore: 97,
     tier: 'S-Tier',
     website: 'https://zepto.com',
     description: 'Pioneered 10-minute grocery delivery in India, operating an ultra-dense network of micro-fulfillment dark stores with sub-second picking robotics.',
-    tags: ['Dark Store', 'Instant Delivery', 'Fresh Produce', 'Electronics'],
+    tags: ['Dark Store', 'Instant Delivery', 'Fresh Produce', 'Electronics', 'Mumbai Tech'],
     trendingRank: 1,
     verified: true,
     socials: { twitter: '@ZeptoNow', linkedin: 'zepto' },
@@ -36,14 +57,34 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     bannerImage: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=1200&q=80',
     category: 'quick-commerce',
     subCategory: 'Dark Store Everything Delivery',
-    headquarters: 'Gurugram, India',
+    headquarters: 'Gurugram, Haryana, India',
+    city: 'Gurugram',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#F8CB46',
+    brandTextColor: '#0C831F',
+    heroTagline: "India's Last Minute App - Delivered in 10 Minutes",
+    heroSubhead: 'Everything from fresh coriander and cold dairy to Apple iPhone 16 Pro, PS5 consoles, and emergency chargers at your doorstep in 10 minutes.',
+    preLoginHighlights: [
+      '8 to 12 Min Express Dark Stores',
+      'Zomato Gold Linked Benefits',
+      'Instant Electronics & Tech Drops',
+      'Document Print Store & Gift Wrapping'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.6,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://blinkit.com',
     founded: 2013,
     valuationOrMarketCap: '$12.0 Billion (Zomato Group)',
     aceScore: 98,
     tier: 'S-Tier',
     website: 'https://blinkit.com',
-    description: 'Instant delivery platform delivering everything from iPhone releases and Playstation consoles to coriander and fresh dairy within 8-12 minutes.',
-    tags: ['Zomato', 'Quick Retail', 'Tech Drops', '10-Min Delivery'],
+    description: 'Instant delivery platform delivering everything from iPhone releases and Playstation consoles to coriander and fresh dairy within 8 to 12 minutes.',
+    tags: ['Zomato', 'Quick Retail', 'Tech Drops', '10-Min Delivery', 'NCR Hub'],
     trendingRank: 2,
     verified: true,
     socials: { twitter: '@letsblinkit', linkedin: 'blinkit' },
@@ -61,13 +102,33 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     category: 'quick-commerce',
     subCategory: 'Grocery Technology & Fulfillment',
     headquarters: 'San Francisco, CA, USA',
+    city: 'San Francisco',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#003D29',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Groceries and more delivered fast from local stores',
+    heroSubhead: 'Get fresh produce, pantry staples, and same-day delivery or pickup from 1,400+ national and regional retailers across North America.',
+    preLoginHighlights: [
+      '1,400+ Retail Banners Connected',
+      'Same-Day Delivery in 1 Hour',
+      'Instacart+ Free Delivery Perks',
+      'In-Store Prices Guaranteed'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.4,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://www.instacart.com',
     founded: 2012,
     valuationOrMarketCap: '$10.5 Billion (NASDAQ: CART)',
     aceScore: 94,
     tier: 'S-Tier',
     website: 'https://instacart.com',
-    description: 'North America’s leading grocery technology company partnering with over 1,400 retail banners to fulfill on-demand grocery and household essentials.',
-    tags: ['North America', 'Retail AI', 'Cart Delivery', 'Same-Day'],
+    description: 'North America leading grocery technology company partnering with over 1,400 retail banners to fulfill on-demand grocery and household essentials.',
+    tags: ['North America', 'Retail AI', 'Cart Delivery', 'Same-Day', 'Bay Area'],
     trendingRank: 5,
     verified: true,
     socials: { twitter: '@Instacart', linkedin: 'instacart' },
@@ -85,6 +146,26 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     category: 'quick-commerce',
     subCategory: 'Instant Needs & Beverages',
     headquarters: 'Philadelphia, PA, USA',
+    city: 'New York',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#00A3FF',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Instant Needs Delivered in Minutes',
+    heroSubhead: 'Snacks, drinks, over-the-counter medicine, electronics, and late-night ice cream delivered directly from local micro-fulfillment centers.',
+    preLoginHighlights: [
+      '24/7 Late Night Micro-Warehouses',
+      'Gopuff FAM Member Free Delivery',
+      'Direct-to-Consumer Vertically Integrated',
+      'Alcohol and Cold Drinks in Minutes'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.5,
+      downloads: '10M+'
+    },
+    officialLoginUrl: 'https://www.gopuff.com',
     founded: 2013,
     valuationOrMarketCap: '$8.9 Billion',
     aceScore: 92,
@@ -101,7 +182,7 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     ]
   },
 
-  // --- E-COMMERCE ---
+  // --- E-COMMERCE & FOOD DELIVERY ---
   {
     id: 'brand-ec-1',
     slug: 'amazon',
@@ -109,45 +190,129 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     logo: 'https://images.unsplash.com/photo-1523474255658-4af61b1684c2?auto=format&fit=crop&w=200&q=80',
     bannerImage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
     category: 'e-commerce',
-    subCategory: 'Global Marketplace & Cloud',
+    subCategory: 'Global Marketplace & Cloud Logistics',
     headquarters: 'Seattle, WA, USA',
+    city: 'Seattle',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#131921',
+    brandTextColor: '#FF9900',
+    heroTagline: 'Low prices, fast delivery, and millions of items',
+    heroSubhead: 'Discover Prime 1-day free delivery, deals of the day, Amazon Fresh groceries, and Kindle books with guaranteed A-to-z protection.',
+    preLoginHighlights: [
+      'Prime 1-Day & Same-Day Free Fulfillment',
+      'A-to-z Safe Purchase Guarantee',
+      '100 Million+ Global Active Catalogs',
+      'Amazon Alexa Voice Ordering'
+    ],
+    appRating: {
+      ios: 4.9,
+      android: 4.7,
+      downloads: '500M+'
+    },
+    officialLoginUrl: 'https://www.amazon.com/ap/signin',
     founded: 1994,
     valuationOrMarketCap: '$2.1 Trillion (NASDAQ: AMZN)',
     aceScore: 99,
     tier: 'S-Tier',
     website: 'https://amazon.com',
-    description: 'The world’s largest online retailer and cloud infrastructure provider, serving hundreds of millions of consumers with Prime 1-day fulfillment.',
-    tags: ['Global Leader', 'Prime', 'Cloud', 'Logistics'],
+    description: 'The world largest online retailer and cloud infrastructure provider, serving hundreds of millions of consumers with Prime fulfillment.',
+    tags: ['Global Leader', 'Prime', 'Cloud', 'Logistics', 'Seattle Hub'],
     trendingRank: 1,
     verified: true,
     socials: { twitter: '@amazon' },
-    playPerkDescription: 'Exclusive Prime Gaming loot drops & $20 Marketplayace gift voucher integration.',
+    playPerkDescription: 'Exclusive Prime Gaming loot drops & $25 Marketplayace gift voucher integration.',
     offers: [
       { id: 'off-am1', title: '$25 Gift Card on Prime Tech Bundles', code: 'AMZACE25', discount: '$25 BACK', expiresIn: 'Limited', isExclusive: true, playDiscountBonus: 20 }
     ]
   },
   {
-    id: 'brand-ec-2',
-    slug: 'shopify',
-    name: 'Shopify',
-    logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&q=80',
-    bannerImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
+    id: 'brand-fd-1',
+    slug: 'zomato',
+    name: 'Zomato',
+    logo: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
     category: 'e-commerce',
-    subCategory: 'Omnichannel Commerce Platform',
-    headquarters: 'Ottawa, Canada',
-    founded: 2006,
-    valuationOrMarketCap: '$110 Billion (NYSE: SHOP)',
+    subCategory: 'Food Delivery & Dining Out Discovery',
+    headquarters: 'Gurugram, Haryana, India',
+    city: 'Delhi NCR',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#E23744',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Discover the best food and drinks in your city',
+    heroSubhead: 'Explore curated menus, verified diner reviews, instant table booking, and lightning fast hot meal delivery to your doorstep.',
+    preLoginHighlights: [
+      '350,000+ Verified Restaurant Partners',
+      'Zomato Gold VIP Dining and Delivery',
+      'Live Order Real-Time GPS Tracking',
+      'Hygienic Kitchen Inspections and Audits'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.6,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://www.zomato.com',
+    founded: 2008,
+    valuationOrMarketCap: '$24.0 Billion (NSE: ZOMATO)',
     aceScore: 98,
     tier: 'S-Tier',
-    website: 'https://shopify.com',
-    description: 'Powers millions of independent merchant brands worldwide, handling everything from payments and fulfillment to AI-assisted storefront creation.',
-    tags: ['D2C', 'Merchant Cloud', 'Shop Pay', 'Commerce'],
-    trendingRank: 3,
+    website: 'https://zomato.com',
+    description: 'India premier food ordering and dining discovery platform connecting millions of diners with hundreds of thousands of restaurants and cloud kitchens.',
+    tags: ['Zomato Gold', 'Food Tech', 'Cloud Kitchen', 'Dine-In'],
+    trendingRank: 1,
     verified: true,
-    socials: { twitter: '@Shopify' },
-    playPerkDescription: 'Shop Pay 1-click accelerated checkout with 10% gamified cashback tokens.',
+    socials: { twitter: '@zomato' },
+    playPerkDescription: 'Play the Bullseye challenge to unlock 50% off dining bills + free Zomato Gold edition pass.',
     offers: [
-      { id: 'off-sh1', title: 'Shop Pay 10% Instant Cashback', code: 'SHOPACE10', discount: '10% BACK', expiresIn: 'Ongoing', isExclusive: true, playDiscountBonus: 10 }
+      { id: 'off-zom1', title: 'Flat ₹200 Off Gourmet Orders', code: 'ZOMATOACE200', discount: '₹200 OFF', expiresIn: 'Today', isExclusive: true, playDiscountBonus: 25 }
+    ]
+  },
+  {
+    id: 'brand-fd-2',
+    slug: 'swiggy',
+    name: 'Swiggy',
+    logo: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80',
+    category: 'e-commerce',
+    subCategory: 'On-Demand Food, Instamart & Dineout',
+    headquarters: 'Bengaluru, Karnataka, India',
+    city: 'Bengaluru',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#FC8019',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Order food and groceries. Discover best restaurants.',
+    heroSubhead: 'Swiggy Food, Instamart 10-minute grocery, and Dineout gourmet table reservations all in one integrated super app.',
+    preLoginHighlights: [
+      'Swiggy One Unlimited Free Delivery',
+      'Instamart 10-Minute Dark Stores',
+      'Swiggy Genie Instant Pick and Drop',
+      '24/7 Late-Night Gourmet Delivery'
+    ],
+    appRating: {
+      ios: 4.7,
+      android: 4.5,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://www.swiggy.com',
+    founded: 2014,
+    valuationOrMarketCap: '$12.5 Billion (NSE: SWIGGY)',
+    aceScore: 97,
+    tier: 'S-Tier',
+    website: 'https://swiggy.com',
+    description: 'Convenience platform delivering food, 10-minute groceries via Instamart, and package courier services across 500+ Indian cities.',
+    tags: ['Swiggy One', 'Instamart', 'Bengaluru Hub', 'Superapp'],
+    trendingRank: 2,
+    verified: true,
+    socials: { twitter: '@Swiggy' },
+    playPerkDescription: 'Claim 3 months of free Swiggy One membership with any Squad Room victory.',
+    offers: [
+      { id: 'off-sw1', title: 'Free Swiggy One VIP Access', code: 'SWIGGYACELITE', discount: 'FREE VIP', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
     ]
   },
 
@@ -160,13 +325,33 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     bannerImage: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80',
     category: 'pharmacy',
     subCategory: 'Digital Healthcare & Diagnostics',
-    headquarters: 'Gurugram, India',
+    headquarters: 'Gurugram, Haryana, India',
+    city: 'Gurugram',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#FF6F61',
+    brandTextColor: '#1A243B',
+    heroTagline: "India's Leading Online Healthcare & Pharmacy Platform",
+    heroSubhead: 'Order verified prescription medicines, schedule lab health tests at home, and consult certified doctors online 24/7.',
+    preLoginHighlights: [
+      '100% Genuine Certified Medicines',
+      'NABL-Accredited Lab Diagnostic Tests',
+      'Safe Doorstep Delivery in 1,000+ Cities',
+      'Free Online Doctor Consultation'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.5,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://www.1mg.com',
     founded: 2015,
     valuationOrMarketCap: '$1.4 Billion (Tata Digital)',
     aceScore: 96,
     tier: 'S-Tier',
     website: 'https://1mg.com',
-    description: 'India’s leading consumer healthcare platform, providing genuine prescription medicines, certified lab tests at home, and verified doctor teleconsultations.',
+    description: 'India leading consumer healthcare platform, providing genuine prescription medicines, certified lab tests at home, and verified doctor teleconsultations.',
     tags: ['Prescription', 'Lab Tests', 'Telehealth', 'Tata Group'],
     trendingRank: 1,
     verified: true,
@@ -176,32 +361,8 @@ export const FLAGSHIP_BRANDS: Brand[] = [
       { id: 'off-1mg1', title: 'Flat 25% Off Medicines + Free Lab Pick', code: 'ACE1MG25', discount: '25% OFF', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 25 }
     ]
   },
-  {
-    id: 'brand-ph-2',
-    slug: 'cvs-health',
-    name: 'CVS Health',
-    logo: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=200&q=80',
-    bannerImage: 'https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=1200&q=80',
-    category: 'pharmacy',
-    subCategory: 'Retail Pharmacy & Managed Care',
-    headquarters: 'Woonsocket, RI, USA',
-    founded: 1963,
-    valuationOrMarketCap: '$80 Billion (NYSE: CVS)',
-    aceScore: 95,
-    tier: 'S-Tier',
-    website: 'https://cvs.com',
-    description: 'Operates over 9,000 retail locations, MinuteClinics, pharmacy benefits management, and digital wellness services across the United States.',
-    tags: ['Prescriptions', 'Wellness', 'MinuteClinic', 'ExtraCare'],
-    trendingRank: 4,
-    verified: true,
-    socials: { twitter: '@CVSHealth' },
-    playPerkDescription: 'Double ExtraCare Rewards points on all wellness essentials via Marketplayace perks.',
-    offers: [
-      { id: 'off-cvs1', title: '$20 ExtraBucks Rewards Credit', code: 'CVSACE20', discount: '$20 REWARDS', expiresIn: 'Active', isExclusive: false, playDiscountBonus: 15 }
-    ]
-  },
 
-  // --- GAMING & ESPORTS ---
+  // --- GAMING & HARDWARE ---
   {
     id: 'brand-gm-1',
     slug: 'razer',
@@ -210,14 +371,34 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     bannerImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
     category: 'gaming',
     subCategory: 'Gaming Hardware, Laptops & Chroma',
-    headquarters: 'Irvine, CA & Singapore',
+    headquarters: 'Singapore and Irvine, CA',
+    city: 'Singapore',
+    country: 'Singapore',
+    countryCode: 'SG',
+    countryFlag: '🇸🇬',
+    brandColor: '#050505',
+    brandTextColor: '#00FF00',
+    heroTagline: 'For Gamers. By Gamers.',
+    heroSubhead: 'High-performance gaming laptops, Chroma RGB mechanical keyboards, esports tournament mice, and spatial audio headsets.',
+    preLoginHighlights: [
+      'Razer Chroma RGB Lighting Ecosystem',
+      'Optical Mechanical Switches & Gen-3 Sensors',
+      'THX Spatial Audio Immersion',
+      'Global Team Razer Esports Roster'
+    ],
+    appRating: {
+      ios: 4.6,
+      android: 4.5,
+      downloads: '10M+'
+    },
+    officialLoginUrl: 'https://www.razer.com',
     founded: 2005,
     valuationOrMarketCap: '$3.2 Billion',
     aceScore: 99,
     tier: 'S-Tier',
     website: 'https://razer.com',
     description: 'The global leading lifestyle brand for gamers. Recognized worldwide for iconic triple-headed snake hardware, Chroma RGB lighting, and esports peripherals.',
-    tags: ['For Gamers By Gamers', 'Chroma RGB', 'Esports Gear', 'Laptops'],
+    tags: ['For Gamers By Gamers', 'Chroma RGB', 'Esports Gear', 'Laptops', 'Singapore Tech'],
     trendingRank: 1,
     verified: true,
     socials: { twitter: '@Razer' },
@@ -226,32 +407,8 @@ export const FLAGSHIP_BRANDS: Brand[] = [
       { id: 'off-rz1', title: '30% Off Razer Blade & Peripherals Drop', code: 'RAZERACE30', discount: '30% OFF', expiresIn: '5 Days', isExclusive: true, playDiscountBonus: 30 }
     ]
   },
-  {
-    id: 'brand-gm-2',
-    slug: 'valve-steam',
-    name: 'Valve (Steam)',
-    logo: 'https://images.unsplash.com/photo-1612287232230-67d7168c7e2b?auto=format&fit=crop&w=200&q=80',
-    bannerImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80',
-    category: 'gaming',
-    subCategory: 'Digital Distribution & Steam Deck',
-    headquarters: 'Bellevue, WA, USA',
-    founded: 1996,
-    valuationOrMarketCap: '$8.5 Billion (Private)',
-    aceScore: 100,
-    tier: 'S-Tier',
-    website: 'https://steampowered.com',
-    description: 'Creator of the legendary Steam platform, Steam Deck handheld console, and seminal franchises including Half-Life, Portal, Counter-Strike 2, and Dota 2.',
-    tags: ['Steam', 'Counter-Strike', 'Steam Deck', 'PC Gaming'],
-    trendingRank: 2,
-    verified: true,
-    socials: { twitter: '@valvesoftware' },
-    playPerkDescription: 'Instant $10 Steam Wallet Code claimable through Marketplayace Squad Drops.',
-    offers: [
-      { id: 'off-st1', title: '$10 Steam Wallet Top-Up Code', code: 'STEAMACE10', discount: '$10 CODE', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
-    ]
-  },
 
-  // --- AVIATION & AIRLINES ---
+  // --- AVIATION & TRAVEL ---
   {
     id: 'brand-av-1',
     slug: 'emirates',
@@ -261,13 +418,33 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     category: 'aviation',
     subCategory: 'Ultra-Luxury Long-Haul Airlines',
     headquarters: 'Dubai, United Arab Emirates',
+    city: 'Dubai',
+    country: 'United Arab Emirates',
+    countryCode: 'AE',
+    countryFlag: '🇦🇪',
+    brandColor: '#D71921',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Fly Better - World-Class Luxury Aviation',
+    heroSubhead: 'Experience luxury aboard the A380 and Boeing 777 with First Class private suites, onboard shower spas, and award-winning ice inflight entertainment.',
+    preLoginHighlights: [
+      'ice Award-Winning Inflight Entertainment',
+      'A380 Onboard Shower Spa & Lounge Bar',
+      'Global Mega-Hub Connecting 150+ Cities',
+      'Emirates Skywards Tiered Perks'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.6,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://www.emirates.com',
     founded: 1985,
     valuationOrMarketCap: 'Government of Dubai ($35B+ Revenue)',
     aceScore: 99,
     tier: 'S-Tier',
     website: 'https://emirates.com',
-    description: 'The world’s premier international airline operating the largest fleet of Airbus A380s and Boeing 777s, renowned for First Class private suites and onboard shower spas.',
-    tags: ['A380', 'Luxury Travel', 'Skywards', 'Global Hub'],
+    description: 'The world premier international airline operating the largest fleet of Airbus A380s and Boeing 777s, renowned for First Class private suites and onboard shower spas.',
+    tags: ['A380', 'Luxury Travel', 'Skywards', 'Dubai Hub'],
     trendingRank: 1,
     verified: true,
     socials: { twitter: '@emirates' },
@@ -278,26 +455,46 @@ export const FLAGSHIP_BRANDS: Brand[] = [
   },
   {
     id: 'brand-av-2',
-    slug: 'singapore-airlines',
-    name: 'Singapore Airlines',
-    logo: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=200&q=80',
-    bannerImage: 'https://images.unsplash.com/photo-1520437358207-323b43b50729?auto=format&fit=crop&w=1200&q=80',
+    slug: 'airbnb',
+    name: 'Airbnb',
+    logo: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
     category: 'aviation',
-    subCategory: '5-Star Hospitality Carrier',
-    headquarters: 'Singapore',
-    founded: 1947,
-    valuationOrMarketCap: '$18.0 Billion (SGX: C6L)',
-    aceScore: 99,
+    subCategory: 'Vacation Rentals & Unique Stays',
+    headquarters: 'San Francisco, CA, USA',
+    city: 'San Francisco',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#FF385C',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Belong Anywhere - Unique Stays & Experiences Worldwide',
+    heroSubhead: 'Book extraordinary homes, beachfront villas, treehouses, and local experiences hosted by passionate locals in 220+ countries.',
+    preLoginHighlights: [
+      'AirCover Comprehensive Guest Protection',
+      '8 Million+ Curated Unique Homes',
+      'Verified Host & Guest Reviews',
+      '24/7 Global Customer Support'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.7,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://www.airbnb.com',
+    founded: 2008,
+    valuationOrMarketCap: '$92.0 Billion (NASDAQ: ABNB)',
+    aceScore: 98,
     tier: 'S-Tier',
-    website: 'https://singaporeair.com',
-    description: 'Consistently voted the World’s Best Airline by Skytrax, famous for exceptional KrisWorld inflight entertainment, haute cuisine, and Singapore Girl hospitality.',
-    tags: ['Skytrax Best', 'KrisFlyer', 'Star Alliance', 'Singapore'],
-    trendingRank: 2,
+    website: 'https://airbnb.com',
+    description: 'Global marketplace for vacation rentals and tourism experiences, transforming how people travel and discover destinations across the globe.',
+    tags: ['Travel', 'Unique Stays', 'AirCover', 'Bay Area'],
+    trendingRank: 3,
     verified: true,
-    socials: { twitter: '@SingaporeAir' },
-    playPerkDescription: 'Squad-book flights with 3 travelers to unlock complimentary lounge access pass.',
+    socials: { twitter: '@Airbnb' },
+    playPerkDescription: 'Win $100 off your next beach villa or chalet getaway in the Marketplayace Dutch Auction.',
     offers: [
-      { id: 'off-sq1', title: 'SilverKris Lounge Access Pass', code: 'SQACELOUNGE', discount: 'FREE PASS', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 25 }
+      { id: 'off-ab1', title: '$100 Off International Villa Stays', code: 'AIRBNBACE100', discount: '$100 OFF', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 25 }
     ]
   },
 
@@ -310,13 +507,33 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     bannerImage: 'https://images.unsplash.com/photo-1559526324-593bc073d998?auto=format&fit=crop&w=1200&q=80',
     category: 'fintech',
     subCategory: 'Financial Infrastructure for the Internet',
-    headquarters: 'San Francisco & Dublin',
+    headquarters: 'San Francisco, CA, USA',
+    city: 'San Francisco',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#635BFF',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Financial infrastructure for the internet',
+    heroSubhead: 'Millions of companies of all sizes, from growing startups to large enterprises, use Stripe software and APIs to accept payments and manage businesses online.',
+    preLoginHighlights: [
+      '99.999% Historical API Uptime',
+      'Payment Methods in 135+ Currencies',
+      'Radar Machine Learning Fraud Prevention',
+      'Instant Payouts & Global Treasury'
+    ],
+    appRating: {
+      ios: 4.7,
+      android: 4.4,
+      downloads: '10M+'
+    },
+    officialLoginUrl: 'https://dashboard.stripe.com/login',
     founded: 2010,
     valuationOrMarketCap: '$70.0 Billion',
     aceScore: 99,
     tier: 'S-Tier',
     website: 'https://stripe.com',
-    description: 'Dual-headquartered payments infrastructure giant powering economic transactions for startups to Fortune 500 giants like Amazon, Google, and Uber.',
+    description: 'Payments infrastructure giant powering economic transactions for startups to Fortune 500 giants like Amazon, Google, and Uber.',
     tags: ['Payments API', 'Global Fintech', 'Stripe Connect', 'Issuing'],
     trendingRank: 1,
     verified: true,
@@ -328,26 +545,92 @@ export const FLAGSHIP_BRANDS: Brand[] = [
   },
   {
     id: 'brand-ft-2',
-    slug: 'revolut',
-    name: 'Revolut',
+    slug: 'razorpay',
+    name: 'Razorpay',
     logo: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=200&q=80',
     bannerImage: 'https://images.unsplash.com/photo-1559526323-cb2f2fe05917?auto=format&fit=crop&w=1200&q=80',
     category: 'fintech',
-    subCategory: 'Global Neobank & Multi-Currency',
-    headquarters: 'London, United Kingdom',
-    founded: 2015,
-    valuationOrMarketCap: '$45.0 Billion',
-    aceScore: 97,
+    subCategory: 'Full-Stack Business Banking & Payments',
+    headquarters: 'Bengaluru, Karnataka, India',
+    city: 'Bengaluru',
+    country: 'India',
+    countryCode: 'IN',
+    countryFlag: '🇮🇳',
+    brandColor: '#0C2340',
+    brandTextColor: '#3395FF',
+    heroTagline: 'The Future of Business Banking & Payments',
+    heroSubhead: 'Accept payments from Indian and global customers seamlessly with cards, UPI, netbanking, and automated payroll payouts.',
+    preLoginHighlights: [
+      'Powering 10M+ Indian Businesses',
+      'Instant UPI AutoPay and Subscriptions',
+      'RazorpayX Smart Neobanking Engine',
+      '99.9% Route Payment Success Rate'
+    ],
+    appRating: {
+      ios: 4.7,
+      android: 4.6,
+      downloads: '10M+'
+    },
+    officialLoginUrl: 'https://dashboard.razorpay.com',
+    founded: 2014,
+    valuationOrMarketCap: '$7.5 Billion',
+    aceScore: 98,
     tier: 'S-Tier',
-    website: 'https://revolut.com',
-    description: 'Europe’s most valuable fintech app offering multi-currency accounts, international FX at interbank rates, crypto trading, and Metal cards to 45M+ users.',
-    tags: ['Neobank', 'Zero FX', 'Metal Card', 'Crypto'],
+    website: 'https://razorpay.com',
+    description: 'India leading payments and business banking platform, enabling millions of businesses to accept UPI payments, automate vendor payouts, and issue corporate cards.',
+    tags: ['UPI', 'Bengaluru Fintech', 'Payment Gateway', 'Neobanking'],
     trendingRank: 2,
     verified: true,
-    socials: { twitter: '@RevolutApp' },
-    playPerkDescription: 'Receive a free customized Black Metal Card + 3 months Revolut Ultra subscription with your Ace Tier win.',
+    socials: { twitter: '@razorpay' },
+    playPerkDescription: 'Flat 50% discount on first-year RazorpayX corporate card subscriptions.',
     offers: [
-      { id: 'off-rev1', title: 'Free Metal Card + 3 Months Ultra Plan', code: 'REVACEMETAL', discount: 'FREE VIP', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 25 }
+      { id: 'off-rzp1', title: '50% Off RazorpayX Neobanking Suite', code: 'RAZORPAYACE50', discount: '50% OFF', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 25 }
+    ]
+  },
+
+  // --- ELECTRIC VEHICLES & SUSTAINABILITY ---
+  {
+    id: 'brand-ev-1',
+    slug: 'tesla',
+    name: 'Tesla',
+    logo: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&w=1200&q=80',
+    category: 'ev-auto',
+    subCategory: 'Electric Vehicles & Clean Energy',
+    headquarters: 'Austin, TX, USA',
+    city: 'Austin',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#111111',
+    brandTextColor: '#E82127',
+    heroTagline: 'Accelerating Sustainable Energy & Autonomous Mobility',
+    heroSubhead: 'Order Model 3, Model Y, Cybertruck, Solar Roof, and experience Full Self-Driving Supervised technology.',
+    preLoginHighlights: [
+      'Full Self-Driving (Supervised) AI',
+      '60,000+ Supercharger Global Stalls',
+      '0 to 60 mph in 1.99s (Model S Plaid)',
+      'Optimus Humanoid General Robotics'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.6,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://auth.tesla.com',
+    founded: 2003,
+    valuationOrMarketCap: '$800+ Billion (NASDAQ: TSLA)',
+    aceScore: 98,
+    tier: 'S-Tier',
+    website: 'https://tesla.com',
+    description: 'Accelerating the world transition to sustainable energy with Cybertruck, Model S/3/X/Y, Full Self-Driving (FSD), Megapack storage, and Optimus humanoid robots.',
+    tags: ['Cybertruck', 'FSD', 'Clean Energy', 'Supercharger', 'Austin Hub'],
+    trendingRank: 1,
+    verified: true,
+    socials: { twitter: '@Tesla' },
+    playPerkDescription: 'Unlock 3 months of complimentary Full Self-Driving (FSD) + 1,000 Free Supercharging miles.',
+    offers: [
+      { id: 'off-ts1', title: '1,000 Free Supercharger Miles', code: 'TESLAACE1000', discount: 'FREE MILES', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
     ]
   },
 
@@ -359,15 +642,35 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     logo: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=200&q=80',
     bannerImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
     category: 'ai-robotics',
-    subCategory: 'Frontier AI & Large Language Models',
+    subCategory: 'Frontier AI & Autonomous Intelligence',
     headquarters: 'San Francisco, CA, USA',
+    city: 'San Francisco',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#000000',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Creating safe AGI that benefits all of humanity',
+    heroSubhead: 'Explore ChatGPT, GPT-4o multimodal intelligence, DALL-E image generation, and Sora video AI with enterprise security.',
+    preLoginHighlights: [
+      'ChatGPT Plus & Team Advanced Voice',
+      'GPT-4o Multimodal Vision & Reasoning',
+      'Enterprise SOC2 Data Privacy Compliance',
+      'Custom GPT Agent Ecosystem'
+    ],
+    appRating: {
+      ios: 4.9,
+      android: 4.8,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://chatgpt.com/auth/login',
     founded: 2015,
     valuationOrMarketCap: '$157 Billion',
     aceScore: 100,
     tier: 'S-Tier',
     website: 'https://openai.com',
-    description: 'Creator of ChatGPT, GPT-4o, DALL·E 3, and Sora, driving the global frontier in generative artificial intelligence and agentic workflows.',
-    tags: ['AGI', 'ChatGPT', 'GPT-4o', 'Deep Learning'],
+    description: 'Creator of ChatGPT, GPT-4o, and Sora, leading the global frontier in artificial general intelligence and agentic workflows.',
+    tags: ['AGI', 'ChatGPT', 'GPT-4o', 'Deep Learning', 'Silicon Valley'],
     trendingRank: 1,
     verified: true,
     socials: { twitter: '@OpenAI' },
@@ -377,43 +680,142 @@ export const FLAGSHIP_BRANDS: Brand[] = [
     ]
   },
 
-  // --- ELECTRIC VEHICLES & AUTO ---
+  // --- MOBILITY & SUPERAPPS ---
   {
-    id: 'brand-ev-1',
-    slug: 'tesla',
-    name: 'Tesla',
-    logo: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=200&q=80',
-    bannerImage: 'https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&w=1200&q=80',
+    id: 'brand-mb-1',
+    slug: 'uber',
+    name: 'Uber',
+    logo: 'https://images.unsplash.com/photo-1510519138195-068d82f8d515?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80',
     category: 'ev-auto',
-    subCategory: 'Electric Vehicles & Clean Energy',
-    headquarters: 'Austin, TX, USA',
-    founded: 2003,
-    valuationOrMarketCap: '$800+ Billion (NASDAQ: TSLA)',
-    aceScore: 98,
+    subCategory: 'Rideshare, Delivery & Urban Mobility',
+    headquarters: 'San Francisco, CA, USA',
+    city: 'San Francisco',
+    country: 'United States',
+    countryCode: 'US',
+    countryFlag: '🇺🇸',
+    brandColor: '#000000',
+    brandTextColor: '#FFFFFF',
+    heroTagline: 'Go anywhere, get anything',
+    heroSubhead: 'Request a ride, order delivery with Uber Eats, or send packages across town on-demand with 24/7 safety features.',
+    preLoginHighlights: [
+      'Real-Time GPS Driver Tracking',
+      '24/7 In-App Safety Toolkit & RideCheck',
+      'Uber One Cashback & Zero Delivery Fees',
+      'Available in 10,000+ Cities Worldwide'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.6,
+      downloads: '500M+'
+    },
+    officialLoginUrl: 'https://auth.uber.com',
+    founded: 2009,
+    valuationOrMarketCap: '$160 Billion (NYSE: UBER)',
+    aceScore: 99,
     tier: 'S-Tier',
-    website: 'https://tesla.com',
-    description: 'Accelerating the world’s transition to sustainable energy with Cybertruck, Model S/3/X/Y, Full Self-Driving (FSD), Megapack storage, and Optimus humanoid robots.',
-    tags: ['Cybertruck', 'FSD', 'Clean Energy', 'Supercharger'],
-    trendingRank: 1,
+    website: 'https://uber.com',
+    description: 'Global mobility platform providing ridesharing, meal delivery through Uber Eats, and freight logistics across 70+ nations.',
+    tags: ['Rideshare', 'Uber Eats', 'Urban Mobility', 'Global Scale'],
+    trendingRank: 2,
     verified: true,
-    socials: { twitter: '@Tesla' },
-    playPerkDescription: 'Unlock 3 months of complimentary Full Self-Driving (FSD) + 1,000 Free Supercharging miles.',
+    socials: { twitter: '@Uber' },
+    playPerkDescription: 'Claim $30 in Uber rideshare and dining credits upon winning any Reflex challenge.',
     offers: [
-      { id: 'off-ts1', title: '1,000 Free Supercharger Miles', code: 'TESLAACE1000', discount: 'FREE MILES', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
+      { id: 'off-ub1', title: '$30 Uber Credits Voucher', code: 'UBERACE30', discount: '$30 CREDITS', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
+    ]
+  },
+  {
+    id: 'brand-mb-2',
+    slug: 'grab',
+    name: 'Grab',
+    logo: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1200&q=80',
+    category: 'quick-commerce',
+    subCategory: 'Southeast Asia Everyday Superapp',
+    headquarters: 'Singapore',
+    city: 'Singapore',
+    country: 'Singapore',
+    countryCode: 'SG',
+    countryFlag: '🇸🇬',
+    brandColor: '#00B14F',
+    brandTextColor: '#FFFFFF',
+    heroTagline: "Southeast Asia's Leading Everyday Superapp",
+    heroSubhead: 'On-demand food delivery, ride-hailing transport, cashless GrabPay digital payments, and express parcel courier.',
+    preLoginHighlights: [
+      'Trusted by 180M+ Users across 8 SEA Nations',
+      'GrabUnlimited Monthly Subscription Savings',
+      'GrabPay & PayLater Financial Freedom',
+      '5-Star Safety Rated Drivers and Riders'
+    ],
+    appRating: {
+      ios: 4.8,
+      android: 4.7,
+      downloads: '100M+'
+    },
+    officialLoginUrl: 'https://www.grab.com/login',
+    founded: 2012,
+    valuationOrMarketCap: '$15.0 Billion (NASDAQ: GRAB)',
+    aceScore: 97,
+    tier: 'S-Tier',
+    website: 'https://grab.com',
+    description: 'Southeast Asia superapp offering food delivery, transport, digital financial services, and enterprise logistics across 8 countries.',
+    tags: ['Superapp', 'Southeast Asia', 'GrabPay', 'Transport'],
+    trendingRank: 3,
+    verified: true,
+    socials: { twitter: '@grabsg' },
+    playPerkDescription: 'Unlock flat 25% off GrabFood orders + GrabUnlimited 30-day VIP pass.',
+    offers: [
+      { id: 'off-gr1', title: '25% Off GrabFood Feast', code: 'GRABACE25', discount: '25% OFF', expiresIn: '7 Days', isExclusive: true, playDiscountBonus: 25 }
+    ]
+  },
+  {
+    id: 'brand-mb-3',
+    slug: 'careem',
+    name: 'Careem',
+    logo: 'https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=200&q=80',
+    bannerImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80',
+    category: 'quick-commerce',
+    subCategory: 'The Everything App for the Middle East',
+    headquarters: 'Dubai, United Arab Emirates',
+    city: 'Dubai',
+    country: 'United Arab Emirates',
+    countryCode: 'AE',
+    countryFlag: '🇦🇪',
+    brandColor: '#16222F',
+    brandTextColor: '#00EC5F',
+    heroTagline: 'The Everything App for the Middle East',
+    heroSubhead: 'Book rides, order food, pay bills, clean your home, and transfer money instantly across Dubai, Abu Dhabi, and the MENA region.',
+    preLoginHighlights: [
+      'Careem Plus Unlimited Free Delivery & Discounts',
+      'Hala Taxi & Luxury Chauffeur Fleet',
+      'Careem Pay Instant Peer-to-Peer Transfers',
+      'Licensed by Dubai Roads & Transport Authority'
+    ],
+    appRating: {
+      ios: 4.7,
+      android: 4.5,
+      downloads: '50M+'
+    },
+    officialLoginUrl: 'https://www.careem.com',
+    founded: 2012,
+    valuationOrMarketCap: '$3.1 Billion (Uber Subsidiary)',
+    aceScore: 96,
+    tier: 'S-Tier',
+    website: 'https://careem.com',
+    description: 'The premier multi-service platform for the greater Middle East, offering ride-hailing, food and grocery delivery, digital wallets, and home services.',
+    tags: ['Middle East', 'Dubai Tech', 'Careem Pay', 'Superapp'],
+    trendingRank: 4,
+    verified: true,
+    socials: { twitter: '@careem' },
+    playPerkDescription: 'Claim 3 months of Careem Plus free delivery pass with any Marketplayace win.',
+    offers: [
+      { id: 'off-cr1', title: 'Free Careem Plus 3-Month Pass', code: 'CAREEMACEPLUS', discount: 'FREE VIP', expiresIn: 'Active', isExclusive: true, playDiscountBonus: 20 }
     ]
   }
 ]
 
-// Algorithmic Procedural Directory Generator:
-// Allows instantly generating realistic, high-fidelity brands for any of the 52 categories
-// so every category has 1,000+ searchable and viewable brands without huge static JSON bundle bloat!
-
-const HQ_CITIES = [
-  'San Francisco, CA', 'New York, NY', 'London, UK', 'Tokyo, Japan',
-  'Bengaluru, India', 'Singapore', 'Berlin, Germany', 'Austin, TX',
-  'Seoul, South Korea', 'Zurich, Switzerland', 'Toronto, Canada', 'Stockholm, Sweden'
-]
-
+// Procedural brand name prefixes and colors for diverse categories
 const BRAND_PREFIXES: Record<string, string[]> = {
   'quick-commerce': ['Dash', 'Hyper', 'Swift', 'Flash', 'Volt', 'Nano', 'Minute', 'Breeze', 'Omni', 'Orbit'],
   'e-commerce': ['Prime', 'Cart', 'Bazaar', 'Market', 'Shop', 'Nova', 'Apex', 'Store', 'Hub', 'Plaza'],
@@ -421,13 +823,27 @@ const BRAND_PREFIXES: Record<string, string[]> = {
   'gaming': ['Cyber', 'Pixel', 'Vortex', 'Nexus', 'Gamer', 'Titan', 'Apex', 'Chrono', 'Hyper', 'Shadow'],
   'aviation': ['Aero', 'Sky', 'Wing', 'Jet', 'Flight', 'Cloud', 'Horizon', 'Air', 'Stratosphere', 'Zephyr'],
   'fintech': ['Pay', 'Vault', 'Ledger', 'Coin', 'Capital', 'Mint', 'Stash', 'Block', 'Liquid', 'FinEdge'],
-  'ai-robotics': ['Neural', 'Cognitive', 'Synapse', 'Cortex', 'Matrix', 'Agentic', 'Auto', 'Tensor', 'Bot', 'QuantumAI']
+  'ai-robotics': ['Neural', 'Cognitive', 'Synapse', 'Cortex', 'Matrix', 'Agentic', 'Auto', 'Tensor', 'Bot', 'QuantumAI'],
+  'ev-auto': ['Electra', 'Volt', 'Ampere', 'Kinetic', 'ApexDrive', 'NeoDrive', 'Flux', 'HyperEV', 'PureDrive']
 }
 
 const BRAND_SUFFIXES = ['Works', 'Labs', 'Global', 'Technologies', 'Systems', 'Networks', 'Dynamics', 'Direct', 'Hub', 'Club', 'Connect', 'One']
 
+const BRAND_PALETTES = [
+  '#2563EB', '#7C3AED', '#DB2777', '#059669', '#D97706',
+  '#4F46E5', '#0891B2', '#0D9488', '#DC2626', '#1E293B'
+]
+
+// Helper to deterministically pick a realistic city and country from MASTER_COUNTRIES
+function getCountryAndCityByIndex(index: number) {
+  const country = MASTER_COUNTRIES[index % MASTER_COUNTRIES.length]
+  const city = country.cities[(index * 3) % country.cities.length]
+  return { country, city }
+}
+
+// Procedural brand directory generator for any category
 export function generateCategoryBrands(categorySlug: string, count: number = 60): Brand[] {
-  // First check if we have hand-crafted flagship brands for this category
+  // First pick flagship brands belonging to this category
   const flagships = FLAGSHIP_BRANDS.filter((b) => b.category === categorySlug)
 
   const prefixes = BRAND_PREFIXES[categorySlug] || ['Nova', 'Apex', 'Hyper', 'Quantum', 'Vanguard', 'Omni', 'Titan', 'Aura']
@@ -440,6 +856,8 @@ export function generateCategoryBrands(categorySlug: string, count: number = 60)
     const id = `gen-${categorySlug}-${i}`
     const aceScore = 80 + ((i * 7) % 20)
     const tier: BrandTier = aceScore >= 95 ? 'S-Tier' : aceScore >= 88 ? 'A-Tier' : 'B-Tier'
+    const { country, city } = getCountryAndCityByIndex(i)
+    const brandColor = BRAND_PALETTES[i % BRAND_PALETTES.length]
 
     generated.push({
       id,
@@ -449,14 +867,34 @@ export function generateCategoryBrands(categorySlug: string, count: number = 60)
       bannerImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
       category: categorySlug,
       subCategory: `${categorySlug.replace('-', ' ').toUpperCase()} Verified Provider`,
-      headquarters: HQ_CITIES[i % HQ_CITIES.length],
-      founded: 2010 + (i % 14),
-      valuationOrMarketCap: `$${(100 + (i * 35) % 900)} Million`,
+      headquarters: `${city.name}, ${country.name}`,
+      city: city.name,
+      country: country.name,
+      countryCode: country.code,
+      countryFlag: country.flag,
+      brandColor,
+      brandTextColor: '#FFFFFF',
+      heroTagline: `Official Enterprise Platform for ${brandName}`,
+      heroSubhead: `Next-generation verified services in ${categorySlug.replace('-', ' ')} with real-time smart-contract voucher escrows and instant game perks.`,
+      preLoginHighlights: [
+        `Direct ${city.name} Regional Fulfillment`,
+        'Encrypted Marketplayace Escrow Checkout',
+        'Verified ISO-Certified Enterprise Partner',
+        '24/7 Dedicated Client VIP Desk'
+      ],
+      appRating: {
+        ios: Number((4.3 + (i % 7) * 0.1).toFixed(1)),
+        android: Number((4.2 + (i % 7) * 0.1).toFixed(1)),
+        downloads: `${1 + (i % 15)}M+`
+      },
+      officialLoginUrl: `https://${brandName.toLowerCase().replace(/[^a-z0-9]/g, '')}.marketplayace.com`,
+      founded: 2012 + (i % 12),
+      valuationOrMarketCap: `$${100 + ((i * 35) % 900)} Million`,
       aceScore,
       tier,
       website: `https://${brandName.toLowerCase().replace(/[^a-z0-9]/g, '')}.marketplayace.com`,
       description: `Verified enterprise brand in ${categorySlug.replace('-', ' ')} operating high-efficiency services with native Marketplayace smart-contract discounts and game perks.`,
-      tags: ['Verified Brand', 'Play Perk Ready', 'Instant Voucher', 'Ace Escrow'],
+      tags: ['Verified Brand', 'Play Perk Ready', 'Instant Voucher', 'Ace Escrow', city.name],
       trendingRank: i + 10,
       verified: i % 2 === 0,
       socials: { twitter: `@${brandName.replace(/\s+/g, '')}` },
@@ -468,6 +906,94 @@ export function generateCategoryBrands(categorySlug: string, count: number = 60)
           code: `ACE${prefix.toUpperCase()}${15 + (i % 20)}`,
           discount: `${15 + (i % 20)}% OFF`,
           expiresIn: '7 Days',
+          isExclusive: true,
+          playDiscountBonus: 20
+        }
+      ]
+    })
+  }
+
+  return [...flagships, ...generated]
+}
+
+// Procedural brand directory generator for any country and optional city
+export function generateCountryBrands(countrySlug: string, citySlug?: string, count: number = 60): Brand[] {
+  const targetCountry = MASTER_COUNTRIES.find((c) => c.slug === countrySlug) || MASTER_COUNTRIES[0]
+  const targetCity = citySlug ? targetCountry.cities.find((ct) => ct.slug === citySlug) : undefined
+
+  // Filter flagships matching this country
+  const flagships = FLAGSHIP_BRANDS.filter((b) => {
+    const matchesCountry = b.countryCode === targetCountry.code || b.country.toLowerCase() === targetCountry.name.toLowerCase()
+    if (!matchesCountry) return false
+    if (targetCity) {
+      return b.city.toLowerCase() === targetCity.name.toLowerCase()
+    }
+    return true
+  })
+
+  const generated: Brand[] = []
+  const availableCities = targetCity ? [targetCity] : targetCountry.cities
+  const categoriesPool = ['quick-commerce', 'e-commerce', 'pharmacy', 'gaming', 'aviation', 'fintech', 'ai-robotics', 'ev-auto']
+
+  for (let i = 1; i <= count; i++) {
+    const city = availableCities[i % availableCities.length]
+    const categorySlug = categoriesPool[i % categoriesPool.length]
+    const prefixes = BRAND_PREFIXES[categorySlug] || ['Nova', 'Apex', 'Hyper', 'Orbit']
+    const prefix = prefixes[i % prefixes.length]
+    const suffix = BRAND_SUFFIXES[(i * 2) % BRAND_SUFFIXES.length]
+    const brandName = `${prefix}${suffix} ${city.name}`.trim()
+    const id = `gen-country-${targetCountry.code.toLowerCase()}-${i}`
+    const aceScore = 82 + ((i * 5) % 18)
+    const tier: BrandTier = aceScore >= 95 ? 'S-Tier' : aceScore >= 88 ? 'A-Tier' : 'B-Tier'
+    const brandColor = BRAND_PALETTES[i % BRAND_PALETTES.length]
+
+    generated.push({
+      id,
+      slug: `${targetCountry.slug}-${city.slug}-${i}`,
+      name: brandName,
+      logo: `https://images.unsplash.com/photo-${1510000000000 + (i * 14321) % 1000000}?auto=format&fit=crop&w=200&q=80`,
+      bannerImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
+      category: categorySlug,
+      subCategory: `${city.name} ${city.hubType} Leader`,
+      headquarters: `${city.name}, ${targetCountry.name}`,
+      city: city.name,
+      country: targetCountry.name,
+      countryCode: targetCountry.code,
+      countryFlag: targetCountry.flag,
+      brandColor,
+      brandTextColor: '#FFFFFF',
+      heroTagline: `Premier ${categorySlug.replace('-', ' ')} Service in ${city.name}`,
+      heroSubhead: `Serving millions of customers across ${city.name} and ${targetCountry.name} with verified quality, zero surge fees, and instant delivery tokens.`,
+      preLoginHighlights: [
+        `Local ${city.name} Regional Headquarters`,
+        `${targetCountry.currency} Native Billing Support`,
+        'Verified National Business Certification',
+        '24/7 Priority Helpline'
+      ],
+      appRating: {
+        ios: Number((4.4 + (i % 6) * 0.1).toFixed(1)),
+        android: Number((4.3 + (i % 6) * 0.1).toFixed(1)),
+        downloads: `${2 + (i % 20)}M+`
+      },
+      officialLoginUrl: `https://${brandName.toLowerCase().replace(/[^a-z0-9]/g, '')}.marketplayace.com`,
+      founded: 2014 + (i % 10),
+      valuationOrMarketCap: `$${120 + ((i * 45) % 850)} Million`,
+      aceScore,
+      tier,
+      website: `https://${brandName.toLowerCase().replace(/[^a-z0-9]/g, '')}.marketplayace.com`,
+      description: `Locally verified enterprise leader located in ${city.name}, ${targetCountry.name}. Integrated directly with Marketplayace token vaults for instant cashback.`,
+      tags: [city.name, targetCountry.name, 'Regional Leader', 'Play Perk Ready'],
+      trendingRank: i + 5,
+      verified: true,
+      socials: { twitter: `@${brandName.replace(/\s+/g, '')}` },
+      playPerkDescription: `Play the Reflex Mini-game to unlock an exclusive ${12 + (i % 20)}% discount coupon.`,
+      offers: [
+        {
+          id: `off-${id}-1`,
+          title: `Exclusive ${city.name} Resident Welcome Offer`,
+          code: `${city.name.slice(0, 3).toUpperCase()}ACE${15 + (i % 15)}`,
+          discount: `${15 + (i % 15)}% OFF`,
+          expiresIn: '5 Days',
           isExclusive: true,
           playDiscountBonus: 20
         }

@@ -20,6 +20,12 @@ export interface BrandOffer {
   playDiscountBonus: number
 }
 
+export interface BrandAppRating {
+  ios: number
+  android: number
+  downloads: string
+}
+
 export interface Brand {
   id: string
   slug: string
@@ -29,6 +35,17 @@ export interface Brand {
   category: string
   subCategory: string
   headquarters: string
+  city: string
+  country: string
+  countryCode: string
+  countryFlag: string
+  brandColor: string
+  brandTextColor?: string
+  heroTagline: string
+  heroSubhead: string
+  preLoginHighlights: string[]
+  appRating?: BrandAppRating
+  officialLoginUrl?: string
   founded: number
   valuationOrMarketCap: string
   aceScore: number // 0 - 100
