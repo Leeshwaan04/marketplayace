@@ -5,7 +5,7 @@ import {
 } from 'lucide-react'
 import { MASTER_CATEGORIES } from '../data/categories'
 import { MASTER_COUNTRIES } from '../data/countriesData'
-import { generateCategoryBrands, generateCountryBrands } from '../data/brandsData'
+import { generateCategoryBrands, generateCountryBrands, REAL_BRANDS } from '../data/brandsData'
 import { BrandLogoBadge } from './BrandLogoBadge'
 import type { Brand, BrandTier } from '../types/brand'
 import { playSound } from '../utils/audio'
@@ -43,12 +43,12 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
     return MASTER_COUNTRIES.find((c) => c.slug === selectedCountrySlug) || MASTER_COUNTRIES[0]
   }, [selectedCountrySlug])
 
-  // Brands Source according to browse mode
+  // Brands Source according to browse mode (100% REAL brands only, zero dummy data)
   const rawBrands = useMemo(() => {
     if (browseMode === 'country-city') {
-      return generateCountryBrands(selectedCountrySlug, selectedCitySlug || undefined, 60)
+      return generateCountryBrands(selectedCountrySlug, selectedCitySlug || undefined)
     }
-    return generateCategoryBrands(selectedCategorySlug, 48)
+    return generateCategoryBrands(selectedCategorySlug)
   }, [browseMode, selectedCategorySlug, selectedCountrySlug, selectedCitySlug])
 
   // Filtered & Sorted Brands
@@ -90,11 +90,6 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
       })
   }, [rawBrands, searchQuery, tierFilter, filterCountrySlug, filterCategorySlug, browseMode, sortBy])
 
-  // Network stats
-  const totalNetworkBrands = useMemo(() => {
-    return MASTER_CATEGORIES.reduce((acc, cat) => acc + cat.totalBrandsCount, 0)
-  }, [])
-
   return (
     <div className="space-y-8">
       {/* Directory Banner */}
@@ -105,32 +100,32 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
           <div className="space-y-2 max-w-2xl">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-semibold border border-purple-500/40">
               <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-              <span>Enterprise Global Network • Country & City Explorer</span>
+              <span>Verified Enterprise Brands • 100% Real-World Data</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              Directory of {totalNetworkBrands.toLocaleString()}+ Global Brands
+              Directory of Real-World Global Brands
             </h2>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Explore authentic pre-login site propositions, official vector marks, Ace Trust Scores, and exclusive escrow promo codes across major global tech hubs and 52 industries.
+              Explore authentic pre-login customer propositions, official vector brandmarks, real valuations, and verified promo codes across leading global enterprises and tech hubs.
             </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 shrink-0 text-center">
             <div className="p-3 bg-gray-950/80 rounded-xl border border-gray-800">
-              <div className="text-xl font-black text-purple-400 font-mono">52</div>
-              <div className="text-[10px] text-gray-400 uppercase font-mono">Sectors</div>
+              <div className="text-xl font-black text-purple-400 font-mono">100%</div>
+              <div className="text-[10px] text-gray-400 uppercase font-mono">Real Brands</div>
             </div>
             <div className="p-3 bg-gray-950/80 rounded-xl border border-gray-800">
               <div className="text-xl font-black text-blue-400 font-mono">10+</div>
               <div className="text-[10px] text-gray-400 uppercase font-mono">Countries</div>
             </div>
             <div className="p-3 bg-gray-950/80 rounded-xl border border-gray-800">
-              <div className="text-xl font-black text-emerald-400 font-mono">60k+</div>
-              <div className="text-[10px] text-gray-400 uppercase font-mono">Brands Indexed</div>
+              <div className="text-xl font-black text-emerald-400 font-mono">Top Tier</div>
+              <div className="text-[10px] text-gray-400 uppercase font-mono">Market Leaders</div>
             </div>
             <div className="p-3 bg-gray-950/80 rounded-xl border border-gray-800">
-              <div className="text-xl font-black text-amber-400 font-mono">100%</div>
-              <div className="text-[10px] text-gray-400 uppercase font-mono">Verified Perks</div>
+              <div className="text-xl font-black text-amber-400 font-mono">Verified</div>
+              <div className="text-[10px] text-gray-400 uppercase font-mono">Escrow Perks</div>
             </div>
           </div>
         </div>
@@ -190,6 +185,7 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
           <div className="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-thin">
             {MASTER_CATEGORIES.map((cat) => {
               const isSelected = cat.slug === selectedCategorySlug
+              const realCount = REAL_BRANDS.filter((b) => b.category === cat.slug).length
               return (
                 <button
                   key={cat.id}
@@ -205,11 +201,13 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
                 >
                   <span className="text-sm">{cat.icon}</span>
                   <span>{cat.name}</span>
-                  <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
-                    isSelected ? 'bg-black/30 text-white' : 'bg-gray-800 text-gray-400'
-                  }`}>
-                    {cat.totalBrandsCount}
-                  </span>
+                  {realCount > 0 && (
+                    <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                      isSelected ? 'bg-black/30 text-white' : 'bg-gray-800 text-gray-400'
+                    }`}>
+                      {realCount}
+                    </span>
+                  )}
                 </button>
               )
             })}
@@ -228,13 +226,14 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
                 <span>Select Country Hub:</span>
               </span>
               <span className="text-xs text-emerald-400 font-medium">
-                {activeCountry.flag} {activeCountry.name} ({activeCountry.totalBrandsCount.toLocaleString()} Brands • Currency: {activeCountry.currency})
+                {activeCountry.flag} {activeCountry.name} ({REAL_BRANDS.filter((b) => b.countryCode === activeCountry.code).length} Verified Market Leaders • Currency: {activeCountry.currency})
               </span>
             </div>
 
             <div className="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-thin">
               {MASTER_COUNTRIES.map((ctry) => {
                 const isSelected = ctry.slug === selectedCountrySlug
+                const realCtryCount = REAL_BRANDS.filter((b) => b.countryCode === ctry.code).length
                 return (
                   <button
                     key={ctry.id}
@@ -254,7 +253,7 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
                     <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
                       isSelected ? 'bg-black/30 text-white' : 'bg-gray-800 text-gray-400'
                     }`}>
-                      {ctry.totalBrandsCount.toLocaleString()}
+                      {realCtryCount > 0 ? `${realCtryCount} Verified` : 'Indexed'}
                     </span>
                   </button>
                 )
@@ -286,11 +285,12 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
                     : 'bg-gray-950 text-gray-400 hover:text-white border-gray-800'
                 }`}
               >
-                All {activeCountry.name} Cities ({activeCountry.cities.length})
+                All {activeCountry.name} Cities ({REAL_BRANDS.filter((b) => b.countryCode === activeCountry.code).length})
               </button>
 
               {activeCountry.cities.map((city) => {
                 const isSelected = selectedCitySlug === city.slug
+                const realCityCount = REAL_BRANDS.filter((b) => b.city.toLowerCase() === city.name.toLowerCase()).length
                 return (
                   <button
                     key={city.slug}
@@ -306,9 +306,11 @@ export const BrandDirectory: React.FC<BrandDirectoryProps> = ({ onSelectBrand })
                   >
                     <span className="font-bold">{city.name}</span>
                     <span className="text-[10px] text-gray-400">({city.hubType})</span>
-                    <span className="text-[10px] font-mono px-1 rounded bg-black/40 text-purple-300">
-                      {city.brandCount}
-                    </span>
+                    {realCityCount > 0 && (
+                      <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-purple-950 text-purple-300 border border-purple-500/40">
+                        {realCityCount}
+                      </span>
+                    )}
                   </button>
                 )
               })}
