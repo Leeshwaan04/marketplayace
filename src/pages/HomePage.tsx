@@ -81,7 +81,7 @@ export const HomePage: React.FC = () => {
 
         <section aria-labelledby="profiled">
           <SectionTitle id="profiled" title="Profiled companies" hint={`Data last synced ${DATA_GENERATED_AT}.`} />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[...COMPANIES].sort((a, b) => a.name.localeCompare(b.name)).map((c) => (
               <CompanyCard key={c.slug} company={c} />
             ))}

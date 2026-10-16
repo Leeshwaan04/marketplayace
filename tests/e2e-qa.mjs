@@ -213,6 +213,17 @@ test('Logos are only shown when freely licensed, and the file exists locally', (
   }
 })
 
+test('Company slugs are clean ASCII and are not truncated versions of the name', () => {
+  const fold = (t) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').replace(/[æÆ]/g, 'ae').replace(/ß/g, 'ss')
+  for (const c of companiesFile.companies) {
+    assert(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c.slug), `${c.slug}: slug must be lowercase ASCII with hyphens`)
+    if (/[^ -~]/.test(c.name)) {
+      const first = fold(c.name).toLowerCase().replace(/[^a-z0-9]+/g, '-').split('-').filter(Boolean)[0]
+      assert(c.slug.startsWith(first.slice(0, 4)), `${c.slug}: slug does not start like "${c.name}" (non-ASCII letters dropped?)`)
+    }
+  }
+})
+
 test('Sitemap lists every company and category', () => {
   const xml = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8')
   for (const c of companiesFile.companies) assert(xml.includes(`/company/${c.slug}<`), `sitemap missing ${c.slug}`)
@@ -243,6 +254,44 @@ test('Hero media is compressed, has a poster, and respects reduced motion', () =
   const hero = fs.readFileSync(path.join(rootDir, 'src/components/HeroBackdrop.tsx'), 'utf8')
   assert(/prefers-reduced-motion/.test(hero), 'HeroBackdrop must honour prefers-reduced-motion')
   assert(/aria-hidden/.test(hero) && /muted/.test(hero) && /playsInline/.test(hero), 'HeroBackdrop must be decorative, muted and inline')
+})
+
+test('Every company and industry page is prerendered with its own content and metadata', () => {
+  const dist = path.join(rootDir, 'dist')
+  assert(fs.existsSync(path.join(dist, 'index.html')), 'run npm run build first')
+  const read = (f) => fs.readFileSync(path.join(dist, f), 'utf8')
+  const titles = new Set()
+  const check = (file, route, expectInText) => {
+    const html = read(file)
+    const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1]
+    assert(title && title.includes('Marketplayace'), `${file}: missing title`)
+    assert(!titles.has(title), `${file}: duplicate title "${title}"`)
+    titles.add(title)
+    assert(new RegExp(`<link rel="canonical" href="https://marketplayace.com${route === '/' ? '/' : route}"`).test(html), `${file}: wrong or missing canonical`)
+    assert((html.match(/<h1[ >]/g) || []).length === 1, `${file}: expected exactly one h1`)
+    assert(/<meta name="description" content="[^"]{40,}"/.test(html), `${file}: missing description`)
+    assert(html.includes(`data-route="${route}"`), `${file}: missing data-route`)
+    assert(html.includes(expectInText), `${file}: server HTML lacks its own content`)
+    assert((html.match(/<meta name="description"/g) || []).length === 1, `${file}: duplicate description tag`)
+  }
+  for (const c of companiesFile.companies) {
+    check(`company/${c.slug}.html`, `/company/${c.slug}`, c.name.replace(/&/g, '&amp;'))
+    const html = read(`company/${c.slug}.html`)
+    assert(/"@type":"Organization"/.test(html), `${c.slug}: missing Organization JSON-LD`)
+  }
+  for (const k of categorySlugs) check(`category/${k}.html`, `/category/${k}`, '<h1')
+  for (const [f, r] of [['index.html', '/'], ['categories.html', '/categories'], ['methodology.html', '/methodology'], ['about.html', '/about'], ['privacy.html', '/privacy'], ['terms.html', '/terms']]) check(f, r, '<h1')
+})
+
+test('Non-indexable and unknown routes are handled correctly', () => {
+  const dist = path.join(rootDir, 'dist')
+  for (const f of ['labs.html', 'labs/vault.html', 'labs/squad.html', 'labs/studio.html', 'compare.html', '404.html']) {
+    const html = fs.readFileSync(path.join(dist, f), 'utf8')
+    assert(/<meta name="robots" content="noindex,nofollow"/.test(html), `${f}: must be noindex`)
+  }
+  assert(fs.existsSync(path.join(dist, '404.html')), '404.html missing, unknown URLs would not return 404')
+  assert(!fs.existsSync(path.join(dist, '_redirects')) || !/\/\*\s+\/index\.html\s+200/.test(fs.readFileSync(path.join(dist, '_redirects'), 'utf8')), 'catch-all SPA rewrite would hide 404s')
+  assert(!fs.existsSync(path.join(dist, 'dist-server')), 'server bundle must not ship')
 })
 
 test('Labs is clearly labelled as sample and kept out of search indexing', () => {

@@ -14362,7 +14362,7 @@
       "dataNote": null
     },
     {
-      "slug": "rsted",
+      "slug": "orsted",
       "wikidataId": "Q1241260",
       "name": "Ørsted",
       "cik": null,
@@ -14466,7 +14466,7 @@
       },
       "logo": {
         "usable": true,
-        "path": "/logos/rsted.svg",
+        "path": "/logos/orsted.svg",
         "license": "Public domain",
         "licenseUrl": null,
         "author": "Ørsted",
@@ -16203,7 +16203,7 @@
       "dataNote": null
     },
     {
-      "slug": "nestl",
+      "slug": "nestle",
       "wikidataId": "Q160746",
       "name": "Nestlé",
       "cik": "0000792990",
@@ -16310,7 +16310,7 @@
       },
       "logo": {
         "usable": true,
-        "path": "/logos/nestl.svg",
+        "path": "/logos/nestle.svg",
         "license": "Public domain",
         "licenseUrl": null,
         "author": "Société des Produits Nestlé S.A.",

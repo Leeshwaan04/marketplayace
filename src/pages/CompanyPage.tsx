@@ -9,6 +9,19 @@ import { useSeo } from '../utils/seo'
 import { SITE } from '../config/site'
 import { NotFoundPage } from './NotFoundPage'
 
+/** Meta description: skip placeholder descriptions like "company", never end mid-word or with a doubled period. */
+function companyDescription(c: Company): string {
+  const raw = (c.description?.value ?? '').trim().replace(/\.+$/, '')
+  const useful = raw.length >= 15 && !/^(public |private )?company$/i.test(raw)
+  const head = useful ? `${c.name}, ${raw}.` : `${c.name}.`
+  const tail = ' Sourced facts including founding, headquarters and financials, each with its source and retrieval date.'
+  const full = head + tail
+  if (full.length <= 300) return full
+  const room = 300 - tail.length - 1
+  const cut = head.slice(0, room).replace(/\s+\S*$/, '').replace(/[,;:.\s]+$/, '')
+  return `${cut}.${tail}`
+}
+
 /** Years since an `asOf` string like '2017-12' or '2024'; null if unknown. */
 const ageYears = (asOf: string | null) => {
   const y = asOf ? Number(asOf.match(/(?:19|20)\d{2}/g)?.slice(-1)[0]) : NaN
@@ -74,7 +87,7 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
   useSeo({
     title: company ? `${company.name}: company profile and facts` : 'Company not found',
     description: company
-      ? `${company.name}${company.description ? `, ${company.description.value}` : ''}. Sourced facts including founding, headquarters and financials, each with its source and retrieval date.`.slice(0, 300)
+      ? companyDescription(company)
       : 'This company profile does not exist.',
     path: `/company/${slug}`,
     noindex: !company,
@@ -193,7 +206,7 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
                 title={`Also profiled in ${primary.name}`}
                 hint="Companies in the same industry. Listing here does not mean they compete directly."
               />
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2">
                 {peers.map((p) => <CompanyCard key={p.slug} company={p} />)}
               </div>
             </section>

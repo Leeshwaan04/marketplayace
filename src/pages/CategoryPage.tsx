@@ -14,7 +14,7 @@ export const CategoryPage: React.FC<{ slug: string }> = ({ slug }) => {
   const shown = country === 'all' ? all : all.filter((c) => c.country?.value === country)
 
   useSeo({
-    title: category ? `${category.name}: companies and industry overview` : 'Industry not found',
+    title: category ? `${category.name}: company profiles` : 'Industry not found',
     description: category
       ? `${category.description} ${all.length > 0 ? `${all.length} sourced company profiles.` : 'Company profiles are being researched.'}`
       : 'This industry does not exist.',
@@ -65,7 +65,7 @@ export const CategoryPage: React.FC<{ slug: string }> = ({ slug }) => {
                 ))}
               </div>
             )}
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {shown.map((c) => <CompanyCard key={c.slug} company={c} />)}
             </div>
           </>

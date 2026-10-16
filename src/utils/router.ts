@@ -47,8 +47,15 @@ export function buildPath(route: Route): string {
 }
 
 /** Minimal History API router. Works with the SPA fallback in public/_redirects. */
-export function useRoute() {
-  const [route, setRoute] = useState<Route>(() => parsePath(window.location.pathname, window.location.search))
+export function useRoute(initialUrl = '/') {
+  const [route, setRoute] = useState<Route>(() => {
+    if (typeof window === 'undefined') {
+      // Server render and prerender: no window, so use the URL we were given.
+      const u = new URL(initialUrl, 'http://localhost')
+      return parsePath(u.pathname, u.search)
+    }
+    return parsePath(window.location.pathname, window.location.search)
+  })
 
   useEffect(() => {
     const onPop = () => {

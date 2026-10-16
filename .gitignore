@@ -32,3 +32,4 @@ dist-ssr
 
 # Source video exports; only the compressed files in public/media are committed
 /*.mp4
+dist-server

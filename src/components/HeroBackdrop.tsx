@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useSyncExternalStore } from 'react'
 
-/** True when the visitor asked for less motion or a reduced-data connection. */
-function prefersStill(): boolean {
-  if (typeof window === 'undefined') return true
+function subscribeToMotionPreference(onChange: () => void) {
+  const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+  mq.addEventListener('change', onChange)
+  return () => mq.removeEventListener('change', onChange)
+}
+
+type Motion = 'unknown' | 'ok' | 'still'
+
+/** Reads the visitor's motion and data-saver preferences. Only callable in the browser. */
+function readMotion(): Motion {
   const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
-  return Boolean(reduced || conn?.saveData)
+  return reduced || conn?.saveData ? 'still' : 'ok'
 }
 
 /**
@@ -13,7 +20,11 @@ function prefersStill(): boolean {
  * assistive tech. Falls back to the poster frame for reduced motion, data saver or playback errors.
  */
 export const HeroBackdrop: React.FC = () => {
-  const [still, setStill] = useState(prefersStill)
+  // The server (and the first client render, so hydration matches) is 'unknown' and shows only the poster.
+  // The video is created after hydration, and only if the visitor has not asked for less motion or data.
+  const motion = useSyncExternalStore(subscribeToMotionPreference, readMotion, (): Motion => 'unknown')
+  const [failed, setFailed] = useState(false)
+  const still = motion !== 'ok' || failed
 
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden bg-surface-0" aria-hidden>
@@ -28,7 +39,7 @@ export const HeroBackdrop: React.FC = () => {
           playsInline
           preload="metadata"
           poster="/media/hero-poster.jpg"
-          onError={() => setStill(true)}
+          onError={() => setFailed(true)}
         >
           <source src="/media/hero.webm" type="video/webm" />
           <source src="/media/hero.mp4" type="video/mp4" />

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { createContext, useContext, useEffect } from 'react'
 
 const SITE = 'https://marketplayace.com'
 const SITE_NAME = 'Marketplayace'
@@ -22,11 +22,21 @@ function setMeta(selector: string, attr: 'name' | 'property', key: string, conte
   el.content = content
 }
 
+export type SeoData = SeoOptions & { fullTitle: string }
+
+/** Provided only during prerender: receives each page's SEO data so the script can write the <head>. */
+export const SeoSinkContext = createContext<((seo: SeoData) => void) | null>(null)
+
+export const fullTitle = (title: string) => (title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`)
+
 /** Per-route title, description, canonical, Open Graph and structured data. */
-export function useSeo({ title, description, path, jsonLd, noindex }: SeoOptions) {
+export function useSeo(options: SeoOptions) {
+  const { title, description, path, jsonLd, noindex } = options
+  const sink = useContext(SeoSinkContext)
+  sink?.({ ...options, fullTitle: fullTitle(title) })
   const ld = jsonLd ? JSON.stringify(jsonLd) : ''
   useEffect(() => {
-    const full = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
+    const full = fullTitle(title)
     document.title = full
     setMeta('meta[name="description"]', 'name', 'description', description)
     setMeta('meta[property="og:title"]', 'property', 'og:title', full)
