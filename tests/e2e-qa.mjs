@@ -234,6 +234,17 @@ test('Source code contains no unverifiable trust claims', () => {
   assert(hits.length === 0, `banned claims found: ${hits.join('; ')}`)
 })
 
+test('Hero media is compressed, has a poster, and respects reduced motion', () => {
+  for (const f of ['hero.webm', 'hero.mp4', 'hero-poster.jpg']) {
+    const full = path.join(rootDir, 'public/media', f)
+    assert(fs.existsSync(full), `missing public/media/${f}`)
+    assert(fs.statSync(full).size < 3 * 1024 * 1024, `${f} is over 3 MB`)
+  }
+  const hero = fs.readFileSync(path.join(rootDir, 'src/components/HeroBackdrop.tsx'), 'utf8')
+  assert(/prefers-reduced-motion/.test(hero), 'HeroBackdrop must honour prefers-reduced-motion')
+  assert(/aria-hidden/.test(hero) && /muted/.test(hero) && /playsInline/.test(hero), 'HeroBackdrop must be decorative, muted and inline')
+})
+
 test('Labs is clearly labelled as sample and kept out of search indexing', () => {
   const labs = fs.readFileSync(path.join(rootDir, 'src/pages/LabsPage.tsx'), 'utf8')
   assert(/nothing is for sale/i.test(labs), 'Labs banner missing')

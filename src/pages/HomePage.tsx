@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowRight, ShieldCheck, Database, FileSearch } from 'lucide-react'
 import { Container, CompanyCard, SectionTitle } from '../components/ui'
 import { SearchBox } from '../components/SearchBox'
+import { HeroBackdrop } from '../components/HeroBackdrop'
 import { Link } from '../utils/nav'
 import { CATEGORIES, GROUPS } from '../data/taxonomy'
 import { COMPANIES, DATA_GENERATED_AT } from '../data/companies'
@@ -27,21 +28,21 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
-      <section className="relative overflow-hidden pb-12 pt-12 sm:pb-16 sm:pt-20">
-        <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[420px] w-[900px] -translate-x-1/2 rounded-full bg-accent/15 blur-[140px]" aria-hidden />
+      <section className="relative isolate overflow-hidden pb-16 pt-14 sm:pb-24 sm:pt-24">
+        <HeroBackdrop />
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="max-w-2xl">
             <h1 className="text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
               Know any company, <span className="text-accent">industry by industry.</span>
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
               Profiles of Indian and global companies where every fact links to its source and shows when we retrieved
               it. If we can&apos;t verify something, we leave it blank.
             </p>
-            <div className="mx-auto mt-8 max-w-xl text-left">
+            <div className="mt-8 max-w-xl">
               <SearchBox />
             </div>
-            <p className="mt-4 text-sm text-ink-faint">
+            <p className="mt-4 text-sm text-ink-muted">
               {COMPANIES.length} companies profiled across {covered.size} of {CATEGORIES.length} industries. Coverage is growing; see{' '}
               <Link to={{ page: 'methodology' }} className="text-accent underline-offset-2 hover:underline">how we work</Link>.
             </p>

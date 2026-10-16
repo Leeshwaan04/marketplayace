@@ -29,3 +29,6 @@ dist-ssr
 !.dev.vars.example
 .env*
 !.env.example
+
+# Source video exports; only the compressed files in public/media are committed
+/*.mp4
