@@ -23,7 +23,7 @@ export const SellerStudio: React.FC<SellerStudioProps> = ({ onAddProduct }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const cleanTitle = sanitizeText(title, 80)
-    const cleanTagline = sanitizeText(tagline, 120) || 'Custom verified drop on Marketplayace'
+    const cleanTagline = sanitizeText(tagline, 120) || 'Sample listing'
     const cleanDescription = sanitizeText(description, 500) || 'Exclusive creator listing configured with zero-loss gameplay mechanics.'
     const safePrice = validatePrice(Number(price), 1, 50000)
     const safeMaxDiscount = validateDiscountPercent(Number(maxDiscountPercent), 40)
@@ -44,12 +44,12 @@ export const SellerStudio: React.FC<SellerStudioProps> = ({ onAddProduct }) => {
       spectators: 12,
       maxDiscountPercent: safeMaxDiscount,
       description: cleanDescription,
-      features: ['Verified smart-escrow fulfillment', 'Direct creator support', 'Instant play challenge enabled'],
+      features: ['Direct creator support', 'Instant play challenge enabled'],
       playFactor: 'High Skill',
       seller: {
         name: 'You (Creator Ace)',
         avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
-        isVerified: true,
+        isVerified: false,
         salesCount: 1
       }
     }
@@ -213,7 +213,7 @@ export const SellerStudio: React.FC<SellerStudioProps> = ({ onAddProduct }) => {
         {/* Live Preview Column */}
         <div className="md:col-span-5 space-y-3">
           <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider font-mono">
-            Live Marketplace Card Preview
+            Sample card preview
           </h3>
 
           <div className="rounded-2xl bg-gray-900 border border-purple-500/40 p-4 space-y-3 shadow-2xl">

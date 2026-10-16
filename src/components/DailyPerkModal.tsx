@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Dialog } from './Dialog'
 import { X, Gift, Sparkles, CheckCircle2 } from 'lucide-react'
 import { playSound } from '../utils/audio'
 import confetti from 'canvas-confetti'
@@ -33,7 +34,7 @@ export const DailyPerkModal: React.FC<DailyPerkModalProps> = ({ isOpen, onClose,
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <Dialog onClose={onClose} label="Daily drop" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-md rounded-2xl bg-gray-900 border border-amber-500/40 p-6 shadow-2xl space-y-6 text-center">
         <button
           onClick={() => {
@@ -112,7 +113,7 @@ export const DailyPerkModal: React.FC<DailyPerkModalProps> = ({ isOpen, onClose,
           {revealed ? 'Awesome, Let\'s Shop' : 'Close'}
         </button>
       </div>
-    </div>
+    </Dialog>
   )
 }
 

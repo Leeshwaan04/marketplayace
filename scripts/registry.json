@@ -1,0 +1,322 @@
+{
+  "_note": "Maps our brand slug to its Wikidata entity. QIDs are reviewed by a human; the sync script never guesses. null = not yet resolved, no facts are published.",
+  "companies": [
+    {
+      "slug": "zepto",
+      "qid": null,
+      "note": "No Wikidata entity found; needs a manual source (company filings / official site)",
+      "categories": [
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "blinkit",
+      "qid": "Q19891628",
+      "note": "Blinkit is the renamed Grofers",
+      "categories": [
+        "quick-commerce"
+      ],
+      "displayName": "Blinkit",
+      "dataNote": "Blinkit was formerly named Grofers. Some open-data records still use the earlier name."
+    },
+    {
+      "slug": "swiggy-instamart",
+      "qid": null,
+      "note": "Product of Swiggy (Q65944364), not a separate company",
+      "categories": [
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "bigbasket",
+      "qid": "Q96373548",
+      "categories": [
+        "quick-commerce",
+        "e-commerce-marketplaces"
+      ]
+    },
+    {
+      "slug": "instacart",
+      "qid": "Q22909236",
+      "categories": [
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "gopuff",
+      "qid": "Q39058719",
+      "categories": [
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "doordash",
+      "qid": "Q20714323",
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "flink",
+      "qid": "Q111915311",
+      "categories": [
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "deliveroo",
+      "qid": "Q22000919",
+      "categories": [
+        "food-delivery"
+      ]
+    },
+    {
+      "slug": "talabat",
+      "qid": "Q39058477",
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "careem",
+      "qid": "Q25112257",
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ]
+    },
+    {
+      "slug": "grab",
+      "qid": "Q20873932",
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ]
+    },
+    {
+      "slug": "amazon",
+      "qid": "Q3884",
+      "categories": [
+        "e-commerce-marketplaces",
+        "cloud-computing"
+      ]
+    },
+    {
+      "slug": "flipkart",
+      "qid": "Q1381966",
+      "categories": [
+        "e-commerce-marketplaces"
+      ]
+    },
+    {
+      "slug": "zomato",
+      "qid": "Q8073715",
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "swiggy",
+      "qid": "Q65944364",
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ]
+    },
+    {
+      "slug": "shopify",
+      "qid": "Q7501150",
+      "categories": [
+        "e-commerce-marketplaces"
+      ]
+    },
+    {
+      "slug": "myntra",
+      "qid": "Q6947830",
+      "categories": [
+        "e-commerce-marketplaces",
+        "fashion-luxury"
+      ]
+    },
+    {
+      "slug": "nykaa",
+      "qid": "Q22907412",
+      "categories": [
+        "e-commerce-marketplaces",
+        "fmcg-personal-care"
+      ]
+    },
+    {
+      "slug": "tata-1mg",
+      "qid": "Q107144226",
+      "categories": [
+        "pharmacy-retail"
+      ]
+    },
+    {
+      "slug": "pharmeasy",
+      "qid": "Q112892594",
+      "categories": [
+        "pharmacy-retail"
+      ]
+    },
+    {
+      "slug": "cvs-health",
+      "qid": "Q624375",
+      "categories": [
+        "pharmacy-retail",
+        "hospitals-healthcare"
+      ]
+    },
+    {
+      "slug": "boots-uk",
+      "qid": "Q6123139",
+      "categories": [
+        "pharmacy-retail"
+      ]
+    },
+    {
+      "slug": "razer",
+      "qid": "Q367412",
+      "categories": [
+        "gaming"
+      ],
+      "overrides": {
+        "headquarters": {
+          "value": "Irvine, California and Singapore",
+          "provider": "Razer: About",
+          "source": "https://www.razer.com/about-razer",
+          "reviewedAt": "2026-10-16"
+        }
+      }
+    },
+    {
+      "slug": "valve-steam",
+      "qid": "Q193559",
+      "categories": [
+        "gaming"
+      ]
+    },
+    {
+      "slug": "playstation",
+      "qid": null,
+      "note": "Operated by Sony Interactive Entertainment; resolve the company entity",
+      "categories": [
+        "gaming"
+      ]
+    },
+    {
+      "slug": "nintendo",
+      "qid": "Q8093",
+      "categories": [
+        "gaming"
+      ],
+      "overrides": {
+        "founded": {
+          "value": 1889,
+          "provider": "Nintendo corporate outline",
+          "source": "https://www.nintendo.co.jp/corporate/en/outline/index.html",
+          "reviewedAt": "2026-10-16"
+        }
+      },
+      "dataNote": "Nintendo was founded in 1889 and incorporated as a company in 1947. Some open-data records use the later date."
+    },
+    {
+      "slug": "stripe",
+      "qid": "Q7624104",
+      "categories": [
+        "fintech-payments"
+      ]
+    },
+    {
+      "slug": "razorpay",
+      "qid": "Q109985545",
+      "categories": [
+        "fintech-payments"
+      ]
+    },
+    {
+      "slug": "phonepe",
+      "qid": "Q30324297",
+      "categories": [
+        "fintech-payments"
+      ]
+    },
+    {
+      "slug": "revolut",
+      "qid": "Q22908307",
+      "categories": [
+        "fintech-payments",
+        "banking"
+      ]
+    },
+    {
+      "slug": "emirates",
+      "qid": "Q180432",
+      "categories": [
+        "aviation"
+      ]
+    },
+    {
+      "slug": "singapore-airlines",
+      "qid": "Q32245",
+      "categories": [
+        "aviation"
+      ]
+    },
+    {
+      "slug": "airbnb",
+      "qid": "Q63327",
+      "categories": [
+        "travel-hospitality"
+      ]
+    },
+    {
+      "slug": "indigo",
+      "qid": "Q1057110",
+      "categories": [
+        "aviation"
+      ]
+    },
+    {
+      "slug": "openai",
+      "qid": "Q21708200",
+      "categories": [
+        "artificial-intelligence"
+      ]
+    },
+    {
+      "slug": "apple",
+      "qid": "Q312",
+      "categories": [
+        "electronics-devices"
+      ]
+    },
+    {
+      "slug": "tesla",
+      "qid": "Q478214",
+      "categories": [
+        "electric-vehicles",
+        "battery-storage"
+      ]
+    },
+    {
+      "slug": "ola-electric",
+      "qid": "Q108337007",
+      "categories": [
+        "electric-vehicles"
+      ]
+    },
+    {
+      "slug": "uber",
+      "qid": "Q780442",
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ]
+    }
+  ]
+}

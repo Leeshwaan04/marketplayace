@@ -1,0 +1,109 @@
+import React from 'react'
+import { ArrowRight, ShieldCheck, Database, FileSearch } from 'lucide-react'
+import { Container, CompanyCard, SectionTitle } from '../components/ui'
+import { SearchBox } from '../components/SearchBox'
+import { Link } from '../utils/nav'
+import { CATEGORIES, GROUPS } from '../data/taxonomy'
+import { COMPANIES, DATA_GENERATED_AT } from '../data/companies'
+import { useSeo } from '../utils/seo'
+import { SITE } from '../config/site'
+
+export const HomePage: React.FC = () => {
+  useSeo({
+    title: 'Company and industry intelligence for India and the world',
+    description:
+      'Explore companies by industry. Every fact on every profile links to its source and shows when it was retrieved, and anything we cannot verify is left blank.',
+    path: '/',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: SITE.name,
+      url: SITE.url,
+      potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/?q={query}`, 'query-input': 'required name=query' }
+    }
+  })
+
+  const covered = new Set(COMPANIES.flatMap((c) => c.categories))
+
+  return (
+    <>
+      <section className="relative overflow-hidden pb-12 pt-12 sm:pb-16 sm:pt-20">
+        <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[420px] w-[900px] -translate-x-1/2 rounded-full bg-accent/15 blur-[140px]" aria-hidden />
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Know any company, <span className="text-accent">industry by industry.</span>
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
+              Profiles of Indian and global companies where every fact links to its source and shows when we retrieved
+              it. If we can&apos;t verify something, we leave it blank.
+            </p>
+            <div className="mx-auto mt-8 max-w-xl text-left">
+              <SearchBox />
+            </div>
+            <p className="mt-4 text-sm text-ink-faint">
+              {COMPANIES.length} companies profiled across {covered.size} of {CATEGORIES.length} industries. Coverage is growing; see{' '}
+              <Link to={{ page: 'methodology' }} className="text-accent underline-offset-2 hover:underline">how we work</Link>.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <Container className="space-y-14 pb-16">
+        <section aria-labelledby="industries">
+          <SectionTitle id="industries" title="Browse by industry" hint="Six groups, each opening into its industries." />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {GROUPS.map((g) => {
+              const cats = CATEGORIES.filter((c) => c.group === g.id)
+              const profiled = new Set(COMPANIES.filter((c) => c.categories.some((s) => cats.some((k) => k.slug === s))).map((c) => c.slug)).size
+              return (
+                <Link
+                  key={g.id}
+                  to={{ page: 'categories' }}
+                  className="surface-card group flex flex-col p-5 transition-colors hover:border-line-strong"
+                >
+                  <h3 className="text-base font-bold text-white group-hover:text-violet-300">{g.name}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{g.blurb}</p>
+                  <p className="mt-4 text-xs text-ink-faint">
+                    {cats.length} industries, {profiled} {profiled === 1 ? 'company' : 'companies'} profiled
+                  </p>
+                </Link>
+              )
+            })}
+          </div>
+          <div className="mt-4">
+            <Link to={{ page: 'categories' }} className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline">
+              See all {CATEGORIES.length} industries <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          </div>
+        </section>
+
+        <section aria-labelledby="profiled">
+          <SectionTitle id="profiled" title="Profiled companies" hint={`Data last synced ${DATA_GENERATED_AT}.`} />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[...COMPANIES].sort((a, b) => a.name.localeCompare(b.name)).map((c) => (
+              <CompanyCard key={c.slug} company={c} />
+            ))}
+          </div>
+        </section>
+
+        <section aria-labelledby="trust" className="surface-card p-6 sm:p-8">
+          <h2 id="trust" className="text-xl font-bold text-white">How we keep this trustworthy</h2>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {[
+              { icon: FileSearch, title: 'Every fact has a source', body: 'Each figure links to where it came from and shows the date we retrieved it.' },
+              { icon: Database, title: 'Blank beats wrong', body: 'We never estimate or fill gaps. A missing value means we have no verified source for it yet.' },
+              { icon: ShieldCheck, title: 'No paid placement', body: 'Companies cannot pay to be listed, ranked or edited. We publish no scores or rankings we cannot explain.' }
+            ].map(({ icon: Icon, title, body }) => (
+              <div key={title}>
+                <Icon className="h-5 w-5 text-accent" aria-hidden />
+                <h3 className="mt-3 font-bold text-white">{title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-ink-muted">{body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </Container>
+    </>
+  )
+}

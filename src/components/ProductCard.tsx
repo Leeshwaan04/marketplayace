@@ -1,5 +1,5 @@
 import React from 'react'
-import { Eye, Star, Zap, ShoppingCart, Sparkles, CheckCircle } from 'lucide-react'
+import { Star, Zap, ShoppingCart, Sparkles } from 'lucide-react'
 import type { Product, Rarity } from '../types'
 import { playSound } from '../utils/audio'
 
@@ -11,27 +11,11 @@ interface ProductCardProps {
   appliedDiscount?: number
 }
 
-const rarityStyles: Record<Rarity, { border: string; badge: string; glow: string }> = {
-  Mythic: {
-    border: 'border-amber-500/40 hover:border-amber-400',
-    badge: 'bg-amber-500/20 text-amber-300 border-amber-500/40',
-    glow: 'hover:shadow-[0_0_30px_-5px_rgba(245,158,11,0.3)]'
-  },
-  Legendary: {
-    border: 'border-purple-500/40 hover:border-purple-400',
-    badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
-    glow: 'hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.3)]'
-  },
-  Rare: {
-    border: 'border-cyan-500/40 hover:border-cyan-400',
-    badge: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40',
-    glow: 'hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)]'
-  },
-  Common: {
-    border: 'border-gray-700 hover:border-gray-500',
-    badge: 'bg-gray-800 text-gray-300 border-gray-600',
-    glow: 'hover:shadow-[0_0_20px_-5px_rgba(156,163,175,0.2)]'
-  }
+const rarityStyles: Record<Rarity, { border: string; badge: string }> = {
+  Mythic: { border: 'hover:border-amber-400/60', badge: 'text-amber-300 border-amber-400/50' },
+  Legendary: { border: 'hover:border-violet-400/60', badge: 'text-violet-300 border-violet-400/50' },
+  Rare: { border: 'hover:border-cyan-400/60', badge: 'text-cyan-300 border-cyan-400/50' },
+  Common: { border: 'hover:border-line-strong', badge: 'text-ink-muted border-line-strong' }
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -41,133 +25,105 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onPlayDiscount,
   appliedDiscount = 0
 }) => {
-  const currentPrice = appliedDiscount > 0
-    ? (product.price * (1 - appliedDiscount / 100))
-    : product.price
-
+  const currentPrice = appliedDiscount > 0 ? product.price * (1 - appliedDiscount / 100) : product.price
   const style = rarityStyles[product.rarity] || rarityStyles.Common
 
   return (
-    <div
-      className={`group relative rounded-2xl bg-gray-900/80 border ${style.border} ${style.glow} transition-all duration-300 overflow-hidden flex flex-col justify-between backdrop-blur-sm`}
+    <article
+      className={`group surface-card animate-rise flex flex-col overflow-hidden transition-colors duration-200 ${style.border}`}
     >
-      {/* Top Media Container */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-950 cursor-pointer" onClick={() => onSelect(product)}>
+      <button
+        type="button"
+        onClick={() => onSelect(product)}
+        aria-label={`View ${product.title}`}
+        className="relative block aspect-[4/3] w-full overflow-hidden bg-surface-2 text-left"
+      >
         <img
           src={product.image}
-          alt={product.title}
-          className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          alt=""
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" aria-hidden />
 
-        {/* Top Badges */}
-        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-          <span className={`px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md border ${style.badge} backdrop-blur-md`}>
+        <div className="absolute left-3 right-3 top-3 flex items-center justify-between">
+          <span
+            className={`rounded-md border bg-surface-0/85 px-2 py-1 text-[11px] font-bold uppercase tracking-wide backdrop-blur-md ${style.badge}`}
+          >
             {product.rarity}
           </span>
-          <div className="flex items-center space-x-1 px-2 py-0.5 rounded-full bg-gray-950/70 border border-gray-800 text-[11px] text-gray-300 backdrop-blur-md">
-            <Eye className="w-3 h-3 text-pink-400" />
-            <span>{product.spectators}</span>
-          </div>
         </div>
 
-        {/* Play Factor Pill */}
-        <div className="absolute bottom-3 left-3">
-          <span className="inline-flex items-center space-x-1 text-[10px] font-semibold text-purple-300 bg-purple-950/80 border border-purple-500/30 px-2 py-0.5 rounded-md backdrop-blur-md">
-            <Sparkles className="w-3 h-3 text-purple-400" />
-            <span>{product.playFactor}</span>
+        <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-md bg-surface-0/85 px-2 py-1 text-xs font-semibold text-white backdrop-blur-md">
+          <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
+          {product.playFactor}
+        </span>
+      </button>
+
+      <div className="flex flex-1 flex-col gap-3 p-4">
+        <div className="flex items-center gap-2 text-sm text-ink-muted">
+          <img src={product.seller.avatar} alt="" className="h-5 w-5 rounded-full object-cover" />
+          <span className="truncate">{product.seller.name}</span>
+          <span className="shrink-0 rounded border border-line px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink-faint">
+            Sample
           </span>
         </div>
-      </div>
 
-      {/* Content Container */}
-      <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
-        <div>
-          {/* Seller / Creator row */}
-          <div className="flex items-center space-x-1.5 text-xs text-gray-400 mb-1.5">
-            <img
-              src={product.seller.avatar}
-              alt={product.seller.name}
-              className="w-4 h-4 rounded-full object-cover"
-            />
-            <span className="truncate">{product.seller.name}</span>
-            {product.seller.isVerified && (
-              <CheckCircle className="w-3 h-3 text-blue-400 shrink-0" />
-            )}
-          </div>
-
-          {/* Title */}
-          <h3
-            onClick={() => onSelect(product)}
-            className="text-base font-bold text-white group-hover:text-purple-300 transition-colors line-clamp-1 cursor-pointer"
-          >
-            {product.title}
+        <div className="flex-1">
+          <h3 className="line-clamp-1 text-base font-bold text-white">
+            <button type="button" onClick={() => onSelect(product)} className="text-left hover:text-violet-300">
+              {product.title}
+            </button>
           </h3>
-
-          <p className="text-xs text-gray-400 line-clamp-2 mt-1 leading-relaxed">
-            {product.tagline}
-          </p>
+          <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-muted">{product.tagline}</p>
         </div>
 
-        {/* Pricing & Ratings */}
-        <div className="pt-2 border-t border-gray-800/80">
-          <div className="flex items-baseline justify-between mb-2">
-            <div>
-              <div className="flex items-baseline space-x-2">
-                <span className="text-xl font-black text-white">
-                  ${currentPrice.toFixed(0)}
-                </span>
-                {product.originalPrice > currentPrice && (
-                  <span className="text-xs text-gray-500 line-through">
-                    ${product.originalPrice}
-                  </span>
-                )}
-              </div>
-              {appliedDiscount > 0 ? (
-                <span className="text-[10px] font-bold text-emerald-400">
-                  🎉 {appliedDiscount}% Game Discount Applied!
-                </span>
-              ) : (
-                <span className="text-[10px] text-gray-400 font-medium">
-                  Up to {product.maxDiscountPercent}% off with mini-game
-                </span>
+        <div className="flex items-end justify-between gap-3 border-t border-line pt-3">
+          <div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-extrabold text-white">${currentPrice.toFixed(0)}</span>
+              {product.originalPrice > currentPrice && (
+                <span className="text-sm text-ink-faint line-through">${product.originalPrice}</span>
               )}
             </div>
-
-            <div className="flex items-center text-xs text-amber-400 space-x-0.5">
-              <Star className="w-3.5 h-3.5 fill-current" />
-              <span className="font-bold">{product.rating}</span>
-              <span className="text-gray-500 text-[10px]">({product.reviewsCount})</span>
-            </div>
+            <p className={`text-xs font-medium ${appliedDiscount > 0 ? 'text-success' : 'text-ink-faint'}`}>
+              {appliedDiscount > 0
+                ? `${appliedDiscount}% game discount applied`
+                : `Win up to ${product.maxDiscountPercent}% off`}
+            </p>
           </div>
-
-          {/* Action Buttons */}
-          <div className="grid grid-cols-2 gap-2 pt-1">
-            <button
-              onClick={() => {
-                playSound('whistle')
-                onPlayDiscount(product)
-              }}
-              className="flex items-center justify-center space-x-1.5 py-2 px-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-purple-600/30 to-pink-600/30 border border-purple-500/40 text-purple-200 hover:from-purple-600 hover:to-pink-600 hover:text-white transition-all cursor-pointer shadow-sm active:scale-95"
-            >
-              <Zap className="w-3.5 h-3.5 text-amber-400" />
-              <span>Play Price</span>
-            </button>
-
-            <button
-              onClick={() => {
-                playSound('coin')
-                onQuickAdd(product)
-              }}
-              className="flex items-center justify-center space-x-1.5 py-2 px-2.5 rounded-xl text-xs font-bold bg-gray-800 hover:bg-gray-700 border border-gray-700 text-gray-200 hover:text-white transition-all cursor-pointer active:scale-95"
-            >
-              <ShoppingCart className="w-3.5 h-3.5" />
-              <span>Quick Add</span>
-            </button>
+          <div className="flex items-center gap-1 text-sm text-ink" aria-label={`Rated ${product.rating} from ${product.reviewsCount} reviews`}>
+            <Star className="h-4 w-4 fill-reward text-reward" aria-hidden />
+            <span className="font-bold">{product.rating}</span>
+            <span className="text-ink-faint">({product.reviewsCount})</span>
           </div>
         </div>
+
+        <div className="grid grid-cols-2 gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              playSound('whistle')
+              onPlayDiscount(product)
+            }}
+            className="flex items-center justify-center gap-1.5 rounded-xl bg-accent px-3 py-2.5 text-sm font-bold text-white transition hover:bg-accent-strong active:scale-[0.97]"
+          >
+            <Zap className="h-4 w-4" aria-hidden />
+            Play price
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              playSound('coin')
+              onQuickAdd(product)
+            }}
+            className="flex items-center justify-center gap-1.5 rounded-xl border border-line-strong px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-surface-2 active:scale-[0.97]"
+          >
+            <ShoppingCart className="h-4 w-4" aria-hidden />
+            Add
+          </button>
+        </div>
       </div>
-    </div>
+    </article>
   )
 }

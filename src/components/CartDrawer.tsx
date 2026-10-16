@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Dialog } from './Dialog'
 import { X, Trash2, ShoppingBag, ArrowRight, ShieldCheck, CheckCircle2, Sparkles, Tag } from 'lucide-react'
 import type { CartItem } from '../types'
 import { playSound } from '../utils/audio'
@@ -85,7 +86,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end bg-black/75 backdrop-blur-sm">
+    <Dialog onClose={onClose} label="Shopping cart" className="fixed inset-0 z-50 flex justify-end bg-black/75 backdrop-blur-sm">
       <div className="relative w-full max-w-md h-full bg-gray-950 border-l border-gray-800 shadow-2xl flex flex-col justify-between overflow-y-auto">
         {/* Top Header */}
         <div className="p-4 border-b border-gray-800 flex items-center justify-between bg-gray-900/60 sticky top-0 z-10">
@@ -115,9 +116,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
-              <h3 className="text-2xl font-black text-white">Order Confirmed!</h3>
+              <h3 className="text-2xl font-black text-white">Sample order complete</h3>
               <p className="text-xs text-gray-300 max-w-xs mx-auto">
-                Your loot has been secured in the Marketplayace smart escrow vault.
+                This was a demonstration. No payment was taken and nothing will be shipped.
               </p>
 
               <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl space-y-2 text-left text-xs font-mono">
@@ -135,7 +136,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Status:</span>
-                  <span className="text-cyan-400 font-bold">Fulfilling via Escrow</span>
+                  <span className="text-cyan-400 font-bold">Demo only, nothing shipped</span>
                 </div>
               </div>
 
@@ -152,7 +153,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               <ShoppingBag className="w-12 h-12 text-gray-600 mx-auto" />
               <h3 className="text-base font-bold text-gray-300">Your Cart is Empty</h3>
               <p className="text-xs text-gray-500 max-w-xs mx-auto">
-                Pick an item on the Play Floor, challenge the Reflex Bar to slash the price, or join a live Squad!
+                Pick an item on the Play Floor, challenge the Reflex Bar to slash the price, or join a sample Squad!
               </p>
               <button
                 onClick={onClose}
@@ -276,17 +277,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               onClick={handleCheckout}
               className="w-full py-3.5 rounded-xl font-black text-sm uppercase bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white shadow-lg shadow-purple-600/30 flex items-center justify-center space-x-2 cursor-pointer active:scale-95 transition-all"
             >
-              <span>Instant Escrow Checkout</span>
+              <span>Complete sample checkout</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
             <div className="flex items-center justify-center space-x-1.5 text-[10px] text-gray-500">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Guaranteed Delivery & Cryptographic Escrow</span>
+              <span>Labs preview: no payment is taken</span>
             </div>
           </div>
         )}
       </div>
-    </div>
+    </Dialog>
   )
 }

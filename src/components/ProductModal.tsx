@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Dialog } from './Dialog'
 import { X, Star, Check, ShoppingBag, Zap, Trophy, RefreshCw } from 'lucide-react'
 import confetti from 'canvas-confetti'
 import type { Product } from '../types'
@@ -104,7 +105,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
     : product.price.toFixed(0)
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
+    <Dialog onClose={onClose} label="Product details" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
       <div className="relative w-full max-w-3xl rounded-2xl bg-gray-900 border border-gray-700 shadow-2xl overflow-hidden my-8">
         {/* Close Button */}
         <button
@@ -184,7 +185,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
                       <Star className="w-4 h-4 fill-current mr-1" />
                       <span className="font-bold text-sm">{product.rating}</span>
                     </div>
-                    <span>({product.reviewsCount} verified reviews)</span>
+                    <span>({product.reviewsCount} sample reviews)</span>
                   </div>
 
                   <p className="text-xs text-gray-300 leading-relaxed border-t border-gray-800 pt-3">
@@ -339,6 +340,6 @@ export const ProductModal: React.FC<ProductModalProps> = ({
           )}
         </div>
       </div>
-    </div>
+    </Dialog>
   )
 }

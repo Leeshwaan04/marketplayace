@@ -144,42 +144,102 @@ test('VAPT-04: Enforces discount ceiling to prevent checkout fraud', () => {
 })
 
 test('VAPT-05: External anchor tags must use rel="noopener noreferrer"', () => {
-  const heroContent = fs.readFileSync(path.join(rootDir, 'src/components/Hero.tsx'), 'utf8')
-  const footerContent = fs.readFileSync(path.join(rootDir, 'src/components/Footer.tsx'), 'utf8')
-  const brandDetailContent = fs.readFileSync(path.join(rootDir, 'src/components/BrandDetailPage.tsx'), 'utf8')
-
-  assert(heroContent.includes('rel="noopener noreferrer"'), 'Hero.tsx missing noopener noreferrer')
-  assert(footerContent.includes('rel="noopener noreferrer"'), 'Footer.tsx missing noopener noreferrer')
-  assert(brandDetailContent.includes('rel="noopener noreferrer"'), 'BrandDetailPage.tsx missing noopener noreferrer')
-})
-
-// --- SUITE 3: ENTERPRISE DIRECTORY & CATEGORIES INTEGRITY ---
-console.log('\n\x1b[36m[SUITE 3: 52-Sector Directory & Brand Scaling Integrity]\x1b[0m')
-
-test('Directory covers 52 distinct categories with >= 1,000 brands each', () => {
-  const catContent = fs.readFileSync(path.join(rootDir, 'src/data/categories.ts'), 'utf8')
-  const catMatches = [...catContent.matchAll(/id:\s*['"]([a-z0-9-]+)['"]/g)].map(m => m[1])
-  
-  assert(catMatches.length >= 52, `Expected at least 52 categories, found ${catMatches.length}`)
-
-  // Unique categories check
-  const uniqueSlugs = new Set(catMatches)
-  assert(uniqueSlugs.size === catMatches.length, 'Duplicate category slug detected')
-
-  // Check required core sectors
-  const required = ['quick-commerce', 'e-commerce', 'pharmacy', 'gaming', 'aviation', 'fintech', 'ai-robotics', 'ev-auto']
-  for (const req of required) {
-    assert(uniqueSlugs.has(req), `Missing required category: ${req}`)
+  const files = ['src/pages/CompanyPage.tsx', 'src/components/Footer.tsx']
+  for (const f of files) {
+    const c = fs.readFileSync(path.join(rootDir, f), 'utf8')
+    const externals = (c.match(/target="_blank"/g) || []).length
+    const safe = (c.match(/rel="noopener noreferrer"/g) || []).length
+    assert(safe >= externals, `${f}: ${externals} target=_blank links but only ${safe} noopener`)
   }
 })
 
-test('Flagship brands dataset includes high-profile verified market leaders', () => {
-  const brandsContent = fs.readFileSync(path.join(rootDir, 'src/data/brandsData.ts'), 'utf8')
-  
-  const expectedLeaders = ['Zepto', 'Blinkit', 'Instacart', 'Amazon', 'Tata 1mg', 'Razer', 'Emirates', 'Stripe', 'OpenAI', 'Tesla']
-  for (const leader of expectedLeaders) {
-    assert(brandsContent.includes(leader), `Missing expected market leader: ${leader}`)
+// --- SUITE 3: DATA INTEGRITY & E-E-A-T GUARDRAILS ---
+console.log('\n\x1b[36m[SUITE 3: Data Integrity & E-E-A-T Guardrails]\x1b[0m')
+
+const companiesFile = JSON.parse(fs.readFileSync(path.join(rootDir, 'src/data/generated/companies.json'), 'utf8'))
+const taxonomySrc = fs.readFileSync(path.join(rootDir, 'src/data/taxonomy.ts'), 'utf8')
+const categorySlugs = [...taxonomySrc.matchAll(/^\s*\['([a-z0-9-]+)', '/gm)].map((m) => m[1])
+const registry = JSON.parse(fs.readFileSync(path.join(rootDir, 'scripts/registry.json'), 'utf8'))
+
+const FACT_FIELDS = ['description', 'founded', 'headquarters', 'country', 'industries', 'founders', 'parent', 'website', 'listings', 'employees', 'revenue', 'netIncome', 'marketCap']
+
+test('Taxonomy has unique slugs and at least 50 industries', () => {
+  assert(new Set(categorySlugs).size === categorySlugs.length, 'duplicate category slugs')
+  assert(categorySlugs.length >= 50, `only ${categorySlugs.length} categories`)
+})
+
+test('Every company category exists in the taxonomy', () => {
+  for (const c of companiesFile.companies) {
+    assert(c.categories.length > 0, `${c.slug} has no category`)
+    for (const k of c.categories) assert(categorySlugs.includes(k), `${c.slug}: unknown category ${k}`)
   }
+})
+
+test('Every published fact carries provider, source URL and retrieval date', () => {
+  for (const c of companiesFile.companies) {
+    for (const f of FACT_FIELDS) {
+      const fact = c[f]
+      if (!fact) continue
+      assert(fact.provider, `${c.slug}.${f} missing provider`)
+      assert(/^https:\/\//.test(fact.source), `${c.slug}.${f} missing https source`)
+      assert(/^\d{4}-\d{2}-\d{2}$/.test(fact.retrievedAt), `${c.slug}.${f} missing retrieval date`)
+    }
+  }
+})
+
+test('No financial figure is published without its period and currency', () => {
+  for (const c of companiesFile.companies) {
+    for (const f of ['revenue', 'netIncome', 'marketCap']) {
+      if (!c[f]) continue
+      assert(c[f].value.asOf, `${c.slug}.${f} has no period`)
+      assert(c[f].value.currency, `${c.slug}.${f} has no currency`)
+    }
+  }
+})
+
+test('Registry entries are unique and human-reviewed', () => {
+  const qids = registry.companies.map((c) => c.qid).filter(Boolean)
+  assert(new Set(qids).size === qids.length, 'duplicate QIDs in registry')
+  for (const o of registry.companies.flatMap((c) => Object.values(c.overrides ?? {}))) {
+    assert(/^https:\/\//.test(o.source) && o.reviewedAt, 'override without source and review date')
+  }
+})
+
+test('Logos are only shown when freely licensed, and the file exists locally', () => {
+  for (const c of companiesFile.companies) {
+    if (!c.logo?.usable) continue
+    assert(c.logo.license, `${c.slug}: usable logo without licence`)
+    assert(fs.existsSync(path.join(rootDir, 'public', c.logo.path)), `${c.slug}: missing ${c.logo.path}`)
+  }
+})
+
+test('Sitemap lists every company and category', () => {
+  const xml = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8')
+  for (const c of companiesFile.companies) assert(xml.includes(`/company/${c.slug}<`), `sitemap missing ${c.slug}`)
+  for (const k of categorySlugs) assert(xml.includes(`/category/${k}<`), `sitemap missing ${k}`)
+})
+
+test('Source code contains no unverifiable trust claims', () => {
+  const banned = [/100% real/i, /verified promo/i, /60k\+?/i, /60,000/, /52 sectors?/i, /escrow/i, /guaranteed delivery/i, /cryptographic/i, /images\.openai\.com/]
+  const hits = []
+  const scan = (rel) => {
+    const full = path.join(rootDir, rel)
+    if (fs.statSync(full).isDirectory()) return fs.readdirSync(full).forEach((c) => scan(path.join(rel, c)))
+    if (!/\.(tsx?|html)$/.test(rel) || rel.startsWith('src/data/mockProducts')) return
+    const text = fs.readFileSync(full, 'utf8')
+    for (const re of banned) if (re.test(text)) hits.push(`${rel}: ${re}`)
+  }
+  scan('src')
+  scan('index.html')
+  assert(hits.length === 0, `banned claims found: ${hits.join('; ')}`)
+})
+
+test('Labs is clearly labelled as sample and kept out of search indexing', () => {
+  const labs = fs.readFileSync(path.join(rootDir, 'src/pages/LabsPage.tsx'), 'utf8')
+  assert(/nothing is for sale/i.test(labs), 'Labs banner missing')
+  assert(/noindex:\s*true/.test(labs), 'Labs must be noindex')
+  const robots = fs.readFileSync(path.join(rootDir, 'public/robots.txt'), 'utf8')
+  assert(/Disallow: \/labs/.test(robots), 'robots.txt must disallow /labs')
 })
 
 // --- SUITE 4: COMMERCE & MULTIPLAYER GAME STATE LOGIC ---

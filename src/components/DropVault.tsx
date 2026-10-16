@@ -60,7 +60,7 @@ export const DropVault: React.FC<DropVaultProps> = ({ drops: initialDrops, onSna
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
               </span>
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-red-400">
-                Live Dutch Reverse Auction Arena
+                Dutch Reverse Auction Demo
               </span>
             </div>
             <h2 className="text-2xl font-black text-white">
@@ -116,7 +116,7 @@ export const DropVault: React.FC<DropVaultProps> = ({ drops: initialDrops, onSna
                 {/* Live price badge on image */}
                 <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
                   <div className="bg-gray-950/90 border border-red-500/40 px-3 py-1.5 rounded-xl shadow-lg">
-                    <span className="text-[10px] text-gray-400 block uppercase font-mono">Current Live Price</span>
+                    <span className="text-[10px] text-gray-400 block uppercase font-mono">Simulated Price</span>
                     <span className="text-2xl font-black text-red-400 font-mono tracking-tight">
                       ${item.currentPrice.toFixed(0)}
                     </span>

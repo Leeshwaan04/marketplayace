@@ -27,7 +27,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'Vortex Labs',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 4290
     }
   },
@@ -57,7 +57,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'AcousticAce Audio',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 1820
     }
   },
@@ -86,7 +86,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'NeoDistrict Apparel',
       avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 8750
     }
   },
@@ -115,7 +115,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'PolygonAce Studio',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 14200
     }
   },
@@ -144,7 +144,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'Vault9 Collectibles',
       avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 640
     }
   },
@@ -173,7 +173,7 @@ export const mockProducts: Product[] = [
     seller: {
       name: 'StreamGrid Tech',
       avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
-      isVerified: true,
+      isVerified: false,
       salesCount: 3910
     }
   }

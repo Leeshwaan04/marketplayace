@@ -1,0 +1,2985 @@
+{
+  "generatedAt": "2026-10-16",
+  "source": "Wikidata (CC0)",
+  "companies": [
+    {
+      "slug": "blinkit",
+      "wikidataId": "Q19891628",
+      "name": "Blinkit",
+      "cik": null,
+      "description": {
+        "value": "an Indian online grocery delivery company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2014,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Gurgaon",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "http://grofers.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q19891628#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/blinkit.png",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sharadharjai",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Grofers-Logo-orange.png"
+      },
+      "categories": [
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Blinkit",
+      "dataNote": "Blinkit was formerly named Grofers. Some open-data records still use the earlier name."
+    },
+    {
+      "slug": "bigbasket",
+      "wikidataId": "Q96373548",
+      "name": "BigBasket",
+      "cik": null,
+      "description": {
+        "value": "Indian online grocery delivery company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q96373548#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": null,
+      "headquarters": null,
+      "country": null,
+      "industries": {
+        "value": [
+          "retail"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q96373548#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": null,
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "quick-commerce",
+        "e-commerce-marketplaces"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/BigBasket",
+      "dataNote": null
+    },
+    {
+      "slug": "instacart",
+      "wikidataId": "Q22909236",
+      "name": "Instacart",
+      "cik": "0001579091",
+      "description": {
+        "value": "Internet-based grocery delivery service",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2012,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco, CA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579091&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579091&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "retail",
+          "delivery",
+          "food delivery",
+          "food product"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Max Mullen",
+          "Apoorva Mehta"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://instacart.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "CART"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22909236#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": {
+        "value": {
+          "amount": 3742000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1579091/000157909126000018/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 447000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1579091/000157909126000018/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/instacart.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Instacart",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Instacart_logo_and_wordmark.svg"
+      },
+      "categories": [
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Instacart",
+      "dataNote": null
+    },
+    {
+      "slug": "gopuff",
+      "wikidataId": "Q39058719",
+      "name": "GoPuff",
+      "cik": "0001659405",
+      "description": {
+        "value": "American digital delivery service",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058719#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2013,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058719#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": null,
+      "country": null,
+      "industries": {
+        "value": [
+          "retail"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058719#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.gopuff.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058719#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gopuff",
+      "dataNote": null
+    },
+    {
+      "slug": "doordash",
+      "wikidataId": "Q20714323",
+      "name": "DoorDash",
+      "cik": "0001792789",
+      "description": {
+        "value": "American food delivery company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2012,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco, CA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001792789&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001792789&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "food delivery",
+          "logistics"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Tony Xu"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.doordash.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "New York Stock Exchange",
+            "symbol": "DASH"
+          },
+          {
+            "exchange": "Nasdaq",
+            "symbol": "DASH"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20714323#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": {
+        "value": {
+          "amount": 13717000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 935000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/doordash.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "DoorDash",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:DoorDash_Logo.svg"
+      },
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/DoorDash",
+      "dataNote": null
+    },
+    {
+      "slug": "flink",
+      "wikidataId": "Q111915311",
+      "name": "Flink",
+      "cik": null,
+      "description": {
+        "value": "food delivery service",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q111915311#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": null,
+      "headquarters": null,
+      "country": null,
+      "industries": {
+        "value": [
+          "food delivery",
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q111915311#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.goflink.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q111915311#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/flink.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Flink SE",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Flink_Logo_2020.svg"
+      },
+      "categories": [
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Flink_(company)",
+      "dataNote": null
+    },
+    {
+      "slug": "deliveroo",
+      "wikidataId": "Q22000919",
+      "name": "Deliveroo",
+      "cik": "0001872342",
+      "description": {
+        "value": "food delivery company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2013,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "London",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United Kingdom",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "food delivery",
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Will Shu"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://deliveroo.co.uk/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "London Stock Exchange",
+            "symbol": "ROO"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22000919#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/deliveroo.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Roofoods Ltd",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Deliveroo_logo.svg"
+      },
+      "categories": [
+        "food-delivery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Deliveroo",
+      "dataNote": null
+    },
+    {
+      "slug": "talabat",
+      "wikidataId": "Q39058477",
+      "name": "Talabat",
+      "cik": null,
+      "description": {
+        "value": "food delivery service",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058477#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2004,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058477#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": null,
+      "country": null,
+      "industries": null,
+      "founders": null,
+      "parent": {
+        "value": "Delivery Hero",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058477#P749",
+        "retrievedAt": "2026-10-16"
+      },
+      "website": {
+        "value": "https://www.talabat.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q39058477#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/talabat.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Talabat",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Talabat_logo.svg"
+      },
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Talabat",
+      "dataNote": null
+    },
+    {
+      "slug": "careem",
+      "wikidataId": "Q25112257",
+      "name": "Careem",
+      "cik": null,
+      "description": {
+        "value": "multinational transportation network company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q25112257#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2012,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q25112257#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Dubai",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q25112257#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": null,
+      "industries": {
+        "value": [
+          "technology industry",
+          "transport industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q25112257#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.careem.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q25112257#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/careem.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Careem",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Careem_Logo.svg"
+      },
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Careem",
+      "dataNote": null
+    },
+    {
+      "slug": "grab",
+      "wikidataId": "Q20873932",
+      "name": "Grab",
+      "cik": "0001855612",
+      "description": {
+        "value": "Southeast Asian technology company headquartered in Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2012,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "transport",
+          "peer-to-peer ridesharing",
+          "information technology"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.grab.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "GRAB"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q20873932#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/grab.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Grab Holdings Inc.",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Grab_Logo.svg"
+      },
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Grab_Holdings",
+      "dataNote": null
+    },
+    {
+      "slug": "amazon",
+      "wikidataId": "Q3884",
+      "name": "Amazon",
+      "cik": "0001018724",
+      "description": {
+        "value": "American multinational technology company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1994,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Seattle, WA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "retail",
+          "web hosting service",
+          "web service",
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Jeff Bezos"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.amazon.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "AMZN"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 1500000,
+          "unit": "1",
+          "asOf": "2023"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 716924000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 77670000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 2018000000000,
+          "unit": "Q4917",
+          "asOf": "2025-05-01",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q3884#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/amazon.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Amazon.com, Inc., Koto, and NaN (typeface creator)",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Amazon_2024.svg"
+      },
+      "categories": [
+        "e-commerce-marketplaces",
+        "cloud-computing"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "dataNote": null
+    },
+    {
+      "slug": "flipkart",
+      "wikidataId": "Q1381966",
+      "name": "Flipkart",
+      "cik": null,
+      "description": {
+        "value": "Indian electronic commerce company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2007,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Sachin Bansal",
+          "Binny Bansal"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.flipkart.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1381966#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/flipkart.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Flipkart",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Flipkart_logo_(2026).svg"
+      },
+      "categories": [
+        "e-commerce-marketplaces"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Flipkart",
+      "dataNote": null
+    },
+    {
+      "slug": "zomato",
+      "wikidataId": "Q8073715",
+      "name": "Zomato",
+      "cik": null,
+      "description": {
+        "value": "Indian food delivery service",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2008,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "New Delhi",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": null,
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.zomato.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Bombay Stock Exchange",
+            "symbol": "543320"
+          },
+          {
+            "exchange": "National Stock Exchange of India",
+            "symbol": "ZOMATO"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8073715#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/zomato.png",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Zomato",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Zomato_logo.png"
+      },
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Zomato",
+      "dataNote": null
+    },
+    {
+      "slug": "swiggy",
+      "wikidataId": "Q65944364",
+      "name": "Swiggy",
+      "cik": null,
+      "description": {
+        "value": "Indian food delivery app",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2014,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "food delivery"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.swiggy.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q65944364#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": false,
+        "path": null,
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Alterbach",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Swiggy_Logo_2024.webp"
+      },
+      "categories": [
+        "food-delivery",
+        "quick-commerce"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Swiggy",
+      "dataNote": null
+    },
+    {
+      "slug": "shopify",
+      "wikidataId": "Q7501150",
+      "name": "Shopify",
+      "cik": "0001594805",
+      "description": {
+        "value": "Canadian e-commerce company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2006,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Ottawa",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "Canada",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "e-commerce",
+          "online marketplace"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Tobias Lütke"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.shopify.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Toronto Stock Exchange",
+            "symbol": "SHOP"
+          },
+          {
+            "exchange": "New York Stock Exchange",
+            "symbol": "SHOP"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 8300,
+          "unit": "1",
+          "asOf": "2023"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 11556000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 1231000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 47750000000,
+          "unit": "Q4917",
+          "asOf": "2022-01-05",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7501150#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/shopify.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "[[:w:|]]",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Shopify_logo_2018.svg"
+      },
+      "categories": [
+        "e-commerce-marketplaces"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Shopify",
+      "dataNote": null
+    },
+    {
+      "slug": "myntra",
+      "wikidataId": "Q6947830",
+      "name": "Myntra",
+      "cik": null,
+      "description": {
+        "value": "E-commerce company of fashion & lifestyle products in India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2007,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": {
+        "value": "Flipkart",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P749",
+        "retrievedAt": "2026-10-16"
+      },
+      "website": {
+        "value": "https://www.myntra.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6947830#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "e-commerce-marketplaces",
+        "fashion-luxury"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Myntra",
+      "dataNote": null
+    },
+    {
+      "slug": "nykaa",
+      "wikidataId": "Q22907412",
+      "name": "Nykaa",
+      "cik": null,
+      "description": {
+        "value": "online beauty retailer",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2012,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Mumbai",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "e-commerce"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Falguni Nayar"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "http://nykaa.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22907412#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/nykaa.png",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Anurag Saboo",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Nykaa.png"
+      },
+      "categories": [
+        "e-commerce-marketplaces",
+        "fmcg-personal-care"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Nykaa",
+      "dataNote": null
+    },
+    {
+      "slug": "tata-1mg",
+      "wikidataId": "Q107144226",
+      "name": "Tata 1mg",
+      "cik": null,
+      "description": {
+        "value": "healthcare platform in Gurugram, India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q107144226#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2015,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q107144226#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Gurgaon",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q107144226#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q107144226#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "pharmacy",
+          "health care"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q107144226#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": null,
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "pharmacy-retail"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Tata_1mg",
+      "dataNote": null
+    },
+    {
+      "slug": "pharmeasy",
+      "wikidataId": "Q112892594",
+      "name": "PharmEasy",
+      "cik": null,
+      "description": {
+        "value": "Indian online healthcare company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q112892594#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": null,
+      "headquarters": null,
+      "country": null,
+      "industries": null,
+      "founders": null,
+      "parent": null,
+      "website": null,
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "pharmacy-retail"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/PharmEasy",
+      "dataNote": null
+    },
+    {
+      "slug": "cvs-health",
+      "wikidataId": "Q624375",
+      "name": "CVS Health",
+      "cik": "0000064803",
+      "description": {
+        "value": "company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1996,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Woonsocket, RI",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064803&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064803&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "retail"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://cvshealth.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "New York Stock Exchange",
+            "symbol": "CVS"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 300000,
+          "unit": "1",
+          "asOf": "2019"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 402067000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000010/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 1768000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000010/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 123000000000,
+          "unit": "Q4917",
+          "asOf": "2021-11-22",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q624375#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/cvs-health.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "CVS Health",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:CVS_Health_Logo.svg"
+      },
+      "categories": [
+        "pharmacy-retail",
+        "hospitals-healthcare"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/CVS_Health",
+      "dataNote": null
+    },
+    {
+      "slug": "boots-uk",
+      "wikidataId": "Q6123139",
+      "name": "Boots",
+      "cik": null,
+      "description": {
+        "value": "UK based pharmacy shop chain",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1849,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Nottingham",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United Kingdom",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "health care"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "John Boot"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": {
+        "value": "Walgreens Boots Alliance",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P749",
+        "retrievedAt": "2026-10-16"
+      },
+      "website": {
+        "value": "https://boots.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q6123139#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "pharmacy-retail"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Boots_(company)",
+      "dataNote": null
+    },
+    {
+      "slug": "razer",
+      "wikidataId": "Q367412",
+      "name": "Razer Inc.",
+      "cik": null,
+      "description": {
+        "value": "Singaporean-American technological company specializing in gaming products",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2005,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Irvine, California and Singapore",
+        "provider": "Razer: About",
+        "source": "https://www.razer.com/about-razer",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "computer hardware industry",
+          "video game industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Min-Liang Tan"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.razer.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Hong Kong Stock Exchange",
+            "symbol": "1337"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q367412#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/razer.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Razer Inc.",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Razer_wordmark.svg"
+      },
+      "categories": [
+        "gaming"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Razer_Inc.",
+      "dataNote": null
+    },
+    {
+      "slug": "valve-steam",
+      "wikidataId": "Q193559",
+      "name": "Valve Corporation",
+      "cik": null,
+      "description": {
+        "value": "American video game development and digital distribution company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1996,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bellevue",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "video game industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Gabe Newell",
+          "Mike Harrington"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.valvesoftware.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": {
+        "value": {
+          "amount": 336,
+          "unit": "1",
+          "asOf": "2021"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q193559#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/valve-steam.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Valve Corporation",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Valve_logo.svg"
+      },
+      "categories": [
+        "gaming"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Valve_Corporation",
+      "dataNote": null
+    },
+    {
+      "slug": "nintendo",
+      "wikidataId": "Q8093",
+      "name": "Nintendo",
+      "cik": null,
+      "description": {
+        "value": "Japanese multinational video game and consumer electronics company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1889,
+        "provider": "Nintendo corporate outline",
+        "source": "https://www.nintendo.co.jp/corporate/en/outline/index.html",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Kyoto",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "Japan",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "video game industry",
+          "game industry",
+          "video game industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Fusajirō Yamauchi"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.nintendo.com/jp/index.html",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Tokyo Stock Exchange",
+            "symbol": "7974"
+          },
+          {
+            "exchange": "Nasdaq",
+            "symbol": "NTDOY"
+          },
+          {
+            "exchange": "Frankfurt Stock Exchange",
+            "symbol": "NTO"
+          },
+          {
+            "exchange": "OTC Markets Group",
+            "symbol": "NTDOF"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 7317,
+          "unit": "1",
+          "asOf": "2023-03-31"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q8093#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/nintendo.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Nintendo",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Nintendo.svg"
+      },
+      "categories": [
+        "gaming"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Nintendo",
+      "dataNote": "Nintendo was founded in 1889 and incorporated as a company in 1947. Some open-data records use the later date."
+    },
+    {
+      "slug": "stripe",
+      "wikidataId": "Q7624104",
+      "name": "Stripe",
+      "cik": "0001691342",
+      "description": {
+        "value": "Irish-American payment technology company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2010,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "financial services",
+          "mobile payment industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Patrick Collison",
+          "John Collison"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://stripe.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": {
+        "value": {
+          "amount": 8000,
+          "unit": "1",
+          "asOf": "2022"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q7624104#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/stripe.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Stripe, Inc.",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Stripe_Logo,_revised_2016.svg"
+      },
+      "categories": [
+        "fintech-payments"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Stripe%2C_Inc.",
+      "dataNote": null
+    },
+    {
+      "slug": "razorpay",
+      "wikidataId": "Q109985545",
+      "name": "Razorpay",
+      "cik": null,
+      "description": {
+        "value": "Indian payment gateway company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2014,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "software industry",
+          "payment system"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://razorpay.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q109985545#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": null,
+      "categories": [
+        "fintech-payments"
+      ],
+      "wikipedia": null,
+      "dataNote": null
+    },
+    {
+      "slug": "phonepe",
+      "wikidataId": "Q30324297",
+      "name": "PhonePe",
+      "cik": null,
+      "description": {
+        "value": "Indian financial technology company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q30324297#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": null,
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q30324297#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q30324297#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": null,
+      "founders": null,
+      "parent": {
+        "value": "Flipkart",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q30324297#P749",
+        "retrievedAt": "2026-10-16"
+      },
+      "website": {
+        "value": "https://www.phonepe.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q30324297#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/phonepe.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "PhonePe",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:PhonePe_Logo.svg"
+      },
+      "categories": [
+        "fintech-payments"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/PhonePe",
+      "dataNote": null
+    },
+    {
+      "slug": "revolut",
+      "wikidataId": "Q22908307",
+      "name": "Revolut",
+      "cik": null,
+      "description": {
+        "value": "financial technology company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22908307#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": null,
+      "headquarters": null,
+      "country": {
+        "value": "Lithuania",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22908307#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "financial services"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22908307#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Nikolay Storonsky",
+          "Vlad Yatsenko"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22908307#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.revolut.com",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q22908307#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/revolut.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Revolut Ltd",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg"
+      },
+      "categories": [
+        "fintech-payments",
+        "banking"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Revolut",
+      "dataNote": null
+    },
+    {
+      "slug": "emirates",
+      "wikidataId": "Q180432",
+      "name": "Emirates",
+      "cik": null,
+      "description": {
+        "value": "flag carrier airline of the United Arab Emirates",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1985,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Al Garhoud",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United Arab Emirates",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": null,
+      "founders": null,
+      "parent": null,
+      "website": {
+        "value": "https://www.emirates.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": {
+        "value": {
+          "amount": 100000,
+          "unit": "1",
+          "asOf": "2018"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 107356000000,
+          "unit": "Q200294",
+          "asOf": "2023",
+          "currency": "AED"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q180432#P2139",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/emirates.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Fly Emirates Group",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Emirates_banner_logo.svg"
+      },
+      "categories": [
+        "aviation"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Emirates_(airline)",
+      "dataNote": null
+    },
+    {
+      "slug": "singapore-airlines",
+      "wikidataId": "Q32245",
+      "name": "Singapore Airlines",
+      "cik": null,
+      "description": {
+        "value": "the flag carrier airline of Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1964,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "Singapore",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "air transport"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": null,
+      "parent": {
+        "value": "Temasek Holdings",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P749",
+        "retrievedAt": "2026-10-16"
+      },
+      "website": {
+        "value": "https://www.singaporeair.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Singapore Stock Exchange",
+            "symbol": "C6L"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q32245#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/singapore-airlines.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Singapore Airlines Limited",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Singapore_Airlines_wordmark.svg"
+      },
+      "categories": [
+        "aviation"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Singapore_Airlines",
+      "dataNote": null
+    },
+    {
+      "slug": "airbnb",
+      "wikidataId": "Q63327",
+      "name": "Airbnb",
+      "cik": "0001559720",
+      "description": {
+        "value": "American online platform for rental accommodations",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2008,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco, CA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "tourism industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Brian Chesky",
+          "Joe Gebbia",
+          "Nathan Blecharczyk"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.airbnb.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "ABNB"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 5597,
+          "unit": "1",
+          "asOf": "2020-12-31"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 12241000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 2511000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 76532000000,
+          "unit": "Q4917",
+          "asOf": "2023-02-14",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q63327#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/airbnb.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "DesignStudio",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Airbnb_Logo_B%C3%A9lo.svg"
+      },
+      "categories": [
+        "travel-hospitality"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Airbnb",
+      "dataNote": null
+    },
+    {
+      "slug": "indigo",
+      "wikidataId": "Q1057110",
+      "name": "IndiGo",
+      "cik": null,
+      "description": {
+        "value": "Indian airline company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2005,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Gurgaon",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": null,
+      "founders": {
+        "value": [
+          "Rahul Bhatia",
+          "Rakesh Gangwal"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.goindigo.in",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "National Stock Exchange of India",
+            "symbol": "INDIGO"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q1057110#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/indigo.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "IndiGo",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:IndiGo_Airlines_logo.svg"
+      },
+      "categories": [
+        "aviation"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/IndiGo",
+      "dataNote": null
+    },
+    {
+      "slug": "openai",
+      "wikidataId": "Q21708200",
+      "name": "OpenAI",
+      "cik": null,
+      "description": {
+        "value": "American artificial intelligence research organization",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2015,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "artificial intelligence"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Sam Altman",
+          "Ilya Sutskever",
+          "Greg Brockman",
+          "Wojciech Zaremba",
+          "Andrej Karpathy",
+          "John Schulman",
+          "Trevor Blackwell",
+          "Vicki Cheung",
+          "Diederik P. Kingma",
+          "Pamela Vagata",
+          "Elon Musk"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://openai.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": null,
+      "employees": {
+        "value": {
+          "amount": 4500,
+          "unit": "1",
+          "asOf": "2026-03-21"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 25000000000,
+          "unit": "Q4917",
+          "asOf": "2026",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q21708200#P2139",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/openai.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "OpenAI",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:OpenAI_logo_2025_(wordmark).svg"
+      },
+      "categories": [
+        "artificial-intelligence"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/OpenAI",
+      "dataNote": null
+    },
+    {
+      "slug": "apple",
+      "wikidataId": "Q312",
+      "name": "Apple Inc.",
+      "cik": "0000320193",
+      "description": {
+        "value": "American multinational technology company based in Cupertino, California",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 1976,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Cupertino, CA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "software industry",
+          "consumer electronics industry",
+          "digital distribution",
+          "electronics industry",
+          "information technology industry",
+          "mobile phone industry",
+          "software development"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Steve Wozniak",
+          "Steve Jobs"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.apple.com/tw",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "AAPL"
+          },
+          {
+            "exchange": "Tokyo Stock Exchange",
+            "symbol": "6689"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 164000,
+          "unit": "1",
+          "asOf": "2022"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 416161000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-09-27)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 112010000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-09-27)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 3205000000000,
+          "unit": "Q4917",
+          "asOf": "2025-05-01",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q312#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/apple.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Rob Janoff",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Apple_logo_white.svg"
+      },
+      "categories": [
+        "electronics-devices"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Apple_Inc.",
+      "dataNote": null
+    },
+    {
+      "slug": "tesla",
+      "wikidataId": "Q478214",
+      "name": "Tesla",
+      "cik": "0001318605",
+      "description": {
+        "value": "American automotive and clean energy company",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2003,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Austin, TX",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "automotive industry",
+          "solar industry",
+          "battery industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Martin Eberhard",
+          "Marc Tarpenning"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.tesla.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "Nasdaq",
+            "symbol": "TSLA"
+          },
+          {
+            "exchange": "Frankfurt Stock Exchange",
+            "symbol": "TL0"
+          },
+          {
+            "exchange": "Xetra",
+            "symbol": "TL0"
+          },
+          {
+            "exchange": "London Stock Exchange",
+            "symbol": "0R0X"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 140473,
+          "unit": "1",
+          "asOf": "2023-12-31"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 94827000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 3794000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 903544000000,
+          "unit": "Q4917",
+          "asOf": "2025-05-01",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q478214#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/tesla.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Tesla",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Tesla_Motors.svg"
+      },
+      "categories": [
+        "electric-vehicles",
+        "battery-storage"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Tesla%2C_Inc.",
+      "dataNote": null
+    },
+    {
+      "slug": "ola-electric",
+      "wikidataId": "Q108337007",
+      "name": "Ola Electric",
+      "cik": null,
+      "description": {
+        "value": "electric motor scooter manufacturer India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2017,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "Bengaluru",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P159",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "India",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P17",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "automotive industry"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Bhavish Aggarwal"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://olaelectric.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "National Stock Exchange of India",
+            "symbol": "OLAELEC"
+          },
+          {
+            "exchange": "Bombay Stock Exchange",
+            "symbol": "544225"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q108337007#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": null,
+      "revenue": null,
+      "netIncome": null,
+      "marketCap": null,
+      "logo": {
+        "usable": true,
+        "path": "/logos/ola-electric.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Ola Electric",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:OLA_Electric_logo.svg"
+      },
+      "categories": [
+        "electric-vehicles"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Ola_Electric",
+      "dataNote": null
+    },
+    {
+      "slug": "uber",
+      "wikidataId": "Q780442",
+      "name": "Uber",
+      "cik": "0001543151",
+      "description": {
+        "value": "peer-to-peer ridesharing, food delivery, and transportation network company headquartered in San Francisco, California",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#description",
+        "retrievedAt": "2026-10-16"
+      },
+      "founded": {
+        "value": 2009,
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P571",
+        "retrievedAt": "2026-10-16"
+      },
+      "headquarters": {
+        "value": "San Francisco, CA",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "country": {
+        "value": "United States",
+        "provider": "SEC EDGAR",
+        "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K",
+        "retrievedAt": "2026-10-16"
+      },
+      "industries": {
+        "value": [
+          "information technology",
+          "passenger transport"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P452",
+        "retrievedAt": "2026-10-16"
+      },
+      "founders": {
+        "value": [
+          "Garrett Camp",
+          "Travis Kalanick"
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P112",
+        "retrievedAt": "2026-10-16"
+      },
+      "parent": null,
+      "website": {
+        "value": "https://www.uber.com/",
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P856",
+        "retrievedAt": "2026-10-16"
+      },
+      "listings": {
+        "value": [
+          {
+            "exchange": "New York Stock Exchange",
+            "symbol": "UBER"
+          }
+        ],
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P414",
+        "retrievedAt": "2026-10-16"
+      },
+      "employees": {
+        "value": {
+          "amount": 12000,
+          "unit": "1",
+          "asOf": "2017-12"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P1128",
+        "retrievedAt": "2026-10-16"
+      },
+      "revenue": {
+        "value": {
+          "amount": 52017000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/",
+        "retrievedAt": "2026-10-16"
+      },
+      "netIncome": {
+        "value": {
+          "amount": 10053000000,
+          "currency": "USD",
+          "asOf": "FY2025 (to 2025-12-31)"
+        },
+        "provider": "SEC EDGAR 10-K",
+        "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/",
+        "retrievedAt": "2026-10-16"
+      },
+      "marketCap": {
+        "value": {
+          "amount": 189063000000,
+          "unit": "Q4917",
+          "asOf": "2025-05-15",
+          "currency": "USD"
+        },
+        "provider": "Wikidata",
+        "source": "https://www.wikidata.org/wiki/Q780442#P2226",
+        "retrievedAt": "2026-10-16"
+      },
+      "logo": {
+        "usable": true,
+        "path": "/logos/uber.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "author": "Wolff Olins, in collaboration with Uber's Brand Team [1]",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.svg"
+      },
+      "categories": [
+        "ride-hailing",
+        "food-delivery"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Uber",
+      "dataNote": null
+    }
+  ]
+}
