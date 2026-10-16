@@ -6,7 +6,8 @@ import { HomePage } from './pages/HomePage'
 import { CategoriesPage } from './pages/CategoriesPage'
 import { CategoryPage } from './pages/CategoryPage'
 import { CompanyPage } from './pages/CompanyPage'
-import { MethodologyPage, AboutPage, PrivacyPage } from './pages/StaticPages'
+import { MethodologyPage, AboutPage, PrivacyPage, TermsPage } from './pages/StaticPages'
+import { ComparePage } from './pages/ComparePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { LabsPage } from './pages/LabsPage'
 
@@ -22,6 +23,8 @@ export function App() {
       case 'methodology': return <MethodologyPage />
       case 'about': return <AboutPage />
       case 'privacy': return <PrivacyPage />
+      case 'terms': return <TermsPage />
+      case 'compare': return <ComparePage slugs={route.slugs} />
       case 'labs': return <LabsPage tab={route.tab} onTabChange={(tab) => navigate({ page: 'labs', tab })} />
       default: return <NotFoundPage />
     }

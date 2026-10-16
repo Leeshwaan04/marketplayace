@@ -49,7 +49,11 @@ for (const ids of chunk([...needed], 40)) {
 }
 
 // helpers -------------------------------------------------------------
-const lab = (id) => labels[id] ?? null
+// Strip invisible bidi/control characters that sometimes sit inside Wikidata labels.
+const clean = (t) => (t ? t.replace(/[\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF]/g, '').trim() : t)
+const lab = (id) => clean(labels[id]) ?? null
+// A headquarters that is a building, street address or district is not a useful city. Leave it blank instead.
+const NOT_A_CITY = /\d|building|district|tower|plaza|square|centre|center|campus/i
 const best = (e, p) => {
   const list = (e.claims?.[p] ?? []).filter((c) => c.rank !== 'deprecated' && c.mainsnak?.datavalue)
   return list.find((c) => c.rank === 'preferred') ?? list[list.length - 1] ?? null
@@ -130,11 +134,11 @@ for (const entry of entries) {
   out.push({
     slug: entry.slug,
     wikidataId: q,
-    name: entry.displayName ?? e.labels?.en?.value ?? null,
+    name: clean(entry.displayName ?? e.labels?.en?.value ?? entry.name) ?? null,
     cik: best(e, 'P5531')?.mainsnak.datavalue.value ?? null,
     description: fact(e.descriptions?.en?.value ?? null, q, 'description'),
     founded: fact(parseYear(inception), q, 'P571'),
-    headquarters: fact(claimIds(e, 'P159').map(lab).filter(Boolean)[0] ?? null, q, 'P159'),
+    headquarters: fact(claimIds(e, 'P159').map(lab).filter((l) => l && !NOT_A_CITY.test(l))[0] ?? null, q, 'P159'),
     country: fact(claimIds(e, 'P17').map(lab).filter(Boolean)[0] ?? null, q, 'P17'),
     industries: fact(claimIds(e, 'P452').map(lab).filter(Boolean), q, 'P452'),
     founders: fact(claimIds(e, 'P112').map(lab).filter(Boolean), q, 'P112'),
@@ -170,6 +174,14 @@ for (const entry of entries) {
   const r = out.find((x) => x.slug === entry.slug)
   for (const [field, o] of Object.entries(entry.overrides ?? {})) {
     if (r) r[field] = { value: o.value, provider: o.provider, source: o.source, retrievedAt: o.reviewedAt }
+  }
+}
+
+// Suppressions: values we know are wrong upstream are shown as blank, with the reason kept in registry.json.
+for (const entry of entries) {
+  const r = out.find((x) => x.slug === entry.slug)
+  for (const field of entry.suppress ?? []) {
+    if (r && !(entry.overrides ?? {})[field]) r[field] = null
   }
 }
 

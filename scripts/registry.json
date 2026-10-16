@@ -22,7 +22,7 @@
     {
       "slug": "swiggy-instamart",
       "qid": null,
-      "note": "Product of Swiggy (Q65944364), not a separate company",
+      "note": "Product of Swiggy, profiled under Swiggy",
       "categories": [
         "quick-commerce"
       ]
@@ -202,11 +202,12 @@
     },
     {
       "slug": "playstation",
-      "qid": null,
-      "note": "Operated by Sony Interactive Entertainment; resolve the company entity",
+      "qid": "Q18594",
       "categories": [
         "gaming"
-      ]
+      ],
+      "displayName": "PlayStation (Sony Interactive Entertainment)",
+      "dataNote": "PlayStation is a brand of Sony Interactive Entertainment; the figures shown are for that company."
     },
     {
       "slug": "nintendo",
@@ -317,6 +318,1721 @@
         "ride-hailing",
         "food-delivery"
       ]
+    },
+    {
+      "slug": "hdfc-bank",
+      "qid": "Q631047",
+      "categories": [
+        "banking"
+      ],
+      "name": "HDFC Bank"
+    },
+    {
+      "slug": "icici-bank",
+      "qid": "Q1653258",
+      "categories": [
+        "banking"
+      ],
+      "name": "ICICI Bank"
+    },
+    {
+      "slug": "state-bank-of-india",
+      "qid": "Q1340361",
+      "categories": [
+        "banking"
+      ],
+      "name": "State Bank of India"
+    },
+    {
+      "slug": "jpmorgan-chase",
+      "qid": "Q192314",
+      "categories": [
+        "banking"
+      ],
+      "name": "JPMorgan Chase"
+    },
+    {
+      "slug": "hsbc",
+      "qid": "Q190464",
+      "categories": [
+        "banking"
+      ],
+      "name": "HSBC"
+    },
+    {
+      "slug": "visa",
+      "qid": "Q328840",
+      "categories": [
+        "payment-networks"
+      ],
+      "name": "Visa"
+    },
+    {
+      "slug": "mastercard",
+      "qid": "Q489921",
+      "categories": [
+        "payment-networks"
+      ],
+      "name": "Mastercard"
+    },
+    {
+      "slug": "american-express",
+      "qid": "Q194360",
+      "categories": [
+        "payment-networks"
+      ],
+      "name": "American Express"
+    },
+    {
+      "slug": "paytm",
+      "qid": "Q19757718",
+      "categories": [
+        "fintech-payments"
+      ],
+      "name": "Paytm"
+    },
+    {
+      "slug": "wise",
+      "qid": "Q7833987",
+      "categories": [
+        "fintech-payments"
+      ],
+      "name": "Wise"
+    },
+    {
+      "slug": "zerodha",
+      "qid": "Q8069628",
+      "categories": [
+        "stockbroking"
+      ],
+      "name": "Zerodha"
+    },
+    {
+      "slug": "groww",
+      "qid": "Q85764693",
+      "categories": [
+        "stockbroking"
+      ],
+      "name": "Groww"
+    },
+    {
+      "slug": "robinhood",
+      "qid": "Q18155123",
+      "categories": [
+        "stockbroking"
+      ],
+      "name": "Robinhood"
+    },
+    {
+      "slug": "interactive-brokers",
+      "qid": "Q20011294",
+      "categories": [
+        "stockbroking"
+      ],
+      "name": "Interactive Brokers"
+    },
+    {
+      "slug": "blackrock",
+      "qid": "Q219635",
+      "categories": [
+        "asset-management"
+      ],
+      "name": "BlackRock"
+    },
+    {
+      "slug": "vanguard",
+      "qid": "Q849363",
+      "categories": [
+        "asset-management"
+      ],
+      "name": "Vanguard"
+    },
+    {
+      "slug": "sbi-mutual-fund",
+      "qid": "Q24942577",
+      "categories": [
+        "asset-management"
+      ],
+      "name": "SBI Mutual Fund"
+    },
+    {
+      "slug": "nippon-india-mutual-fund",
+      "qid": "Q139926147",
+      "categories": [
+        "asset-management"
+      ],
+      "name": "Nippon India Mutual Fund"
+    },
+    {
+      "slug": "hdfc-life",
+      "qid": "Q5629189",
+      "categories": [
+        "life-insurance"
+      ],
+      "name": "HDFC Life"
+    },
+    {
+      "slug": "sbi-life",
+      "qid": "Q7388955",
+      "categories": [
+        "life-insurance"
+      ],
+      "name": "SBI Life"
+    },
+    {
+      "slug": "prudential",
+      "qid": "Q1374135",
+      "categories": [
+        "life-insurance"
+      ],
+      "name": "Prudential"
+    },
+    {
+      "slug": "allianz",
+      "qid": "Q487292",
+      "categories": [
+        "life-insurance"
+      ],
+      "name": "Allianz"
+    },
+    {
+      "slug": "icici-lombard",
+      "qid": "Q5969591",
+      "categories": [
+        "general-insurance"
+      ],
+      "name": "ICICI Lombard"
+    },
+    {
+      "slug": "bajaj-allianz",
+      "qid": "Q804084",
+      "categories": [
+        "general-insurance"
+      ],
+      "name": "Bajaj Allianz"
+    },
+    {
+      "slug": "progressive",
+      "qid": "Q7248721",
+      "categories": [
+        "general-insurance"
+      ],
+      "name": "Progressive"
+    },
+    {
+      "slug": "axa",
+      "qid": "Q160054",
+      "categories": [
+        "general-insurance"
+      ],
+      "name": "AXA"
+    },
+    {
+      "slug": "crisil",
+      "qid": "Q5013889",
+      "categories": [
+        "credit-ratings"
+      ],
+      "name": "CRISIL"
+    },
+    {
+      "slug": "moody-s",
+      "qid": "Q675585",
+      "categories": [
+        "credit-ratings"
+      ],
+      "name": "Moody's"
+    },
+    {
+      "slug": "sandp-global",
+      "qid": "Q868587",
+      "categories": [
+        "credit-ratings"
+      ],
+      "name": "S&P Global"
+    },
+    {
+      "slug": "fitch-ratings",
+      "qid": "Q871325",
+      "categories": [
+        "credit-ratings"
+      ],
+      "name": "Fitch Ratings"
+    },
+    {
+      "slug": "bse",
+      "qid": "Q638398",
+      "categories": [
+        "exchanges"
+      ],
+      "name": "BSE"
+    },
+    {
+      "slug": "nasdaq",
+      "qid": "Q82059",
+      "categories": [
+        "exchanges"
+      ],
+      "name": "Nasdaq"
+    },
+    {
+      "slug": "nyse",
+      "qid": "Q13677",
+      "categories": [
+        "exchanges"
+      ],
+      "name": "NYSE"
+    },
+    {
+      "slug": "cme-group",
+      "qid": "Q1023876",
+      "categories": [
+        "exchanges"
+      ],
+      "name": "CME Group"
+    },
+    {
+      "slug": "anand-rathi",
+      "qid": "Q140354296",
+      "categories": [
+        "wealth-investment-banking"
+      ],
+      "name": "Anand Rathi"
+    },
+    {
+      "slug": "ubs",
+      "qid": "Q193199",
+      "categories": [
+        "wealth-investment-banking"
+      ],
+      "name": "UBS"
+    },
+    {
+      "slug": "goldman-sachs",
+      "qid": "Q193326",
+      "categories": [
+        "wealth-investment-banking"
+      ],
+      "name": "Goldman Sachs"
+    },
+    {
+      "slug": "morgan-stanley",
+      "qid": "Q334204",
+      "categories": [
+        "wealth-investment-banking"
+      ],
+      "name": "Morgan Stanley"
+    },
+    {
+      "slug": "nvidia",
+      "qid": "Q182477",
+      "categories": [
+        "semiconductors"
+      ],
+      "name": "NVIDIA"
+    },
+    {
+      "slug": "amd",
+      "qid": "Q128896",
+      "categories": [
+        "semiconductors"
+      ],
+      "name": "AMD"
+    },
+    {
+      "slug": "intel",
+      "qid": "Q248",
+      "categories": [
+        "semiconductors"
+      ],
+      "name": "Intel"
+    },
+    {
+      "slug": "qualcomm",
+      "qid": "Q544847",
+      "categories": [
+        "semiconductors"
+      ],
+      "name": "Qualcomm"
+    },
+    {
+      "slug": "samsung",
+      "qid": "Q20718",
+      "categories": [
+        "electronics-devices"
+      ],
+      "name": "Samsung"
+    },
+    {
+      "slug": "foxconn",
+      "qid": "Q463094",
+      "categories": [
+        "electronics-devices"
+      ],
+      "name": "Foxconn"
+    },
+    {
+      "slug": "dixon-technologies",
+      "qid": "Q104876658",
+      "categories": [
+        "electronics-devices"
+      ],
+      "name": "Dixon Technologies"
+    },
+    {
+      "slug": "lenovo",
+      "qid": "Q14799",
+      "categories": [
+        "electronics-devices"
+      ],
+      "name": "Lenovo"
+    },
+    {
+      "slug": "crowdstrike",
+      "qid": "Q24890758",
+      "categories": [
+        "cybersecurity"
+      ],
+      "name": "CrowdStrike"
+    },
+    {
+      "slug": "palo-alto-networks",
+      "qid": "Q7128508",
+      "categories": [
+        "cybersecurity"
+      ],
+      "name": "Palo Alto Networks"
+    },
+    {
+      "slug": "fortinet",
+      "qid": "Q2749364",
+      "categories": [
+        "cybersecurity"
+      ],
+      "name": "Fortinet"
+    },
+    {
+      "slug": "zscaler",
+      "qid": "Q8074786",
+      "categories": [
+        "cybersecurity"
+      ],
+      "name": "Zscaler"
+    },
+    {
+      "slug": "cloudflare",
+      "qid": "Q4778915",
+      "categories": [
+        "cybersecurity"
+      ],
+      "name": "Cloudflare"
+    },
+    {
+      "slug": "salesforce",
+      "qid": "Q941127",
+      "categories": [
+        "crm-sales-tech"
+      ],
+      "name": "Salesforce"
+    },
+    {
+      "slug": "hubspot",
+      "qid": "Q5926631",
+      "categories": [
+        "crm-sales-tech"
+      ],
+      "name": "HubSpot"
+    },
+    {
+      "slug": "zoho",
+      "qid": "Q8063247",
+      "categories": [
+        "crm-sales-tech"
+      ],
+      "name": "Zoho"
+    },
+    {
+      "slug": "adobe",
+      "qid": "Q11463",
+      "categories": [
+        "design-creative-software"
+      ],
+      "name": "Adobe"
+    },
+    {
+      "slug": "canva",
+      "qid": "Q23498528",
+      "categories": [
+        "design-creative-software"
+      ],
+      "name": "Canva"
+    },
+    {
+      "slug": "autodesk",
+      "qid": "Q628051",
+      "categories": [
+        "design-creative-software"
+      ],
+      "name": "Autodesk"
+    },
+    {
+      "slug": "corel",
+      "qid": "Q835702",
+      "categories": [
+        "design-creative-software"
+      ],
+      "name": "Corel"
+    },
+    {
+      "slug": "databricks",
+      "qid": "Q18350420",
+      "categories": [
+        "data-platforms"
+      ],
+      "name": "Databricks"
+    },
+    {
+      "slug": "mongodb",
+      "qid": "Q1165204",
+      "categories": [
+        "data-platforms"
+      ],
+      "name": "MongoDB"
+    },
+    {
+      "slug": "palantir",
+      "qid": "Q2047336",
+      "categories": [
+        "data-platforms"
+      ],
+      "name": "Palantir"
+    },
+    {
+      "slug": "sap",
+      "qid": "Q552581",
+      "categories": [
+        "enterprise-software"
+      ],
+      "name": "SAP"
+    },
+    {
+      "slug": "servicenow",
+      "qid": "Q7455653",
+      "categories": [
+        "enterprise-software"
+      ],
+      "name": "ServiceNow"
+    },
+    {
+      "slug": "workday",
+      "qid": "Q8034666",
+      "categories": [
+        "enterprise-software"
+      ],
+      "name": "Workday"
+    },
+    {
+      "slug": "atlassian",
+      "qid": "Q757307",
+      "categories": [
+        "enterprise-software"
+      ],
+      "name": "Atlassian"
+    },
+    {
+      "slug": "uipath",
+      "qid": "Q55080120",
+      "categories": [
+        "enterprise-software"
+      ],
+      "name": "UiPath"
+    },
+    {
+      "slug": "spacex",
+      "qid": "Q193701",
+      "categories": [
+        "space-technology"
+      ],
+      "name": "SpaceX"
+    },
+    {
+      "slug": "rocket-lab",
+      "qid": "Q116319",
+      "categories": [
+        "space-technology"
+      ],
+      "name": "Rocket Lab"
+    },
+    {
+      "slug": "isro",
+      "qid": "Q229058",
+      "categories": [
+        "space-technology"
+      ],
+      "name": "ISRO"
+    },
+    {
+      "slug": "blue-origin",
+      "qid": "Q885836",
+      "categories": [
+        "space-technology"
+      ],
+      "name": "Blue Origin"
+    },
+    {
+      "slug": "planet-labs",
+      "qid": "Q17085620",
+      "categories": [
+        "space-technology"
+      ],
+      "name": "Planet Labs"
+    },
+    {
+      "slug": "siemens",
+      "qid": "Q81230",
+      "categories": [
+        "industrial-automation"
+      ],
+      "name": "Siemens"
+    },
+    {
+      "slug": "abb",
+      "qid": "Q52825",
+      "categories": [
+        "industrial-automation"
+      ],
+      "name": "ABB"
+    },
+    {
+      "slug": "schneider-electric",
+      "qid": "Q49053",
+      "categories": [
+        "industrial-automation"
+      ],
+      "name": "Schneider Electric"
+    },
+    {
+      "slug": "fanuc",
+      "qid": "Q212116",
+      "categories": [
+        "industrial-automation"
+      ],
+      "name": "Fanuc"
+    },
+    {
+      "slug": "rockwell-automation",
+      "qid": "Q1529234",
+      "categories": [
+        "industrial-automation"
+      ],
+      "name": "Rockwell Automation"
+    },
+    {
+      "slug": "byd",
+      "qid": "Q2608329",
+      "categories": [
+        "electric-vehicles"
+      ],
+      "name": "BYD"
+    },
+    {
+      "slug": "tata-motors",
+      "qid": "Q188514",
+      "categories": [
+        "electric-vehicles"
+      ],
+      "name": "Tata Motors",
+      "suppress": [
+        "founded"
+      ],
+      "suppressReason": "Open data gives 2024, the date of a corporate restructuring, not when the company was founded."
+    },
+    {
+      "slug": "rivian",
+      "qid": "Q7338847",
+      "categories": [
+        "electric-vehicles"
+      ],
+      "name": "Rivian"
+    },
+    {
+      "slug": "bosch",
+      "qid": "Q234021",
+      "categories": [
+        "automotive-components"
+      ],
+      "name": "Bosch"
+    },
+    {
+      "slug": "denso",
+      "qid": "Q176508",
+      "categories": [
+        "automotive-components"
+      ],
+      "name": "Denso"
+    },
+    {
+      "slug": "continental",
+      "qid": "Q163241",
+      "categories": [
+        "automotive-components"
+      ],
+      "name": "Continental"
+    },
+    {
+      "slug": "motherson",
+      "qid": "Q6917594",
+      "categories": [
+        "automotive-components"
+      ],
+      "name": "Motherson"
+    },
+    {
+      "slug": "bharat-forge",
+      "qid": "Q4901117",
+      "categories": [
+        "automotive-components"
+      ],
+      "name": "Bharat Forge"
+    },
+    {
+      "slug": "lyft",
+      "qid": "Q17077936",
+      "categories": [
+        "ride-hailing"
+      ],
+      "name": "Lyft"
+    },
+    {
+      "slug": "fedex",
+      "qid": "Q459477",
+      "categories": [
+        "logistics-courier"
+      ],
+      "name": "FedEx"
+    },
+    {
+      "slug": "dhl",
+      "qid": "Q489815",
+      "categories": [
+        "logistics-courier"
+      ],
+      "name": "DHL"
+    },
+    {
+      "slug": "delhivery",
+      "qid": "Q55609321",
+      "categories": [
+        "logistics-courier"
+      ],
+      "name": "Delhivery"
+    },
+    {
+      "slug": "maersk",
+      "qid": "Q18224",
+      "categories": [
+        "shipping-maritime"
+      ],
+      "name": "Maersk"
+    },
+    {
+      "slug": "hapag-lloyd",
+      "qid": "Q819094",
+      "categories": [
+        "shipping-maritime"
+      ],
+      "name": "Hapag-Lloyd"
+    },
+    {
+      "slug": "larsen-and-toubro",
+      "qid": "Q638231",
+      "categories": [
+        "construction-heavy-equipment"
+      ],
+      "name": "Larsen & Toubro"
+    },
+    {
+      "slug": "caterpillar",
+      "qid": "Q459965",
+      "categories": [
+        "construction-heavy-equipment"
+      ],
+      "name": "Caterpillar"
+    },
+    {
+      "slug": "komatsu",
+      "qid": "Q162257",
+      "categories": [
+        "construction-heavy-equipment"
+      ],
+      "name": "Komatsu"
+    },
+    {
+      "slug": "jcb",
+      "qid": "Q1542317",
+      "categories": [
+        "construction-heavy-equipment"
+      ],
+      "name": "JCB"
+    },
+    {
+      "slug": "volvo-construction-equipment",
+      "qid": "Q617322",
+      "categories": [
+        "construction-heavy-equipment"
+      ],
+      "name": "Volvo Construction Equipment",
+      "suppress": [
+        "founded"
+      ],
+      "suppressReason": "Open data date refers to a predecessor company, not Volvo CE."
+    },
+    {
+      "slug": "ultratech-cement",
+      "qid": "Q7880419",
+      "categories": [
+        "cement-building-materials"
+      ],
+      "name": "UltraTech Cement"
+    },
+    {
+      "slug": "ambuja-cements",
+      "qid": "Q459976",
+      "categories": [
+        "cement-building-materials"
+      ],
+      "name": "Ambuja Cements"
+    },
+    {
+      "slug": "holcim",
+      "qid": "Q267818",
+      "categories": [
+        "cement-building-materials"
+      ],
+      "name": "Holcim"
+    },
+    {
+      "slug": "tata-steel",
+      "qid": "Q963101",
+      "categories": [
+        "steel-metals"
+      ],
+      "name": "Tata Steel"
+    },
+    {
+      "slug": "jsw-steel",
+      "qid": "Q6108978",
+      "categories": [
+        "steel-metals"
+      ],
+      "name": "JSW Steel"
+    },
+    {
+      "slug": "hindalco",
+      "qid": "Q1619261",
+      "categories": [
+        "steel-metals"
+      ],
+      "name": "Hindalco"
+    },
+    {
+      "slug": "arcelormittal",
+      "qid": "Q27893",
+      "categories": [
+        "steel-metals"
+      ],
+      "name": "ArcelorMittal"
+    },
+    {
+      "slug": "honeywell",
+      "qid": "Q898208",
+      "categories": [
+        "engineering-capital-goods"
+      ],
+      "name": "Honeywell"
+    },
+    {
+      "slug": "bhel",
+      "qid": "Q854820",
+      "categories": [
+        "engineering-capital-goods"
+      ],
+      "name": "BHEL"
+    },
+    {
+      "slug": "cummins",
+      "qid": "Q173476",
+      "categories": [
+        "engineering-capital-goods"
+      ],
+      "name": "Cummins"
+    },
+    {
+      "slug": "adani-ports",
+      "qid": "Q16058076",
+      "categories": [
+        "ports-infrastructure"
+      ],
+      "name": "Adani Ports"
+    },
+    {
+      "slug": "dp-world",
+      "qid": "Q1154956",
+      "categories": [
+        "ports-infrastructure"
+      ],
+      "name": "DP World"
+    },
+    {
+      "slug": "psa-international",
+      "qid": "Q1012832",
+      "categories": [
+        "ports-infrastructure"
+      ],
+      "name": "PSA International"
+    },
+    {
+      "slug": "ongc",
+      "qid": "Q1430541",
+      "categories": [
+        "oil-gas"
+      ],
+      "name": "ONGC"
+    },
+    {
+      "slug": "reliance-industries",
+      "qid": "Q908931",
+      "categories": [
+        "oil-gas"
+      ],
+      "name": "Reliance Industries"
+    },
+    {
+      "slug": "exxonmobil",
+      "qid": "Q156238",
+      "categories": [
+        "oil-gas"
+      ],
+      "name": "ExxonMobil"
+    },
+    {
+      "slug": "chevron",
+      "qid": "Q319642",
+      "categories": [
+        "oil-gas"
+      ],
+      "name": "Chevron"
+    },
+    {
+      "slug": "shell",
+      "qid": "Q154950",
+      "categories": [
+        "oil-gas"
+      ],
+      "name": "Shell"
+    },
+    {
+      "slug": "tata-power",
+      "qid": "Q1814429",
+      "categories": [
+        "power-utilities"
+      ],
+      "name": "Tata Power"
+    },
+    {
+      "slug": "adani-power",
+      "qid": "Q1852211",
+      "categories": [
+        "power-utilities"
+      ],
+      "name": "Adani Power"
+    },
+    {
+      "slug": "nextera-energy",
+      "qid": "Q967868",
+      "categories": [
+        "power-utilities"
+      ],
+      "name": "NextEra Energy"
+    },
+    {
+      "slug": "edf",
+      "qid": "Q274591",
+      "categories": [
+        "power-utilities"
+      ],
+      "name": "EDF"
+    },
+    {
+      "slug": "adani-green-energy",
+      "qid": "Q83473736",
+      "categories": [
+        "renewable-energy"
+      ],
+      "name": "Adani Green Energy"
+    },
+    {
+      "slug": "suzlon",
+      "qid": "Q1402563",
+      "categories": [
+        "renewable-energy"
+      ],
+      "name": "Suzlon"
+    },
+    {
+      "slug": "vestas",
+      "qid": "Q868259",
+      "categories": [
+        "renewable-energy"
+      ],
+      "name": "Vestas"
+    },
+    {
+      "slug": "first-solar",
+      "qid": "Q1138888",
+      "categories": [
+        "renewable-energy"
+      ],
+      "name": "First Solar"
+    },
+    {
+      "slug": "rsted",
+      "qid": "Q1241260",
+      "categories": [
+        "renewable-energy"
+      ],
+      "name": "Ørsted"
+    },
+    {
+      "slug": "lg-energy-solution",
+      "qid": "Q109464416",
+      "categories": [
+        "battery-storage"
+      ],
+      "name": "LG Energy Solution"
+    },
+    {
+      "slug": "exide-industries",
+      "qid": "Q5420252",
+      "categories": [
+        "battery-storage"
+      ],
+      "name": "Exide Industries"
+    },
+    {
+      "slug": "tata-chemicals",
+      "qid": "Q2331365",
+      "categories": [
+        "chemicals-materials"
+      ],
+      "name": "Tata Chemicals"
+    },
+    {
+      "slug": "basf",
+      "qid": "Q9401",
+      "categories": [
+        "chemicals-materials"
+      ],
+      "name": "BASF"
+    },
+    {
+      "slug": "apollo-hospitals",
+      "qid": "Q4780321",
+      "categories": [
+        "hospitals-healthcare"
+      ],
+      "name": "Apollo Hospitals"
+    },
+    {
+      "slug": "fortis-healthcare",
+      "qid": "Q7810035",
+      "categories": [
+        "hospitals-healthcare"
+      ],
+      "name": "Fortis Healthcare"
+    },
+    {
+      "slug": "max-healthcare",
+      "qid": "Q6794859",
+      "categories": [
+        "hospitals-healthcare"
+      ],
+      "name": "Max Healthcare"
+    },
+    {
+      "slug": "hca-healthcare",
+      "qid": "Q1630431",
+      "categories": [
+        "hospitals-healthcare"
+      ],
+      "name": "HCA Healthcare"
+    },
+    {
+      "slug": "sun-pharma",
+      "qid": "Q3291801",
+      "categories": [
+        "pharmaceuticals"
+      ],
+      "name": "Sun Pharma"
+    },
+    {
+      "slug": "cipla",
+      "qid": "Q905572",
+      "categories": [
+        "pharmaceuticals"
+      ],
+      "name": "Cipla"
+    },
+    {
+      "slug": "dr-reddy-s",
+      "qid": "Q908961",
+      "categories": [
+        "pharmaceuticals"
+      ],
+      "name": "Dr. Reddy's"
+    },
+    {
+      "slug": "pfizer",
+      "qid": "Q206921",
+      "categories": [
+        "pharmaceuticals"
+      ],
+      "name": "Pfizer"
+    },
+    {
+      "slug": "eli-lilly",
+      "qid": "Q632240",
+      "categories": [
+        "pharmaceuticals"
+      ],
+      "name": "Eli Lilly"
+    },
+    {
+      "slug": "dr-lal-pathlabs",
+      "qid": "Q23198401",
+      "categories": [
+        "diagnostics"
+      ],
+      "name": "Dr Lal PathLabs"
+    },
+    {
+      "slug": "thyrocare",
+      "qid": "Q28103648",
+      "categories": [
+        "diagnostics"
+      ],
+      "name": "Thyrocare"
+    },
+    {
+      "slug": "quest-diagnostics",
+      "qid": "Q7271456",
+      "categories": [
+        "diagnostics"
+      ],
+      "name": "Quest Diagnostics"
+    },
+    {
+      "slug": "roche-diagnostics",
+      "qid": "Q1592110",
+      "categories": [
+        "diagnostics"
+      ],
+      "name": "Roche Diagnostics"
+    },
+    {
+      "slug": "medtronic",
+      "qid": "Q642189",
+      "categories": [
+        "medical-devices"
+      ],
+      "name": "Medtronic"
+    },
+    {
+      "slug": "abbott",
+      "qid": "Q306764",
+      "categories": [
+        "medical-devices"
+      ],
+      "name": "Abbott"
+    },
+    {
+      "slug": "siemens-healthineers",
+      "qid": "Q472451",
+      "categories": [
+        "medical-devices"
+      ],
+      "name": "Siemens Healthineers"
+    },
+    {
+      "slug": "ge-healthcare",
+      "qid": "Q1152374",
+      "categories": [
+        "medical-devices"
+      ],
+      "name": "GE HealthCare"
+    },
+    {
+      "slug": "nestl",
+      "qid": "Q160746",
+      "categories": [
+        "packaged-food"
+      ],
+      "name": "Nestlé"
+    },
+    {
+      "slug": "mondelez",
+      "qid": "Q12857502",
+      "categories": [
+        "packaged-food"
+      ],
+      "name": "Mondelez"
+    },
+    {
+      "slug": "pepsico",
+      "qid": "Q334800",
+      "categories": [
+        "packaged-food"
+      ],
+      "name": "PepsiCo"
+    },
+    {
+      "slug": "hindustan-unilever",
+      "qid": "Q1619376",
+      "categories": [
+        "fmcg-personal-care"
+      ],
+      "name": "Hindustan Unilever",
+      "suppress": [
+        "description"
+      ],
+      "suppressReason": "Open-data description contains a typo."
+    },
+    {
+      "slug": "pandg",
+      "qid": "Q212405",
+      "categories": [
+        "fmcg-personal-care"
+      ],
+      "name": "P&G"
+    },
+    {
+      "slug": "dabur",
+      "qid": "Q2723075",
+      "categories": [
+        "fmcg-personal-care"
+      ],
+      "name": "Dabur"
+    },
+    {
+      "slug": "colgate-palmolive",
+      "qid": "Q609466",
+      "categories": [
+        "fmcg-personal-care"
+      ],
+      "name": "Colgate-Palmolive"
+    },
+    {
+      "slug": "nike",
+      "qid": "Q483915",
+      "categories": [
+        "fashion-luxury"
+      ],
+      "name": "Nike"
+    },
+    {
+      "slug": "adidas",
+      "qid": "Q3895",
+      "categories": [
+        "fashion-luxury"
+      ],
+      "name": "Adidas"
+    },
+    {
+      "slug": "handm",
+      "qid": "Q188326",
+      "categories": [
+        "fashion-luxury"
+      ],
+      "name": "H&M"
+    },
+    {
+      "slug": "lvmh",
+      "qid": "Q504998",
+      "categories": [
+        "fashion-luxury"
+      ],
+      "name": "LVMH"
+    },
+    {
+      "slug": "tanishq",
+      "qid": "Q13117711",
+      "categories": [
+        "jewellery-watches"
+      ],
+      "name": "Tanishq"
+    },
+    {
+      "slug": "kalyan-jewellers",
+      "qid": "Q6354854",
+      "categories": [
+        "jewellery-watches"
+      ],
+      "name": "Kalyan Jewellers"
+    },
+    {
+      "slug": "dmart",
+      "qid": "Q5203271",
+      "categories": [
+        "retail-supermarkets"
+      ],
+      "name": "DMart"
+    },
+    {
+      "slug": "walmart",
+      "qid": "Q483551",
+      "categories": [
+        "retail-supermarkets"
+      ],
+      "name": "Walmart"
+    },
+    {
+      "slug": "costco",
+      "qid": "Q715583",
+      "categories": [
+        "retail-supermarkets"
+      ],
+      "name": "Costco"
+    },
+    {
+      "slug": "target",
+      "qid": "Q1046951",
+      "categories": [
+        "retail-supermarkets"
+      ],
+      "name": "Target"
+    },
+    {
+      "slug": "tesco",
+      "qid": "Q487494",
+      "categories": [
+        "retail-supermarkets"
+      ],
+      "name": "Tesco"
+    },
+    {
+      "slug": "ebay",
+      "qid": "Q58024",
+      "categories": [
+        "e-commerce-marketplaces"
+      ],
+      "name": "eBay"
+    },
+    {
+      "slug": "etsy",
+      "qid": "Q1353939",
+      "categories": [
+        "e-commerce-marketplaces"
+      ],
+      "name": "Etsy"
+    },
+    {
+      "slug": "alibaba",
+      "qid": "Q1359568",
+      "categories": [
+        "e-commerce-marketplaces"
+      ],
+      "name": "Alibaba"
+    },
+    {
+      "slug": "disney",
+      "qid": "Q7414",
+      "categories": [
+        "film-streaming"
+      ],
+      "name": "Disney"
+    },
+    {
+      "slug": "universal-music-group",
+      "qid": "Q38903",
+      "categories": [
+        "music-audio"
+      ],
+      "name": "Universal Music Group"
+    },
+    {
+      "slug": "saregama",
+      "qid": "Q122575",
+      "categories": [
+        "music-audio"
+      ],
+      "name": "Saregama"
+    },
+    {
+      "slug": "espn",
+      "qid": "Q217776",
+      "categories": [
+        "sports-media"
+      ],
+      "name": "ESPN"
+    },
+    {
+      "slug": "fifa",
+      "qid": "Q253414",
+      "categories": [
+        "sports-media"
+      ],
+      "name": "FIFA"
+    },
+    {
+      "slug": "nba",
+      "qid": "Q155223",
+      "categories": [
+        "sports-media"
+      ],
+      "name": "NBA",
+      "suppress": [
+        "country",
+        "headquarters"
+      ],
+      "suppressReason": "Open data lists Canada; the league is headquartered in the United States."
+    },
+    {
+      "slug": "dream11",
+      "qid": "Q53080990",
+      "categories": [
+        "sports-media"
+      ],
+      "name": "Dream11"
+    },
+    {
+      "slug": "coursera",
+      "qid": "Q499962",
+      "categories": [
+        "education-edtech"
+      ],
+      "name": "Coursera"
+    },
+    {
+      "slug": "udemy",
+      "qid": "Q7877165",
+      "categories": [
+        "education-edtech"
+      ],
+      "name": "Udemy"
+    },
+    {
+      "slug": "upgrad",
+      "qid": "Q123512446",
+      "categories": [
+        "education-edtech"
+      ],
+      "name": "upGrad"
+    },
+    {
+      "slug": "unacademy",
+      "qid": "Q42417624",
+      "categories": [
+        "education-edtech"
+      ],
+      "name": "Unacademy"
+    },
+    {
+      "slug": "pearson",
+      "qid": "Q1916402",
+      "categories": [
+        "education-edtech"
+      ],
+      "name": "Pearson"
+    },
+    {
+      "slug": "deloitte",
+      "qid": "Q491748",
+      "categories": [
+        "consulting-professional-services"
+      ],
+      "name": "Deloitte"
+    },
+    {
+      "slug": "ey",
+      "qid": "Q489097",
+      "categories": [
+        "consulting-professional-services"
+      ],
+      "name": "EY"
+    },
+    {
+      "slug": "kpmg",
+      "qid": "Q493751",
+      "categories": [
+        "consulting-professional-services"
+      ],
+      "name": "KPMG"
+    },
+    {
+      "slug": "pwc",
+      "qid": "Q488048",
+      "categories": [
+        "consulting-professional-services"
+      ],
+      "name": "PwC"
+    },
+    {
+      "slug": "accenture",
+      "qid": "Q338825",
+      "categories": [
+        "consulting-professional-services"
+      ],
+      "name": "Accenture"
+    },
+    {
+      "slug": "national-stock-exchange-of-india",
+      "qid": "Q638740",
+      "categories": [
+        "exchanges"
+      ],
+      "name": "National Stock Exchange of India"
+    },
+    {
+      "slug": "fidelity-investments",
+      "qid": "Q1411292",
+      "categories": [
+        "asset-management"
+      ],
+      "name": "Fidelity Investments"
+    },
+    {
+      "slug": "snowflake",
+      "qid": "Q22078063",
+      "categories": [
+        "data-platforms"
+      ],
+      "displayName": "Snowflake",
+      "name": "Snowflake"
+    },
+    {
+      "slug": "ups",
+      "qid": "Q155026",
+      "categories": [
+        "logistics-courier"
+      ],
+      "displayName": "UPS",
+      "name": "UPS"
+    },
+    {
+      "slug": "blue-dart-express",
+      "qid": "Q54621493",
+      "categories": [
+        "logistics-courier"
+      ],
+      "name": "Blue Dart Express"
+    },
+    {
+      "slug": "msc",
+      "qid": "Q869570",
+      "categories": [
+        "shipping-maritime"
+      ],
+      "displayName": "MSC",
+      "name": "MSC"
+    },
+    {
+      "slug": "cosco-shipping-holdings",
+      "qid": "Q5099614",
+      "categories": [
+        "shipping-maritime"
+      ],
+      "name": "COSCO Shipping Holdings"
+    },
+    {
+      "slug": "vedanta-limited",
+      "qid": "Q3958138",
+      "categories": [
+        "steel-metals"
+      ],
+      "name": "Vedanta Limited"
+    },
+    {
+      "slug": "broadcom",
+      "qid": "Q790060",
+      "categories": [
+        "semiconductors"
+      ],
+      "name": "Broadcom"
+    },
+    {
+      "slug": "microsoft",
+      "qid": "Q2283",
+      "categories": [
+        "cloud-computing",
+        "enterprise-software",
+        "crm-sales-tech"
+      ],
+      "name": "Microsoft"
+    },
+    {
+      "slug": "alphabet",
+      "qid": "Q20800404",
+      "categories": [
+        "cloud-computing",
+        "artificial-intelligence"
+      ],
+      "name": "Alphabet"
+    },
+    {
+      "slug": "oracle",
+      "qid": "Q19900",
+      "categories": [
+        "cloud-computing",
+        "enterprise-software"
+      ],
+      "displayName": "Oracle",
+      "name": "Oracle"
+    },
+    {
+      "slug": "ibm",
+      "qid": "Q37156",
+      "categories": [
+        "cloud-computing",
+        "enterprise-software"
+      ],
+      "name": "IBM"
+    },
+    {
+      "slug": "spotify-technology",
+      "qid": "Q60269744",
+      "categories": [
+        "music-audio"
+      ],
+      "name": "Spotify Technology"
+    },
+    {
+      "slug": "srf-limited",
+      "qid": "Q7392815",
+      "categories": [
+        "chemicals-materials"
+      ],
+      "name": "SRF Limited"
+    },
+    {
+      "slug": "itc-limited",
+      "qid": "Q1655008",
+      "categories": [
+        "packaged-food",
+        "fmcg-personal-care"
+      ],
+      "name": "ITC Limited"
+    },
+    {
+      "slug": "life-insurance-corporation-of-india",
+      "qid": "Q2767170",
+      "categories": [
+        "life-insurance"
+      ],
+      "name": "Life Insurance Corporation of India"
+    },
+    {
+      "slug": "acko-general-insurance",
+      "qid": "Q60750850",
+      "categories": [
+        "general-insurance"
+      ],
+      "name": "Acko General Insurance"
+    },
+    {
+      "slug": "acc-limited",
+      "qid": "Q649343",
+      "categories": [
+        "cement-building-materials"
+      ],
+      "name": "ACC Limited"
+    },
+    {
+      "slug": "jsw-infrastructure",
+      "qid": "Q6108976",
+      "categories": [
+        "ports-infrastructure"
+      ],
+      "name": "JSW Infrastructure"
+    },
+    {
+      "slug": "ntpc-limited",
+      "qid": "Q1967805",
+      "categories": [
+        "power-utilities"
+      ],
+      "name": "NTPC Limited"
+    },
+    {
+      "slug": "catl",
+      "qid": "Q18653563",
+      "categories": [
+        "battery-storage"
+      ],
+      "displayName": "CATL",
+      "name": "CATL"
+    },
+    {
+      "slug": "dow",
+      "qid": "Q62739842",
+      "categories": [
+        "chemicals-materials"
+      ],
+      "name": "Dow"
+    },
+    {
+      "slug": "stryker",
+      "qid": "Q2357515",
+      "categories": [
+        "medical-devices"
+      ],
+      "name": "Stryker"
+    },
+    {
+      "slug": "britannia-industries",
+      "qid": "Q4969284",
+      "categories": [
+        "packaged-food"
+      ],
+      "name": "Britannia Industries"
+    },
+    {
+      "slug": "inditex",
+      "qid": "Q44504",
+      "categories": [
+        "fashion-luxury"
+      ],
+      "name": "Inditex"
+    },
+    {
+      "slug": "titan-company",
+      "qid": "Q3536932",
+      "categories": [
+        "jewellery-watches"
+      ],
+      "displayName": "Titan Company",
+      "name": "Titan Company"
+    },
+    {
+      "slug": "richemont",
+      "qid": "Q689240",
+      "categories": [
+        "jewellery-watches",
+        "fashion-luxury"
+      ],
+      "name": "Richemont"
+    },
+    {
+      "slug": "formula-one-group",
+      "qid": "Q174035",
+      "categories": [
+        "sports-media"
+      ],
+      "name": "Formula One Group",
+      "suppress": [
+        "founded",
+        "country"
+      ],
+      "suppressReason": "Open data values describe a predecessor entity and are unreliable."
     }
   ]
 }

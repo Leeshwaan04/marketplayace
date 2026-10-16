@@ -14,6 +14,7 @@ const urls = [
   ['/methodology', 'monthly', '0.5'],
   ['/about', 'monthly', '0.4'],
   ['/privacy', 'yearly', '0.2'],
+  ['/terms', 'yearly', '0.2'],
   ...categorySlugs.map((s) => [`/category/${s}`, 'weekly', '0.6']),
   ...companies.map((c) => [`/company/${c.slug}`, 'weekly', '0.7'])
 ]

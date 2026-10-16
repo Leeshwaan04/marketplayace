@@ -124,6 +124,7 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
                 </Link>
               ) : null
             })}
+            <Link to={{ page: 'compare', slugs: [c.slug] }} className="text-sm text-accent hover:underline">Compare</Link>
             {c.website && (
               <a href={c.website.value} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
                 Official website <ExternalLink className="h-3.5 w-3.5" aria-hidden />
@@ -221,7 +222,7 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
             </ul>
             <p className="mt-3 text-xs text-ink-faint">
               Retrieved {c.description?.retrievedAt ?? c.founded?.retrievedAt ?? 'recently'}. Wikidata is open data
-              under CC0 and can contain errors. Where a US filing exists, we use the SEC record instead. See our{' '}
+              under CC0 and is community-maintained: facts credited to Wikidata have not been individually checked by us and can be wrong. Where a US filing exists, we use the SEC record instead. See our{' '}
               <Link to={{ page: 'methodology' }} className="underline hover:text-accent">methodology</Link>.
             </p>
             {SITE.contactEmail && (

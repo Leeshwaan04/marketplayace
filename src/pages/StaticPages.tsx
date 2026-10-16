@@ -62,7 +62,7 @@ export const MethodologyPage: React.FC = () => {
         <ul>
           <li>If we have no verified value, the profile says so. We do not estimate, round up or infer.</li>
           <li>Figures dated three or more years ago are flagged as possibly out of date.</li>
-          <li>Open data can be wrong or lag behind events. Financial figures are not live and are not investment advice.</li>
+          <li>Facts credited to Wikidata are community-maintained and have not been individually checked by us. When we find a value that is wrong upstream, we blank it and record why, rather than show it. Open data can be wrong or lag behind events. Financial figures are not live and are not investment advice.</li>
         </ul>
       </section>
       <section>
@@ -179,6 +179,67 @@ export const PrivacyPage: React.FC = () => {
       <section>
         <h2>Changes</h2>
         <p>If we add analytics or accounts, we will update this page before we do and say what changes.</p>
+      </section>
+    </Doc>
+  )
+}
+
+export const TermsPage: React.FC = () => {
+  useSeo({
+    title: 'Terms of use',
+    description: 'The terms for using Marketplayace: informational use only, no investment advice, accuracy limits and trademark notices.',
+    path: '/terms'
+  })
+  return (
+    <Doc title="Terms of use" intro="Plain-language terms for using this site.">
+      <section>
+        <h2>Information only</h2>
+        <p>
+          Marketplayace publishes reference information about companies. It is not investment, legal, tax or financial advice,
+          and nothing on the site is an offer or recommendation to buy or sell any security or product. Do your own research
+          and consult a qualified adviser before making decisions.
+        </p>
+      </section>
+      <section>
+        <h2>Accuracy</h2>
+        <p>
+          We link every fact to its source and show when we retrieved it, but sources can be wrong, incomplete or out of date,
+          and we cannot guarantee that anything is accurate or current. Check the linked source before relying on a figure. See
+          the <Link to={{ page: 'methodology' }}>methodology</Link> for how we handle gaps and errors.
+        </p>
+      </section>
+      <section>
+        <h2>Trademarks and affiliation</h2>
+        <p>
+          Company names, logos and marks belong to their owners and are used only to identify the companies described. We are
+          not affiliated with, sponsored by or endorsed by any company profiled, and no company pays for inclusion.
+        </p>
+      </section>
+      <section>
+        <h2>Labs</h2>
+        <p>
+          Labs contains sample listings for testing ideas. Nothing there is for sale, no payment is taken, and no order will be
+          fulfilled.
+        </p>
+      </section>
+      <section>
+        <h2>Your use of the site</h2>
+        <ul>
+          <li>Do not attempt to disrupt the site or access it in ways that place unreasonable load on it.</li>
+          <li>You may link to any page. If you quote our compiled data, credit Marketplayace and the original source.</li>
+          <li>Underlying open data (for example Wikidata) remains under its own licence.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Liability</h2>
+        <p>
+          The site is provided as is. To the extent the law allows, we are not liable for losses arising from use of, or
+          reliance on, the information published here.
+        </p>
+      </section>
+      <section>
+        <h2>Changes</h2>
+        <p>We may update these terms as the site evolves. The current version is always on this page.</p>
       </section>
     </Doc>
   )

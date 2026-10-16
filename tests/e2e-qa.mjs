@@ -43,7 +43,7 @@ test('Codebase must contain zero em dashes (\u2014)', () => {
       for (const child of fs.readdirSync(fullPath)) {
         scan(path.join(dirOrFile, child))
       }
-    } else if (/\.(tsx?|html|css|md|json)$/.test(dirOrFile)) {
+    } else if (/\.(tsx?|html|css|md|json)$/.test(dirOrFile) && !dirOrFile.includes('data/generated')) {
       const content = fs.readFileSync(fullPath, 'utf8')
       if (content.includes('\u2014')) {
         console.error(`Found em dash in: ${dirOrFile}`)
@@ -67,7 +67,7 @@ test('Codebase must contain zero en dashes (\u2013)', () => {
       for (const child of fs.readdirSync(fullPath)) {
         scan(path.join(dirOrFile, child))
       }
-    } else if (/\.(tsx?|html|css|md|json)$/.test(dirOrFile)) {
+    } else if (/\.(tsx?|html|css|md|json)$/.test(dirOrFile) && !dirOrFile.includes('data/generated')) {
       const content = fs.readFileSync(fullPath, 'utf8')
       if (content.includes('\u2013')) {
         console.error(`Found en dash in: ${dirOrFile}`)

@@ -24,6 +24,7 @@ export const Footer: React.FC = () => (
         <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">Explore</h3>
         <ul className="space-y-2">
           <li><Link to={{ page: 'categories' }} className="hover:text-white">Industries</Link></li>
+          <li><Link to={{ page: 'compare', slugs: [] }} className="hover:text-white">Compare companies</Link></li>
           <li><Link to={{ page: 'labs', tab: 'floor' }} className="hover:text-white">Labs (sample listings)</Link></li>
         </ul>
       </nav>
@@ -34,6 +35,7 @@ export const Footer: React.FC = () => (
           <li><Link to={{ page: 'methodology' }} className="hover:text-white">Methodology</Link></li>
           <li><Link to={{ page: 'about' }} className="hover:text-white">About</Link></li>
           <li><Link to={{ page: 'privacy' }} className="hover:text-white">Privacy</Link></li>
+          <li><Link to={{ page: 'terms' }} className="hover:text-white">Terms</Link></li>
           {SITE.contactEmail && <li><a href={`mailto:${SITE.contactEmail}`} className="hover:text-white">Contact</a></li>}
         </ul>
       </nav>
