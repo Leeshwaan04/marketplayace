@@ -1,0 +1,12 @@
+{
+  "category": "banking",
+  "includes": [
+    { "via": "P31", "qid": "Q22687", "why": "instance of (a subclass of) bank" }
+  ],
+  "requireTypes": ["Q4830453"],
+  "minSitelinks": 14,
+  "excludeQids": [],
+  "excludeLabelRegex": "",
+  "maxCount": 150,
+  "notes": ""
+}

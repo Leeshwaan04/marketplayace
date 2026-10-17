@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Pulls verifiable company facts from Wikidata and writes src/data/generated/companies.json.
+ * Pulls verifiable company facts from Wikidata (plus SEC EDGAR for US filers) and writes the generated
+ * company data: a light index in src/data/generated/ and full records in public/data/ shards.
  *
  * Rules that keep the data trustworthy (E-E-A-T):
  *  - Only QIDs a human put in scripts/registry.json are fetched; nothing is guessed.
@@ -8,16 +9,32 @@
  *  - Missing data stays missing. We never fill gaps with invented values.
  *  - Logos are only used when Wikimedia Commons reports a free licence; otherwise null.
  *
- * Run: node scripts/sync-wikidata.mjs
+ * Run: node scripts/sync-wikidata.mjs          sync only registry entries not yet generated (fast)
+ *      node scripts/sync-wikidata.mjs --all    re-fetch everything
  */
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readAllCompanies, writeAllCompanies } from './lib/data.mjs'
 
 const UA = { 'User-Agent': 'marketplayace-data-sync/1.0 (https://marketplayace.com; sumit.bagewadi@indiabulls.com)' }
 const API = 'https://www.wikidata.org/w/api.php'
 const retrievedAt = new Date().toISOString().slice(0, 10)
 
 const registry = JSON.parse(await readFile(new URL('./registry.json', import.meta.url)))
-const entries = registry.companies.filter((c) => c.qid)
+const ALL = process.argv.includes('--all')
+const previous = ALL ? [] : await readAllCompanies()
+const have = new Set(previous.map((c) => c.slug))
+// Incremental by default: only registry entries we have no record for yet.
+const registered = registry.companies.filter((c) => c.qid)
+const entries = registered.filter((c) => ALL || !have.has(c.slug))
+console.log(`registry: ${registered.length} entries, ${previous.length} already generated, fetching ${entries.length}`)
+if (entries.length === 0) {
+  // Registry-only changes (categories, overrides) still need to be applied to existing records.
+  const by = new Map(registered.map((c) => [c.slug, c]))
+  for (const r of previous) if (by.get(r.slug)) r.categories = by.get(r.slug).categories ?? r.categories
+  await writeAllCompanies(previous, new Date().toISOString().slice(0, 10))
+  console.log('nothing new to fetch; index rewritten')
+  process.exit(0)
+}
 
 async function wd(params) {
   const url = `${API}?${new URLSearchParams({ format: 'json', origin: '*', ...params })}`
@@ -110,6 +127,25 @@ async function logoFor(e, slug) {
   return { usable: true, path: `/logos/${slug}.${ext}`, ...base }
 }
 
+// Download logos with a small worker pool (the Commons API and file CDN are the slow part).
+async function pool(items, size, fn) {
+  const results = new Array(items.length)
+  let next = 0
+  await Promise.all(Array.from({ length: size }, async () => {
+    while (next < items.length) {
+      const i = next++
+      try { results[i] = await fn(items[i]) } catch (err) { console.warn(`! logo ${items[i].slug}: ${err.message}`); results[i] = null }
+    }
+  }))
+  return results
+}
+const logoResults = new Map()
+{
+  const todo = entries.filter((e) => entities[e.qid] && e.qid && entities[e.qid].missing === undefined)
+  const got = await pool(todo, 6, (e) => logoFor(entities[e.qid], e.slug))
+  todo.forEach((e, i) => logoResults.set(e.slug, got[i]))
+}
+
 // 4) Build records
 const currencyLabel = {}
 const out = []
@@ -149,7 +185,8 @@ for (const entry of entries) {
     revenue: fact(revenue, q, 'P2139'),
     netIncome: fact(netIncome, q, 'P2295'),
     marketCap: fact(marketCap, q, 'P2226'),
-    logo: await logoFor(e, entry.slug),
+    logo: logoResults.get(entry.slug) ?? null,
+    sitelinks: Object.keys(e.sitelinks ?? {}).length,
     categories: entry.categories ?? [],
     wikipedia: e.sitelinks?.enwiki ? `https://en.wikipedia.org/wiki/${encodeURIComponent(e.sitelinks.enwiki.title.replace(/ /g, '_'))}` : null,
     dataNote: entry.dataNote ?? null
@@ -235,7 +272,11 @@ for (const r of out) {
   }
 }
 
-await writeFile(new URL('../src/data/generated/companies.json', import.meta.url), JSON.stringify({ generatedAt: retrievedAt, source: 'Wikidata (CC0)', companies: out }, null, 2) + '\n')
+// Merge with records from earlier runs, then write the index and shards.
+const mergedBySlug = new Map(previous.map((c) => [c.slug, c]))
+for (const r of out) mergedBySlug.set(r.slug, r)
+const merged = [...mergedBySlug.values()]
+await writeAllCompanies(merged, retrievedAt)
 
 // Coverage report
 const fields = ['founded', 'headquarters', 'founders', 'website', 'listings', 'employees', 'revenue', 'marketCap']

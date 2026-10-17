@@ -1,0 +1,9 @@
+{
+  "category": "automobile-manufacturers",
+  "includes": [
+    { "via": "P31", "qid": "Q786820", "why": "instance of automobile manufacturer" },
+    { "via": "P31", "qid": "Q10429667", "why": "instance of car brand" }
+  ],
+  "minSitelinks": 8,
+  "maxCount": 400
+}

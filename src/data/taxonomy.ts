@@ -105,7 +105,26 @@ const rows: Row[] = [
   ['education-edtech', 'Education and edtech', 'media-services', 'Online learning platforms and education publishers.', ['Coursera', 'Udemy', 'upGrad', 'Unacademy', 'Pearson']],
   ['consulting-professional-services', 'Consulting, audit and professional services', 'media-services', 'Audit, tax, advisory and consulting firms.', ['Deloitte', 'EY', 'KPMG', 'PwC', 'Accenture']],
   ['travel-hospitality', 'Travel and hospitality', 'media-services', 'Online travel agencies, hotels and lodging platforms.'],
-  ['jobs-hr', 'Jobs and HR', 'media-services', 'Job boards, recruiting and HR technology.']
+  ['jobs-hr', 'Jobs and HR', 'media-services', 'Job boards, recruiting and HR technology.'],
+  ['ai-tools', 'AI tools and models', 'technology', 'Chatbots, image and video generators, coding assistants and the foundation models behind them.'],
+  ['telecom', 'Telecommunications', 'technology', 'Mobile, broadband and network operators and equipment makers.'],
+  ['social-media', 'Social media and internet platforms', 'technology', 'Social networks, messaging apps, search engines and large consumer internet platforms.'],
+  ['smartphones', 'Smartphones and mobile devices', 'technology', 'Makers of smartphones, tablets and wearables.'],
+  ['automobile-manufacturers', 'Automobile manufacturers', 'mobility', 'Makers of passenger cars and SUVs, by country of origin.'],
+  ['motorcycles-two-wheelers', 'Motorcycles and two-wheelers', 'mobility', 'Makers of motorcycles, scooters and mopeds.'],
+  ['commercial-vehicles', 'Trucks, buses and commercial vehicles', 'mobility', 'Makers of trucks, buses and heavy commercial vehicles.'],
+  ['tyres-rubber', 'Tyres and rubber', 'mobility', 'Tyre makers and rubber product companies.'],
+  ['footwear', 'Footwear', 'consumer', 'Shoe, sneaker and boot brands and manufacturers, by country.'],
+  ['apparel-garments', 'Apparel and garments', 'consumer', 'Clothing brands and garment makers, by country.'],
+  ['sportswear-athleisure', 'Sportswear and athleisure', 'consumer', 'Sports apparel, equipment and athleisure brands.'],
+  ['beauty-cosmetics', 'Beauty and cosmetics', 'consumer', 'Cosmetics, skincare and fragrance brands.'],
+  ['beverages', 'Beverages', 'consumer', 'Soft drink, water, juice, coffee and tea brands.'],
+  ['alcoholic-beverages', 'Beer, wine and spirits', 'consumer', 'Breweries, wineries and distillers.'],
+  ['restaurants-fast-food', 'Restaurants and fast food', 'consumer', 'Restaurant chains and quick-service food brands.'],
+  ['home-appliances', 'Home appliances', 'consumer', 'Makers of household and kitchen appliances.'],
+  ['furniture-home', 'Furniture and home goods', 'consumer', 'Furniture, furnishing and home improvement brands.'],
+  ['toys-games', 'Toys and games', 'consumer', 'Toy makers and tabletop and board game companies.'],
+  ['hotels-resorts', 'Hotels and resorts', 'media-services', 'Hotel chains, resort groups and hospitality brands.']
 ]
 
 export const CATEGORIES: Category[] = rows.map(([slug, name, group, description, planned]) => ({
