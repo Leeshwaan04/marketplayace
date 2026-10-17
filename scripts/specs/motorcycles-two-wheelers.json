@@ -1,0 +1,33 @@
+{
+  "category": "motorcycles-two-wheelers",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q15081030",
+      "why": "instance of motorcycle manufacturer",
+      "exact": true
+    }
+  ],
+  "minSitelinks": 5,
+  "maxCount": 300,
+  "excludeLabelRegex": "(\\bAMG\\b|\\bBMW M\\b|Audi Sport|Gazoo|Peugeot Sport|Sportsline|Racing|Engineering|Motorenbau|do Brasil|Ford Germany|Ford of Europe|Stellantis Europe|North America|GM Korea|SAIC (General Motors|Volkswagen)|Scrambler|K ?1100|Simson S50|Manx|G50|Chetak|Racing Project|English Racing|March Engineering|Dallara|Kalex|Mercedes-Benz EQ|^Mercedes-Benz$|Geely Auto|Maḥmīyat|Automobiles Gonfaronnaises|Argus Motoren|Detroit Diesel|Ilmor|Italdesign|Bertone|Miele|Wilkinson|Barr and Stroud|Flottweg|Roper steam|Ner-A-Car|Hildebrand|Nymanbolagen|Tulamashzavod|FSO Syrena|FSR Tarpan|FSC |Sevel|Tec-Mec|Kojima|OSCA|Osella|Cooper Car|China South Industries)",
+  "includeQids": [
+    {
+      "qid": "Q3300084",
+      "name": "TVS Motor Company"
+    },
+    {
+      "qid": "Q10910065",
+      "name": "Bajaj Auto"
+    },
+    {
+      "qid": "Q2668720",
+      "name": "Royal Enfield"
+    },
+    {
+      "qid": "Q24946444",
+      "name": "Ather Energy"
+    }
+  ],
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bformer\\b|\\bhistorical\\b|concept car|rare car|prototype|discontinued|\\bextinct\\b|one-off|coachbuilder|\\bbicycle and motorcycle\\b|group of companies|industrial group|engine (manufacturer|builder)|racing team|\\bjoint venture\\b|sub[- ]brand)"
+}

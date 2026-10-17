@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '../utils/nav'
-import { COMPANIES } from '../data/companies'
+import { INDEX } from '../data/companies'
 import { SITE } from '../config/site'
 
 const YEAR = new Date().getFullYear()
@@ -16,7 +16,7 @@ export const Footer: React.FC = () => (
           </span>
         </div>
         <p className="max-w-sm leading-relaxed">
-          Company and industry profiles where every fact shows its source. {COMPANIES.length} companies profiled so far.
+          Company and industry profiles where every fact shows its source. {INDEX.length.toLocaleString('en')} companies profiled so far.
         </p>
       </div>
 
@@ -24,6 +24,7 @@ export const Footer: React.FC = () => (
         <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">Explore</h3>
         <ul className="space-y-2">
           <li><Link to={{ page: 'categories' }} className="hover:text-white">Industries</Link></li>
+          <li><Link to={{ page: 'countries' }} className="hover:text-white">Countries</Link></li>
           <li><Link to={{ page: 'compare', slugs: [] }} className="hover:text-white">Compare companies</Link></li>
           <li><Link to={{ page: 'labs', tab: 'floor' }} className="hover:text-white">Labs (sample listings)</Link></li>
         </ul>

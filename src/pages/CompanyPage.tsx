@@ -3,7 +3,8 @@ import { ExternalLink, Clock } from 'lucide-react'
 import { Container, Breadcrumbs, CompanyCard, SectionTitle } from '../components/ui'
 import { CompanyLogo } from '../components/CompanyLogo'
 import { Link } from '../utils/nav'
-import { companyBySlug, companiesInCategory, formatMoney, type Company, type Sourced } from '../data/companies'
+import { companyLite, companiesInCategory, titleName, countrySlug, formatMoney, type Company, type Sourced } from '../data/companies'
+import { useCompanyDetails } from '../data/useCompanyDetails'
 import { categoryBySlug } from '../data/taxonomy'
 import { useSeo } from '../utils/seo'
 import { SITE } from '../config/site'
@@ -81,16 +82,20 @@ const orgJsonLd = (c: Company) => ({
 })
 
 export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
-  const company = companyBySlug(slug)
-  const primary = company ? categoryBySlug(company.categories[0]) : null
+  const lite = companyLite(slug)
+  const { details, loading, failed } = useCompanyDetails(lite ? [slug] : [])
+  const company = details[0] ?? null
+  const primary = lite ? categoryBySlug(lite.categories[0]) : null
 
   useSeo({
-    title: company ? `${company.name}: company profile and facts` : 'Company not found',
+    title: lite ? `${titleName(lite)}: company profile and facts` : 'Company not found',
     description: company
       ? companyDescription(company)
-      : 'This company profile does not exist.',
+      : lite
+        ? `${lite.name}. Company profile with sourced facts, each with its source and retrieval date.`
+        : 'This company profile does not exist.',
     path: `/company/${slug}`,
-    noindex: !company,
+    noindex: !lite,
     jsonLd: company
       ? [
           orgJsonLd(company),
@@ -107,9 +112,31 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
       : undefined
   })
 
-  if (!company) return <NotFoundPage />
+  if (!lite) return <NotFoundPage />
+  if (!company) {
+    return (
+      <Container className="pb-16 pt-8">
+        <Breadcrumbs items={[{ label: 'Home', to: { page: 'home' } }, ...(primary ? [{ label: primary.name, to: { page: 'category', slug: primary.slug } as const }] : []), { label: lite.name }]} />
+        <header className="flex flex-col gap-5 sm:flex-row sm:items-center">
+          <CompanyLogo name={lite.name} src={lite.logo} size="xl" />
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{lite.name}</h1>
+        </header>
+        <p className="mt-8 text-sm text-ink-muted" role="status">
+          {failed ? 'We could not load this profile. Check your connection and reload the page.' : loading ? 'Loading profile…' : ''}
+        </p>
+      </Container>
+    )
+  }
   const c = company
-  const peers = primary ? companiesInCategory(primary.slug).filter((x) => x.slug !== c.slug).slice(0, 6) : []
+  const countryName = c.country?.value ?? null
+  const peers = primary
+    ? (() => {
+        // Same industry first and, when we can, same country, then the most notable of the rest.
+        const all = companiesInCategory(primary.slug).filter((x) => x.slug !== c.slug)
+        const near = all.filter((x) => x.country === lite.country)
+        return [...near, ...all.filter((x) => !near.includes(x))].slice(0, 6)
+      })()
+    : []
   const hasFinancials = c.revenue || c.netIncome || c.marketCap
 
   return (
@@ -123,11 +150,16 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
       />
 
       <header className="flex flex-col gap-5 sm:flex-row sm:items-center">
-        <CompanyLogo company={c} size="xl" />
+        <CompanyLogo name={c.name} src={c.logo?.usable ? c.logo.path : null} size="xl" />
         <div className="min-w-0">
           <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{c.name}</h1>
           {c.description && <p className="mt-2 max-w-2xl text-ink-muted first-letter:uppercase">{c.description.value}</p>}
           {c.dataNote && <p className="mt-2 max-w-2xl text-sm text-ink-faint">Note: {c.dataNote}</p>}
+          {c.discovery === 'query' && (
+            <p className="mt-2 max-w-2xl text-sm text-ink-faint">
+              This profile was added automatically by an industry match on open data. Its facts have not been individually checked by us.
+            </p>
+          )}
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {c.categories.map((s) => {
               const k = categoryBySlug(s)
@@ -137,6 +169,11 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
                 </Link>
               ) : null
             })}
+            {countryName && (
+              <Link to={{ page: 'country', slug: countrySlug(countryName) }} className="rounded-full border border-line bg-surface-1 px-3 py-1 text-xs text-ink hover:border-line-strong">
+                {countryName}
+              </Link>
+            )}
             <Link to={{ page: 'compare', slugs: [c.slug] }} className="text-sm text-accent hover:underline">Compare</Link>
             {c.website && (
               <a href={c.website.value} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">

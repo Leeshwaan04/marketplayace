@@ -12,17 +12,22 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { pathToFileURL } from 'node:url'
 import path from 'node:path'
+import { readAllCompanies } from './lib/data.mjs'
+import { listRoutes } from './lib/routes.mjs'
 
 const root = new URL('..', import.meta.url).pathname
 const dist = path.join(root, 'dist')
 
-const { render } = await import(pathToFileURL(path.join(root, 'dist-server/entry-server.js')).href)
+const serverModule = await import(pathToFileURL(path.join(root, 'dist-server/entry-server.js')).href)
+const render = Object.assign((url) => serverModule.render(url), { setDetailProvider: serverModule.setDetailProvider })
 const template = await readFile(path.join(dist, 'index.html'), 'utf8')
 if (!template.includes('<div id="root"></div>')) throw new Error('dist/index.html is not the untouched client shell (run vite build first)')
 
-const companies = JSON.parse(await readFile(path.join(root, 'src/data/generated/companies.json'), 'utf8')).companies
-const taxonomy = await readFile(path.join(root, 'src/data/taxonomy.ts'), 'utf8')
-const categorySlugs = [...taxonomy.matchAll(/^\s*\['([a-z0-9-]+)', '/gm)].map((m) => m[1])
+// Full records are read from the shards on disk (the browser fetches the same files on demand).
+const details = new Map((await readAllCompanies()).map((c) => [c.slug, c]))
+render.setDetailProvider((slug) => details.get(slug) ?? null)
+const { routes, shells: shellRoutes, counts } = await listRoutes()
+console.log(`routes: ${routes.length} pages (${counts.companies} companies, ${counts.categories} industries, ${counts.countries} countries, ${counts.categoryCountry} industry-by-country)`)
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 const SITE = 'https://marketplayace.com'
@@ -66,30 +71,22 @@ let pages = 0
 const problems = []
 
 // Fully prerendered, indexable pages
-const full = [
-  '/', '/categories', '/methodology', '/about', '/privacy', '/terms',
-  ...categorySlugs.map((s) => `/category/${s}`),
-  ...companies.map((c) => `/company/${c.slug}`)
-]
-for (const url of full) {
+const titles = new Map()
+for (const url of routes) {
   const { html, seo } = render(url)
   if (!seo) { problems.push(`${url}: no SEO data captured`); continue }
   if (!/<h1[ >]/.test(html)) problems.push(`${url}: no <h1> in rendered HTML`)
-  if (seo.noindex) problems.push(`${url}: unexpectedly noindex`)
+  if (seo.noindex) problems.push(`${url}: unexpectedly noindex (route listed but page says it does not exist)`)
+  if (titles.has(seo.fullTitle)) problems.push(`${url}: duplicate title with ${titles.get(seo.fullTitle)}: ${seo.fullTitle}`)
+  titles.set(seo.fullTitle, url)
   const file = url === '/' ? 'index.html' : `${url.slice(1)}.html`
   await write(file, inject(seo, html, url))
   pages++
 }
 
 // Shell pages: not indexable, but must resolve (no 404) and carry correct meta.
-const shells = {
-  '/labs': 'Labs: shopping experiments with sample listings',
-  '/labs/vault': 'Labs: shopping experiments with sample listings',
-  '/labs/squad': 'Labs: shopping experiments with sample listings',
-  '/labs/studio': 'Labs: shopping experiments with sample listings',
-  '/compare': 'Compare companies'
-}
-for (const [url, title] of Object.entries(shells)) {
+for (const url of shellRoutes) {
+  const title = url.startsWith('/labs') ? 'Labs: shopping experiments with sample listings' : 'Compare companies'
   const seo = { title, fullTitle: `${title} | Marketplayace`, description: 'Interactive page. Content loads in the browser.', path: url, noindex: true }
   await write(`${url.slice(1)}.html`, inject(seo, '', null))
   pages++

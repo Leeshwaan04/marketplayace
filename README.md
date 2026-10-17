@@ -1,6 +1,6 @@
 # Marketplayace
 
-Company and industry intelligence for India and the world. Browse 61 industries and open a company profile in which **every fact links to its source and shows when it was retrieved**. Anything we cannot verify is left blank.
+Company and industry intelligence for India and the world. Browse 80 industries and open a company or brand profile, by country, in which **every fact links to its source and shows when it was retrieved**. Anything we cannot verify is left blank.
 
 Live at [marketplayace.com](https://marketplayace.com).
 
@@ -16,23 +16,32 @@ Live at [marketplayace.com](https://marketplayace.com).
 
 React 19, Vite, Tailwind CSS v4, TypeScript. Deployed to Cloudflare Pages. No analytics, cookies or third-party requests; fonts are self-hosted.
 
-## Routes
-
-`/` home · `/categories` · `/category/:slug` · `/company/:slug` · `/methodology` · `/about` · `/privacy` · `/labs`
-
 ## Data pipeline
 
+Two ways a company enters the site, and every profile says which:
+
+- **Matched by hand:** `scripts/registry.json` entries with a reviewed Wikidata `qid`, optional `overrides` (cited) and `suppress` (with a reason).
+- **Found by an industry rule:** `scripts/specs/<category>.json` describes how to find a category's companies in open data (classes, notability threshold, exclusions, plus a reviewed list of extra entities). Entries it adds are marked `source: "query"` and shown as "added automatically, not individually checked".
+
 ```bash
-npm run data:sync      # fetch facts + logos, regenerate sitemap.xml and robots.txt
+node scripts/resolve-names.mjs scripts/specs/curated/footwear.txt   # propose Wikidata matches for a list of brand names (review by hand)
+node scripts/enumerate.mjs scripts/specs/footwear.json --preview     # test a spec: candidates grouped by country
+node scripts/apply-specs.mjs [category ...]                          # merge spec results into the registry (prunes entries that no longer qualify)
+npm run data:sync                                                    # fetch facts + logos for new entries, rebuild index, shards and sitemap
+node scripts/sync-wikidata.mjs --all                                 # re-fetch every entry (refresh dates and countries)
 ```
 
-1. `scripts/registry.json` is the human-reviewed list of companies. Each entry maps our `slug` to a Wikidata `qid`, lists `categories`, and may carry `overrides` (with `source` and `reviewedAt`) and a public `dataNote`.
-2. `scripts/sync-wikidata.mjs` fetches facts, then replaces HQ and financials with SEC EDGAR data for 10-K filers. Output: `src/data/generated/companies.json` and `public/logos/`.
-3. `scripts/build-sitemap.mjs` writes `public/sitemap.xml` and `public/robots.txt`.
+Output layout: a light index (`src/data/generated/index.json`) ships in the app for lists, search and counts; full records live in 64 shards (`public/data/shard-NN.json`) that the browser fetches on demand and the prerender reads from disk. US filers get HQ, revenue and net income from SEC EDGAR; everything else from Wikidata (CC0). Financial figures without a period or currency are never published.
 
-**Add a company:** find its Wikidata QID, confirm it is the right entity (names are ambiguous), add an entry to `registry.json`, run `npm run data:sync`, and spot-check the output against the company's own site.
+**Coverage is bounded by open data.** A brand with no Wikidata entry (many regional brands) cannot be added this way. See `scripts/specs/README.md` for the spec format.
 
-Taxonomy lives in `src/data/taxonomy.ts`. The `planned` lists are coverage targets, not rankings.
+**Add a company by hand:** find its Wikidata QID, confirm it is the right entity, add an entry to `registry.json`, run `npm run data:sync`, and spot-check the output against the company's own site.
+
+Taxonomy lives in `src/data/taxonomy.ts` (the `planned` lists are coverage targets, not rankings).
+
+## Pages
+
+`/` · `/categories` · `/category/:industry` · `/category/:industry/:country` · `/countries` · `/country/:country` · `/company/:slug` · `/methodology` · `/about` · `/privacy` · `/terms` · `/compare` and `/labs` (not indexed). Every page except Compare and Labs is prerendered to static HTML at build time (`npm run build`).
 
 ## Scripts
 

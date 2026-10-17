@@ -1,0 +1,231 @@
+{
+  "category": "ai-tools",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q870780",
+      "exact": true,
+      "why": "chatbot"
+    },
+    {
+      "via": "P31",
+      "qid": "Q115305900",
+      "exact": true,
+      "why": "large language model"
+    },
+    {
+      "via": "P31",
+      "qid": "Q113940039",
+      "exact": true,
+      "why": "text-to-image model"
+    },
+    {
+      "via": "P31",
+      "qid": "Q119018971",
+      "exact": true,
+      "why": "generative AI website"
+    }
+  ],
+  "minSitelinks": 3,
+  "maxCount": 400,
+  "includeQids": [
+    {
+      "qid": "Q115564437",
+      "name": "ChatGPT"
+    },
+    {
+      "qid": "Q116758847",
+      "name": "Anthropic"
+    },
+    {
+      "qid": "Q118876059",
+      "name": "Claude"
+    },
+    {
+      "qid": "Q116698014",
+      "name": "Gemini"
+    },
+    {
+      "qid": "Q116793893",
+      "name": "Microsoft Copilot"
+    },
+    {
+      "qid": "Q107435063",
+      "name": "GitHub Copilot"
+    },
+    {
+      "qid": "Q124333951",
+      "name": "Perplexity AI"
+    },
+    {
+      "qid": "Q113070628",
+      "name": "Midjourney"
+    },
+    {
+      "qid": "Q113660857",
+      "name": "Stable Diffusion"
+    },
+    {
+      "qid": "Q123592234",
+      "name": "Stability AI"
+    },
+    {
+      "qid": "Q105078662",
+      "name": "DALL-E"
+    },
+    {
+      "qid": "Q116798355",
+      "name": "ElevenLabs"
+    },
+    {
+      "qid": "Q119718658",
+      "name": "Mistral AI"
+    },
+    {
+      "qid": "Q131577453",
+      "name": "DeepSeek"
+    },
+    {
+      "qid": "Q123361035",
+      "name": "Grok"
+    },
+    {
+      "qid": "Q116894231",
+      "name": "LLaMA"
+    },
+    {
+      "qid": "Q130234299",
+      "name": "Qwen"
+    },
+    {
+      "qid": "Q116894099",
+      "name": "Ernie Bot"
+    },
+    {
+      "qid": "Q115517493",
+      "name": "Character.ai"
+    },
+    {
+      "qid": "Q108943604",
+      "name": "Hugging Face"
+    },
+    {
+      "qid": "Q110363143",
+      "name": "Cohere"
+    },
+    {
+      "qid": "Q16840770",
+      "name": "Grammarly"
+    },
+    {
+      "qid": "Q43968444",
+      "name": "DeepL"
+    },
+    {
+      "qid": "Q120487902",
+      "name": "Adobe Firefly"
+    },
+    {
+      "qid": "Q124157014",
+      "name": "Leonardo AI"
+    },
+    {
+      "qid": "Q117322900",
+      "name": "Synthesia"
+    },
+    {
+      "qid": "Q123258741",
+      "name": "HeyGen"
+    },
+    {
+      "qid": "Q135998012",
+      "name": "Lovable"
+    },
+    {
+      "qid": "Q134437782",
+      "name": "Sarvam AI"
+    },
+    {
+      "qid": "Q65172862",
+      "name": "Otter.ai"
+    },
+    {
+      "qid": "Q582159",
+      "name": "Siri"
+    },
+    {
+      "qid": "Q25025241",
+      "name": "Google Assistant"
+    },
+    {
+      "qid": "Q116761434",
+      "name": "Windsurf"
+    },
+    {
+      "qid": "Q125535706",
+      "name": "Tabnine"
+    },
+    {
+      "qid": "Q136002360",
+      "name": "Meta AI"
+    },
+    {
+      "qid": "Q124650700",
+      "name": "GigaChat"
+    },
+    {
+      "qid": "Q131863911",
+      "name": "Doubao"
+    },
+    {
+      "qid": "Q129572031",
+      "name": "Zhipu AI"
+    },
+    {
+      "qid": "Q130263208",
+      "name": "MiniMax"
+    },
+    {
+      "qid": "Q128801641",
+      "name": "Black Forest Labs"
+    },
+    {
+      "qid": "Q128801793",
+      "name": "FLUX"
+    },
+    {
+      "qid": "Q125475915",
+      "name": "Udio"
+    },
+    {
+      "qid": "Q120534390",
+      "name": "Writesonic"
+    },
+    {
+      "qid": "Q112629176",
+      "name": "Scale AI"
+    },
+    {
+      "qid": "Q113270365",
+      "name": "Inflection AI"
+    },
+    {
+      "qid": "Q113030551",
+      "name": "AI21 Labs"
+    },
+    {
+      "qid": "Q123368857",
+      "name": "Aleph Alpha"
+    },
+    {
+      "qid": "Q125878748",
+      "name": "Reka"
+    }
+  ],
+  "notes": "AI tools and models are largely products rather than companies. Discovered via chatbot / LLM / text-to-image classes plus a reviewed curated list. Tools with no Wikidata entity (for example Suno, Cursor, Runway, Kimi, Pika, Replit) are not covered.",
+  "excludeLabelRegex": "(^GPT[-\\s]?\\d|^GPT-J|GPT4-Chan|^OpenAI o\\d|DeepSeek-R1|Claude Mythos|^bidirectional encoder|^Tay$|Cleverbot|Eugene Goostman|PARRY|Mitsuku|Jabberwacky|Neuro-sama|Talking Angela|SimSimi|^Zo$|Artificial Linguistic|DeviantArt|Galaxy AI|GPT-6|Muse Spark|Minerva|Apertus|Jais|^Open Assistant|Xiaoice|Replika|^Brave Leo|Chinchilla|VideoPoet|Imagen|^BLOOM|DBRX|PaLM|AutoGPT|OpenAI Codex|Huawei PanGu|Microsoft Copilot for Microsoft 365)",
+  "excludeQids": [
+    "Q132324293"
+  ],
+  "excludeDescriptionRegex": "(chatterbot|early example|\\bformerly\\b|\\bdefunct\\b|VTuber|2002 Application|2012 chatbot)"
+}

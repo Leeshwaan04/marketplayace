@@ -5,7 +5,7 @@ import { SearchBox } from '../components/SearchBox'
 import { HeroBackdrop } from '../components/HeroBackdrop'
 import { Link } from '../utils/nav'
 import { CATEGORIES, GROUPS } from '../data/taxonomy'
-import { COMPANIES, DATA_GENERATED_AT } from '../data/companies'
+import { INDEX, COUNTRIES, DATA_GENERATED_AT } from '../data/companies'
 import { useSeo } from '../utils/seo'
 import { SITE } from '../config/site'
 
@@ -24,7 +24,8 @@ export const HomePage: React.FC = () => {
     }
   })
 
-  const covered = new Set(COMPANIES.flatMap((c) => c.categories))
+  const covered = new Set(INDEX.flatMap((c) => c.categories))
+  const featured = [...INDEX].sort((a, b) => b.sitelinks - a.sitelinks || a.name.localeCompare(b.name)).slice(0, 24)
 
   return (
     <>
@@ -43,7 +44,7 @@ export const HomePage: React.FC = () => {
               <SearchBox />
             </div>
             <p className="mt-4 text-sm text-ink-muted">
-              {COMPANIES.length} companies profiled across {covered.size} of {CATEGORIES.length} industries. Coverage is growing; see{' '}
+              {INDEX.length.toLocaleString('en')} companies profiled across {covered.size} of {CATEGORIES.length} industries and {COUNTRIES.length} countries. Coverage is growing; see{' '}
               <Link to={{ page: 'methodology' }} className="text-accent underline-offset-2 hover:underline">how we work</Link>.
             </p>
           </div>
@@ -56,7 +57,7 @@ export const HomePage: React.FC = () => {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {GROUPS.map((g) => {
               const cats = CATEGORIES.filter((c) => c.group === g.id)
-              const profiled = new Set(COMPANIES.filter((c) => c.categories.some((s) => cats.some((k) => k.slug === s))).map((c) => c.slug)).size
+              const profiled = new Set(INDEX.filter((c) => c.categories.some((s) => cats.some((k) => k.slug === s))).map((c) => c.slug)).size
               return (
                 <Link
                   key={g.id}
@@ -79,10 +80,28 @@ export const HomePage: React.FC = () => {
           </div>
         </section>
 
+        <section aria-labelledby="countries">
+          <SectionTitle id="countries" title="Browse by country" hint="Brands grouped by where they are based." />
+          <ul className="flex flex-wrap gap-2">
+            {COUNTRIES.slice(0, 18).map((c) => (
+              <li key={c.slug}>
+                <Link to={{ page: 'country', slug: c.slug }} className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-1 px-3.5 py-1.5 text-sm text-ink hover:border-line-strong hover:text-white">
+                  {c.name} <span className="text-xs text-ink-faint">{c.count.toLocaleString('en')}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4">
+            <Link to={{ page: 'countries' }} className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline">
+              See all {COUNTRIES.length} countries <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          </div>
+        </section>
+
         <section aria-labelledby="profiled">
-          <SectionTitle id="profiled" title="Profiled companies" hint={`Data last synced ${DATA_GENERATED_AT}.`} />
+          <SectionTitle id="profiled" title="Most widely documented companies" hint={`The ${featured.length} profiled companies with the most Wikipedia coverage. Data last synced ${DATA_GENERATED_AT}.`} />
           <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[...COMPANIES].sort((a, b) => a.name.localeCompare(b.name)).map((c) => (
+            {featured.map((c) => (
               <CompanyCard key={c.slug} company={c} />
             ))}
           </div>

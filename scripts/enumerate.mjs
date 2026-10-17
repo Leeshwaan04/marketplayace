@@ -5,14 +5,15 @@
  *   node scripts/enumerate.mjs scripts/specs/footwear.json [--preview] [--out file.json]
  *
  * Spec shape (see scripts/specs/README.md):
- *   { category, includes: [{via:'P31'|'P452', qid, why}], requireTypes?: [qid],
- *     minSitelinks, excludeQids?: [], excludeLabelRegex?: string, maxCount, notes }
+ *   (requireAnyType: [qid] = direct instance of any listed class, much cheaper than requireTypes)
+ *   { category, includes: [{via:'P31'|'P452'|'P1056', qid, exact?, why}], includeQids?: [{qid,name}], requireTypes?: [qid],
+ *     minSitelinks, excludeQids?: [], excludeLabelRegex?: string, excludeDescriptionRegex?: string, maxCount, notes }
  *
  * Quality rules baked in: dissolved entities are dropped, only entities with at least `minSitelinks`
  * Wikipedia language editions are kept (a notability proxy), people are excluded, and each entity gets one
  * current country. Output is a list of candidates for human review, never published automatically.
  */
-import { readFile, writeFile, mkdir, stat } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 
 const UA = { 'User-Agent': 'marketplayace-data-sync/1.0 (https://marketplayace.com; sumit.bagewadi@indiabulls.com)', Accept: 'application/sparql-results+json' }
@@ -51,22 +52,40 @@ export async function sparql(query) {
 }
 
 export function buildQuery(spec) {
-  const parts = spec.includes.map((i) => {
-    if (!/^P(31|452)$/.test(i.via) || !/^Q\d+$/.test(i.qid)) throw new Error(`bad include ${JSON.stringify(i)}`)
-    return `{ ?c wdt:${i.via}/wdt:P279* wd:${i.qid} . }`
+  const parts = (spec.includes ?? []).map((i) => {
+    if (!/^P(31|452|1056)$/.test(i.via) || !/^Q\d+$/.test(i.qid)) throw new Error(`bad include ${JSON.stringify(i)}`)
+    // exact: match the class itself; default also matches every subclass (can pull in unrelated things).
+    return i.exact ? `{ ?c wdt:${i.via} wd:${i.qid} . }` : `{ ?c wdt:${i.via}/wdt:P279* wd:${i.qid} . }`
   })
+  const explicit = (spec.includeQids ?? []).map((i) => {
+    const q = typeof i === 'string' ? i : i.qid
+    if (!/^Q\d+$/.test(q)) throw new Error(`bad includeQid ${q}`)
+    return q
+  })
+  if (explicit.length) parts.push(`{ VALUES ?c { ${explicit.map((q) => 'wd:' + q).join(' ')} } }`)
   const types = (spec.requireTypes ?? []).map((q) => {
     if (!/^Q\d+$/.test(q)) throw new Error(`bad requireType ${q}`)
     return `?c wdt:P31/wdt:P279* wd:${q} .`
   })
   const min = Number(spec.minSitelinks ?? 10)
+  const anyType = (spec.requireAnyType ?? []).map((q) => {
+    if (!/^Q\d+$/.test(q)) throw new Error(`bad requireAnyType ${q}`)
+    return 'wd:' + q
+  })
+  // Cheap alternative to requireTypes: the item must be a DIRECT instance of one of these classes.
+  if (anyType.length) types.push(`VALUES ?t { ${anyType.join(' ')} } ?c wdt:P31 ?t .`)
+  const rules = parts.filter((p) => !p.includes('VALUES'))
+  const curated = parts.filter((p) => p.includes('VALUES'))
+  // Curated (explicitly reviewed) entities bypass the type and notability filters; discovered ones do not.
+  const discovered = rules.length ? `{ ${rules.join(' UNION ')} ${types.join(' ')} ?c wikibase:sitelinks ?sl0 . FILTER(?sl0 >= ${min}) }` : ''
+  const body = [discovered, ...curated].filter(Boolean).join(' UNION ')
   return `SELECT ?c ?cLabel ?cDescription ?sl ?country ?countryLabel ?code WHERE {
-  ${parts.join(' UNION ')}
-  ${types.join('\n  ')}
-  ?c wikibase:sitelinks ?sl . FILTER(?sl >= ${min})
+  ${body}
+  ?c wikibase:sitelinks ?sl .
   FILTER NOT EXISTS { ?c wdt:P576 [] }
   FILTER NOT EXISTS { ?c wdt:P31 wd:Q5 }
-  OPTIONAL { ?c wdt:P17 ?country . FILTER NOT EXISTS { ?country wdt:P576 [] } OPTIONAL { ?country wdt:P297 ?code } }
+  # Country is only for preview here; the sync step resolves the final country (with fallbacks) from each entity.
+  OPTIONAL { ?c wdt:P17 ?country . OPTIONAL { ?country wdt:P297 ?code } }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } LIMIT 6000`
 }
@@ -75,10 +94,11 @@ export function collapse(rows, spec) {
   const byQid = new Map()
   const excludeQ = new Set(spec.excludeQids ?? [])
   const rx = spec.excludeLabelRegex ? new RegExp(spec.excludeLabelRegex, 'i') : null
+  const dx = spec.excludeDescriptionRegex ? new RegExp(spec.excludeDescriptionRegex, 'i') : null
   for (const r of rows) {
     const qid = r.c.value.split('/').pop()
     const label = r.cLabel?.value ?? ''
-    if (excludeQ.has(qid) || !label || /^Q\d+$/.test(label) || (rx && rx.test(label))) continue
+    if (excludeQ.has(qid) || !label || /^Q\d+$/.test(label) || (rx && rx.test(label)) || (dx && dx.test(r.cDescription?.value ?? ''))) continue
     const e = byQid.get(qid) ?? { qid, name: label, description: r.cDescription?.value ?? null, sitelinks: Number(r.sl.value), countries: [] }
     if (r.countryLabel && !e.countries.some((c) => c.name === r.countryLabel.value)) {
       e.countries.push({ name: r.countryLabel.value, code: r.code?.value ?? null })

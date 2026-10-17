@@ -1,0 +1,82 @@
+ChatGPT
+Claude | Anthropic
+Anthropic
+Gemini | Google
+Microsoft Copilot
+GitHub Copilot
+Perplexity AI
+Midjourney
+Stable Diffusion
+Stability AI
+DALL-E
+Sora | OpenAI
+Runway | AI
+Suno | AI
+ElevenLabs
+Cursor | code editor
+Mistral AI
+DeepSeek
+Grok | xAI
+xAI
+Llama | Meta
+Qwen
+Kimi | Moonshot
+Ernie Bot
+Character.ai
+Hugging Face
+Cohere
+Jasper | AI
+Grammarly
+DeepL
+Adobe Firefly
+Leonardo.Ai
+Pika | AI
+Synthesia
+HeyGen
+Replit
+Lovable
+Krutrim
+Sarvam AI
+Notion AI
+Otter.ai
+Canva Magic Studio
+Whisper | OpenAI
+Siri
+Alexa
+Google Assistant
+Bard
+Bing Chat
+You.com
+Poe | Quora
+Devin | Cognition
+Windsurf
+Tabnine
+Codeium
+Amazon Q
+Meta AI
+Yandex GPT
+GigaChat
+HyperCLOVA
+Tongyi Qianwen
+Doubao
+Hunyuan
+Zhipu AI
+MiniMax
+Baichuan
+Midjourney
+Ideogram
+Flux | Black Forest Labs
+Black Forest Labs
+Udio
+Descript
+Gamma | AI
+Copy.ai
+Writesonic
+Scale AI
+Databricks
+Nvidia
+Inflection AI
+AI21 Labs
+Aleph Alpha
+Reka AI
+Glean

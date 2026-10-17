@@ -1,6 +1,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { readAllCompanies } from '../scripts/lib/data.mjs'
+import { listRoutes } from '../scripts/lib/routes.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '..')
@@ -156,7 +158,8 @@ test('VAPT-05: External anchor tags must use rel="noopener noreferrer"', () => {
 // --- SUITE 3: DATA INTEGRITY & E-E-A-T GUARDRAILS ---
 console.log('\n\x1b[36m[SUITE 3: Data Integrity & E-E-A-T Guardrails]\x1b[0m')
 
-const companiesFile = JSON.parse(fs.readFileSync(path.join(rootDir, 'src/data/generated/companies.json'), 'utf8'))
+const companiesFile = { companies: await readAllCompanies() }
+const routeList = await listRoutes()
 const taxonomySrc = fs.readFileSync(path.join(rootDir, 'src/data/taxonomy.ts'), 'utf8')
 const categorySlugs = [...taxonomySrc.matchAll(/^\s*\['([a-z0-9-]+)', '/gm)].map((m) => m[1])
 const registry = JSON.parse(fs.readFileSync(path.join(rootDir, 'scripts/registry.json'), 'utf8'))
@@ -224,11 +227,54 @@ test('Company slugs are clean ASCII and are not truncated versions of the name',
   }
 })
 
-test('Sitemap lists every company and category', () => {
+test('Sitemap lists exactly the published pages', () => {
   const xml = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8')
-  for (const c of companiesFile.companies) assert(xml.includes(`/company/${c.slug}<`), `sitemap missing ${c.slug}`)
-  for (const k of categorySlugs) assert(xml.includes(`/category/${k}<`), `sitemap missing ${k}`)
+  const urls = [...xml.matchAll(/<loc>https:\/\/marketplayace\.com([^<]*)<\/loc>/g)].map((m) => m[1])
+  assert(urls.length === routeList.routes.length, `sitemap has ${urls.length} URLs but the site publishes ${routeList.routes.length}; run npm run data:sync`)
+  const set = new Set(urls)
+  for (const r of routeList.routes) assert(set.has(r), `sitemap missing ${r}`)
+  for (const u of urls) assert(!u.startsWith('/labs') && !u.startsWith('/compare'), `non-indexable page in sitemap: ${u}`)
 })
+
+test('Query-discovered entries are marked, dated and in a known industry', () => {
+  const queryEntries = registry.companies.filter((c) => c.source === 'query')
+  assert(queryEntries.length > 0, 'expected query-discovered entries')
+  for (const c of queryEntries) {
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(c.discoveredAt), `${c.slug}: missing discoveredAt`)
+    for (const k of c.categories) assert(categorySlugs.includes(k), `${c.slug}: unknown category ${k}`)
+  }
+  const slugs = registry.companies.map((c) => c.slug)
+  assert(new Set(slugs).size === slugs.length, 'duplicate slugs in registry')
+  const full = new Map(companiesFile.companies.map((c) => [c.slug, c]))
+  for (const c of queryEntries) {
+    const rec = full.get(c.slug)
+    if (rec) assert(rec.discovery === 'query', `${c.slug}: generated record does not say it was found by a query`)
+  }
+})
+
+test('Category specs are valid and point at real industries', () => {
+  const dir = path.join(rootDir, 'scripts/specs')
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+    const spec = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))
+    assert(spec.category === f.replace('.json', ''), `${f}: category does not match file name`)
+    assert(categorySlugs.includes(spec.category), `${f}: unknown industry`)
+    for (const i of spec.includes ?? []) assert(/^P(31|452|1056)$/.test(i.via) && /^Q\d+$/.test(i.qid), `${f}: bad include ${JSON.stringify(i)}`)
+    for (const i of spec.includeQids ?? []) assert(/^Q\d+$/.test(i.qid) && i.name, `${f}: bad includeQid ${JSON.stringify(i)}`)
+    assert((spec.includes?.length ?? 0) + (spec.includeQids?.length ?? 0) > 0, `${f}: spec selects nothing`)
+  }
+})
+
+test('Country slugs are clean and every country page has companies', () => {
+  const countries = new Map()
+  for (const c of companiesFile.companies) if (c.country) {
+    const v = c.country.value
+    assert(!/People's Republic of China|United States of America/.test(v), `${c.slug}: un-normalised country "${v}"`)
+    countries.set(v, (countries.get(v) ?? 0) + 1)
+  }
+  assert(countries.size >= 10, 'expected at least 10 countries')
+  for (const r of routeList.routes.filter((x) => x.startsWith('/country/'))) assert(/^\/country\/[a-z0-9-]+$/.test(r), `bad country route ${r}`)
+})
+
 
 test('Source code contains no unverifiable trust claims', () => {
   const banned = [/100% real/i, /verified promo/i, /60k\+?/i, /60,000/, /52 sectors?/i, /escrow/i, /guaranteed delivery/i, /cryptographic/i, /images\.openai\.com/]
@@ -274,13 +320,12 @@ test('Every company and industry page is prerendered with its own content and me
     assert(html.includes(expectInText), `${file}: server HTML lacks its own content`)
     assert((html.match(/<meta name="description"/g) || []).length === 1, `${file}: duplicate description tag`)
   }
-  for (const c of companiesFile.companies) {
-    check(`company/${c.slug}.html`, `/company/${c.slug}`, c.name.replace(/&/g, '&amp;'))
-    const html = read(`company/${c.slug}.html`)
-    assert(/"@type":"Organization"/.test(html), `${c.slug}: missing Organization JSON-LD`)
+  for (const r of routeList.routes) {
+    const file = r === '/' ? 'index.html' : `${r.slice(1)}.html`
+    const company = r.startsWith('/company/') ? companiesFile.companies.find((c) => `/company/${c.slug}` === r) : null
+    check(file, r, company ? company.name.replace(/&/g, '&amp;').replace(/</g, '&lt;') : '<h1')
+    if (company) assert(/"@type":"Organization"/.test(read(file)), `${company.slug}: missing Organization JSON-LD`)
   }
-  for (const k of categorySlugs) check(`category/${k}.html`, `/category/${k}`, '<h1')
-  for (const [f, r] of [['index.html', '/'], ['categories.html', '/categories'], ['methodology.html', '/methodology'], ['about.html', '/about'], ['privacy.html', '/privacy'], ['terms.html', '/terms']]) check(f, r, '<h1')
 })
 
 test('Non-indexable and unknown routes are handled correctly', () => {

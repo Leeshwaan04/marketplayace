@@ -301,7 +301,8 @@
       "qid": "Q478214",
       "categories": [
         "electric-vehicles",
-        "battery-storage"
+        "battery-storage",
+        "automobile-manufacturers"
       ]
     },
     {
@@ -939,7 +940,8 @@
       "slug": "tata-motors",
       "qid": "Q188514",
       "categories": [
-        "electric-vehicles"
+        "electric-vehicles",
+        "automobile-manufacturers"
       ],
       "name": "Tata Motors",
       "suppress": [
@@ -951,7 +953,8 @@
       "slug": "rivian",
       "qid": "Q7338847",
       "categories": [
-        "electric-vehicles"
+        "electric-vehicles",
+        "automobile-manufacturers"
       ],
       "name": "Rivian"
     },
@@ -1535,7 +1538,9 @@
       "slug": "nike",
       "qid": "Q483915",
       "categories": [
-        "fashion-luxury"
+        "fashion-luxury",
+        "footwear",
+        "apparel-garments"
       ],
       "name": "Nike"
     },
@@ -1543,7 +1548,8 @@
       "slug": "adidas",
       "qid": "Q3895",
       "categories": [
-        "fashion-luxury"
+        "fashion-luxury",
+        "footwear"
       ],
       "name": "Adidas"
     },
@@ -1551,7 +1557,8 @@
       "slug": "handm",
       "qid": "Q188326",
       "categories": [
-        "fashion-luxury"
+        "fashion-luxury",
+        "apparel-garments"
       ],
       "name": "H&M"
     },
@@ -1559,7 +1566,8 @@
       "slug": "lvmh",
       "qid": "Q504998",
       "categories": [
-        "fashion-luxury"
+        "fashion-luxury",
+        "apparel-garments"
       ],
       "name": "LVMH"
     },
@@ -1999,7 +2007,8 @@
       "slug": "inditex",
       "qid": "Q44504",
       "categories": [
-        "fashion-luxury"
+        "fashion-luxury",
+        "apparel-garments"
       ],
       "name": "Inditex"
     },
@@ -2033,6 +2042,8584 @@
         "country"
       ],
       "suppressReason": "Open data values describe a predecessor entity and are unreliable."
+    },
+    {
+      "slug": "puma",
+      "qid": "Q157064",
+      "name": "Puma",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "reebok",
+      "qid": "Q466183",
+      "name": "Reebok",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "giorgio-armani",
+      "qid": "Q635484",
+      "name": "Giorgio Armani",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "converse",
+      "qid": "Q319515",
+      "name": "Converse",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "givenchy",
+      "qid": "Q759210",
+      "name": "Givenchy",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "asics",
+      "qid": "Q327247",
+      "name": "ASICS",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kappa",
+      "qid": "Q735873",
+      "name": "Kappa",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "new-balance",
+      "qid": "Q742988",
+      "name": "New Balance",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fila-inc",
+      "qid": "Q482539",
+      "name": "Fila, Inc.",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vans",
+      "qid": "Q1135366",
+      "name": "Vans",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "joma",
+      "qid": "Q1051799",
+      "name": "Joma",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lotto-sport-italia",
+      "qid": "Q850307",
+      "name": "Lotto Sport Italia",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "diadora",
+      "qid": "Q1208130",
+      "name": "Diadora",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "le-coq-sportif",
+      "qid": "Q1066156",
+      "name": "Le Coq sportif",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bata-limited",
+      "qid": "Q688082",
+      "name": "Bata Limited",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dr-martens",
+      "qid": "Q1126126",
+      "name": "Dr. Martens",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mango",
+      "qid": "Q136503",
+      "name": "Mango",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "crocs-inc",
+      "qid": "Q926699",
+      "name": "Crocs, Inc.",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mizuno-corporation",
+      "qid": "Q1156731",
+      "name": "Mizuno Corporation",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chloe",
+      "qid": "Q1075391",
+      "name": "Chloé",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "supreme",
+      "qid": "Q1659229",
+      "name": "Supreme",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "moschino",
+      "qid": "Q659863",
+      "name": "Moschino",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yonex",
+      "qid": "Q773924",
+      "name": "Yonex",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "li-ning-company-limited",
+      "qid": "Q1272525",
+      "name": "Li-Ning Company Limited",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kenzo",
+      "qid": "Q895795",
+      "name": "Kenzo",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "quiksilver",
+      "qid": "Q1329463",
+      "name": "Quiksilver",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ralph-lauren-corporation",
+      "qid": "Q1641437",
+      "name": "Ralph Lauren Corporation",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "salomon",
+      "qid": "Q2120822",
+      "name": "Salomon",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "the-timberland-company",
+      "qid": "Q1539185",
+      "name": "The Timberland Company",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "birkenstock",
+      "qid": "Q648458",
+      "name": "Birkenstock",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "skechers",
+      "qid": "Q2945643",
+      "name": "Skechers",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dc-shoes",
+      "qid": "Q1130577",
+      "name": "DC Shoes",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "salvatore-ferragamo",
+      "qid": "Q3946053",
+      "name": "Salvatore Ferragamo",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "saucony",
+      "qid": "Q1687798",
+      "name": "Saucony",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "head",
+      "qid": "Q631894",
+      "name": "HEAD",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "deichmann-se",
+      "qid": "Q664543",
+      "name": "Deichmann SE",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ecco",
+      "qid": "Q1280255",
+      "name": "ECCO",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "anta",
+      "qid": "Q4653060",
+      "name": "Anta",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "j-barbour-and-sons",
+      "qid": "Q182399",
+      "name": "J. Barbour and Sons",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "geox",
+      "qid": "Q588001",
+      "name": "Geox",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tods-s-p-a",
+      "qid": "Q1342350",
+      "name": "Tod's S.p.A.",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dickies",
+      "qid": "Q114913",
+      "name": "Dickies",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hoka",
+      "qid": "Q16908664",
+      "name": "Hoka",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "on-ag",
+      "qid": "Q43452713",
+      "name": "On AG",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "c-and-j-clark-international-ltd",
+      "qid": "Q1095857",
+      "name": "C. & J. Clark International Ltd",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "havaianas",
+      "qid": "Q3128675",
+      "name": "Havaianas",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "acne-studios",
+      "qid": "Q3277165",
+      "name": "Acne Studios",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "k-swiss",
+      "qid": "Q1422386",
+      "name": "K-Swiss",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "keds",
+      "qid": "Q2630615",
+      "name": "Keds",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jimmy-choo-ltd",
+      "qid": "Q5213855",
+      "name": "Jimmy Choo Ltd",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brooks-sports",
+      "qid": "Q670764",
+      "name": "Brooks Sports",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "4f",
+      "qid": "Q16525801",
+      "name": "4F",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ugg",
+      "qid": "Q1138480",
+      "name": "UGG",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "john-lobb-bootmaker",
+      "qid": "Q641722",
+      "name": "John Lobb Bootmaker",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "and1",
+      "qid": "Q26924",
+      "name": "AND1",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "camper",
+      "qid": "Q1030922",
+      "name": "Camper",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "merrell",
+      "qid": "Q1921997",
+      "name": "Merrell",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "penalty",
+      "qid": "Q2749168",
+      "name": "Penalty",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "churchs",
+      "qid": "Q2967663",
+      "name": "Church's",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fred-perry",
+      "qid": "Q4038967",
+      "name": "Fred Perry",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ecko-unltd",
+      "qid": "Q1281935",
+      "name": "Eckō Unltd.",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "belle-international",
+      "qid": "Q815847",
+      "name": "Belle International",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vibram",
+      "qid": "Q1305019",
+      "name": "Vibram",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "peak-sport",
+      "qid": "Q7157843",
+      "name": "Peak Sport",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bally",
+      "qid": "Q688195",
+      "name": "Bally",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tecnica-group",
+      "qid": "Q1658959",
+      "name": "Tecnica Group",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "superga",
+      "qid": "Q3073822",
+      "name": "Superga",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cole-haan",
+      "qid": "Q4356504",
+      "name": "Cole Haan",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "florsheim-shoes",
+      "qid": "Q5461946",
+      "name": "Florsheim Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zoo-york",
+      "qid": "Q1966442",
+      "name": "Zoo York",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dsquared2",
+      "qid": "Q2551058",
+      "name": "DSQUARED2",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "xtep",
+      "qid": "Q4021859",
+      "name": "Xtep",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "onitsuka-tiger",
+      "qid": "Q7093962",
+      "name": "Onitsuka Tiger",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "361",
+      "qid": "Q10846067",
+      "name": "361˚",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "red-wing-shoes",
+      "qid": "Q934096",
+      "name": "Red Wing Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dr-scholls",
+      "qid": "Q17019662",
+      "name": "Dr. Scholl's",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "karhu",
+      "qid": "Q1140843",
+      "name": "Karhu",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "deckers-outdoor-corporation",
+      "qid": "Q1181953",
+      "name": "Deckers Outdoor Corporation",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pou-chen-corporation",
+      "qid": "Q2106675",
+      "name": "Pou Chen Corporation",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "topper",
+      "qid": "Q2749140",
+      "name": "Topper",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "la-sportiva",
+      "qid": "Q3821214",
+      "name": "La Sportiva",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "salamander",
+      "qid": "Q878354",
+      "name": "Salamander",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gilbert-rugby",
+      "qid": "Q289120",
+      "name": "Gilbert Rugby",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "edward-green-shoes",
+      "qid": "Q3048535",
+      "name": "Edward Green Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hurley-international",
+      "qid": "Q3266971",
+      "name": "Hurley International",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "finta",
+      "qid": "Q1650688",
+      "name": "Finta",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "madshus",
+      "qid": "Q2160593",
+      "name": "Madshus",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "osiris-shoes",
+      "qid": "Q2654262",
+      "name": "Osiris Shoes",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aldo",
+      "qid": "Q2832297",
+      "name": "ALDO",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "erke",
+      "qid": "Q1230766",
+      "name": "ERKE",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "munich",
+      "qid": "Q2076935",
+      "name": "Munich",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "blundstone-australia-pty-ltd",
+      "qid": "Q2896348",
+      "name": "Blundstone Australia Pty Ltd",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hunter-boot-ltd",
+      "qid": "Q3143350",
+      "name": "Hunter Boot Ltd",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kickers",
+      "qid": "Q3196356",
+      "name": "Kickers",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "olympikus",
+      "qid": "Q3351674",
+      "name": "Olympikus",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ccc",
+      "qid": "Q11788344",
+      "name": "CCC",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "loake",
+      "qid": "Q22336859",
+      "name": "Loake",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dvs-shoes",
+      "qid": "Q2022655",
+      "name": "DVS Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alpina-ziri",
+      "qid": "Q4735446",
+      "name": "Alpina Žiri",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "golden-goose",
+      "qid": "Q28224724",
+      "name": "Golden Goose",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "invicta",
+      "qid": "Q3073404",
+      "name": "Invicta",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rockport-company",
+      "qid": "Q4048384",
+      "name": "Rockport Company",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brantano-footwear",
+      "qid": "Q4957616",
+      "name": "Brantano Footwear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "oneill-inc",
+      "qid": "Q2043372",
+      "name": "O'Neill, Inc.",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "toms-shoes",
+      "qid": "Q7820400",
+      "name": "Toms Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "feiyue",
+      "qid": "Q1074372",
+      "name": "Feiyue",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hanwag",
+      "qid": "Q1584049",
+      "name": "Hanwag",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lowa-sportschuhe",
+      "qid": "Q1798270",
+      "name": "Lowa Sportschuhe",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rieker-shoes",
+      "qid": "Q2152193",
+      "name": "Rieker Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alpargatas-s-a",
+      "qid": "Q3509859",
+      "name": "Alpargatas S.A.",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wolverine-world-wide",
+      "qid": "Q8030548",
+      "name": "Wolverine World Wide",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "allbirds",
+      "qid": "Q30591057",
+      "name": "Allbirds",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "borovo",
+      "qid": "Q894110",
+      "name": "Borovo",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alden-shoe-company",
+      "qid": "Q1704283",
+      "name": "Alden Shoe Company",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "iceberg",
+      "qid": "Q2603072",
+      "name": "Iceberg",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tommy-bahama",
+      "qid": "Q3531299",
+      "name": "Tommy Bahama",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "caleres",
+      "qid": "Q4112833",
+      "name": "Caleres",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "grand-sport-group",
+      "qid": "Q5595113",
+      "name": "Grand Sport Group",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "defacto",
+      "qid": "Q6059861",
+      "name": "DeFacto",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "parfois",
+      "qid": "Q7136948",
+      "name": "Parfois",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sean-john",
+      "qid": "Q849057",
+      "name": "Sean John",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ed-meier",
+      "qid": "Q980030",
+      "name": "Ed Meier",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "walon-sport",
+      "qid": "Q7963716",
+      "name": "Walon Sport",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scotch-and-soda",
+      "qid": "Q17141914",
+      "name": "Scotch & Soda",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yue-yuen-industrial-holdings",
+      "qid": "Q698467",
+      "name": "Yue Yuen Industrial Holdings",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "repetto",
+      "qid": "Q3427237",
+      "name": "Repetto",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scarpa",
+      "qid": "Q3943471",
+      "name": "Scarpa",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "steve-madden",
+      "qid": "Q25352034",
+      "name": "Steve Madden",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "airwalk",
+      "qid": "Q409335",
+      "name": "Airwalk",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alpargatas-argentina",
+      "qid": "Q4734761",
+      "name": "Alpargatas Argentina",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "prospecs",
+      "qid": "Q7250716",
+      "name": "Prospecs",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "la-gear",
+      "qid": "Q3480338",
+      "name": "LA Gear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "five-ten-footwear",
+      "qid": "Q3746269",
+      "name": "Five Ten Footwear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "the-athletes-foot",
+      "qid": "Q7714792",
+      "name": "The Athlete's Foot",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nokian-footwear",
+      "qid": "Q4356525",
+      "name": "Nokian Footwear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "allen-edmonds-shoe-corporation",
+      "qid": "Q4731627",
+      "name": "Allen Edmonds Shoe Corporation",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "crockett-and-jones",
+      "qid": "Q5187348",
+      "name": "Crockett & Jones",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "russell-and-bromley",
+      "qid": "Q7381310",
+      "name": "Russell & Bromley",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sperry-top-sider",
+      "qid": "Q7576421",
+      "name": "Sperry Top-Sider",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "atletica",
+      "qid": "Q604034",
+      "name": "Atletica",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "naot",
+      "qid": "Q6964738",
+      "name": "Naot",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pataugas",
+      "qid": "Q3368657",
+      "name": "Pataugas",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sole-technology",
+      "qid": "Q3494107",
+      "name": "Sole Technology",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avia",
+      "qid": "Q4828498",
+      "name": "Avia",
+      "categories": [
+        "footwear",
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "san-antonio-shoemakers",
+      "qid": "Q7388815",
+      "name": "San Antonio Shoemakers",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lottusse",
+      "qid": "Q1871217",
+      "name": "Lottusse",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "falc",
+      "qid": "Q907959",
+      "name": "Falc",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "west-coast-shoe-company",
+      "qid": "Q7984835",
+      "name": "West Coast Shoe Company",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rainha",
+      "qid": "Q10357221",
+      "name": "Rainha",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ara-ag",
+      "qid": "Q623598",
+      "name": "Ara AG",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "johnston-and-murphy",
+      "qid": "Q6268615",
+      "name": "Johnston & Murphy",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "justin-boots",
+      "qid": "Q16998009",
+      "name": "Justin Boots",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kurt-geiger",
+      "qid": "Q17063744",
+      "name": "Kurt Geiger",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "klauser-schuhe",
+      "qid": "Q139585",
+      "name": "Klauser Schuhe",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stride-rite-corporation",
+      "qid": "Q2356171",
+      "name": "Stride Rite Corporation",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sebago",
+      "qid": "Q3476844",
+      "name": "Sebago",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "belwest",
+      "qid": "Q4081686",
+      "name": "Belwest",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marko",
+      "qid": "Q4281995",
+      "name": "Marko",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aristoc",
+      "qid": "Q4791007",
+      "name": "Aristoc",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vivobarefoot",
+      "qid": "Q7937938",
+      "name": "Vivobarefoot",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zhejiang-aokang-shoes-co-ltd",
+      "qid": "Q10942605",
+      "name": "ZheJiang AoKang Shoes Co., Ltd.",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sievin-jalkine",
+      "qid": "Q11893355",
+      "name": "Sievin Jalkine",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bontoni",
+      "qid": "Q16844422",
+      "name": "Bontoni",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "world-balance",
+      "qid": "Q104670193",
+      "name": "World Balance",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "spira-footwear-inc",
+      "qid": "Q3493536",
+      "name": "Spira Footwear, Inc.",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bearpaw",
+      "qid": "Q4876759",
+      "name": "Bearpaw",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "famous-footwear",
+      "qid": "Q5433457",
+      "name": "Famous Footwear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "freeman-hardy-and-willis",
+      "qid": "Q5500971",
+      "name": "Freeman, Hardy and Willis",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "genesco",
+      "qid": "Q5532704",
+      "name": "Genesco",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "office-holdings",
+      "qid": "Q7079121",
+      "name": "Office Holdings",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kangaroos",
+      "qid": "Q1723726",
+      "name": "KangaRoos",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "viking",
+      "qid": "Q2776391",
+      "name": "Viking",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "shoe-zone",
+      "qid": "Q7500016",
+      "name": "Shoe Zone",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "snipes",
+      "qid": "Q42306166",
+      "name": "Snipes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "paraboot",
+      "qid": "Q3363091",
+      "name": "Paraboot",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "liberty-shoes",
+      "qid": "Q6541947",
+      "name": "Liberty Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "grendene",
+      "qid": "Q10291538",
+      "name": "Grendene",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dansko",
+      "qid": "Q10466725",
+      "name": "Dansko",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "khadims",
+      "qid": "Q104876652",
+      "name": "Khadim's",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gabor-shoes",
+      "qid": "Q1488760",
+      "name": "Gabor Shoes",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fratelli-rossetti",
+      "qid": "Q3752400",
+      "name": "Fratelli Rossetti",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rocky-brands",
+      "qid": "Q7355744",
+      "name": "Rocky Brands",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "weyco-group",
+      "qid": "Q22121873",
+      "name": "Weyco Group",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "grenson",
+      "qid": "Q30292667",
+      "name": "Grenson",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rothys",
+      "qid": "Q60749530",
+      "name": "Rothy's",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "relaxo",
+      "qid": "Q96401486",
+      "name": "Relaxo",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "christian-louboutin-ltd",
+      "qid": "Q23681835",
+      "name": "Christian Louboutin Ltd.",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hotic",
+      "qid": "Q28729859",
+      "name": "Hotiç",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jonak",
+      "qid": "Q105372529",
+      "name": "Jonak",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bitis",
+      "qid": "Q127375336",
+      "name": "Biti's",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mochi",
+      "qid": "Q128692885",
+      "name": "Mochi",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kolon-sport",
+      "qid": "Q131394332",
+      "name": "Kolon Sport",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "paragon-footwear",
+      "qid": "Q132145156",
+      "name": "Paragon Footwear",
+      "categories": [
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gucci",
+      "qid": "Q178516",
+      "name": "Gucci",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "prada",
+      "qid": "Q193136",
+      "name": "Prada",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "uniqlo",
+      "qid": "Q26070",
+      "name": "Uniqlo",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chanel",
+      "qid": "Q218115",
+      "name": "Chanel",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "versace",
+      "qid": "Q696376",
+      "name": "Versace",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lacoste",
+      "qid": "Q309031",
+      "name": "Lacoste",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hermes",
+      "qid": "Q843887",
+      "name": "Hermès",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "christian-dior",
+      "qid": "Q542767",
+      "name": "Christian Dior",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dolce-and-gabbana",
+      "qid": "Q214480",
+      "name": "Dolce & Gabbana",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "burberry",
+      "qid": "Q390107",
+      "name": "Burberry",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "balenciaga",
+      "qid": "Q1530892",
+      "name": "Balenciaga",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "levi-strauss-and-co",
+      "qid": "Q127962",
+      "name": "Levi Strauss & Co.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hugo-boss",
+      "qid": "Q491627",
+      "name": "Hugo Boss",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "calvin-klein",
+      "qid": "Q1068628",
+      "name": "Calvin Klein",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fendi",
+      "qid": "Q926575",
+      "name": "Fendi",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kering",
+      "qid": "Q931207",
+      "name": "Kering",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "shein",
+      "qid": "Q107377209",
+      "name": "Shein",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gap-inc",
+      "qid": "Q420822",
+      "name": "Gap Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "benetton-group",
+      "qid": "Q817139",
+      "name": "Benetton Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yves-saint-laurent",
+      "qid": "Q2282172",
+      "name": "Yves Saint Laurent",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "under-armour",
+      "qid": "Q2031485",
+      "name": "Under Armour",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bottega-veneta",
+      "qid": "Q894874",
+      "name": "Bottega Veneta",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marks-and-spencer",
+      "qid": "Q714491",
+      "name": "Marks & Spencer",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "the-north-face-inc",
+      "qid": "Q152784",
+      "name": "The North Face, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tommy-hilfiger-b-v",
+      "qid": "Q634881",
+      "name": "Tommy Hilfiger B.V.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "primark",
+      "qid": "Q137023",
+      "name": "Primark",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bershka",
+      "qid": "Q827258",
+      "name": "Bershka",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "massimo-dutti",
+      "qid": "Q788231",
+      "name": "Massimo Dutti",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "guess",
+      "qid": "Q2470307",
+      "name": "Guess",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hummel-international",
+      "qid": "Q532310",
+      "name": "Hummel International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "valentino",
+      "qid": "Q649646",
+      "name": "Valentino",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "loro-piana",
+      "qid": "Q1686544",
+      "name": "Loro Piana",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "diesel",
+      "qid": "Q158285",
+      "name": "Diesel",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "errea",
+      "qid": "Q1361595",
+      "name": "Erreà",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "patagonia-inc",
+      "qid": "Q1660552",
+      "name": "Patagonia, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dkny",
+      "qid": "Q938773",
+      "name": "DKNY",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "macron",
+      "qid": "Q1439645",
+      "name": "Macron",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "max-mara",
+      "qid": "Q1151774",
+      "name": "Max Mara",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "forever-21",
+      "qid": "Q1060537",
+      "name": "Forever 21",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "c-and-a",
+      "qid": "Q701338",
+      "name": "C&A",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lanvin",
+      "qid": "Q866899",
+      "name": "Lanvin",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hollister-co",
+      "qid": "Q1257477",
+      "name": "Hollister Co.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "esprit-holdings",
+      "qid": "Q532746",
+      "name": "Esprit Holdings",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "moncler",
+      "qid": "Q1548951",
+      "name": "Moncler",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "banana-republic",
+      "qid": "Q806085",
+      "name": "Banana Republic",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "loewe",
+      "qid": "Q966905",
+      "name": "Loewe",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gant",
+      "qid": "Q1493667",
+      "name": "GANT",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "missoni",
+      "qid": "Q1400977",
+      "name": "Missoni",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "escada-se",
+      "qid": "Q600986",
+      "name": "Escada SE",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "triumph-international",
+      "qid": "Q671216",
+      "name": "Triumph International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stone-island",
+      "qid": "Q950042",
+      "name": "Stone Island",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "columbia-sportswear-company",
+      "qid": "Q1112588",
+      "name": "Columbia Sportswear Company",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "desigual",
+      "qid": "Q83750",
+      "name": "Desigual",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "american-eagle-outfitters",
+      "qid": "Q2842931",
+      "name": "American Eagle Outfitters",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "a-bathing-ape",
+      "qid": "Q300324",
+      "name": "A Bathing Ape",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wrangler",
+      "qid": "Q1445358",
+      "name": "Wrangler",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "old-navy",
+      "qid": "Q2735242",
+      "name": "Old Navy",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "oysho",
+      "qid": "Q3327046",
+      "name": "OYSHO",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vf-corporation",
+      "qid": "Q457960",
+      "name": "VF Corporation",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "carhartt",
+      "qid": "Q527877",
+      "name": "Carhartt",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "off-white",
+      "qid": "Q53472173",
+      "name": "Off-White",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "american-apparel-inc",
+      "qid": "Q463378",
+      "name": "American Apparel Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bestseller",
+      "qid": "Q594721",
+      "name": "Bestseller",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brooks-brothers",
+      "qid": "Q929722",
+      "name": "Brooks Brothers",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "topshop",
+      "qid": "Q1893576",
+      "name": "Topshop",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "slazenger",
+      "qid": "Q2855977",
+      "name": "Slazenger",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lc-waikiki",
+      "qid": "Q3205965",
+      "name": "LC Waikiki",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "coach",
+      "qid": "Q727697",
+      "name": "Coach",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pepe-jeans",
+      "qid": "Q426992",
+      "name": "Pepe Jeans",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lululemon-athletica",
+      "qid": "Q6702957",
+      "name": "Lululemon Athletica",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pvh-corp",
+      "qid": "Q1132272",
+      "name": "PVH Corp.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fast-retailing",
+      "qid": "Q1397688",
+      "name": "Fast Retailing",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "playlife",
+      "qid": "Q172227",
+      "name": "Playlife",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alfred-dunhill",
+      "qid": "Q1784995",
+      "name": "Alfred Dunhill",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "new-era-cap-company",
+      "qid": "Q1982603",
+      "name": "New Era Cap Company",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stussy-inc",
+      "qid": "Q7629175",
+      "name": "Stüssy, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "superdry",
+      "qid": "Q1684445",
+      "name": "Superdry",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ted-baker-plc",
+      "qid": "Q2913458",
+      "name": "Ted Baker Plc",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "etnies",
+      "qid": "Q651470",
+      "name": "etnies",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "urban-outfitters",
+      "qid": "Q3552193",
+      "name": "Urban Outfitters",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "volcom",
+      "qid": "Q2021416",
+      "name": "Volcom",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sheriff",
+      "qid": "Q378941",
+      "name": "Sheriff",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "thor-steinar",
+      "qid": "Q2003244",
+      "name": "Thor Steinar",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "givova-sport",
+      "qid": "Q3108205",
+      "name": "Givova Sport",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "etro",
+      "qid": "Q1371677",
+      "name": "Etro",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "next-plc",
+      "qid": "Q246655",
+      "name": "Next plc",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "french-connection",
+      "qid": "Q306457",
+      "name": "French Connection",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "loblaw-companies",
+      "qid": "Q909856",
+      "name": "Loblaw Companies",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "viktor-and-rolf",
+      "qid": "Q2707765",
+      "name": "Viktor & Rolf",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "g-star-raw",
+      "qid": "Q1484081",
+      "name": "G-Star Raw",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "miss-sixty",
+      "qid": "Q241295",
+      "name": "Miss Sixty",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fruit-of-the-loom",
+      "qid": "Q765087",
+      "name": "Fruit of the Loom",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "haglofs",
+      "qid": "Q1427623",
+      "name": "Haglöfs",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "uterque",
+      "qid": "Q3328552",
+      "name": "Uterqüe",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tom-tailor",
+      "qid": "Q571206",
+      "name": "Tom Tailor",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aeropostale",
+      "qid": "Q794565",
+      "name": "Aéropostale",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "giordano",
+      "qid": "Q4115012",
+      "name": "Giordano",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lpp",
+      "qid": "Q11752350",
+      "name": "LPP",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "deuter-sport",
+      "qid": "Q323161",
+      "name": "Deuter Sport",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "reusch",
+      "qid": "Q551889",
+      "name": "Reusch",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mexx",
+      "qid": "Q1837290",
+      "name": "Mexx",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "spanx-inc",
+      "qid": "Q1932886",
+      "name": "Spanx, Inc.",
+      "categories": [
+        "apparel-garments",
+        "footwear"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tiger-of-sweden",
+      "qid": "Q4176650",
+      "name": "Tiger of Sweden",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jack-and-jones",
+      "qid": "Q6077665",
+      "name": "Jack & Jones",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kitsune",
+      "qid": "Q917561",
+      "name": "Kitsuné",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "s-oliver",
+      "qid": "Q265056",
+      "name": "s.Oliver",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ann-summers",
+      "qid": "Q579524",
+      "name": "Ann Summers",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hackett",
+      "qid": "Q1136426",
+      "name": "Hackett",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vetements",
+      "qid": "Q29109956",
+      "name": "Vetements",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gildan-activewear",
+      "qid": "Q1524197",
+      "name": "Gildan Activewear",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nautica",
+      "qid": "Q6981479",
+      "name": "Nautica",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "napapijri",
+      "qid": "Q2782017",
+      "name": "Napapijri",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hanesbrands",
+      "qid": "Q5647768",
+      "name": "Hanesbrands",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jd-sports",
+      "qid": "Q6108019",
+      "name": "JD Sports",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mcm-worldwide",
+      "qid": "Q835487",
+      "name": "MCM Worldwide",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cerruti-1881",
+      "qid": "Q1056200",
+      "name": "Cerruti 1881",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "river-island",
+      "qid": "Q2670328",
+      "name": "River Island",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "house-of-worth",
+      "qid": "Q5915543",
+      "name": "House of Worth",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lojas-renner",
+      "qid": "Q3064071",
+      "name": "Lojas Renner",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brunello-cucinelli",
+      "qid": "Q3645582",
+      "name": "Brunello Cucinelli",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "quechua",
+      "qid": "Q2759606",
+      "name": "Quechua",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "adidas-yeezy",
+      "qid": "Q22101752",
+      "name": "Adidas Yeezy",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "anti-social-social-club",
+      "qid": "Q43401543",
+      "name": "Anti Social Social Club",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "capri-holdings",
+      "qid": "Q19572998",
+      "name": "Capri Holdings",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nkd",
+      "qid": "Q927272",
+      "name": "NKD",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "strauss",
+      "qid": "Q1341990",
+      "name": "Strauss",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tally-weijl",
+      "qid": "Q689695",
+      "name": "Tally Weijl",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lindex",
+      "qid": "Q1786717",
+      "name": "Lindex",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wesc",
+      "qid": "Q1810141",
+      "name": "WESC",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "turnbull-and-asser",
+      "qid": "Q1986392",
+      "name": "Turnbull & Asser",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kangol",
+      "qid": "Q3192653",
+      "name": "Kangol",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "evisu",
+      "qid": "Q3274777",
+      "name": "Evisu",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kukuxumusu",
+      "qid": "Q1638521",
+      "name": "Kukuxumusu",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gottex",
+      "qid": "Q2903774",
+      "name": "Gottex",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "j-crew",
+      "qid": "Q5370765",
+      "name": "J.Crew",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gymshark",
+      "qid": "Q56246099",
+      "name": "Gymshark",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marithe-francois-girbaud",
+      "qid": "Q1320295",
+      "name": "Marithé + François Girbaud",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mulberry",
+      "qid": "Q3866987",
+      "name": "Mulberry",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tapestry-inc",
+      "qid": "Q56273715",
+      "name": "Tapestry, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "akris",
+      "qid": "Q420765",
+      "name": "Akris",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "c-p-company",
+      "qid": "Q429204",
+      "name": "C.P. Company",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "eddie-bauer-holdings-inc",
+      "qid": "Q842174",
+      "name": "Eddie Bauer Holdings, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marmot",
+      "qid": "Q1902277",
+      "name": "Marmot",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "l-a-m-b",
+      "qid": "Q2223659",
+      "name": "L.A.M.B.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marina-rinaldi",
+      "qid": "Q2349550",
+      "name": "Marina Rinaldi",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "acerbis",
+      "qid": "Q3604249",
+      "name": "Acerbis",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "andrew-christian",
+      "qid": "Q4120731",
+      "name": "Andrew Christian",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "von-dutch",
+      "qid": "Q17091130",
+      "name": "Von Dutch",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brandy-melville",
+      "qid": "Q25387414",
+      "name": "Brandy Melville",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "youngor-group",
+      "qid": "Q1112652",
+      "name": "Youngor Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "delta-galil-industries-ltd",
+      "qid": "Q2912754",
+      "name": "Delta Galil Industries Ltd.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "koton",
+      "qid": "Q6063877",
+      "name": "Koton",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cotton-on-group",
+      "qid": "Q113992257",
+      "name": "Cotton On Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lands-end",
+      "qid": "Q839555",
+      "name": "Lands' End",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "k-way",
+      "qid": "Q2820820",
+      "name": "K-way",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "karrimor",
+      "qid": "Q3544544",
+      "name": "Karrimor",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fiorucci",
+      "qid": "Q1089081",
+      "name": "Fiorucci",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gu",
+      "qid": "Q5512642",
+      "name": "GU",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "about-you",
+      "qid": "Q51844714",
+      "name": "About You",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cal-k-holding",
+      "qid": "Q272361",
+      "name": "Çalık Holding",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "suitsupply",
+      "qid": "Q17149142",
+      "name": "Suitsupply",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "delvaux",
+      "qid": "Q18155981",
+      "name": "Delvaux",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "baby-the-stars-shine-bright",
+      "qid": "Q797809",
+      "name": "Baby, The Stars Shine Bright",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bench",
+      "qid": "Q816714",
+      "name": "Bench",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "thomas-pink",
+      "qid": "Q1137991",
+      "name": "Thomas Pink",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "club-monaco",
+      "qid": "Q2979949",
+      "name": "Club Monaco",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jordache-enterprises-inc",
+      "qid": "Q6276279",
+      "name": "Jordache Enterprises, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "replay",
+      "qid": "Q1654538",
+      "name": "Replay",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cia-hering",
+      "qid": "Q5119055",
+      "name": "Cia. Hering",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jockey-international",
+      "qid": "Q534235",
+      "name": "Jockey International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "castro-model-ltd",
+      "qid": "Q1049887",
+      "name": "Castro Model Ltd.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "joop",
+      "qid": "Q1703526",
+      "name": "JOOP!",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "iconix-brand-group",
+      "qid": "Q5986662",
+      "name": "Iconix Brand Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "charles-tyrwhitt",
+      "qid": "Q924963",
+      "name": "Charles Tyrwhitt",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "norrona",
+      "qid": "Q1274125",
+      "name": "Norrøna",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "billionaire-boys-club",
+      "qid": "Q2719846",
+      "name": "Billionaire Boys Club",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fubu",
+      "qid": "Q3063461",
+      "name": "FUBU",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "famous-stars-and-straps",
+      "qid": "Q3066293",
+      "name": "Famous Stars and Straps",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mcs",
+      "qid": "Q3111039",
+      "name": "MCS",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "henry-poole-and-co",
+      "qid": "Q3408814",
+      "name": "Henry Poole & Co",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "g2000",
+      "qid": "Q5512676",
+      "name": "G2000",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pony-international",
+      "qid": "Q7228459",
+      "name": "Pony International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "new-look",
+      "qid": "Q12063852",
+      "name": "New Look",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "castelli-cycling",
+      "qid": "Q30898624",
+      "name": "Castelli Cycling",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bossini",
+      "qid": "Q4035334",
+      "name": "Bossini",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "beams",
+      "qid": "Q4876226",
+      "name": "Beams",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bosideng",
+      "qid": "Q4947278",
+      "name": "Bosideng",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "shenzhou-international",
+      "qid": "Q25054381",
+      "name": "Shenzhou International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bjorn-borg-ab",
+      "qid": "Q4919709",
+      "name": "Björn Borg AB",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tom-ford",
+      "qid": "Q105476592",
+      "name": "Tom Ford",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pinko",
+      "qid": "Q3905226",
+      "name": "PINKO",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fox-wizel-ltd",
+      "qid": "Q5476569",
+      "name": "Fox-Wizel Ltd.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zumiez",
+      "qid": "Q8075252",
+      "name": "Zumiez",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "silvano-fashion-group",
+      "qid": "Q12000481",
+      "name": "Silvano Fashion Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bean-pole-international",
+      "qid": "Q497706",
+      "name": "Bean Pole International",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "proenza-schouler",
+      "qid": "Q1130841",
+      "name": "Proenza Schouler",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "oshkosh-bgosh",
+      "qid": "Q1417347",
+      "name": "OshKosh B'Gosh",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "belstaff",
+      "qid": "Q1628518",
+      "name": "Belstaff",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "spyder",
+      "qid": "Q1748393",
+      "name": "Spyder",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stefanel",
+      "qid": "Q2338087",
+      "name": "Stefanel",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ulla-popken",
+      "qid": "Q2475146",
+      "name": "Ulla Popken",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sabelt",
+      "qid": "Q3069462",
+      "name": "Sabelt",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "schott-nyc",
+      "qid": "Q3475516",
+      "name": "Schott NYC",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avirex",
+      "qid": "Q3504397",
+      "name": "Avirex",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "original-penguin",
+      "qid": "Q3885836",
+      "name": "Original Penguin",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sorelle-fontana",
+      "qid": "Q3965055",
+      "name": "Sorelle Fontana",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "no-fear",
+      "qid": "Q5949868",
+      "name": "No Fear",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rocawear",
+      "qid": "Q7193265",
+      "name": "Rocawear",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ports-1961",
+      "qid": "Q7232388",
+      "name": "Ports 1961",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "roots-canada",
+      "qid": "Q7366633",
+      "name": "Roots Canada",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "talbots",
+      "qid": "Q7679064",
+      "name": "Talbots",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "otb-group",
+      "qid": "Q17162776",
+      "name": "OTB Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hanes",
+      "qid": "Q3126743",
+      "name": "Hanes",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bombay-dyeing",
+      "qid": "Q4940554",
+      "name": "Bombay Dyeing",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "colcci",
+      "qid": "Q5142063",
+      "name": "Colcci",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "padini",
+      "qid": "Q13657207",
+      "name": "Padini",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "arvind-limited",
+      "qid": "Q16962142",
+      "name": "Arvind Limited",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kate-spade-and-company",
+      "qid": "Q753521",
+      "name": "Kate Spade & Company",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pimkie",
+      "qid": "Q1758066",
+      "name": "Pimkie",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "the-childrens-place",
+      "qid": "Q3520257",
+      "name": "The Children's Place",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "liu-jo",
+      "qid": "Q3835099",
+      "name": "Liu·Jo",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "honigman",
+      "qid": "Q12406489",
+      "name": "Honigman",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scalpers",
+      "qid": "Q87193804",
+      "name": "Scalpers",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mainbocher",
+      "qid": "Q3278330",
+      "name": "Mainbocher",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "emporio-armani",
+      "qid": "Q3497483",
+      "name": "Emporio Armani",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ann-taylor",
+      "qid": "Q4766699",
+      "name": "Ann Taylor",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bebe-stores",
+      "qid": "Q4878313",
+      "name": "Bebe Stores",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ascena-retail-group",
+      "qid": "Q5307031",
+      "name": "Ascena Retail Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "maidenform",
+      "qid": "Q6735419",
+      "name": "Maidenform",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vera-bradley",
+      "qid": "Q7920749",
+      "name": "Vera Bradley",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "boohoo-group",
+      "qid": "Q30688042",
+      "name": "Boohoo Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "armani-exchange",
+      "qid": "Q56045740",
+      "name": "Armani Exchange",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "7-for-all-mankind",
+      "qid": "Q270013",
+      "name": "7 for all Mankind",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "a-p-c",
+      "qid": "Q546542",
+      "name": "A.P.C.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "x-large",
+      "qid": "Q8041451",
+      "name": "X-Large",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gudrun-sjoden",
+      "qid": "Q28233673",
+      "name": "Gudrun Sjödén",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sacai",
+      "qid": "Q43080895",
+      "name": "sacai",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "matieres-fecales",
+      "qid": "Q138543842",
+      "name": "Matières Fécales",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "costume-national",
+      "qid": "Q1136537",
+      "name": "Costume National",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "la-martina",
+      "qid": "Q1798938",
+      "name": "La Martina",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "true-religion",
+      "qid": "Q2456205",
+      "name": "True Religion",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "filippa-k",
+      "qid": "Q2479728",
+      "name": "Filippa K",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "william-rast",
+      "qid": "Q3067008",
+      "name": "William Rast",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "paul-frank-limited",
+      "qid": "Q3371242",
+      "name": "Paul Frank Limited",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tokidoki",
+      "qid": "Q3473171",
+      "name": "Tokidoki",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chrome-hearts",
+      "qid": "Q5113774",
+      "name": "Chrome Hearts",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "crombie",
+      "qid": "Q5187569",
+      "name": "Crombie",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "peacocks",
+      "qid": "Q7157762",
+      "name": "Peacocks",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "matalan",
+      "qid": "Q12061509",
+      "name": "Matalan",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "marc-opolo",
+      "qid": "Q1892752",
+      "name": "Marc O’Polo",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pantaloons",
+      "qid": "Q7131643",
+      "name": "Pantaloons",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "khaadi",
+      "qid": "Q22031750",
+      "name": "Khaadi",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "british-knights",
+      "qid": "Q4970227",
+      "name": "British Knights",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "buckle",
+      "qid": "Q4983306",
+      "name": "Buckle",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "citi-trends",
+      "qid": "Q5122438",
+      "name": "Citi Trends",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ocean-pacific",
+      "qid": "Q7076031",
+      "name": "Ocean Pacific",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hawes-and-curtis",
+      "qid": "Q12019314",
+      "name": "Hawes & Curtis",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "esteem-group",
+      "qid": "Q15728212",
+      "name": "ESteem Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "renuar",
+      "qid": "Q96179406",
+      "name": "Renuar",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "theory",
+      "qid": "Q2039867",
+      "name": "Theory",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "custo-barcelona",
+      "qid": "Q2672333",
+      "name": "Custo Barcelona",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "la-polar",
+      "qid": "Q3053377",
+      "name": "La Polar",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "adidas-originals",
+      "qid": "Q4682711",
+      "name": "Adidas Originals",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "crocodile-garments",
+      "qid": "Q5187383",
+      "name": "Crocodile Garments",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jos-a-bank-clothiers",
+      "qid": "Q6204078",
+      "name": "Jos. A. Bank Clothiers",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "miss-selfridge",
+      "qid": "Q6877374",
+      "name": "Miss Selfridge",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "torrid",
+      "qid": "Q7827120",
+      "name": "Torrid",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cos",
+      "qid": "Q60772401",
+      "name": "COS",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "icebreaker",
+      "qid": "Q539507",
+      "name": "Icebreaker",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bogner",
+      "qid": "Q881017",
+      "name": "Bogner",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wibra",
+      "qid": "Q943405",
+      "name": "Wibra",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "xuly-bet",
+      "qid": "Q8045255",
+      "name": "Xuly Bët",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "united-arrows",
+      "qid": "Q10853153",
+      "name": "United Arrows",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aerie",
+      "qid": "Q25351619",
+      "name": "Aerie",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bergans-fritid-as",
+      "qid": "Q819350",
+      "name": "Bergans Fritid AS",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "woolrich-inc",
+      "qid": "Q2593287",
+      "name": "Woolrich, Inc.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ardene",
+      "qid": "Q2860764",
+      "name": "Ardène",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cubus",
+      "qid": "Q3439593",
+      "name": "Cubus",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "the-kooples",
+      "qid": "Q3521493",
+      "name": "The Kooples",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "victorio-and-lucchino",
+      "qid": "Q3557747",
+      "name": "Victorio & Lucchino",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gattinoni",
+      "qid": "Q3758885",
+      "name": "Gattinoni",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "luhta",
+      "qid": "Q4043247",
+      "name": "Luhta",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "austin-reed",
+      "qid": "Q4823255",
+      "name": "Austin Reed",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bad-boy",
+      "qid": "Q4840199",
+      "name": "Bad Boy",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ben-davis",
+      "qid": "Q4885517",
+      "name": "Ben Davis",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bukta",
+      "qid": "Q4987144",
+      "name": "Bukta",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "coogi",
+      "qid": "Q5166857",
+      "name": "Coogi",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cotton-traders",
+      "qid": "Q5175738",
+      "name": "Cotton Traders",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fat-face",
+      "qid": "Q5437186",
+      "name": "Fat Face",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kayser-roth",
+      "qid": "Q6380695",
+      "name": "Kayser-Roth",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "penshoppe",
+      "qid": "Q6508917",
+      "name": "Penshoppe",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mascot-workwear",
+      "qid": "Q6714510",
+      "name": "MASCOT Workwear",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "odd-molly",
+      "qid": "Q7077415",
+      "name": "Odd Molly",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "carlings",
+      "qid": "Q10443115",
+      "name": "Carlings",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dege-and-skinner",
+      "qid": "Q10467678",
+      "name": "Dege & Skinner",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "eton-shirts",
+      "qid": "Q10489339",
+      "name": "Eton Shirts",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sanyo-shokai",
+      "qid": "Q11358279",
+      "name": "Sanyo Shokai",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "j-lo-by-jennifer-lopez",
+      "qid": "Q16851394",
+      "name": "J.Lo by Jennifer Lopez",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mossimo",
+      "qid": "Q17107723",
+      "name": "Mossimo",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tory-burch-llc",
+      "qid": "Q19988222",
+      "name": "Tory Burch LLC",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "h-huntsman-and-sons",
+      "qid": "Q20711728",
+      "name": "H. Huntsman & Sons",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vero-moda",
+      "qid": "Q640418",
+      "name": "Vero Moda",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "shimamura",
+      "qid": "Q7758173",
+      "name": "Shimamura",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "only",
+      "qid": "Q12329792",
+      "name": "ONLY",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "colins-jeans",
+      "qid": "Q18015543",
+      "name": "Colin's Jeans",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brandix",
+      "qid": "Q73185587",
+      "name": "Brandix",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "edgars",
+      "qid": "Q97276073",
+      "name": "Edgars",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fabindia",
+      "qid": "Q5427779",
+      "name": "Fabindia",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "page-industries",
+      "qid": "Q18386006",
+      "name": "Page Industries",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "monte-carlo-fashions-limited",
+      "qid": "Q19894117",
+      "name": "Monte Carlo Fashions Limited",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "siyaram-silk-mills",
+      "qid": "Q19898409",
+      "name": "Siyaram Silk Mills",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "foschini-group",
+      "qid": "Q24233996",
+      "name": "Foschini Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "max-fashion",
+      "qid": "Q24939079",
+      "name": "Max Fashion",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zodiac-clothing-company-ltd",
+      "qid": "Q108281403",
+      "name": "Zodiac Clothing Company Ltd.",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mas-holdings",
+      "qid": "Q6714540",
+      "name": "MAS Holdings",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mr-price-group",
+      "qid": "Q6929120",
+      "name": "Mr Price Group",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lux-industries",
+      "qid": "Q17068419",
+      "name": "Lux Industries",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "peter-england",
+      "qid": "Q19573665",
+      "name": "Peter England",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "biba-apparels",
+      "qid": "Q19882351",
+      "name": "Biba Apparels",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "manyavar",
+      "qid": "Q24906783",
+      "name": "Manyavar",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mudo",
+      "qid": "Q28059537",
+      "name": "Mudo",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "allen-solly",
+      "qid": "Q110036995",
+      "name": "Allen Solly",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "van-heusen",
+      "qid": "Q67551865",
+      "name": "Van Heusen",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "w-for-woman",
+      "qid": "Q127513681",
+      "name": "W for Woman",
+      "categories": [
+        "apparel-garments"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "toyota",
+      "qid": "Q53268",
+      "name": "Toyota",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "volkswagen",
+      "qid": "Q246",
+      "name": "Volkswagen",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bmw",
+      "qid": "Q26678",
+      "name": "BMW",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "audi-ag",
+      "qid": "Q23317",
+      "name": "Audi AG",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ford-motor-company",
+      "qid": "Q44294",
+      "name": "Ford Motor Company",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "renault",
+      "qid": "Q6686",
+      "name": "Renault",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "honda",
+      "qid": "Q9584",
+      "name": "Honda",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "donkervoort",
+      "qid": "Q27571",
+      "name": "Donkervoort",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ferrari",
+      "qid": "Q27586",
+      "name": "Ferrari",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "porsche",
+      "qid": "Q40993",
+      "name": "Porsche",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nissan",
+      "qid": "Q20165",
+      "name": "Nissan",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "general-motors",
+      "qid": "Q81965",
+      "name": "General Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "opel",
+      "qid": "Q40966",
+      "name": "Opel",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fiat",
+      "qid": "Q27597",
+      "name": "Fiat",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chevrolet",
+      "qid": "Q29570",
+      "name": "Chevrolet",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lamborghini",
+      "qid": "Q35886",
+      "name": "Lamborghini",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "suzuki-motor-corporation",
+      "qid": "Q181642",
+      "name": "Suzuki Motor Corporation",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mazda",
+      "qid": "Q35996",
+      "name": "Mazda",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "skoda-auto",
+      "qid": "Q29637",
+      "name": "Škoda Auto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kia",
+      "qid": "Q35349",
+      "name": "Kia",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "citroen",
+      "qid": "Q6746",
+      "name": "Citroën",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alfa-romeo",
+      "qid": "Q26921",
+      "name": "Alfa Romeo",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hyundai-motor-company",
+      "qid": "Q55931",
+      "name": "Hyundai Motor Company",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mercedes-benz-group",
+      "qid": "Q27530",
+      "name": "Mercedes-Benz Group",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "togg",
+      "qid": "Q6039733",
+      "name": "Togg",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "volkswagen-group",
+      "qid": "Q156578",
+      "name": "Volkswagen Group",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aston-martin-lagonda",
+      "qid": "Q27074",
+      "name": "Aston Martin Lagonda",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cadillac",
+      "qid": "Q27436",
+      "name": "Cadillac",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jeep",
+      "qid": "Q30113",
+      "name": "Jeep",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rolls-royce-motor-cars",
+      "qid": "Q234803",
+      "name": "Rolls-Royce Motor Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "maserati",
+      "qid": "Q35962",
+      "name": "Maserati",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mitsubishi-motors",
+      "qid": "Q36033",
+      "name": "Mitsubishi Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bentley",
+      "qid": "Q27224",
+      "name": "Bentley",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lancia",
+      "qid": "Q35896",
+      "name": "Lancia",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "subaru",
+      "qid": "Q172741",
+      "name": "Subaru",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lexus",
+      "qid": "Q35919",
+      "name": "Lexus",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "seat",
+      "qid": "Q188217",
+      "name": "SEAT",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dodge",
+      "qid": "Q27564",
+      "name": "Dodge",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "volvo-cars",
+      "qid": "Q215293",
+      "name": "Volvo Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "buick",
+      "qid": "Q27415",
+      "name": "Buick",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dacia",
+      "qid": "Q27460",
+      "name": "Dacia",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "isuzu",
+      "qid": "Q29803",
+      "name": "Isuzu",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lada",
+      "qid": "Q35676",
+      "name": "Lada",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gaz",
+      "qid": "Q28616",
+      "name": "GAZ",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "geely",
+      "qid": "Q739000",
+      "name": "Geely",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avtovaz",
+      "qid": "Q2309",
+      "name": "AvtoVAZ",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "acura",
+      "qid": "Q53097",
+      "name": "Acura",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "smart",
+      "qid": "Q156490",
+      "name": "smart",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stellantis",
+      "qid": "Q97439162",
+      "name": "Stellantis",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ktm",
+      "qid": "Q215657",
+      "name": "KTM",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "daihatsu",
+      "qid": "Q27511",
+      "name": "Daihatsu",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "koenigsegg",
+      "qid": "Q35594",
+      "name": "Koenigsegg",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lincoln-motor-company",
+      "qid": "Q216796",
+      "name": "Lincoln Motor Company",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hummer",
+      "qid": "Q213487",
+      "name": "Hummer",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lotus-cars",
+      "qid": "Q35935",
+      "name": "Lotus Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "byd-auto",
+      "qid": "Q27423",
+      "name": "BYD Auto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vauxhall",
+      "qid": "Q59187",
+      "name": "Vauxhall",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "infiniti",
+      "qid": "Q29714",
+      "name": "Infiniti",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "elbo",
+      "qid": "Q1275062",
+      "name": "ELBO",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alpine",
+      "qid": "Q26944",
+      "name": "Alpine",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "daf",
+      "qid": "Q27489",
+      "name": "DAF",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kg-mobility",
+      "qid": "Q221869",
+      "name": "KG Mobility",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mahindra-and-mahindra",
+      "qid": "Q848059",
+      "name": "Mahindra & Mahindra",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pagani-automobili",
+      "qid": "Q749239",
+      "name": "Pagani Automobili",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mini",
+      "qid": "Q116232",
+      "name": "Mini",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "saic-motor",
+      "qid": "Q910401",
+      "name": "SAIC Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mclaren-automotive",
+      "qid": "Q1351854",
+      "name": "McLaren Automotive",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dongfeng-motor-corporation",
+      "qid": "Q1138452",
+      "name": "Dongfeng Motor Corporation",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gmc",
+      "qid": "Q28993",
+      "name": "GMC",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hino-motors",
+      "qid": "Q867667",
+      "name": "Hino Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "proton",
+      "qid": "Q827306",
+      "name": "Proton",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bajaj-auto",
+      "qid": "Q10910065",
+      "name": "Bajaj Auto",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "maruti-suzuki",
+      "qid": "Q963718",
+      "name": "Maruti Suzuki",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chery",
+      "qid": "Q591001",
+      "name": "Chery",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "uaz",
+      "qid": "Q658242",
+      "name": "UAZ",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "great-wall-motor",
+      "qid": "Q1117001",
+      "name": "Great Wall Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hyundai-motor-group",
+      "qid": "Q59243",
+      "name": "Hyundai Motor Group",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ds-automobiles",
+      "qid": "Q16040593",
+      "name": "DS Automobiles",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "renault-korea-motors",
+      "qid": "Q494168",
+      "name": "Renault Korea Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "xpeng",
+      "qid": "Q63035278",
+      "name": "XPeng",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "abarth",
+      "qid": "Q26823",
+      "name": "Abarth",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "faw-group",
+      "qid": "Q1124351",
+      "name": "FAW Group",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brabus",
+      "qid": "Q321785",
+      "name": "Brabus",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "changan-automobile",
+      "qid": "Q29366",
+      "name": "Changan Automobile",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "minsk-automobile-plant",
+      "qid": "Q1251215",
+      "name": "Minsk Automobile Plant",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nio-inc",
+      "qid": "Q29921278",
+      "name": "Nio Inc.",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ligier",
+      "qid": "Q35931",
+      "name": "Ligier",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "subaru-corporation",
+      "qid": "Q1051297",
+      "name": "Subaru Corporation",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "spyker-cars",
+      "qid": "Q1128836",
+      "name": "Spyker Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rimac-automobili",
+      "qid": "Q7334368",
+      "name": "Rimac Automobili",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "iran-khodro",
+      "qid": "Q1343045",
+      "name": "Iran Khodro",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "perodua",
+      "qid": "Q1476369",
+      "name": "Perodua",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "polestar",
+      "qid": "Q4047174",
+      "name": "Polestar",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vinfast",
+      "qid": "Q56660561",
+      "name": "VinFast",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ram-trucks",
+      "qid": "Q165708",
+      "name": "Ram Trucks",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "caterham-cars",
+      "qid": "Q838832",
+      "name": "Caterham Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alpina",
+      "qid": "Q203550",
+      "name": "Alpina",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "polaris",
+      "qid": "Q1850587",
+      "name": "Polaris",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ashok-leyland",
+      "qid": "Q726193",
+      "name": "Ashok Leyland",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zeekr",
+      "qid": "Q106621124",
+      "name": "Zeekr",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "morgan-motor-company",
+      "qid": "Q1165625",
+      "name": "Morgan Motor Company",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zaz",
+      "qid": "Q71233",
+      "name": "ZAZ",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hongqi",
+      "qid": "Q1611731",
+      "name": "Hongqi",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tvs-motor-company",
+      "qid": "Q3300084",
+      "name": "TVS Motor Company",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "genesis-motor",
+      "qid": "Q21451523",
+      "name": "Genesis Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chrysler",
+      "qid": "Q29610",
+      "name": "Chrysler",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "brilliance-auto",
+      "qid": "Q917192",
+      "name": "Brilliance Auto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "roewe",
+      "qid": "Q1637227",
+      "name": "Roewe",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cupra",
+      "qid": "Q8352675",
+      "name": "Cupra",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gordini",
+      "qid": "Q173222",
+      "name": "Gordini",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hindustan-motors",
+      "qid": "Q1422710",
+      "name": "Hindustan Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jac-group",
+      "qid": "Q545579",
+      "name": "JAC Group",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "autosan",
+      "qid": "Q48593",
+      "name": "Autosan",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "foton-motor",
+      "qid": "Q814825",
+      "name": "Foton Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tofas",
+      "qid": "Q1136056",
+      "name": "Tofaş",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mitsuoka-motor",
+      "qid": "Q1544189",
+      "name": "Mitsuoka Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lucid-motors",
+      "qid": "Q28027517",
+      "name": "Lucid Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "leapmotor",
+      "qid": "Q99510294",
+      "name": "Leapmotor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "li-auto",
+      "qid": "Q98139925",
+      "name": "Li Auto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ac-cars",
+      "qid": "Q26893",
+      "name": "AC Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avia-q27143",
+      "qid": "Q27143",
+      "name": "Avia",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alfa-romeo-tonale",
+      "qid": "Q110856516",
+      "name": "Alfa Romeo Tonale",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ariel-motor-company",
+      "qid": "Q202888",
+      "name": "Ariel Motor Company",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "volvo-buses",
+      "qid": "Q2373435",
+      "name": "Volvo Buses",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "renault-nissan-mitsubishi-alliance",
+      "qid": "Q1477864",
+      "name": "Renault–Nissan–Mitsubishi Alliance",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mg-motor",
+      "qid": "Q1881443",
+      "name": "MG Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "saipa",
+      "qid": "Q116234",
+      "name": "Saipa",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lynk-and-co",
+      "qid": "Q27555283",
+      "name": "Lynk & Co",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "noble-automotive",
+      "qid": "Q1542124",
+      "name": "Noble Automotive",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nanjing-automobile",
+      "qid": "Q1584295",
+      "name": "Nanjing Automobile",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "am-general",
+      "qid": "Q295481",
+      "name": "AM General",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dino",
+      "qid": "Q577775",
+      "name": "Dino",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zaporozhets",
+      "qid": "Q744996",
+      "name": "Zaporozhets",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ora",
+      "qid": "Q97014020",
+      "name": "Ora",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "carroll-shelby-international",
+      "qid": "Q1045210",
+      "name": "Carroll Shelby International",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wuling-motors",
+      "qid": "Q3817853",
+      "name": "Wuling Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ruf-automobile",
+      "qid": "Q559608",
+      "name": "Ruf Automobile",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "saleen",
+      "qid": "Q1361906",
+      "name": "Saleen",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "isdera",
+      "qid": "Q704981",
+      "name": "Isdera",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "panoz-auto-development",
+      "qid": "Q746256",
+      "name": "Panoz Auto Development",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "haval",
+      "qid": "Q28223947",
+      "name": "Haval",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aiways",
+      "qid": "Q65158716",
+      "name": "Aiways",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aito",
+      "qid": "Q111660349",
+      "name": "AITO",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "qoros",
+      "qid": "Q4231991",
+      "name": "Qoros",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fso-warszawa",
+      "qid": "Q1462357",
+      "name": "FSO Warszawa",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zx-auto",
+      "qid": "Q1572159",
+      "name": "ZX Auto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dongfeng-stellantis",
+      "qid": "Q1241360",
+      "name": "Dongfeng Stellantis",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "faraday-future",
+      "qid": "Q21562062",
+      "name": "Faraday Future",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "itala",
+      "qid": "Q29852",
+      "name": "Itala",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "arcfox",
+      "qid": "Q95786931",
+      "name": "Arcfox",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "baw",
+      "qid": "Q814715",
+      "name": "BAW",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ginetta-cars",
+      "qid": "Q167016",
+      "name": "Ginetta Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "baojun",
+      "qid": "Q2883616",
+      "name": "Baojun",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "trumpchi",
+      "qid": "Q5404497",
+      "name": "Trumpchi",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "higer",
+      "qid": "Q1617677",
+      "name": "Higer",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "agrale",
+      "qid": "Q395941",
+      "name": "Agrale",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gillet",
+      "qid": "Q674555",
+      "name": "Gillet",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aurus",
+      "qid": "Q52834700",
+      "name": "Aurus",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "eicher-motors",
+      "qid": "Q1301821",
+      "name": "Eicher Motors",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "nysa",
+      "qid": "Q136404",
+      "name": "Nysa",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "faw-volkswagen",
+      "qid": "Q913734",
+      "name": "FAW-Volkswagen",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vdl-nedcar",
+      "qid": "Q167158",
+      "name": "VDL Nedcar",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fiat-professional",
+      "qid": "Q1146494",
+      "name": "Fiat Professional",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "karsan",
+      "qid": "Q1734420",
+      "name": "Karsan",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ford-otosan",
+      "qid": "Q1790346",
+      "name": "Ford Otosan",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vector-motors",
+      "qid": "Q1969669",
+      "name": "Vector Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "seres-auto-hubei",
+      "qid": "Q55608782",
+      "name": "Seres Auto (Hubei)",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "piech-automotive",
+      "qid": "Q61965086",
+      "name": "Piëch Automotive",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bmw-dixi",
+      "qid": "Q695703",
+      "name": "BMW Dixi",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jetta",
+      "qid": "Q63124631",
+      "name": "Jetta",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "omoda",
+      "qid": "Q118646009",
+      "name": "Omoda",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rinspeed",
+      "qid": "Q269311",
+      "name": "Rinspeed",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "soueast",
+      "qid": "Q1855184",
+      "name": "Soueast",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jetour",
+      "qid": "Q98145436",
+      "name": "Jetour",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "im-motors",
+      "qid": "Q106617594",
+      "name": "IM Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avatr-technology",
+      "qid": "Q109616786",
+      "name": "Avatr Technology",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "force-motors",
+      "qid": "Q1436646",
+      "name": "Force Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "geometry",
+      "qid": "Q65064934",
+      "name": "Geometry",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fangchengbao",
+      "qid": "Q123556040",
+      "name": "Fangchengbao",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jiangling-motors",
+      "qid": "Q1065539",
+      "name": "Jiangling Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wallyscar",
+      "qid": "Q1745885",
+      "name": "Wallyscar",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lister-cars",
+      "qid": "Q1864949",
+      "name": "Lister Cars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "haima-automobile",
+      "qid": "Q1397713",
+      "name": "Haima Automobile",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gemballa",
+      "qid": "Q692402",
+      "name": "Gemballa",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "luxgen",
+      "qid": "Q711545",
+      "name": "Luxgen",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bitter-automobile",
+      "qid": "Q27334",
+      "name": "Bitter Automobile",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "luxeed",
+      "qid": "Q123575158",
+      "name": "Luxeed",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "beijing-benz",
+      "qid": "Q814713",
+      "name": "Beijing Benz",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jiangsu-yueda-kia-motors",
+      "qid": "Q842268",
+      "name": "Jiangsu Yueda Kia Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ford-of-britain",
+      "qid": "Q860661",
+      "name": "Ford of Britain",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "changhe",
+      "qid": "Q1062020",
+      "name": "Changhe",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ac-schnitzer",
+      "qid": "Q202523",
+      "name": "AC Schnitzer",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "irmscher",
+      "qid": "Q571225",
+      "name": "Irmscher",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "radical-sportscars",
+      "qid": "Q1577346",
+      "name": "Radical Sportscars",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "switch-mobility",
+      "qid": "Q2235147",
+      "name": "Switch Mobility",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fisker",
+      "qid": "Q1420893",
+      "name": "Fisker",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "izhavto",
+      "qid": "Q384012",
+      "name": "IzhAvto",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sungri-motors",
+      "qid": "Q471290",
+      "name": "Sungri Motors",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dr-automobiles-groupe",
+      "qid": "Q474988",
+      "name": "DR Automobiles Groupe",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "seres-group",
+      "qid": "Q104907477",
+      "name": "Seres Group",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scuderia-cameron-glickenhaus",
+      "qid": "Q108187217",
+      "name": "Scuderia Cameron Glickenhaus",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wey",
+      "qid": "Q31842448",
+      "name": "Wey",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hiphi",
+      "qid": "Q99479670",
+      "name": "HiPhi",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tank",
+      "qid": "Q106620909",
+      "name": "TANK",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "valmet-automotive",
+      "qid": "Q118559",
+      "name": "Valmet Automotive",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zhiguli",
+      "qid": "Q2391438",
+      "name": "Zhiguli",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "magyar-suzuki",
+      "qid": "Q262381",
+      "name": "Magyar Suzuki",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "oaf",
+      "qid": "Q293615",
+      "name": "ÖAF",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "oyak-renault",
+      "qid": "Q1854061",
+      "name": "Oyak Renault",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "pars-khodro",
+      "qid": "Q1315638",
+      "name": "Pars Khodro",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yulon-motor",
+      "qid": "Q711523",
+      "name": "Yulon Motor",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "venucia",
+      "qid": "Q7920470",
+      "name": "Venucia",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gac-aion",
+      "qid": "Q85740196",
+      "name": "GAC Aion",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "premier-automobiles-limited",
+      "qid": "Q268808",
+      "name": "Premier Automobiles Limited",
+      "categories": [
+        "automobile-manufacturers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "shineray-group",
+      "qid": "Q10371083",
+      "name": "Shineray Group",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ather-energy",
+      "qid": "Q24946444",
+      "name": "Ather Energy",
+      "categories": [
+        "automobile-manufacturers",
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scutum-logistic",
+      "qid": "Q22059031",
+      "name": "Scutum Logistic",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "alexander-leutner-and-co",
+      "qid": "Q2642559",
+      "name": "Alexander Leutner & Co.",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yamaha-motor-company",
+      "qid": "Q158888",
+      "name": "Yamaha Motor Company",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "harley-davidson",
+      "qid": "Q192814",
+      "name": "Harley-Davidson",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ducati",
+      "qid": "Q271812",
+      "name": "Ducati",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "piaggio",
+      "qid": "Q841263",
+      "name": "Piaggio",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aprilia",
+      "qid": "Q622062",
+      "name": "Aprilia",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "moto-guzzi",
+      "qid": "Q1149018",
+      "name": "Moto Guzzi",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kwang-yang-motor",
+      "qid": "Q696338",
+      "name": "Kwang Yang Motor",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "jawa",
+      "qid": "Q763622",
+      "name": "Jawa",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hero-motocorp",
+      "qid": "Q1613763",
+      "name": "Hero MotoCorp",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lifan-group",
+      "qid": "Q1465351",
+      "name": "Lifan Group",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bmw-motorrad",
+      "qid": "Q249173",
+      "name": "BMW Motorrad",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "indian-motorcycle",
+      "qid": "Q1091034",
+      "name": "Indian Motorcycle",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "triumph-motorcycles-ltd",
+      "qid": "Q1140383",
+      "name": "Triumph Motorcycles Ltd",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cagiva",
+      "qid": "Q1025726",
+      "name": "Cagiva",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "benelli",
+      "qid": "Q817107",
+      "name": "Benelli",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "imz-ural",
+      "qid": "Q1543724",
+      "name": "IMZ-Ural",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kawasaki-motors",
+      "qid": "Q249033",
+      "name": "Kawasaki Motors",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bimota",
+      "qid": "Q863478",
+      "name": "Bimota",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gas-gas",
+      "qid": "Q1495046",
+      "name": "Gas Gas",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bombardier-recreational-products",
+      "qid": "Q891797",
+      "name": "Bombardier Recreational Products",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "husqvarna-motorcycles",
+      "qid": "Q5493297",
+      "name": "Husqvarna Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rieju",
+      "qid": "Q761958",
+      "name": "Rieju",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "beta-motor",
+      "qid": "Q830950",
+      "name": "Beta Motor",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "moto-morini",
+      "qid": "Q1949745",
+      "name": "Moto Morini",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "fantic-motor",
+      "qid": "Q2704677",
+      "name": "Fantic Motor",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "baotian-motorcycle-company",
+      "qid": "Q807077",
+      "name": "Baotian Motorcycle Company",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "qianjiang-motorcycle",
+      "qid": "Q2121562",
+      "name": "Qianjiang Motorcycle",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "italjet",
+      "qid": "Q1424713",
+      "name": "Italjet",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "royal-enfield-india",
+      "qid": "Q2668720",
+      "name": "Royal Enfield India",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vyrus",
+      "qid": "Q1781440",
+      "name": "Vyrus",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dna-motors",
+      "qid": "Q55736867",
+      "name": "DNA Motors",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zero-motorcycles",
+      "qid": "Q191945",
+      "name": "Zero Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sachs",
+      "qid": "Q317263",
+      "name": "Sachs",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vectrix",
+      "qid": "Q936714",
+      "name": "Vectrix",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "monark",
+      "qid": "Q1785043",
+      "name": "Monark",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "peugeot-motocycles",
+      "qid": "Q2081467",
+      "name": "Peugeot Motocycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "star-motorcycles",
+      "qid": "Q385960",
+      "name": "Star Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chang-jiang",
+      "qid": "Q447860",
+      "name": "Chang Jiang",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "di-blasi-industriale",
+      "qid": "Q945560",
+      "name": "Di Blasi Industriale",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ghezzi-and-brian",
+      "qid": "Q1056264",
+      "name": "Ghezzi & Brian",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rokon-motorcycle",
+      "qid": "Q1344744",
+      "name": "Rokon motorcycle",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "harris-performance-products",
+      "qid": "Q2057446",
+      "name": "Harris Performance Products",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "magni",
+      "qid": "Q2693648",
+      "name": "Magni",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "loncin-holdings-ltd",
+      "qid": "Q6669689",
+      "name": "Loncin Holdings, Ltd",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "clews-competition-motorcycles",
+      "qid": "Q1023047",
+      "name": "Clews Competition Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "borile",
+      "qid": "Q1058467",
+      "name": "Borile",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "junak",
+      "qid": "Q1459130",
+      "name": "Junak",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "crocker-motorcycles",
+      "qid": "Q2153246",
+      "name": "Crocker Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "bmw-type-255",
+      "qid": "Q1848379",
+      "name": "BMW Type 255",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "can-am-motorcycles",
+      "qid": "Q2935727",
+      "name": "Can-Am motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "atk-motorcycles",
+      "qid": "Q3601318",
+      "name": "ATK motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tehuelche",
+      "qid": "Q3982599",
+      "name": "Tehuelche",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "condor",
+      "qid": "Q680344",
+      "name": "Condor",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "metisse-motorcycles",
+      "qid": "Q2141191",
+      "name": "Métisse Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mego",
+      "qid": "Q2340033",
+      "name": "Mego",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rewaco",
+      "qid": "Q2462547",
+      "name": "rewaco",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "wasp-motorcycles",
+      "qid": "Q1826638",
+      "name": "Wasp Motorcycles",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "avello-motorcycle",
+      "qid": "Q3013042",
+      "name": "Avello (motorcycle)",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dot-cycle-and-motor-manufacturing-company",
+      "qid": "Q5299383",
+      "name": "Dot Cycle and Motor Manufacturing Company",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zxmoto",
+      "qid": "Q138827182",
+      "name": "ZXMOTO",
+      "categories": [
+        "motorcycles-two-wheelers"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "chatgpt",
+      "qid": "Q115564437",
+      "name": "ChatGPT",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "deepseek",
+      "qid": "Q131577453",
+      "name": "DeepSeek",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gemini",
+      "qid": "Q116698014",
+      "name": "Gemini",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "anthropic",
+      "qid": "Q116758847",
+      "name": "Anthropic",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "grok",
+      "qid": "Q123361035",
+      "name": "Grok",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "claude",
+      "qid": "Q118876059",
+      "name": "Claude",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "siri",
+      "qid": "Q582159",
+      "name": "Siri",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "qid": "Q116793893",
+      "name": "Microsoft Copilot",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "google-assistant",
+      "qid": "Q25025241",
+      "name": "Google Assistant",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "perplexity-ai",
+      "qid": "Q124333951",
+      "name": "Perplexity AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "midjourney",
+      "qid": "Q113070628",
+      "name": "Midjourney",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "dall-e",
+      "qid": "Q105078662",
+      "name": "DALL-E",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stable-diffusion",
+      "qid": "Q113660857",
+      "name": "Stable Diffusion",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "mistral-ai",
+      "qid": "Q119718658",
+      "name": "Mistral AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "deepl",
+      "qid": "Q43968444",
+      "name": "DeepL",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "qwen",
+      "qid": "Q130234299",
+      "name": "Qwen",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "grammarly",
+      "qid": "Q16840770",
+      "name": "Grammarly",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "hugging-face",
+      "qid": "Q108943604",
+      "name": "Hugging Face",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "llama",
+      "qid": "Q116894231",
+      "name": "LLaMA",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "character-ai",
+      "qid": "Q115517493",
+      "name": "Character.ai",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ernie-bot",
+      "qid": "Q116894099",
+      "name": "Ernie Bot",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "minimax-group",
+      "qid": "Q130263208",
+      "name": "MiniMax Group",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "you-com",
+      "qid": "Q111598768",
+      "name": "You.com",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "elevenlabs",
+      "qid": "Q116798355",
+      "name": "ElevenLabs",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "zhipu-ai",
+      "qid": "Q129572031",
+      "name": "Zhipu AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "scale-ai",
+      "qid": "Q112629176",
+      "name": "Scale AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kimi",
+      "qid": "Q131993396",
+      "name": "Kimi",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "adobe-firefly",
+      "qid": "Q120487902",
+      "name": "Adobe Firefly",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "udio",
+      "qid": "Q125475915",
+      "name": "Udio",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "flux",
+      "qid": "Q128801793",
+      "name": "Flux",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "cohere",
+      "qid": "Q110363143",
+      "name": "Cohere",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "inflection-ai",
+      "qid": "Q113270365",
+      "name": "Inflection AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "stability-ai",
+      "qid": "Q123592234",
+      "name": "Stability AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "gigachat",
+      "qid": "Q124650700",
+      "name": "GigaChat",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "yandexgpt",
+      "qid": "Q118869775",
+      "name": "YandexGPT",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "doubao",
+      "qid": "Q131863911",
+      "name": "Doubao",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "aleph-alpha",
+      "qid": "Q123368857",
+      "name": "Aleph Alpha",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "leonardo-ai",
+      "qid": "Q124157014",
+      "name": "Leonardo AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "novelai",
+      "qid": "Q114450428",
+      "name": "NovelAI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "devin",
+      "qid": "Q124874381",
+      "name": "Devin",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "lovable",
+      "qid": "Q135998012",
+      "name": "Lovable",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "kling-ai",
+      "qid": "Q133141218",
+      "name": "Kling AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "otter-ai",
+      "qid": "Q65172862",
+      "name": "otter.ai",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "ai21-labs",
+      "qid": "Q113030551",
+      "name": "AI21 Labs",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "synthesia",
+      "qid": "Q117322900",
+      "name": "Synthesia",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "writesonic",
+      "qid": "Q120534390",
+      "name": "Writesonic",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "heygen",
+      "qid": "Q123258741",
+      "name": "HeyGen",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "black-forest-labs",
+      "qid": "Q128801641",
+      "name": "Black Forest Labs",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sarvam-ai",
+      "qid": "Q134437782",
+      "name": "Sarvam AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "recraft",
+      "qid": "Q135108019",
+      "name": "Recraft",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "albert-one",
+      "qid": "Q4710926",
+      "name": "Albert One",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "rog-o-matic",
+      "qid": "Q7357636",
+      "name": "Rog-O-Matic",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "sparrow",
+      "qid": "Q116470199",
+      "name": "Sparrow",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "vicuna-llm",
+      "qid": "Q123739038",
+      "name": "Vicuna LLM",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "amalia-llm",
+      "qid": "Q135495894",
+      "name": "Amália (LLM)",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "meta-ai",
+      "qid": "Q136002360",
+      "name": "Meta AI",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "tabnine",
+      "qid": "Q125535706",
+      "name": "Tabnine",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
+    },
+    {
+      "slug": "reka",
+      "qid": "Q125878748",
+      "name": "Reka",
+      "categories": [
+        "ai-tools"
+      ],
+      "source": "query",
+      "discoveredAt": "2026-10-17"
     }
   ]
 }

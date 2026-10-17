@@ -24,11 +24,28 @@ export function shardOf(slug) {
 }
 export const shardName = (n) => `shard-${String(n).padStart(2, '0')}.json`
 
+/** Wikidata uses several names for the same place; show one consistent name. */
+const COUNTRY_NAMES = {
+  "People's Republic of China": 'China',
+  'Republic of China': 'Taiwan',
+  'United States of America': 'United States',
+  'Czech Republic': 'Czechia',
+  'Kingdom of the Netherlands': 'Netherlands',
+  'Russian Federation': 'Russia',
+  'Korea, South': 'South Korea',
+  "Côte d'Ivoire": "Côte d'Ivoire"
+}
+export const normalizeCountry = (name) => (name ? (COUNTRY_NAMES[name] ?? name) : name)
+
+/** Must stay identical to countrySlug() in src/data/companies.ts. */
+export const countrySlug = (name) =>
+  name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['’`]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+
 export const toLite = (c) => ({
   slug: c.slug,
   name: c.name,
   hq: c.headquarters?.value ?? null,
-  country: c.country?.value ?? null,
+  country: normalizeCountry(c.country?.value ?? null),
   categories: c.categories,
   logo: c.logo?.usable && c.logo.path ? c.logo.path : null,
   founded: c.founded?.value ?? null,
@@ -54,7 +71,14 @@ export async function writeAllCompanies(companies, generatedAt) {
   await mkdir(SHARD_DIR, { recursive: true })
   for (const f of await readdir(SHARD_DIR)) if (/^shard-\d+\.json$/.test(f)) await rm(path.join(SHARD_DIR, f))
   const shards = Array.from({ length: SHARDS }, () => ({}))
-  for (const c of companies) shards[shardOf(c.slug)][c.slug] = c
+  for (const c of companies) {
+    // A financial figure without its period or currency is not trustworthy; never publish one.
+    for (const k of ['revenue', 'netIncome', 'marketCap']) {
+      if (c[k] && (!c[k].value?.asOf || !c[k].value?.currency)) c[k] = null
+    }
+    if (c.country) c.country = { ...c.country, value: normalizeCountry(c.country.value) }
+    shards[shardOf(c.slug)][c.slug] = c
+  }
   for (let i = 0; i < SHARDS; i++) await writeFile(path.join(SHARD_DIR, shardName(i)), JSON.stringify(shards[i]))
   const sorted = [...companies].sort((a, b) => a.slug.localeCompare(b.slug))
   await writeFile(INDEX_FILE, JSON.stringify({ generatedAt, source: 'Wikidata (CC0), SEC EDGAR', companies: sorted.map(toLite) }))

@@ -4,7 +4,9 @@ import { Container, Breadcrumbs } from '../components/ui'
 import { CompanyLogo } from '../components/CompanyLogo'
 import { Link } from '../utils/nav'
 import { useNavigate } from '../utils/navContext'
-import { COMPANIES, companyBySlug, formatMoney, type Company, type Sourced } from '../data/companies'
+import { companyLite, formatMoney, type Company, type Sourced } from '../data/companies'
+import { useCompanyDetails } from '../data/useCompanyDetails'
+import { SearchBox } from '../components/SearchBox'
 import { useSeo } from '../utils/seo'
 
 interface Row {
@@ -27,7 +29,9 @@ const ROWS: Row[] = [
 
 export const ComparePage: React.FC<{ slugs: string[] }> = ({ slugs }) => {
   const navigate = useNavigate()
-  const selected = slugs.map(companyBySlug).filter((c): c is Company => !!c)
+  const valid = slugs.filter((s) => companyLite(s))
+  const { details, loading } = useCompanyDetails(valid)
+  const selected = details.filter((c): c is Company => !!c)
   const set = (next: string[]) => navigate({ page: 'compare', slugs: next })
 
   useSeo({
@@ -36,8 +40,6 @@ export const ComparePage: React.FC<{ slugs: string[] }> = ({ slugs }) => {
     path: '/compare',
     noindex: true
   })
-
-  const options = COMPANIES.filter((c) => !slugs.includes(c.slug)).sort((a, b) => a.name.localeCompare(b.name))
 
   return (
     <Container className="pb-16 pt-8">
@@ -49,31 +51,31 @@ export const ComparePage: React.FC<{ slugs: string[] }> = ({ slugs }) => {
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        {selected.map((c) => (
-          <span key={c.slug} className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface-1 py-1 pl-1.5 pr-2 text-sm text-white">
-            <CompanyLogo company={c} size="sm" className="!h-6 !w-6 !rounded-full !text-[10px]" />
-            {c.name}
-            <button type="button" aria-label={`Remove ${c.name}`} onClick={() => set(slugs.filter((s) => s !== c.slug))} className="rounded-full p-0.5 text-ink-muted hover:bg-surface-3 hover:text-white">
-              <X className="h-3.5 w-3.5" aria-hidden />
-            </button>
-          </span>
-        ))}
-        {selected.length < 3 && (
-          <label className="text-sm text-ink-muted">
-            <span className="sr-only">Add a company to compare</span>
-            <select
-              value=""
-              onChange={(e) => e.target.value && set([...slugs, e.target.value])}
-              className="rounded-lg border border-line bg-surface-1 px-3 py-2 text-sm text-white focus:border-accent"
-            >
-              <option value="">Add a company…</option>
-              {options.map((c) => <option key={c.slug} value={c.slug}>{c.name}</option>)}
-            </select>
-          </label>
+        {valid.map((slug) => {
+          const l = companyLite(slug)!
+          return (
+            <span key={slug} className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface-1 py-1 pl-1.5 pr-2 text-sm text-white">
+              <CompanyLogo name={l.name} src={l.logo} size="sm" className="!h-6 !w-6 !rounded-full !text-[10px]" />
+              {l.name}
+              <button type="button" aria-label={`Remove ${l.name}`} onClick={() => set(valid.filter((s) => s !== slug))} className="rounded-full p-0.5 text-ink-muted hover:bg-surface-3 hover:text-white">
+                <X className="h-3.5 w-3.5" aria-hidden />
+              </button>
+            </span>
+          )
+        })}
+        {valid.length < 3 && (
+          <SearchBox
+            className="w-72"
+            placeholder="Add a company…"
+            label="Add a company to compare"
+            onPickCompany={(slug) => !valid.includes(slug) && set([...valid, slug])}
+          />
         )}
       </div>
 
-      {selected.length < 2 ? (
+      {loading ? (
+        <p className="mt-8 text-sm text-ink-muted" role="status">Loading…</p>
+      ) : selected.length < 2 ? (
         <div className="surface-card mt-8 p-6 text-sm text-ink-muted">Choose at least two companies to see them side by side.</div>
       ) : (
         <div className="surface-card mt-8 overflow-x-auto">
@@ -85,7 +87,7 @@ export const ComparePage: React.FC<{ slugs: string[] }> = ({ slugs }) => {
                 {selected.map((c) => (
                   <th key={c.slug} scope="col" className="p-4">
                     <Link to={{ page: 'company', slug: c.slug }} className="flex items-center gap-3 text-white hover:text-violet-300">
-                      <CompanyLogo company={c} size="sm" />
+                      <CompanyLogo name={c.name} src={c.logo?.usable ? c.logo.path : null} size="sm" />
                       <span className="font-bold">{c.name}</span>
                     </Link>
                   </th>

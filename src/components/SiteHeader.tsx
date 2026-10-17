@@ -5,6 +5,7 @@ import type { Route } from '../utils/router'
 
 const NAV: { label: string; to: Route; match: Route['page'][] }[] = [
   { label: 'Industries', to: { page: 'categories' }, match: ['categories', 'category'] },
+  { label: 'Countries', to: { page: 'countries' }, match: ['countries', 'country'] },
   { label: 'Compare', to: { page: 'compare', slugs: [] }, match: ['compare'] },
   { label: 'Methodology', to: { page: 'methodology' }, match: ['methodology'] },
   { label: 'About', to: { page: 'about' }, match: ['about'] },

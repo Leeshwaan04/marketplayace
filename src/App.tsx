@@ -5,6 +5,8 @@ import { useRoute } from './utils/router'
 import { HomePage } from './pages/HomePage'
 import { CategoriesPage } from './pages/CategoriesPage'
 import { CategoryPage } from './pages/CategoryPage'
+import { CountriesPage } from './pages/CountriesPage'
+import { CountryPage } from './pages/CountryPage'
 import { CompanyPage } from './pages/CompanyPage'
 import { MethodologyPage, AboutPage, PrivacyPage, TermsPage } from './pages/StaticPages'
 import { ComparePage } from './pages/ComparePage'
@@ -18,7 +20,9 @@ export function App({ url }: { url?: string }) {
     switch (route.page) {
       case 'home': return <HomePage />
       case 'categories': return <CategoriesPage />
-      case 'category': return <CategoryPage key={route.slug} slug={route.slug} />
+      case 'category': return <CategoryPage key={`${route.slug}/${route.country ?? ''}`} slug={route.slug} country={route.country} />
+      case 'countries': return <CountriesPage />
+      case 'country': return <CountryPage key={route.slug} slug={route.slug} />
       case 'company': return <CompanyPage key={route.slug} slug={route.slug} />
       case 'methodology': return <MethodologyPage />
       case 'about': return <AboutPage />

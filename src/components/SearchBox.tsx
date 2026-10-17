@@ -13,7 +13,16 @@ interface Hit {
 }
 
 /** Global search over profiled companies and industry categories (ARIA combobox). */
-export const SearchBox: React.FC<{ className?: string; autoFocus?: boolean }> = ({ className = '', autoFocus }) => {
+interface SearchBoxProps {
+  className?: string
+  autoFocus?: boolean
+  /** When set, picking a company calls this instead of navigating, and industries are not suggested. */
+  onPickCompany?: (slug: string) => void
+  placeholder?: string
+  label?: string
+}
+
+export const SearchBox: React.FC<SearchBoxProps> = ({ className = '', autoFocus, onPickCompany, placeholder = 'Search companies and industries', label = 'Search companies and industries' }) => {
   const navigate = useNavigate()
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
@@ -29,14 +38,15 @@ export const SearchBox: React.FC<{ className?: string; autoFocus?: boolean }> = 
     }))
     // Match at the start of a word so "gro" finds Groww but not "Group".
     const wordStart = (text: string) => new RegExp(`(^|[^a-z0-9])${needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(text)
-    const cats: Hit[] = CATEGORIES.filter((c) => wordStart(c.name) || c.planned.some(wordStart))
+    const cats: Hit[] = onPickCompany ? [] : CATEGORIES.filter((c) => wordStart(c.name) || c.planned.some(wordStart))
       .slice(0, 4)
       .map((c) => ({ key: `k-${c.slug}`, label: c.name, kind: 'Category', route: { page: 'category', slug: c.slug } }))
     return [...companies, ...cats]
-  }, [q])
+  }, [q, onPickCompany])
 
   const go = (hit: Hit) => {
-    navigate(hit.route)
+    if (onPickCompany && hit.route.page === 'company') onPickCompany(hit.route.slug)
+    else navigate(hit.route)
     setQ('')
     setOpen(false)
     inputRef.current?.blur()
@@ -56,9 +66,9 @@ export const SearchBox: React.FC<{ className?: string; autoFocus?: boolean }> = 
         aria-controls={listId}
         aria-autocomplete="list"
         aria-activedescendant={showList && hits[active] ? `${listId}-${active}` : undefined}
-        aria-label="Search companies and industries"
+        aria-label={label}
         value={q}
-        placeholder="Search companies and industries"
+        placeholder={placeholder}
         onChange={(e) => {
           setQ(e.target.value)
           setActive(0)

@@ -1,0 +1,340 @@
+{
+  "category": "footwear",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q22676",
+      "why": "industry: shoe"
+    },
+    {
+      "via": "P452",
+      "qid": "Q161928",
+      "why": "industry: footwear"
+    },
+    {
+      "via": "P452",
+      "qid": "Q5915560",
+      "why": "industry: footwear industry"
+    },
+    {
+      "via": "P1056",
+      "qid": "Q161928",
+      "why": "produces footwear"
+    },
+    {
+      "via": "P1056",
+      "qid": "Q22676",
+      "why": "produces shoes"
+    }
+  ],
+  "requireTypes": [
+    "Q4830453"
+  ],
+  "minSitelinks": 3,
+  "maxCount": 600,
+  "includeQids": [
+    {
+      "qid": "Q96401486",
+      "name": "Relaxo"
+    },
+    {
+      "qid": "Q6541947",
+      "name": "Liberty Shoes"
+    },
+    {
+      "qid": "Q132145156",
+      "name": "Paragon Footwear"
+    },
+    {
+      "qid": "Q104876652",
+      "name": "Khadim's"
+    },
+    {
+      "qid": "Q128692885",
+      "name": "Mochi"
+    },
+    {
+      "qid": "Q25352034",
+      "name": "Steve Madden"
+    },
+    {
+      "qid": "Q1181953",
+      "name": "Deckers Outdoor"
+    },
+    {
+      "qid": "Q8030548",
+      "name": "Wolverine World Wide"
+    },
+    {
+      "qid": "Q30591057",
+      "name": "Allbirds"
+    },
+    {
+      "qid": "Q60749530",
+      "name": "Rothy's"
+    },
+    {
+      "qid": "Q7576421",
+      "name": "Sperry Top-Sider"
+    },
+    {
+      "qid": "Q2630615",
+      "name": "Keds"
+    },
+    {
+      "qid": "Q10466725",
+      "name": "Dansko"
+    },
+    {
+      "qid": "Q6268615",
+      "name": "Johnston & Murphy"
+    },
+    {
+      "qid": "Q4731627",
+      "name": "Allen Edmonds"
+    },
+    {
+      "qid": "Q16998009",
+      "name": "Justin Boots"
+    },
+    {
+      "qid": "Q7355744",
+      "name": "Rocky Brands"
+    },
+    {
+      "qid": "Q22121873",
+      "name": "Weyco Group"
+    },
+    {
+      "qid": "Q1798270",
+      "name": "Lowa"
+    },
+    {
+      "qid": "Q1584049",
+      "name": "Hanwag"
+    },
+    {
+      "qid": "Q1488760",
+      "name": "Gabor"
+    },
+    {
+      "qid": "Q623598",
+      "name": "Ara"
+    },
+    {
+      "qid": "Q2056117",
+      "name": "Meindl"
+    },
+    {
+      "qid": "Q2152193",
+      "name": "Rieker"
+    },
+    {
+      "qid": "Q688195",
+      "name": "Bally"
+    },
+    {
+      "qid": "Q588001",
+      "name": "Geox"
+    },
+    {
+      "qid": "Q1342350",
+      "name": "Tod's"
+    },
+    {
+      "qid": "Q3752400",
+      "name": "Fratelli Rossetti"
+    },
+    {
+      "qid": "Q1208130",
+      "name": "Diadora"
+    },
+    {
+      "qid": "Q850307",
+      "name": "Lotto"
+    },
+    {
+      "qid": "Q3943471",
+      "name": "Scarpa"
+    },
+    {
+      "qid": "Q1658959",
+      "name": "Tecnica Group"
+    },
+    {
+      "qid": "Q3821214",
+      "name": "La Sportiva"
+    },
+    {
+      "qid": "Q17063744",
+      "name": "Kurt Geiger"
+    },
+    {
+      "qid": "Q5213855",
+      "name": "Jimmy Choo Ltd"
+    },
+    {
+      "qid": "Q22336859",
+      "name": "Loake"
+    },
+    {
+      "qid": "Q30292667",
+      "name": "Grenson"
+    },
+    {
+      "qid": "Q7381310",
+      "name": "Russell & Bromley"
+    },
+    {
+      "qid": "Q3143350",
+      "name": "Hunter Boot"
+    },
+    {
+      "qid": "Q5187348",
+      "name": "Crockett & Jones"
+    },
+    {
+      "qid": "Q1095857",
+      "name": "Clarks"
+    },
+    {
+      "qid": "Q466183",
+      "name": "Reebok"
+    },
+    {
+      "qid": "Q23681835",
+      "name": "Christian Louboutin Ltd"
+    },
+    {
+      "qid": "Q3363091",
+      "name": "Paraboot"
+    },
+    {
+      "qid": "Q3196356",
+      "name": "Kickers"
+    },
+    {
+      "qid": "Q2120822",
+      "name": "Salomon"
+    },
+    {
+      "qid": "Q105372529",
+      "name": "Jonak"
+    },
+    {
+      "qid": "Q3427237",
+      "name": "Repetto"
+    },
+    {
+      "qid": "Q2076935",
+      "name": "Munich"
+    },
+    {
+      "qid": "Q1280255",
+      "name": "ECCO"
+    },
+    {
+      "qid": "Q4356525",
+      "name": "Nokian Footwear"
+    },
+    {
+      "qid": "Q11788344",
+      "name": "CCC"
+    },
+    {
+      "qid": "Q664543",
+      "name": "Deichmann"
+    },
+    {
+      "qid": "Q4653060",
+      "name": "Anta"
+    },
+    {
+      "qid": "Q4021859",
+      "name": "Xtep"
+    },
+    {
+      "qid": "Q10846067",
+      "name": "361 Degrees"
+    },
+    {
+      "qid": "Q7157843",
+      "name": "Peak Sport"
+    },
+    {
+      "qid": "Q1074372",
+      "name": "Feiyue"
+    },
+    {
+      "qid": "Q815847",
+      "name": "Belle International"
+    },
+    {
+      "qid": "Q7093962",
+      "name": "Onitsuka Tiger"
+    },
+    {
+      "qid": "Q327247",
+      "name": "ASICS"
+    },
+    {
+      "qid": "Q1156731",
+      "name": "Mizuno"
+    },
+    {
+      "qid": "Q131394332",
+      "name": "Kolon Sport"
+    },
+    {
+      "qid": "Q1305019",
+      "name": "Vibram"
+    },
+    {
+      "qid": "Q2106675",
+      "name": "Pou Chen"
+    },
+    {
+      "qid": "Q698467",
+      "name": "Yue Yuen"
+    },
+    {
+      "qid": "Q10291538",
+      "name": "Grendene"
+    },
+    {
+      "qid": "Q3351674",
+      "name": "Olympikus"
+    },
+    {
+      "qid": "Q3128675",
+      "name": "Havaianas"
+    },
+    {
+      "qid": "Q3509859",
+      "name": "Alpargatas"
+    },
+    {
+      "qid": "Q2749140",
+      "name": "Topper"
+    },
+    {
+      "qid": "Q2896348",
+      "name": "Blundstone"
+    },
+    {
+      "qid": "Q1138480",
+      "name": "UGG"
+    },
+    {
+      "qid": "Q28729859",
+      "name": "Hotiç"
+    },
+    {
+      "qid": "Q127375336",
+      "name": "Biti's"
+    }
+  ],
+  "excludeLabelRegex": "^(México\\.|La Senza|Spanx|Mango|FBT|Supreme|Troop Sport|Zoo York|Grays International|Koho|Wilson Sporting Goods|Yeezy|Adidas Yeezy|Happy Socks|Southpole|Baby Phat|FSS|J\\. Nooitgedagt en Zonen|Athleta)$",
+  "notes": "Discovered via industry/product signals (shoe, footwear) plus a reviewed curated list. Brands with no Wikidata entity (for example Woodland, Campus, Metro Brands, Red Tape in India) cannot be covered from this source.",
+  "excludeDescriptionRegex": "(skateboard|hockey|golf|cricket|tennis equipment|lingerie|\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b)"
+}

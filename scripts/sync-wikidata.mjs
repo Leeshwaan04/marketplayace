@@ -12,16 +12,38 @@
  * Run: node scripts/sync-wikidata.mjs          sync only registry entries not yet generated (fast)
  *      node scripts/sync-wikidata.mjs --all    re-fetch everything
  */
-import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, stat, readdir, rm } from 'node:fs/promises'
 import { readAllCompanies, writeAllCompanies } from './lib/data.mjs'
 
 const UA = { 'User-Agent': 'marketplayace-data-sync/1.0 (https://marketplayace.com; sumit.bagewadi@indiabulls.com)' }
 const API = 'https://www.wikidata.org/w/api.php'
+
+// One shared gate spaces out every request to Wikimedia, and 429/5xx responses are retried with backoff.
+const nap = (ms) => new Promise((r) => setTimeout(r, ms))
+let gateChain = Promise.resolve()
+const GAP_MS = 220
+const gate = () => (gateChain = gateChain.then(() => nap(GAP_MS)))
+async function politeFetch(url, tries = 7) {
+  for (let i = 0; i < tries; i++) {
+    await gate()
+    const res = await fetch(url, { headers: UA })
+    if (res.status === 429 || res.status >= 500) {
+      const wait = (Number(res.headers.get('retry-after')) || 4 * 2 ** i) * 1000
+      console.warn(`  ${res.status} from ${new URL(url).host}, waiting ${Math.round(wait / 1000)}s (try ${i + 1}/${tries})`)
+      await nap(wait)
+      continue
+    }
+    return res
+  }
+  throw new Error(`gave up after ${tries} tries: ${url.slice(0, 120)}`)
+}
 const retrievedAt = new Date().toISOString().slice(0, 10)
 
 const registry = JSON.parse(await readFile(new URL('./registry.json', import.meta.url)))
 const ALL = process.argv.includes('--all')
-const previous = ALL ? [] : await readAllCompanies()
+const inRegistry = new Set(registry.companies.filter((c) => c.qid).map((c) => c.slug))
+// Records for entries that left the registry (for example pruned by a stricter spec) are dropped.
+const previous = ALL ? [] : (await readAllCompanies()).filter((c) => inRegistry.has(c.slug))
 const have = new Set(previous.map((c) => c.slug))
 // Incremental by default: only registry entries we have no record for yet.
 const registered = registry.companies.filter((c) => c.qid)
@@ -32,13 +54,14 @@ if (entries.length === 0) {
   const by = new Map(registered.map((c) => [c.slug, c]))
   for (const r of previous) if (by.get(r.slug)) r.categories = by.get(r.slug).categories ?? r.categories
   await writeAllCompanies(previous, new Date().toISOString().slice(0, 10))
-  console.log('nothing new to fetch; index rewritten')
+  await removeUnusedLogos(previous)
+  console.log(`nothing new to fetch; index rewritten (${previous.length} companies)`)
   process.exit(0)
 }
 
 async function wd(params) {
   const url = `${API}?${new URLSearchParams({ format: 'json', origin: '*', ...params })}`
-  const res = await fetch(url, { headers: UA })
+  const res = await politeFetch(url)
   if (!res.ok) throw new Error(`Wikidata ${res.status}`)
   return res.json()
 }
@@ -53,16 +76,45 @@ for (const ids of chunk(entries.map((e) => e.qid), 40)) {
 }
 
 // 2) Collect every referenced entity so we can print human-readable labels
-const claimIds = (e, p) =>
-  (e.claims?.[p] ?? []).filter((c) => c.rank !== 'deprecated').map((c) => c.mainsnak?.datavalue?.value?.id).filter(Boolean)
+const claimIds = (e, p) => {
+  const live = (e.claims?.[p] ?? []).filter((c) => c.rank !== 'deprecated')
+  // Prefer statements that have not ended (no "end time" qualifier), so a company shows its current country, not a historical one.
+  const current = live.filter((c) => !c.qualifiers?.P582)
+  return (current.length ? current : live).map((c) => c.mainsnak?.datavalue?.value?.id).filter(Boolean)
+}
 
-const REF_PROPS = ['P159', 'P17', 'P452', 'P112', 'P127', 'P749', 'P355', 'P414']
+const REF_PROPS = ['P159', 'P17', 'P495', 'P178', 'P176', 'P452', 'P112', 'P127', 'P749', 'P355', 'P414']
 const needed = new Set()
 for (const e of Object.values(entities)) for (const p of REF_PROPS) claimIds(e, p).forEach((id) => needed.add(id))
 const labels = {}
 for (const ids of chunk([...needed], 40)) {
   const data = await wd({ action: 'wbgetentities', ids: ids.join('|'), props: 'labels', languages: 'en' })
   for (const [id, ent] of Object.entries(data.entities)) labels[id] = ent.labels?.en?.value ?? null
+}
+
+// Country fallback: the headquarters' own country, for entities with neither P17 nor P495.
+const hqCountry = {}
+{
+  const hqIds = new Set()
+  for (const e of Object.values(entities)) {
+    // No country of its own: look at where its headquarters, developer or manufacturer is.
+    if (claimIds(e, 'P17').length === 0 && claimIds(e, 'P495').length === 0) {
+      for (const p of ['P159', 'P178', 'P176']) claimIds(e, p).forEach((id) => hqIds.add(id))
+    }
+  }
+  const countryIds = new Set()
+  for (const ids of chunk([...hqIds], 40)) {
+    const data = await wd({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims', languages: 'en' })
+    for (const [id, ent] of Object.entries(data.entities)) {
+      const c = claimIds(ent, 'P17')[0]
+      if (c) { hqCountry[id] = c; countryIds.add(c) }
+    }
+  }
+  const missing = [...countryIds].filter((id) => !(id in labels))
+  for (const ids of chunk(missing, 40)) {
+    const data = await wd({ action: 'wbgetentities', ids: ids.join('|'), props: 'labels', languages: 'en' })
+    for (const [id, ent] of Object.entries(data.entities)) labels[id] = ent.labels?.en?.value ?? null
+  }
 }
 
 // helpers -------------------------------------------------------------
@@ -105,7 +157,8 @@ async function logoFor(e, slug) {
   const url = `https://commons.wikimedia.org/w/api.php?${new URLSearchParams({
     action: 'query', titles: `File:${file}`, prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: '256', format: 'json', origin: '*'
   })}`
-  const page = Object.values((await (await fetch(url, { headers: UA })).json()).query.pages)[0]
+  const apiRes = await politeFetch(url)
+  const page = Object.values((await apiRes.json()).query.pages)[0]
   const info = page?.imageinfo?.[0]
   if (!info) return null
   const md = info.extmetadata ?? {}
@@ -121,9 +174,13 @@ async function logoFor(e, slug) {
   if (!isFree) return { usable: false, path: null, ...base }
   const ext = info.mime === 'image/svg+xml' ? 'svg' : info.mime === 'image/png' ? 'png' : info.mime === 'image/jpeg' ? 'jpg' : null
   if (!ext) return { usable: false, path: null, ...base }
-  const bin = await fetch(info.mime === 'image/svg+xml' ? info.url : info.thumburl ?? info.url, { headers: UA })
-  if (!bin.ok) return { usable: false, path: null, ...base }
-  await writeFile(new URL(`../public/logos/${slug}.${ext}`, import.meta.url), Buffer.from(await bin.arrayBuffer()))
+  const target = new URL(`../public/logos/${slug}.${ext}`, import.meta.url)
+  const already = await stat(target).then((st) => st.size > 0, () => false)
+  if (!already) {
+    const bin = await politeFetch(info.mime === 'image/svg+xml' ? info.url : info.thumburl ?? info.url)
+    if (!bin.ok) return { usable: false, path: null, ...base }
+    await writeFile(target, Buffer.from(await bin.arrayBuffer()))
+  }
   return { usable: true, path: `/logos/${slug}.${ext}`, ...base }
 }
 
@@ -142,7 +199,7 @@ async function pool(items, size, fn) {
 const logoResults = new Map()
 {
   const todo = entries.filter((e) => entities[e.qid] && e.qid && entities[e.qid].missing === undefined)
-  const got = await pool(todo, 6, (e) => logoFor(entities[e.qid], e.slug))
+  const got = await pool(todo, 3, (e) => logoFor(entities[e.qid], e.slug))
   todo.forEach((e, i) => logoResults.set(e.slug, got[i]))
 }
 
@@ -175,7 +232,17 @@ for (const entry of entries) {
     description: fact(e.descriptions?.en?.value ?? null, q, 'description'),
     founded: fact(parseYear(inception), q, 'P571'),
     headquarters: fact(claimIds(e, 'P159').map(lab).filter((l) => l && !NOT_A_CITY.test(l))[0] ?? null, q, 'P159'),
-    country: fact(claimIds(e, 'P17').map(lab).filter(Boolean)[0] ?? null, q, 'P17'),
+    country: (() => {
+      const direct = claimIds(e, 'P17').map(lab).filter(Boolean)[0]
+      if (direct) return fact(direct, q, 'P17')
+      const origin = claimIds(e, 'P495').map(lab).filter(Boolean)[0]
+      if (origin) return fact(origin, q, 'P495')
+      for (const p of ['P159', 'P178', 'P176']) {
+        const via = claimIds(e, p).map((id) => lab(hqCountry[id])).filter(Boolean)[0]
+        if (via) return fact(via, q, p)
+      }
+      return null
+    })(),
     industries: fact(claimIds(e, 'P452').map(lab).filter(Boolean), q, 'P452'),
     founders: fact(claimIds(e, 'P112').map(lab).filter(Boolean), q, 'P112'),
     parent: fact(claimIds(e, 'P749').map(lab).filter(Boolean)[0] ?? null, q, 'P749'),
@@ -189,16 +256,17 @@ for (const entry of entries) {
     sitelinks: Object.keys(e.sitelinks ?? {}).length,
     categories: entry.categories ?? [],
     wikipedia: e.sitelinks?.enwiki ? `https://en.wikipedia.org/wiki/${encodeURIComponent(e.sitelinks.enwiki.title.replace(/ /g, '_'))}` : null,
-    dataNote: entry.dataNote ?? null
+    dataNote: entry.dataNote ?? null,
+    discovery: entry.source === 'query' ? 'query' : 'curated'
   })
 }
 
 // Resolve currency QIDs (units) to ISO-ish labels
 const unitIds = new Set()
-for (const r of out) for (const k of ['revenue', 'netIncome', 'marketCap']) if (r[k]?.value?.unit) unitIds.add(r[k].value.unit)
+for (const r of out) for (const k of ['revenue', 'netIncome', 'marketCap']) if (/^Q\d+$/.test(r[k]?.value?.unit ?? '')) unitIds.add(r[k].value.unit)
 for (const ids of chunk([...unitIds], 40)) {
   const data = await wd({ action: 'wbgetentities', ids: ids.join('|'), props: 'labels|claims', languages: 'en' })
-  for (const [id, ent] of Object.entries(data.entities)) {
+  for (const [id, ent] of Object.entries(data.entities ?? {})) {
     currencyLabel[id] = ent.claims?.P498?.[0]?.mainsnak?.datavalue?.value ?? ent.labels?.en?.value ?? id
   }
 }
@@ -226,7 +294,7 @@ for (const entry of entries) {
 for (const r of out) for (const k of ['revenue', 'netIncome', 'marketCap']) if (r[k] && !r[k].value.asOf) r[k] = null
 
 // 5) SEC EDGAR: primary-source HQ address and reported financials for US filers.
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+const sleep = nap
 const titleCase = (t) => t.toLowerCase().replace(/\b\w/g, (m) => m.toUpperCase())
 const REVENUE_CONCEPTS = ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'RevenueFromContractWithCustomerIncludingAssessedTax', 'SalesRevenueNet']
 
@@ -272,15 +340,24 @@ for (const r of out) {
   }
 }
 
+async function removeUnusedLogos(records) {
+  const used = new Set(records.map((r) => r.logo?.path).filter(Boolean).map((p) => p.split('/').pop()))
+  const dir = new URL('../public/logos/', import.meta.url)
+  let removed = 0
+  for (const f of await readdir(dir)) if (!used.has(f)) { await rm(new URL(f, dir)); removed++ }
+  if (removed) console.log(`removed ${removed} unused logo files`)
+}
+
 // Merge with records from earlier runs, then write the index and shards.
 const mergedBySlug = new Map(previous.map((c) => [c.slug, c]))
 for (const r of out) mergedBySlug.set(r.slug, r)
 const merged = [...mergedBySlug.values()]
 await writeAllCompanies(merged, retrievedAt)
+await removeUnusedLogos(merged)
 
 // Coverage report
 const fields = ['founded', 'headquarters', 'founders', 'website', 'listings', 'employees', 'revenue', 'marketCap']
-console.log(`\nSynced ${out.length}/${registry.companies.length} companies (${registry.companies.length - entries.length} unresolved in registry)`)
+console.log(`\nSynced ${out.length} new companies this run (${merged.length} total)`)
 for (const f of fields) console.log(`  ${f.padEnd(13)} ${out.filter((r) => r[f]).length}/${out.length}`)
 console.log(`  SEC-sourced   ${out.filter((r) => r.headquarters?.provider === 'SEC EDGAR').length}/${out.length}`)
 console.log(`  logo (free)   ${out.filter((r) => r.logo?.usable).length}/${out.length}`)

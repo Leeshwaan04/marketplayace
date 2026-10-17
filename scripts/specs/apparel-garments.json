@@ -1,0 +1,383 @@
+{
+  "category": "apparel-garments",
+  "includes": [
+    {
+      "via": "P1056",
+      "qid": "Q11460",
+      "exact": true,
+      "why": "produces clothing"
+    },
+    {
+      "via": "P452",
+      "qid": "Q11828862",
+      "exact": true,
+      "why": "industry: clothing industry"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1618899",
+      "exact": true,
+      "why": "fashion label"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q1618899",
+    "Q783794",
+    "Q167037"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 900,
+  "includeQids": [
+    {
+      "qid": "Q16962142",
+      "name": "Arvind"
+    },
+    {
+      "qid": "Q18386006",
+      "name": "Page Industries"
+    },
+    {
+      "qid": "Q5427779",
+      "name": "Fabindia"
+    },
+    {
+      "qid": "Q19882351",
+      "name": "Biba"
+    },
+    {
+      "qid": "Q24906783",
+      "name": "Manyavar"
+    },
+    {
+      "qid": "Q7131643",
+      "name": "Pantaloons"
+    },
+    {
+      "qid": "Q110036995",
+      "name": "Allen Solly"
+    },
+    {
+      "qid": "Q19573665",
+      "name": "Peter England"
+    },
+    {
+      "qid": "Q67551865",
+      "name": "Van Heusen"
+    },
+    {
+      "qid": "Q19894117",
+      "name": "Monte Carlo"
+    },
+    {
+      "qid": "Q19898409",
+      "name": "Siyaram"
+    },
+    {
+      "qid": "Q108281403",
+      "name": "Zodiac Clothing"
+    },
+    {
+      "qid": "Q17068419",
+      "name": "Lux Industries"
+    },
+    {
+      "qid": "Q24939079",
+      "name": "Max Fashion"
+    },
+    {
+      "qid": "Q127513681",
+      "name": "W for Woman"
+    },
+    {
+      "qid": "Q4940554",
+      "name": "Bombay Dyeing"
+    },
+    {
+      "qid": "Q44504",
+      "name": "Inditex"
+    },
+    {
+      "qid": "Q420822",
+      "name": "Gap Inc."
+    },
+    {
+      "qid": "Q1397688",
+      "name": "Fast Retailing"
+    },
+    {
+      "qid": "Q26070",
+      "name": "Uniqlo"
+    },
+    {
+      "qid": "Q137023",
+      "name": "Primark"
+    },
+    {
+      "qid": "Q390107",
+      "name": "Burberry"
+    },
+    {
+      "qid": "Q178516",
+      "name": "Gucci"
+    },
+    {
+      "qid": "Q696376",
+      "name": "Versace"
+    },
+    {
+      "qid": "Q193136",
+      "name": "Prada"
+    },
+    {
+      "qid": "Q931207",
+      "name": "Kering"
+    },
+    {
+      "qid": "Q817139",
+      "name": "Benetton Group"
+    },
+    {
+      "qid": "Q2470307",
+      "name": "Guess"
+    },
+    {
+      "qid": "Q1068628",
+      "name": "Calvin Klein"
+    },
+    {
+      "qid": "Q634881",
+      "name": "Tommy Hilfiger"
+    },
+    {
+      "qid": "Q1641437",
+      "name": "Ralph Lauren Corporation"
+    },
+    {
+      "qid": "Q6702957",
+      "name": "Lululemon"
+    },
+    {
+      "qid": "Q56246099",
+      "name": "Gymshark"
+    },
+    {
+      "qid": "Q1660552",
+      "name": "Patagonia"
+    },
+    {
+      "qid": "Q152784",
+      "name": "The North Face"
+    },
+    {
+      "qid": "Q457960",
+      "name": "VF Corporation"
+    },
+    {
+      "qid": "Q527877",
+      "name": "Carhartt"
+    },
+    {
+      "qid": "Q1524197",
+      "name": "Gildan"
+    },
+    {
+      "qid": "Q3126743",
+      "name": "Hanes"
+    },
+    {
+      "qid": "Q1684445",
+      "name": "Superdry"
+    },
+    {
+      "qid": "Q2913458",
+      "name": "Ted Baker"
+    },
+    {
+      "qid": "Q6077665",
+      "name": "Jack & Jones"
+    },
+    {
+      "qid": "Q640418",
+      "name": "Vero Moda"
+    },
+    {
+      "qid": "Q12329792",
+      "name": "ONLY"
+    },
+    {
+      "qid": "Q1892752",
+      "name": "Marc O'Polo"
+    },
+    {
+      "qid": "Q571206",
+      "name": "Tom Tailor"
+    },
+    {
+      "qid": "Q491627",
+      "name": "Hugo Boss"
+    },
+    {
+      "qid": "Q3645582",
+      "name": "Brunello Cucinelli"
+    },
+    {
+      "qid": "Q1686544",
+      "name": "Loro Piana"
+    },
+    {
+      "qid": "Q214480",
+      "name": "Dolce & Gabbana"
+    },
+    {
+      "qid": "Q3946053",
+      "name": "Salvatore Ferragamo S.p.A."
+    },
+    {
+      "qid": "Q926575",
+      "name": "Fendi"
+    },
+    {
+      "qid": "Q1530892",
+      "name": "Balenciaga"
+    },
+    {
+      "qid": "Q2282172",
+      "name": "Yves Saint Laurent"
+    },
+    {
+      "qid": "Q894874",
+      "name": "Bottega Veneta"
+    },
+    {
+      "qid": "Q1151774",
+      "name": "Max Mara"
+    },
+    {
+      "qid": "Q1371677",
+      "name": "Etro"
+    },
+    {
+      "qid": "Q1400977",
+      "name": "Missoni"
+    },
+    {
+      "qid": "Q659863",
+      "name": "Moschino"
+    },
+    {
+      "qid": "Q950042",
+      "name": "Stone Island"
+    },
+    {
+      "qid": "Q1654538",
+      "name": "Replay"
+    },
+    {
+      "qid": "Q426992",
+      "name": "Pepe Jeans"
+    },
+    {
+      "qid": "Q3205965",
+      "name": "LC Waikiki"
+    },
+    {
+      "qid": "Q6063877",
+      "name": "Koton"
+    },
+    {
+      "qid": "Q6059861",
+      "name": "DeFacto"
+    },
+    {
+      "qid": "Q18015543",
+      "name": "Colin's Jeans"
+    },
+    {
+      "qid": "Q28059537",
+      "name": "Mudo"
+    },
+    {
+      "qid": "Q4035334",
+      "name": "Bossini"
+    },
+    {
+      "qid": "Q6823520",
+      "name": "Metersbonwe"
+    },
+    {
+      "qid": "Q4947278",
+      "name": "Bosideng"
+    },
+    {
+      "qid": "Q1112652",
+      "name": "Youngor"
+    },
+    {
+      "qid": "Q25054381",
+      "name": "Shenzhou International"
+    },
+    {
+      "qid": "Q4876226",
+      "name": "Beams"
+    },
+    {
+      "qid": "Q7758173",
+      "name": "Shimamura"
+    },
+    {
+      "qid": "Q13657207",
+      "name": "Padini"
+    },
+    {
+      "qid": "Q113992257",
+      "name": "Cotton On Group"
+    },
+    {
+      "qid": "Q22031750",
+      "name": "Khaadi"
+    },
+    {
+      "qid": "Q6714540",
+      "name": "MAS Holdings"
+    },
+    {
+      "qid": "Q73185587",
+      "name": "Brandix"
+    },
+    {
+      "qid": "Q3064071",
+      "name": "Lojas Renner"
+    },
+    {
+      "qid": "Q701338",
+      "name": "C&A"
+    },
+    {
+      "qid": "Q5142063",
+      "name": "Colcci"
+    },
+    {
+      "qid": "Q6929120",
+      "name": "Mr Price Group"
+    },
+    {
+      "qid": "Q97276073",
+      "name": "Edgars"
+    },
+    {
+      "qid": "Q24233996",
+      "name": "Foschini Group"
+    },
+    {
+      "qid": "Q2912754",
+      "name": "Delta Galil"
+    }
+  ],
+  "excludeLabelRegex": "^(México\\.|Parkwood Entertainment|Independent Truck Company|Acushnet|TaylorMade|Titleist|Oakley|Burton Snowboards|Bath & Body Works|Neiman Marcus|Zalando|Farfetch|ASOS|Intersport|Li & Fung|Rinascente|House of Fraser|Henri Bendel|Central Department Store|Robinson|Audimas|Apranga|Fox Racing|Majestic Athletic|Nocona|Mikimoto|Sideshow Collectibles|Beatties|Robne kuće Beograd|Jugoexport|Manufactum|Kariyushi shirt|Lillywhites|Daei Sport|Rainha|Metrojaya|NHS, Inc\\.|Body Glove)",
+  "notes": "Discovered via exact product/industry/instance signals plus a hand-reviewed curated list. Sporting-goods and department-store entries are excluded. Regional brands with no Wikidata entity (for example Raymond, ABFRL, Trident, Gokaldas, Vardhman, Giordano, Semir, Gul Ahmed, Nishat) cannot be covered from this source.",
+  "excludeDescriptionRegex": "(\\bdefunct\\b|\\bhistorical\\b|lingerie|golf equipment|sports? equipment manufacturer)"
+}

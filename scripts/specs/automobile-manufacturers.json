@@ -1,9 +1,119 @@
 {
   "category": "automobile-manufacturers",
   "includes": [
-    { "via": "P31", "qid": "Q786820", "why": "instance of automobile manufacturer" },
-    { "via": "P31", "qid": "Q10429667", "why": "instance of car brand" }
+    {
+      "via": "P31",
+      "qid": "Q786820",
+      "why": "instance of automobile manufacturer (incl. subclasses)",
+      "exact": true
+    },
+    {
+      "via": "P31",
+      "qid": "Q10429667",
+      "why": "instance of car brand",
+      "exact": true
+    }
   ],
-  "minSitelinks": 8,
-  "maxCount": 400
+  "minSitelinks": 12,
+  "maxCount": 600,
+  "excludeLabelRegex": "(\\bAMG\\b|\\bBMW M\\b|Audi Sport|Gazoo|Peugeot Sport|Sportsline|Racing|Engineering|Motorenbau|do Brasil|Ford Germany|Ford of Europe|Stellantis Europe|North America|GM Korea|SAIC (General Motors|Volkswagen)|Scrambler|K ?1100|Simson S50|Manx|G50|Chetak|Racing Project|English Racing|March Engineering|Dallara|Kalex|Mercedes-Benz EQ|^Mercedes-Benz$|Geely Auto|Maḥmīyat|Automobiles Gonfaronnaises|Argus Motoren|Detroit Diesel|Ilmor|Italdesign|Bertone|Miele|Wilkinson|Barr and Stroud|Flottweg|Roper steam|Ner-A-Car|Hildebrand|Nymanbolagen|Tulamashzavod|FSO Syrena|FSR Tarpan|FSC |Sevel|Tec-Mec|Kojima|OSCA|Osella|Cooper Car|China South Industries|\\b(Slovakia|Argentina|Romania|Egypt|Indiana|Ibérica|U\\.S\\. International|Autoeuropa|Investment Co|Motor Company of Canada|Liuzhou|Astra Daihatsu|Anadolu|Local Motors|NAMI)\\b|Buick Gran Sport|Lexus F|Terraplane|Durant|DeWitt|Dort|McLaughlin)",
+  "includeQids": [
+    {
+      "qid": "Q188514",
+      "name": "Tata Motors"
+    },
+    {
+      "qid": "Q848059",
+      "name": "Mahindra & Mahindra"
+    },
+    {
+      "qid": "Q726193",
+      "name": "Ashok Leyland"
+    },
+    {
+      "qid": "Q3300084",
+      "name": "TVS Motor Company"
+    },
+    {
+      "qid": "Q10910065",
+      "name": "Bajaj Auto"
+    },
+    {
+      "qid": "Q24946444",
+      "name": "Ather Energy"
+    },
+    {
+      "qid": "Q268808",
+      "name": "Premier Automobiles"
+    },
+    {
+      "qid": "Q63035278",
+      "name": "XPeng"
+    },
+    {
+      "qid": "Q98139925",
+      "name": "Li Auto"
+    },
+    {
+      "qid": "Q56660561",
+      "name": "VinFast"
+    },
+    {
+      "qid": "Q21451523",
+      "name": "Genesis Motor"
+    },
+    {
+      "qid": "Q827306",
+      "name": "Proton"
+    },
+    {
+      "qid": "Q1476369",
+      "name": "Perodua"
+    },
+    {
+      "qid": "Q1343045",
+      "name": "Iran Khodro"
+    },
+    {
+      "qid": "Q116234",
+      "name": "Saipa"
+    },
+    {
+      "qid": "Q4047174",
+      "name": "Polestar"
+    },
+    {
+      "qid": "Q7338847",
+      "name": "Rivian"
+    },
+    {
+      "qid": "Q478214",
+      "name": "Tesla"
+    },
+    {
+      "qid": "Q910401",
+      "name": "SAIC Motor"
+    },
+    {
+      "qid": "Q739000",
+      "name": "Geely"
+    },
+    {
+      "qid": "Q1117001",
+      "name": "Great Wall Motor"
+    },
+    {
+      "qid": "Q1138452",
+      "name": "Dongfeng Motor"
+    },
+    {
+      "qid": "Q1301821",
+      "name": "Eicher Motors"
+    },
+    {
+      "qid": "Q1436646",
+      "name": "Force Motors"
+    }
+  ],
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bformer\\b|\\bhistorical\\b|concept car|rare car|prototype|discontinued|\\bextinct\\b|one-off|coachbuilder|\\bbicycle and motorcycle\\b|group of companies|industrial group|engine (manufacturer|builder)|racing team|\\bjoint venture\\b|sub[- ]brand)"
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Breadcrumbs } from '../components/ui'
 import { Link } from '../utils/nav'
 import { useSeo } from '../utils/seo'
-import { COMPANIES, DATA_GENERATED_AT } from '../data/companies'
+import { INDEX, DATA_GENERATED_AT } from '../data/companies'
 import { CATEGORIES } from '../data/taxonomy'
 import { SITE } from '../config/site'
 
@@ -50,10 +50,24 @@ export const MethodologyPage: React.FC = () => {
       </section>
       <section>
         <h2>How a company is added</h2>
+        <p>Companies enter in two ways, and each profile says which.</p>
+        <ul>
+          <li>
+            <strong>Matched by hand.</strong> A person matches the company to its Wikidata entry, because names are
+            ambiguous (for example, several things are called &ldquo;Zepto&rdquo;), and a script then fetches the facts.
+          </li>
+          <li>
+            <strong>Found by an industry rule.</strong> For industries such as footwear, apparel, cars and AI tools we
+            write a reviewed rule against open data (for example, &ldquo;is a car manufacturer&rdquo;). We keep only
+            entities that are not dissolved, are not people, and have enough Wikipedia language editions to show they
+            are notable. A person samples each rule&apos;s results for accuracy before they are published. These
+            profiles are labelled as automatically added and are not checked one by one.
+          </li>
+        </ul>
         <p>
-          A person matches each company to its Wikidata entry by hand, because names are ambiguous (for example, several
-          things are called &ldquo;Zepto&rdquo;). A script then fetches the facts. A company with no reliable match is not
-          published. Right now {COMPANIES.length} companies across {new Set(COMPANIES.flatMap((c) => c.categories)).size} of{' '}
+          We do not claim to list every brand. A brand with no entry in open data is not covered, and many regional
+          brands fall into that gap. A company with no reliable match is not published. Right now{' '}
+          {INDEX.length.toLocaleString('en')} companies across {new Set(INDEX.flatMap((c) => c.categories)).size} of{' '}
           {CATEGORIES.length} industries are profiled. Data was last synced on {DATA_GENERATED_AT}.
         </p>
       </section>
