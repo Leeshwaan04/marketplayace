@@ -3,12 +3,17 @@ import { Container, Breadcrumbs } from '../components/ui'
 import { Link } from '../utils/nav'
 import { COUNTRIES, INDEX } from '../data/companies'
 import { useSeo } from '../utils/seo'
+import { breadcrumbList, collectionPage } from '../utils/jsonld'
 
 export const CountriesPage: React.FC = () => {
   useSeo({
     title: 'Companies and brands by country',
     description: `Browse ${INDEX.length.toLocaleString('en')} company and brand profiles across ${COUNTRIES.length} countries, then narrow by industry.`,
-    path: '/countries'
+    path: '/countries',
+    jsonLd: [
+      breadcrumbList([{ name: 'Home', path: '/' }, { name: 'Countries' }]),
+      collectionPage({ name: 'Companies and brands by country', path: '/countries', description: 'Countries with company and brand profiles.', items: COUNTRIES.map((c) => ({ name: c.name, path: `/country/${c.slug}` })), limit: 100 })
+    ]
   })
   return (
     <Container className="pb-16 pt-8">

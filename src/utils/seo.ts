@@ -1,25 +1,14 @@
 import { createContext, useContext, useEffect } from 'react'
-
-const SITE = 'https://marketplayace.com'
-const SITE_NAME = 'Marketplayace'
+import { MANAGED_KEYS, SITE_NAME, seoTags, type TagSpec } from './seoTags'
 
 interface SeoOptions {
   title: string
   description: string
-  path: string
+  /** Canonical path, or null for pages that must not declare one. */
+  path: string | null
   /** schema.org JSON-LD object(s) for this page */
   jsonLd?: object | object[]
   noindex?: boolean
-}
-
-function setMeta(selector: string, attr: 'name' | 'property', key: string, content: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(selector)
-  if (!el) {
-    el = document.createElement('meta')
-    el.setAttribute(attr, key)
-    document.head.appendChild(el)
-  }
-  el.content = content
 }
 
 export type SeoData = SeoOptions & { fullTitle: string }
@@ -27,9 +16,24 @@ export type SeoData = SeoOptions & { fullTitle: string }
 /** Provided only during prerender: receives each page's SEO data so the script can write the <head>. */
 export const SeoSinkContext = createContext<((seo: SeoData) => void) | null>(null)
 
-export const fullTitle = (title: string) => (title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`)
+const fullTitle = (title: string) => (title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`)
 
-/** Per-route title, description, canonical, Open Graph and structured data. */
+function selectorFor(t: TagSpec): string {
+  if (t.tag === 'link') return `link[rel="${t.attrs.rel}"]`
+  const [kind, name] = t.key.split(/:(.*)/s) as ['name' | 'property', string]
+  return `meta[${kind}="${name}"]`
+}
+
+function upsert(t: TagSpec) {
+  let el = document.head.querySelector<HTMLElement>(selectorFor(t))
+  if (!el) {
+    el = document.createElement(t.tag)
+    document.head.appendChild(el)
+  }
+  for (const [k, v] of Object.entries(t.attrs)) el.setAttribute(k, v)
+}
+
+/** Per-route title, description, canonical, Open Graph, Twitter card and structured data. */
 export function useSeo(options: SeoOptions) {
   const { title, description, path, jsonLd, noindex } = options
   const sink = useContext(SeoSinkContext)
@@ -38,20 +42,15 @@ export function useSeo(options: SeoOptions) {
   useEffect(() => {
     const full = fullTitle(title)
     document.title = full
-    setMeta('meta[name="description"]', 'name', 'description', description)
-    setMeta('meta[property="og:title"]', 'property', 'og:title', full)
-    setMeta('meta[property="og:description"]', 'property', 'og:description', description)
-    setMeta('meta[property="og:url"]', 'property', 'og:url', SITE + path)
-    setMeta('meta[property="og:type"]', 'property', 'og:type', 'website')
-    setMeta('meta[name="robots"]', 'name', 'robots', noindex ? 'noindex,nofollow' : 'index,follow')
-
-    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-    if (!canonical) {
-      canonical = document.createElement('link')
-      canonical.rel = 'canonical'
-      document.head.appendChild(canonical)
+    const tags = seoTags({ fullTitle: full, description, path, noindex })
+    const present = new Set(tags.map((t) => t.key))
+    for (const t of tags) upsert(t)
+    // Remove tags the new page does not declare (for example the canonical on a 404).
+    for (const key of MANAGED_KEYS) {
+      if (present.has(key)) continue
+      const t: TagSpec = key.startsWith('link:') ? { tag: 'link', key, attrs: { rel: key.slice(5) } } : { tag: 'meta', key, attrs: {} }
+      document.head.querySelector(selectorFor(t))?.remove()
     }
-    canonical.href = SITE + path
 
     let script = document.getElementById('page-jsonld') as HTMLScriptElement | null
     if (ld) {

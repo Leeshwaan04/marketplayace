@@ -4,6 +4,7 @@ import { Link } from '../utils/nav'
 import { CATEGORIES, GROUPS } from '../data/taxonomy'
 import { companiesInCountry, countryBySlug } from '../data/companies'
 import { useSeo } from '../utils/seo'
+import { breadcrumbList, collectionPage } from '../utils/jsonld'
 import { NotFoundPage } from './NotFoundPage'
 
 const PREVIEW = 6
@@ -18,7 +19,18 @@ export const CountryPage: React.FC<{ slug: string }> = ({ slug }) => {
       ? `${all.length.toLocaleString('en')} company and brand profiles based in ${country.name}, grouped by industry, each with sourced facts.`
       : 'This country page does not exist.',
     path: `/country/${slug}`,
-    noindex: !country
+    noindex: !country,
+    jsonLd: country
+      ? [
+          breadcrumbList([{ name: 'Home', path: '/' }, { name: 'Countries', path: '/countries' }, { name: country.name }]),
+          collectionPage({
+            name: `Companies and brands in ${country.name}`,
+            path: `/country/${slug}`,
+            description: `Company and brand profiles based in ${country.name}, grouped by industry.`,
+            items: all.map((c) => ({ name: c.name, path: `/company/${c.slug}` }))
+          })
+        ]
+      : undefined
   })
 
   if (!country) return <NotFoundPage />

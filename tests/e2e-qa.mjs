@@ -230,6 +230,7 @@ test('Company slugs are clean ASCII and are not truncated versions of the name',
 test('Sitemap lists exactly the published pages', () => {
   const xml = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8')
   const urls = [...xml.matchAll(/<loc>https:\/\/marketplayace\.com([^<]*)<\/loc>/g)].map((m) => m[1])
+  for (const r of routeList.thin) assert(!urls.includes(r), `thin page in sitemap: ${r}`)
   assert(urls.length === routeList.routes.length, `sitemap has ${urls.length} URLs but the site publishes ${routeList.routes.length}; run npm run data:sync`)
   const set = new Set(urls)
   for (const r of routeList.routes) assert(set.has(r), `sitemap missing ${r}`)
@@ -307,6 +308,7 @@ test('Every company and industry page is prerendered with its own content and me
   assert(fs.existsSync(path.join(dist, 'index.html')), 'run npm run build first')
   const read = (f) => fs.readFileSync(path.join(dist, f), 'utf8')
   const titles = new Set()
+  const jsonLdTypes = new Map()
   const check = (file, route, expectInText) => {
     const html = read(file)
     const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1]
@@ -319,6 +321,25 @@ test('Every company and industry page is prerendered with its own content and me
     assert(html.includes(`data-route="${route}"`), `${file}: missing data-route`)
     assert(html.includes(expectInText), `${file}: server HTML lacks its own content`)
     assert((html.match(/<meta name="description"/g) || []).length === 1, `${file}: duplicate description tag`)
+    // Social sharing tags, exactly once each
+    for (const t of ['og:title', 'og:description', 'og:image', 'og:url', 'og:site_name']) {
+      assert((html.match(new RegExp(`<meta property="${t}"`, 'g')) || []).length === 1, `${file}: expected exactly one ${t}`)
+    }
+    assert(/<meta name="twitter:card" content="summary_large_image"/.test(html), `${file}: missing twitter card`)
+    assert(/<meta name="robots" content="index,follow,max-image-preview:large"/.test(html), `${file}: wrong robots meta`)
+    // Structured data must parse and be well-formed
+    const blocks = [...html.matchAll(/<script id="page-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1])
+    assert(blocks.length <= 1, `${file}: more than one page-jsonld block`)
+    for (const b of blocks) {
+      let data
+      try { data = JSON.parse(b) } catch (e) { throw new Error(`${file}: JSON-LD does not parse (${e.message})`) }
+      for (const item of Array.isArray(data) ? data : [data]) {
+        assert(item['@context'] === 'https://schema.org' && item['@type'], `${file}: JSON-LD item missing @context/@type`)
+        if (item['@type'] === 'BreadcrumbList') assert(item.itemListElement.length >= 2 && item.itemListElement.every((x, i) => x.position === i + 1 && x.name), `${file}: malformed BreadcrumbList`)
+        if (item['@type'] === 'CollectionPage') assert(item.mainEntity?.itemListElement?.length > 0 && item.url?.startsWith('https://marketplayace.com/'), `${file}: malformed CollectionPage`)
+      }
+      jsonLdTypes.set(file, (Array.isArray(data) ? data : [data]).map((i) => i['@type']))
+    }
   }
   for (const r of routeList.routes) {
     const file = r === '/' ? 'index.html' : `${r.slice(1)}.html`
@@ -326,6 +347,28 @@ test('Every company and industry page is prerendered with its own content and me
     check(file, r, company ? company.name.replace(/&/g, '&amp;').replace(/</g, '&lt;') : '<h1')
     if (company) assert(/"@type":"Organization"/.test(read(file)), `${company.slug}: missing Organization JSON-LD`)
   }
+  // List pages describe themselves to search engines
+  const typesOf = (f) => jsonLdTypes.get(f) ?? []
+  assert(typesOf('index.html').includes('WebSite') && typesOf('index.html').includes('Organization'), 'home: missing WebSite/Organization JSON-LD')
+  for (const f of ['categories.html', 'countries.html', 'category/footwear.html', 'country/india.html']) {
+    assert(typesOf(f).includes('CollectionPage') && typesOf(f).includes('BreadcrumbList'), `${f}: missing CollectionPage/BreadcrumbList JSON-LD`)
+  }
+  for (const r of routeList.routes.filter((x) => /^\/category\/[^/]+\/[^/]+$/.test(x))) {
+    assert(typesOf(`${r.slice(1)}.html`).includes('CollectionPage'), `${r}: missing CollectionPage JSON-LD`)
+  }
+  // Thin industry pages exist, are noindex, and are not in the sitemap
+  for (const r of routeList.thin) {
+    const html = read(`${r.slice(1)}.html`)
+    assert(/<meta name="robots" content="noindex,nofollow"/.test(html), `${r}: thin page must be noindex`)
+  }
+  // Static assets referenced by the tags exist
+  assert(fs.existsSync(path.join(dist, 'og-default.jpg')), 'og-default.jpg missing from the build')
+})
+
+test('The thin-page threshold is the same in the build script and the app', () => {
+  const a = fs.readFileSync(path.join(rootDir, 'scripts/lib/routes.mjs'), 'utf8').match(/MIN_INDEXED_COUNTRY_PAGE = (\d+)/)?.[1]
+  const b = fs.readFileSync(path.join(rootDir, 'src/data/companies.ts'), 'utf8').match(/MIN_INDEXED_COUNTRY_PAGE = (\d+)/)?.[1]
+  assert(a && a === b, `MIN_INDEXED_COUNTRY_PAGE differs: build ${a} vs app ${b}`)
 })
 
 test('Non-indexable and unknown routes are handled correctly', () => {
@@ -339,12 +382,14 @@ test('Non-indexable and unknown routes are handled correctly', () => {
   assert(!fs.existsSync(path.join(dist, 'dist-server')), 'server bundle must not ship')
 })
 
-test('Labs is clearly labelled as sample and kept out of search indexing', () => {
+test('Labs is clearly labelled as sample and kept out of search results', () => {
   const labs = fs.readFileSync(path.join(rootDir, 'src/pages/LabsPage.tsx'), 'utf8')
   assert(/nothing is for sale/i.test(labs), 'Labs banner missing')
   assert(/noindex:\s*true/.test(labs), 'Labs must be noindex')
   const robots = fs.readFileSync(path.join(rootDir, 'public/robots.txt'), 'utf8')
-  assert(/Disallow: \/labs/.test(robots), 'robots.txt must disallow /labs')
+  assert(!/Disallow: \/(labs|compare)/.test(robots), 'do not block noindex pages in robots.txt: crawlers could not see the noindex tag')
+  assert(/Disallow: \/data\//.test(robots), 'robots.txt must keep crawlers out of /data/')
+  assert(/Sitemap: https:\/\/marketplayace\.com\/sitemap\.xml/.test(robots), 'robots.txt must point to the sitemap')
 })
 
 // --- SUITE 4: COMMERCE & MULTIPLAYER GAME STATE LOGIC ---

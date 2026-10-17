@@ -73,9 +73,6 @@ export interface CompanyLite {
 
 export const DATA_GENERATED_AT: string = indexData.generatedAt
 export const INDEX = indexData.companies as CompanyLite[]
-/** Alias kept for readability where only the list is needed. */
-export const COMPANIES = INDEX
-
 const bySlug = new Map(INDEX.map((c) => [c.slug, c]))
 const byNotability = (a: CompanyLite, b: CompanyLite) => b.sitelinks - a.sitelinks || a.name.localeCompare(b.name)
 
@@ -116,6 +113,8 @@ for (const c of INDEX) {
 export const COUNTRIES: CountryInfo[] = [...countryMap.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
 export const countryBySlug = (slug: string) => countryMap.get(slug) ?? null
 export const companiesInCountry = (slug: string) => INDEX.filter((c) => c.country && countrySlug(c.country) === slug).sort(byNotability)
+/** Industry-by-country pages with fewer companies than this are noindex. Keep equal to MIN_INDEXED_COUNTRY_PAGE in scripts/lib/routes.mjs. */
+export const MIN_INDEXED_COUNTRY_PAGE = 3
 export const companiesInCategoryAndCountry = (category: string, slug: string) =>
   companiesInCategory(category).filter((c) => c.country && countrySlug(c.country) === slug)
 
@@ -137,10 +136,10 @@ export function searchCompanies(q: string, limit = 8): CompanyLite[] {
 /* Details (loaded on demand)                                          */
 /* ------------------------------------------------------------------ */
 
-export const SHARDS = 64
+const SHARDS = 64
 
 /** FNV-1a. Must stay identical to shardOf() in scripts/lib/data.mjs. */
-export function shardOf(slug: string): number {
+function shardOf(slug: string): number {
   let h = 0x811c9dc5
   for (let i = 0; i < slug.length; i++) {
     h ^= slug.charCodeAt(i)
@@ -148,7 +147,7 @@ export function shardOf(slug: string): number {
   }
   return h % SHARDS
 }
-export const shardUrl = (n: number) => `/data/shard-${String(n).padStart(2, '0')}.json`
+const shardUrl = (n: number) => `/data/shard-${String(n).padStart(2, '0')}.json`
 
 const cache = new Map<string, Company>()
 /** Set by the prerender entry so server rendering can read details synchronously from disk. */

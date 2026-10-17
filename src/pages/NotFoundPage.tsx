@@ -5,7 +5,7 @@ import { SearchBox } from '../components/SearchBox'
 import { useSeo } from '../utils/seo'
 
 export const NotFoundPage: React.FC = () => {
-  useSeo({ title: 'Page not found', description: 'This page does not exist.', path: '/', noindex: true })
+  useSeo({ title: 'Page not found', description: 'This page does not exist.', path: null, noindex: true })
   return (
     <Container className="py-24 text-center">
       <p className="text-sm font-semibold text-accent">404</p>

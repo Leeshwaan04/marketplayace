@@ -1,13 +1,22 @@
 import React from 'react'
 import { Link } from '../utils/nav'
-import { INDEX } from '../data/companies'
+import { INDEX, COUNTRIES } from '../data/companies'
+import { CATEGORIES } from '../data/taxonomy'
 import { SITE } from '../config/site'
 
 const YEAR = new Date().getFullYear()
 
+// Sitewide links to the biggest industries and countries give crawlers (and people) a short path to deep pages.
+const categoryCounts = new Map<string, number>()
+for (const c of INDEX) for (const k of c.categories) categoryCounts.set(k, (categoryCounts.get(k) ?? 0) + 1)
+const TOP_INDUSTRIES = CATEGORIES.filter((c) => categoryCounts.has(c.slug))
+  .sort((a, b) => (categoryCounts.get(b.slug) ?? 0) - (categoryCounts.get(a.slug) ?? 0))
+  .slice(0, 8)
+const TOP_COUNTRIES = COUNTRIES.slice(0, 8)
+
 export const Footer: React.FC = () => (
   <footer className="mt-8 border-t border-line bg-surface-0 text-sm text-ink-muted">
-    <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
+    <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:px-8">
       <div className="space-y-3">
         <div className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-sm font-black text-white">A</span>
@@ -19,6 +28,24 @@ export const Footer: React.FC = () => (
           Company and industry profiles where every fact shows its source. {INDEX.length.toLocaleString('en')} companies profiled so far.
         </p>
       </div>
+
+      <nav aria-label="Popular industries">
+        <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">Industries</h3>
+        <ul className="space-y-2">
+          {TOP_INDUSTRIES.map((c) => (
+            <li key={c.slug}><Link to={{ page: 'category', slug: c.slug }} className="hover:text-white">{c.name}</Link></li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav aria-label="Popular countries">
+        <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">Countries</h3>
+        <ul className="space-y-2">
+          {TOP_COUNTRIES.map((c) => (
+            <li key={c.slug}><Link to={{ page: 'country', slug: c.slug }} className="hover:text-white">{c.name}</Link></li>
+          ))}
+        </ul>
+      </nav>
 
       <nav aria-label="Explore">
         <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">Explore</h3>

@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /labs
+Disallow: /data/
 
 Sitemap: https://marketplayace.com/sitemap.xml

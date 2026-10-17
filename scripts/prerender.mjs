@@ -26,28 +26,18 @@ if (!template.includes('<div id="root"></div>')) throw new Error('dist/index.htm
 // Full records are read from the shards on disk (the browser fetches the same files on demand).
 const details = new Map((await readAllCompanies()).map((c) => [c.slug, c]))
 render.setDetailProvider((slug) => details.get(slug) ?? null)
-const { routes, shells: shellRoutes, counts } = await listRoutes()
-console.log(`routes: ${routes.length} pages (${counts.companies} companies, ${counts.categories} industries, ${counts.countries} countries, ${counts.categoryCountry} industry-by-country)`)
+const { routes, thin, shells: shellRoutes, counts } = await listRoutes()
+console.log(`routes: ${routes.length} pages + ${thin.length} thin (noindex) (${counts.companies} companies, ${counts.categories} industries, ${counts.countries} countries, ${counts.categoryCountry} industry-by-country)`)
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-const SITE = 'https://marketplayace.com'
-
 function headTags(seo) {
-  const tags = [
-    `<meta name="description" content="${esc(seo.description)}" />`,
-    `<meta name="robots" content="${seo.noindex ? 'noindex,nofollow' : 'index,follow'}" />`,
-    ...(seo.path ? [`<link rel="canonical" href="${SITE}${seo.path}" />`] : []),
-    `<meta property="og:title" content="${esc(seo.fullTitle)}" />`,
-    `<meta property="og:description" content="${esc(seo.description)}" />`,
-    ...(seo.path ? [`<meta property="og:url" content="${SITE}${seo.path}" />`] : []),
-    `<meta property="og:type" content="website" />`,
-    `<meta name="twitter:card" content="summary" />`
-  ]
+  // Meta, canonical and social tags come from the same definition the browser uses (src/utils/seoTags.ts).
+  const parts = [serverModule.renderHead(seo)]
   if (seo.jsonLd) {
     const json = JSON.stringify(seo.jsonLd).replace(/</g, '\\u003c')
-    tags.push(`<script id="page-jsonld" type="application/ld+json">${json}</script>`)
+    parts.push(`<script id="page-jsonld" type="application/ld+json">${json}</script>`)
   }
-  return tags.join('\n    ')
+  return parts.join('\n    ')
 }
 
 function inject(seo, bodyHtml, route) {
@@ -81,6 +71,14 @@ for (const url of routes) {
   titles.set(seo.fullTitle, url)
   const file = url === '/' ? 'index.html' : `${url.slice(1)}.html`
   await write(file, inject(seo, html, url))
+  pages++
+}
+
+// Thin pages (industries with no profiles yet): published so links work, but kept out of the index and sitemap.
+for (const url of thin) {
+  const { html, seo } = render(url)
+  if (!seo || !seo.noindex) { problems.push(`${url}: thin page must be noindex`); continue }
+  await write(`${url.slice(1)}.html`, inject(seo, html, url))
   pages++
 }
 

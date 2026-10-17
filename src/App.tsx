@@ -13,7 +13,7 @@ import { ComparePage } from './pages/ComparePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { LabsPage } from './pages/LabsPage'
 
-export function App({ url }: { url?: string }) {
+function App({ url }: { url?: string }) {
   const { route, navigate } = useRoute(url)
 
   const page = (() => {

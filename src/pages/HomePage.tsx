@@ -7,7 +7,7 @@ import { Link } from '../utils/nav'
 import { CATEGORIES, GROUPS } from '../data/taxonomy'
 import { INDEX, COUNTRIES, DATA_GENERATED_AT } from '../data/companies'
 import { useSeo } from '../utils/seo'
-import { SITE } from '../config/site'
+import { websiteAndPublisher } from '../utils/jsonld'
 
 export const HomePage: React.FC = () => {
   useSeo({
@@ -15,13 +15,7 @@ export const HomePage: React.FC = () => {
     description:
       'Explore companies by industry. Every fact on every profile links to its source and shows when it was retrieved, and anything we cannot verify is left blank.',
     path: '/',
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: SITE.name,
-      url: SITE.url,
-      potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/?q={query}`, 'query-input': 'required name=query' }
-    }
+    jsonLd: websiteAndPublisher()
   })
 
   const covered = new Set(INDEX.flatMap((c) => c.categories))

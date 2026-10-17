@@ -43,6 +43,16 @@ Taxonomy lives in `src/data/taxonomy.ts` (the `planned` lists are coverage targe
 
 `/` · `/categories` · `/category/:industry` · `/category/:industry/:country` · `/countries` · `/country/:country` · `/company/:slug` · `/methodology` · `/about` · `/privacy` · `/terms` · `/compare` and `/labs` (not indexed). Every page except Compare and Labs is prerendered to static HTML at build time (`npm run build`).
 
+## SEO and indexing
+
+- Every indexable page is prerendered with its own title, description, canonical, Open Graph and Twitter tags, and JSON-LD (Organization, BreadcrumbList, CollectionPage with an ItemList). Head tags come from one definition (`src/utils/seoTags.ts`) used by both the browser and the build.
+- `public/sitemap.xml` is generated from the same route list as the prerender (`scripts/lib/routes.mjs`); `lastmod` for data pages is the last data sync date. Thin pages (industries with no profiles, industry-by-country pages with fewer than 3 companies) are published with `noindex` and left out of the sitemap.
+- Labs and Compare are `noindex` (not blocked in robots.txt, so crawlers can see the tag). `/data/` is disallowed in robots.txt.
+- Unknown URLs return a real 404. Clean URLs have no trailing slash; `/x/` and `/x.html` redirect to `/x`.
+- Security and cache headers live in `public/_headers` (strict CSP: same-origin only).
+
+**After each deploy that adds pages:** submit `https://marketplayace.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools (one-time domain verification by the site owner), and spot-check a few new URLs with the URL Inspection tool.
+
 ## Scripts
 
 ```bash

@@ -2,8 +2,9 @@ import React from 'react'
 import { Container, Breadcrumbs, CompanyCard, SectionTitle } from '../components/ui'
 import { Link } from '../utils/nav'
 import { categoryBySlug, groupById, CATEGORIES } from '../data/taxonomy'
-import { companiesInCategory, companiesInCategoryAndCountry, countryBySlug, countrySlug, type CompanyLite } from '../data/companies'
+import { companiesInCategory, companiesInCategoryAndCountry, countryBySlug, MIN_INDEXED_COUNTRY_PAGE, countrySlug, type CompanyLite } from '../data/companies'
 import { useSeo } from '../utils/seo'
+import { breadcrumbList, collectionPage } from '../utils/jsonld'
 import { NotFoundPage } from './NotFoundPage'
 
 /** How many companies each country section shows on the all-countries view before linking to its own page. */
@@ -31,7 +32,24 @@ export const CategoryPage: React.FC<{ slug: string; country?: string }> = ({ slu
         ? `${list.length} ${category.name.toLowerCase()} companies and brands based in ${countryInfo.name}, each with sourced facts.`
         : `${category.description} ${everyone.length > 0 ? `${everyone.length} company profiles, grouped by country.` : 'Company profiles are being researched.'}`,
     path: `/category/${slug}${country ? `/${country}` : ''}`,
-    noindex: invalid
+    // An industry with no profiles yet is a thin page: keep it out of the index until it has content.
+    noindex: invalid || list.length === 0 || (country !== undefined && list.length < MIN_INDEXED_COUNTRY_PAGE),
+    jsonLd:
+      category && !invalid
+        ? [
+            breadcrumbList([
+              { name: 'Home', path: '/' },
+              { name: 'Industries', path: '/categories' },
+              ...(countryInfo ? [{ name: category.name, path: `/category/${category.slug}` }, { name: countryInfo.name }] : [{ name: category.name }])
+            ]),
+            ...(list.length === 0 ? [] : [collectionPage({
+              name: countryInfo ? `${category.name} in ${countryInfo.name}` : category.name,
+              path: `/category/${slug}${country ? `/${country}` : ''}`,
+              description: category.description,
+              items: list.map((c) => ({ name: c.name, path: `/company/${c.slug}` }))
+            })])
+          ]
+        : undefined
   })
 
   if (!category || invalid) return <NotFoundPage />

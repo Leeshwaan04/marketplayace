@@ -4,13 +4,18 @@ import { Link } from '../utils/nav'
 import { CATEGORIES, GROUPS } from '../data/taxonomy'
 import { companiesInCategory } from '../data/companies'
 import { useSeo } from '../utils/seo'
+import { breadcrumbList, collectionPage } from '../utils/jsonld'
 
 export const CategoriesPage: React.FC = () => {
   const [onlyProfiled, setOnlyProfiled] = useState(false)
   useSeo({
     title: 'All industries',
     description: `Browse ${CATEGORIES.length} industries across finance, technology, mobility, energy, consumer and media, and open any profiled company.`,
-    path: '/categories'
+    path: '/categories',
+    jsonLd: [
+      breadcrumbList([{ name: 'Home', path: '/' }, { name: 'Industries' }]),
+      collectionPage({ name: 'All industries', path: '/categories', description: 'Industries with company and brand profiles.', items: CATEGORIES.map((c) => ({ name: c.name, path: `/category/${c.slug}` })), limit: 100 })
+    ]
   })
 
   return (
