@@ -65,6 +65,8 @@ export interface CompanyLite {
   logo: string | null
   founded: number | null
   sitelinks: number
+  /** Count of verified facts, including the description. Drives the quality gate. */
+  facts: number
 }
 
 /* ------------------------------------------------------------------ */
@@ -115,6 +117,8 @@ export const countryBySlug = (slug: string) => countryMap.get(slug) ?? null
 export const companiesInCountry = (slug: string) => INDEX.filter((c) => c.country && countrySlug(c.country) === slug).sort(byNotability)
 /** Industry-by-country pages with fewer companies than this are noindex. Keep equal to MIN_INDEXED_COUNTRY_PAGE in scripts/lib/routes.mjs. */
 export const MIN_INDEXED_COUNTRY_PAGE = 3
+/** A company page needs at least this many verified facts to be indexed. Keep equal to MIN_INDEXED_FACTS in scripts/lib/routes.mjs. */
+export const MIN_INDEXED_FACTS = 5
 export const companiesInCategoryAndCountry = (category: string, slug: string) =>
   companiesInCategory(category).filter((c) => c.country && countrySlug(c.country) === slug)
 

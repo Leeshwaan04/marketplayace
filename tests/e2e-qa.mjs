@@ -227,6 +227,14 @@ test('Company slugs are clean ASCII and are not truncated versions of the name',
   }
 })
 
+test('The quality gate keeps most companies and every lite record carries a fact count', () => {
+  const lite = JSON.parse(fs.readFileSync(path.join(rootDir, 'src/data/generated/index.json'), 'utf8')).companies
+  assert(lite.every((c) => Number.isInteger(c.facts)), 'index.json is missing "facts" (run the data sync)')
+  const indexable = routeList.routes.filter((r) => r.startsWith('/company/')).length
+  assert(indexable >= lite.length * 0.6, `only ${indexable} of ${lite.length} companies pass the gate: threshold or data problem`)
+  assert(indexable < lite.length || lite.every((c) => c.facts >= 5), 'expected the gate to hold back at least the thinnest profiles')
+})
+
 test('Sitemap lists exactly the published pages', () => {
   const xml = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8')
   const urls = [...xml.matchAll(/<loc>https:\/\/marketplayace\.com([^<]*)<\/loc>/g)].map((m) => m[1])
@@ -363,6 +371,12 @@ test('Every company and industry page is prerendered with its own content and me
   }
   // Static assets referenced by the tags exist
   assert(fs.existsSync(path.join(dist, 'og-default.jpg')), 'og-default.jpg missing from the build')
+})
+
+test('The quality-gate threshold for company pages is the same in the build script and the app', () => {
+  const a = fs.readFileSync(path.join(rootDir, 'scripts/lib/routes.mjs'), 'utf8').match(/MIN_INDEXED_FACTS = (\d+)/)?.[1]
+  const b = fs.readFileSync(path.join(rootDir, 'src/data/companies.ts'), 'utf8').match(/MIN_INDEXED_FACTS = (\d+)/)?.[1]
+  assert(a && a === b, `MIN_INDEXED_FACTS differs: build ${a} vs app ${b}`)
 })
 
 test('The thin-page threshold is the same in the build script and the app', () => {

@@ -11,6 +11,7 @@
  *
  * Run: node scripts/sync-wikidata.mjs          sync only registry entries not yet generated (fast)
  *      node scripts/sync-wikidata.mjs --all    re-fetch everything
+ *      node scripts/sync-wikidata.mjs --no-logos   skip logo downloads (long-tail companies get a monogram)
  */
 import { readFile, writeFile, mkdir, stat, readdir, rm } from 'node:fs/promises'
 import { readAllCompanies, writeAllCompanies } from './lib/data.mjs'
@@ -41,6 +42,8 @@ const retrievedAt = new Date().toISOString().slice(0, 10)
 
 const registry = JSON.parse(await readFile(new URL('./registry.json', import.meta.url)))
 const ALL = process.argv.includes('--all')
+// Skip logo downloads (the slow part). Used for the long tail of companies, which get a monogram instead.
+const NO_LOGOS = process.argv.includes('--no-logos')
 const inRegistry = new Set(registry.companies.filter((c) => c.qid).map((c) => c.slug))
 // Records for entries that left the registry (for example pruned by a stricter spec) are dropped.
 const previous = ALL ? [] : (await readAllCompanies()).filter((c) => inRegistry.has(c.slug))
@@ -198,7 +201,7 @@ async function pool(items, size, fn) {
 }
 const logoResults = new Map()
 {
-  const todo = entries.filter((e) => entities[e.qid] && e.qid && entities[e.qid].missing === undefined)
+  const todo = NO_LOGOS ? [] : entries.filter((e) => entities[e.qid] && e.qid && entities[e.qid].missing === undefined)
   const got = await pool(todo, 3, (e) => logoFor(entities[e.qid], e.slug))
   todo.forEach((e, i) => logoResults.set(e.slug, got[i]))
 }

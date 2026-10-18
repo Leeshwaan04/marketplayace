@@ -9,6 +9,8 @@ const root = new URL('../../', import.meta.url).pathname
 
 /** Industry-by-country pages with fewer companies than this are published but noindex. Keep equal to MIN_INDEXED_COUNTRY_PAGE in src/data/companies.ts. */
 export const MIN_INDEXED_COUNTRY_PAGE = 3
+/** A company page needs at least this many verified facts (including its description) to be indexed. Keep equal to MIN_INDEXED_FACTS in src/data/companies.ts. */
+export const MIN_INDEXED_FACTS = 5
 
 export async function categorySlugs() {
   const taxonomy = await readFile(path.join(root, 'src/data/taxonomy.ts'), 'utf8')
@@ -39,11 +41,12 @@ export async function listRoutes() {
     ...cats.filter((k) => withProfiles.has(k)).map((k) => `/category/${k}`),
     ...[...countries.keys()].sort().map((c) => `/country/${c}`),
     ...[...catCountry.keys()].filter(bigEnough).sort().map((kc) => `/category/${kc}`),
-    ...companies.map((c) => `/company/${c.slug}`)
+    ...companies.filter((c) => c.facts >= MIN_INDEXED_FACTS).map((c) => `/company/${c.slug}`)
   ]
   const thin = [
     ...cats.filter((k) => !withProfiles.has(k)).map((k) => `/category/${k}`),
-    ...[...catCountry.keys()].filter((kc) => !bigEnough(kc)).sort().map((kc) => `/category/${kc}`)
+    ...[...catCountry.keys()].filter((kc) => !bigEnough(kc)).sort().map((kc) => `/category/${kc}`),
+    ...companies.filter((c) => c.facts < MIN_INDEXED_FACTS).map((c) => `/company/${c.slug}`)
   ]
-  return { routes, thin, shells: SHELL_ROUTES, counts: { companies: companies.length, categories: cats.filter((k) => withProfiles.has(k)).length, countries: countries.size, categoryCountry: [...catCountry.keys()].filter(bigEnough).length } }
+  return { routes, thin, shells: SHELL_ROUTES, counts: { companies: companies.filter((c) => c.facts >= MIN_INDEXED_FACTS).length, categories: cats.filter((k) => withProfiles.has(k)).length, countries: countries.size, categoryCountry: [...catCountry.keys()].filter(bigEnough).length } }
 }

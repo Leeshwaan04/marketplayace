@@ -3,7 +3,7 @@ import { ExternalLink, Clock } from 'lucide-react'
 import { Container, Breadcrumbs, CompanyCard, SectionTitle } from '../components/ui'
 import { CompanyLogo } from '../components/CompanyLogo'
 import { Link } from '../utils/nav'
-import { companyLite, companiesInCategory, titleName, countrySlug, formatMoney, type Company, type Sourced } from '../data/companies'
+import { companyLite, companiesInCategory, titleName, MIN_INDEXED_FACTS, countrySlug, formatMoney, type Company, type Sourced } from '../data/companies'
 import { useCompanyDetails } from '../data/useCompanyDetails'
 import { categoryBySlug } from '../data/taxonomy'
 import { useSeo } from '../utils/seo'
@@ -95,7 +95,8 @@ export const CompanyPage: React.FC<{ slug: string }> = ({ slug }) => {
         ? `${lite.name}. Company profile with sourced facts, each with its source and retrieval date.`
         : 'This company profile does not exist.',
     path: `/company/${slug}`,
-    noindex: !lite,
+    // Quality gate: a profile with too few verified facts is published for people but not offered to search engines.
+    noindex: !lite || lite.facts < MIN_INDEXED_FACTS,
     jsonLd: company
       ? [
           orgJsonLd(company),

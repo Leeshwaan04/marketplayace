@@ -41,6 +41,10 @@ export const normalizeCountry = (name) => (name ? (COUNTRY_NAMES[name] ?? name) 
 export const countrySlug = (name) =>
   name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['’`]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
 
+/** How many independent verified facts a record has. Used by the quality gate (see docs/SCALING-PLAN.md). */
+export const factCount = (c) =>
+  ['founded', 'headquarters', 'country', 'website', 'industries', 'listings', 'employees', 'founders', 'parent', 'revenue'].filter((k) => c[k]).length
+
 export const toLite = (c) => ({
   slug: c.slug,
   name: c.name,
@@ -49,7 +53,8 @@ export const toLite = (c) => ({
   categories: c.categories,
   logo: c.logo?.usable && c.logo.path ? c.logo.path : null,
   founded: c.founded?.value ?? null,
-  sitelinks: c.sitelinks ?? 0
+  sitelinks: c.sitelinks ?? 0,
+  facts: factCount(c) + (c.description ? 1 : 0)
 })
 
 export async function readAllCompanies() {
