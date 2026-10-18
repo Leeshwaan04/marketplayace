@@ -1,0 +1,153 @@
+{
+  "category": "smartphones",
+  "includes": [
+    {
+      "via": "P1056",
+      "qid": "Q17517",
+      "exact": true,
+      "why": "produces mobile phones"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 150,
+  "excludeDescriptionRegex": "(telecommunication|telecom|telephone company|network operator|mobile operator|\\boperator\\b|internet service|\\bformerly\\b|\\bdefunct\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Hewlett-Packard|HP Inc\\.|TP-Link|AT&T|LG Uplus|Orange Morocco|Smart Communications|Rlg Communications|Netco|Sure Mobile|Golis Telecom Somalia|Somafone|Talk 'N Text|Unitel Mongolia|Mint Mobile|Viva \\(Bolivia\\))$",
+  "includeQids": [
+    {
+      "qid": "Q2084900",
+      "name": "Oppo"
+    },
+    {
+      "qid": "Q18301787",
+      "name": "vivo"
+    },
+    {
+      "qid": "Q16499972",
+      "name": "OnePlus"
+    },
+    {
+      "qid": "Q56275466",
+      "name": "Realme"
+    },
+    {
+      "qid": "Q160120",
+      "name": "Huawei"
+    },
+    {
+      "qid": "Q110339215",
+      "name": "Nothing Technology Ltd."
+    },
+    {
+      "qid": "Q934853",
+      "name": "Motorola Mobility"
+    },
+    {
+      "qid": "Q18127147",
+      "name": "LAVA"
+    },
+    {
+      "qid": "Q6839659",
+      "name": "Micromax"
+    },
+    {
+      "qid": "Q5019402",
+      "name": "Fairphone"
+    },
+    {
+      "qid": "Q152864",
+      "name": "ASUS"
+    },
+    {
+      "qid": "Q733958",
+      "name": "TCL Technology"
+    },
+    {
+      "qid": "Q30594096",
+      "name": "Infinix"
+    },
+    {
+      "qid": "Q1143917",
+      "name": "Meizu"
+    },
+    {
+      "qid": "Q6368978",
+      "name": "Karbonn Mobiles"
+    },
+    {
+      "qid": "Q18636315",
+      "name": "Intex Technologies"
+    },
+    {
+      "qid": "Q376692",
+      "name": "Sony Mobile Communications"
+    },
+    {
+      "qid": "Q53227",
+      "name": "Sharp Corporation"
+    },
+    {
+      "qid": "Q186012",
+      "name": "HTC"
+    },
+    {
+      "qid": "Q97300763",
+      "name": "iQOO"
+    },
+    {
+      "qid": "Q15954223",
+      "name": "Redmi"
+    },
+    {
+      "qid": "Q5167530",
+      "name": "Coolpad"
+    },
+    {
+      "qid": "Q4712953",
+      "name": "Alcatel"
+    },
+    {
+      "qid": "Q14541544",
+      "name": "Wiko"
+    },
+    {
+      "qid": "Q17155017",
+      "name": "Doogee"
+    },
+    {
+      "qid": "Q39058088",
+      "name": "Umidigi"
+    },
+    {
+      "qid": "Q60989782",
+      "name": "Blackview"
+    },
+    {
+      "qid": "Q110042136",
+      "name": "the light phone inc."
+    },
+    {
+      "qid": "Q28450799",
+      "name": "Purism"
+    },
+    {
+      "qid": "Q62299",
+      "name": "Jolla"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

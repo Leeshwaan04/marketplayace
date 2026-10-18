@@ -1,0 +1,200 @@
+{
+  "category": "beverages",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q4899370",
+      "exact": true,
+      "why": "industry: beverage industry"
+    },
+    {
+      "via": "P452",
+      "qid": "Q10302044",
+      "exact": true,
+      "why": "industry: coffee industry"
+    },
+    {
+      "via": "P31",
+      "qid": "Q114392939",
+      "exact": true,
+      "why": "drink brand"
+    },
+    {
+      "via": "P31",
+      "qid": "Q215754",
+      "exact": true,
+      "why": "energy drink"
+    },
+    {
+      "via": "P31",
+      "qid": "Q107898772",
+      "exact": true,
+      "why": "tea company"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865",
+    "Q114392939",
+    "Q215754",
+    "Q107898772"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 300,
+  "excludeDescriptionRegex": "(\\bbeer\\b|brewer|\\bwine\\b|winery|spirits|whisk|vodka|liquor|distill|\\bcider\\b|alcohol|\\bgin\\b|\\brum\\b|tequila|\\bsake\\b|\\bformerly\\b|\\bdefunct\\b)",
+  "excludeLabelRegex": "^(IHG Hotels & Resorts|Pepsi Zero Sugar|Rose's lime juice)$",
+  "includeQids": [
+    {
+      "qid": "Q7138871",
+      "name": "Parle Agro"
+    },
+    {
+      "qid": "Q3635447",
+      "name": "Bisleri"
+    },
+    {
+      "qid": "Q672465",
+      "name": "Thums Up"
+    },
+    {
+      "qid": "Q795622",
+      "name": "Tata Consumer Products"
+    },
+    {
+      "qid": "Q206978",
+      "name": "Sprite"
+    },
+    {
+      "qid": "Q896",
+      "name": "Mountain Dew"
+    },
+    {
+      "qid": "Q568384",
+      "name": "Mirinda"
+    },
+    {
+      "qid": "Q1171787",
+      "name": "Dasani"
+    },
+    {
+      "qid": "Q629009",
+      "name": "San Pellegrino"
+    },
+    {
+      "qid": "Q17081847",
+      "name": "Nestlé Pure Life"
+    },
+    {
+      "qid": "Q121096624",
+      "name": "Vita Coco"
+    },
+    {
+      "qid": "Q10605824",
+      "name": "Oatly AB"
+    },
+    {
+      "qid": "Q1664118",
+      "name": "Innocent Drinks"
+    },
+    {
+      "qid": "Q2425276",
+      "name": "Tetley"
+    },
+    {
+      "qid": "Q874407",
+      "name": "Lipton"
+    },
+    {
+      "qid": "Q1054692",
+      "name": "Twinings"
+    },
+    {
+      "qid": "Q5276991",
+      "name": "Dilmah"
+    },
+    {
+      "qid": "Q4791249",
+      "name": "Arizona Beverage Company"
+    },
+    {
+      "qid": "Q7547340",
+      "name": "Snapple"
+    },
+    {
+      "qid": "Q1206056",
+      "name": "Minute Maid"
+    },
+    {
+      "qid": "Q1846049",
+      "name": "Tropicana Products"
+    },
+    {
+      "qid": "Q7980538",
+      "name": "Welch's"
+    },
+    {
+      "qid": "Q1945295",
+      "name": "Monster Beverage"
+    },
+    {
+      "qid": "Q1110171",
+      "name": "Lucozade"
+    },
+    {
+      "qid": "Q838651",
+      "name": "Schweppes"
+    },
+    {
+      "qid": "Q372270",
+      "name": "Appletiser"
+    },
+    {
+      "qid": "Q1027454",
+      "name": "Calpis"
+    },
+    {
+      "qid": "Q3079325",
+      "name": "Ito En"
+    },
+    {
+      "qid": "Q6684905",
+      "name": "Lotte Chilsung"
+    },
+    {
+      "qid": "Q10895089",
+      "name": "Nongfu Spring"
+    },
+    {
+      "qid": "Q17032450",
+      "name": "Wahaha Joint Venture Company"
+    },
+    {
+      "qid": "Q7937007",
+      "name": "Vitasoy"
+    },
+    {
+      "qid": "Q3535226",
+      "name": "Almarai Company"
+    },
+    {
+      "qid": "Q3369963",
+      "name": "Jarritos"
+    },
+    {
+      "qid": "Q16172223",
+      "name": "Yakult Honsha"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

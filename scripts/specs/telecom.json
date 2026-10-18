@@ -1,0 +1,239 @@
+{
+  "category": "telecom",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q2401749",
+      "exact": true,
+      "why": "telecommunications company"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1941618",
+      "exact": true,
+      "why": "mobile network operator"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1266169",
+      "exact": true,
+      "why": "telephone company"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865",
+    "Q2401749",
+    "Q1941618",
+    "Q1266169"
+  ],
+  "minSitelinks": 5,
+  "maxCount": 400,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Google Voice|Walla! Communications Ltd)$",
+  "includeQids": [
+    {
+      "qid": "Q854867",
+      "name": "Bharti Airtel"
+    },
+    {
+      "qid": "Q1656673",
+      "name": "Vodafone Idea"
+    },
+    {
+      "qid": "Q1884798",
+      "name": "Mahanagar Telephone Nigam"
+    },
+    {
+      "qid": "Q3511885",
+      "name": "T-Mobile US"
+    },
+    {
+      "qid": "Q160229",
+      "name": "Telefónica"
+    },
+    {
+      "qid": "Q845632",
+      "name": "Telenor"
+    },
+    {
+      "qid": "Q165684",
+      "name": "Rogers Communications"
+    },
+    {
+      "qid": "Q24525746",
+      "name": "BCE Inc."
+    },
+    {
+      "qid": "Q864923",
+      "name": "Singtel"
+    },
+    {
+      "qid": "Q1054787",
+      "name": "NTT, Inc."
+    },
+    {
+      "qid": "Q201653",
+      "name": "SoftBank Group"
+    },
+    {
+      "qid": "Q493145",
+      "name": "SK Telecom"
+    },
+    {
+      "qid": "Q485908",
+      "name": "KT Corporation"
+    },
+    {
+      "qid": "Q1535171",
+      "name": "Saudi Telecom Company"
+    },
+    {
+      "qid": "Q144364",
+      "name": "Zain Group"
+    },
+    {
+      "qid": "Q1813361",
+      "name": "MTN Group"
+    },
+    {
+      "qid": "Q4699029",
+      "name": "Airtel Africa"
+    },
+    {
+      "qid": "Q482267",
+      "name": "América Móvil"
+    },
+    {
+      "qid": "Q52618",
+      "name": "Ericsson"
+    },
+    {
+      "qid": "Q1418",
+      "name": "Nokia"
+    },
+    {
+      "qid": "Q160120",
+      "name": "Huawei"
+    },
+    {
+      "qid": "Q136484",
+      "name": "ZTE"
+    },
+    {
+      "qid": "Q173395",
+      "name": "Cisco"
+    },
+    {
+      "qid": "Q2961234",
+      "name": "Charter Communications"
+    },
+    {
+      "qid": "Q5063092",
+      "name": "Lumen Technologies"
+    },
+    {
+      "qid": "Q721162",
+      "name": "Telstra"
+    },
+    {
+      "qid": "Q865038",
+      "name": "Optus"
+    },
+    {
+      "qid": "Q1549526",
+      "name": "Spark New Zealand"
+    },
+    {
+      "qid": "Q792500",
+      "name": "Axiata"
+    },
+    {
+      "qid": "Q2305438",
+      "name": "Telkom Indonesia"
+    },
+    {
+      "qid": "Q2393592",
+      "name": "Indosat Ooredoo Hutchison"
+    },
+    {
+      "qid": "Q3543983",
+      "name": "Globe Telecom"
+    },
+    {
+      "qid": "Q644167",
+      "name": "PLDT"
+    },
+    {
+      "qid": "Q3268422",
+      "name": "True Corporation"
+    },
+    {
+      "qid": "Q379592",
+      "name": "Advanced Info Service"
+    },
+    {
+      "qid": "Q1109534",
+      "name": "Viettel Group"
+    },
+    {
+      "qid": "Q7928543",
+      "name": "Vietnam Posts and Telecommunications Group"
+    },
+    {
+      "qid": "Q919935",
+      "name": "Ooredoo"
+    },
+    {
+      "qid": "Q283852",
+      "name": "Turkcell"
+    },
+    {
+      "qid": "Q263700",
+      "name": "Türk Telekom"
+    },
+    {
+      "qid": "Q144617",
+      "name": "TIM Group"
+    },
+    {
+      "qid": "Q1239347",
+      "name": "Iliad"
+    },
+    {
+      "qid": "Q2005282",
+      "name": "Proximus"
+    },
+    {
+      "qid": "Q338633",
+      "name": "KPN"
+    },
+    {
+      "qid": "Q571779",
+      "name": "Liberty Global"
+    },
+    {
+      "qid": "Q1199764",
+      "name": "Virgin Media"
+    },
+    {
+      "qid": "Q1856518",
+      "name": "Vodacom"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source.",
+  "excludeQids": [
+    "Q919641"
+  ]
+}

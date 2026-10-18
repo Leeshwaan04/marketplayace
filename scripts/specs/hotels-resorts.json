@@ -1,0 +1,275 @@
+{
+  "category": "hotels-resorts",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q1631129",
+      "exact": true,
+      "why": "hotel chain"
+    },
+    {
+      "via": "P31",
+      "qid": "Q3117865",
+      "exact": true,
+      "why": "hotel group"
+    },
+    {
+      "via": "P31",
+      "qid": "Q115040846",
+      "exact": true,
+      "why": "hotel brand"
+    },
+    {
+      "via": "P31",
+      "qid": "Q54967748",
+      "exact": true,
+      "why": "hotel company"
+    },
+    {
+      "via": "P452",
+      "qid": "Q1285245",
+      "exact": true,
+      "why": "industry: hotel industry"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865",
+    "Q115040846",
+    "Q54967748"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 300,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Ethan Allen|Ooedo Onsen Monogatari|Xenia|Czech Inn Hotels)$",
+  "includeQids": [
+    {
+      "qid": "Q56289814",
+      "name": "Indian Hotels Company Limited"
+    },
+    {
+      "qid": "Q17058333",
+      "name": "ITC Hotels Limited"
+    },
+    {
+      "qid": "Q6521344",
+      "name": "Lemon Tree Hotels"
+    },
+    {
+      "qid": "Q24906315",
+      "name": "OYO Rooms"
+    },
+    {
+      "qid": "Q7424497",
+      "name": "Sarovar Hotels & Resorts"
+    },
+    {
+      "qid": "Q28173376",
+      "name": "Treebo Hotels"
+    },
+    {
+      "qid": "Q55611387",
+      "name": "FabHotels"
+    },
+    {
+      "qid": "Q123481851",
+      "name": "Chalet Hotels"
+    },
+    {
+      "qid": "Q17087631",
+      "name": "Royal Orchid Hotels"
+    },
+    {
+      "qid": "Q8040120",
+      "name": "Wyndham Hotels & Resorts"
+    },
+    {
+      "qid": "Q1075788",
+      "name": "Choice Hotels"
+    },
+    {
+      "qid": "Q1815030",
+      "name": "Meliá Hotels International"
+    },
+    {
+      "qid": "Q837244",
+      "name": "Shangri-La Hotels and Resorts"
+    },
+    {
+      "qid": "Q807019",
+      "name": "Banyan Tree Holdings"
+    },
+    {
+      "qid": "Q4739486",
+      "name": "Aman Resorts"
+    },
+    {
+      "qid": "Q1057464",
+      "name": "Hilton Worldwide"
+    },
+    {
+      "qid": "Q1141173",
+      "name": "Marriott International"
+    },
+    {
+      "qid": "Q1425063",
+      "name": "Hyatt Hotels Corporation"
+    },
+    {
+      "qid": "Q19724671",
+      "name": "Radisson Hotel Group"
+    },
+    {
+      "qid": "Q60712573",
+      "name": "Jinjiang International"
+    },
+    {
+      "qid": "Q15926208",
+      "name": "H World Group Limited"
+    },
+    {
+      "qid": "Q111081972",
+      "name": "Atour"
+    },
+    {
+      "qid": "Q7074785",
+      "name": "Oberoi Hotels & Resorts"
+    },
+    {
+      "qid": "Q1521893",
+      "name": "Taj Hotels Resorts and Palaces"
+    },
+    {
+      "qid": "Q2108626",
+      "name": "Premier Inn"
+    },
+    {
+      "qid": "Q1435702",
+      "name": "Whitbread"
+    },
+    {
+      "qid": "Q7836087",
+      "name": "Travelodge"
+    },
+    {
+      "qid": "Q2188884",
+      "name": "Motel 6"
+    },
+    {
+      "qid": "Q5421850",
+      "name": "Extended Stay America"
+    },
+    {
+      "qid": "Q5646230",
+      "name": "Hampton by Hilton"
+    },
+    {
+      "qid": "Q1053170",
+      "name": "Courtyard by Marriott"
+    },
+    {
+      "qid": "Q5880423",
+      "name": "Holiday Inn Express"
+    },
+    {
+      "qid": "Q2746220",
+      "name": "Crowne Plaza"
+    },
+    {
+      "qid": "Q6410248",
+      "name": "Kimpton Hotels & Restaurants"
+    },
+    {
+      "qid": "Q70287020",
+      "name": "Moxy Hotels"
+    },
+    {
+      "qid": "Q4734166",
+      "name": "Aloft Hotels"
+    },
+    {
+      "qid": "Q7958488",
+      "name": "W Hotels"
+    },
+    {
+      "qid": "Q30715430",
+      "name": "St. Regis Hotels & Resorts"
+    },
+    {
+      "qid": "Q1067636",
+      "name": "JW Marriott Hotels"
+    },
+    {
+      "qid": "Q115794911",
+      "name": "Park Hyatt"
+    },
+    {
+      "qid": "Q115794899",
+      "name": "Grand Hyatt"
+    },
+    {
+      "qid": "Q48836304",
+      "name": "Andaz"
+    },
+    {
+      "qid": "Q1076645",
+      "name": "Club Med"
+    },
+    {
+      "qid": "Q7415968",
+      "name": "Sandals Resorts"
+    },
+    {
+      "qid": "Q1115350",
+      "name": "Dusit International"
+    },
+    {
+      "qid": "Q127038412",
+      "name": "Centara Hotels & Resorts"
+    },
+    {
+      "qid": "Q7370229",
+      "name": "Rotana"
+    },
+    {
+      "qid": "Q1331200",
+      "name": "Jumeirah"
+    },
+    {
+      "qid": "Q671990",
+      "name": "Kempinski"
+    },
+    {
+      "qid": "Q129391",
+      "name": "Scandic Hotels Group"
+    },
+    {
+      "qid": "Q10602024",
+      "name": "Strawberry"
+    },
+    {
+      "qid": "Q1431285",
+      "name": "Pierre et Vacances"
+    },
+    {
+      "qid": "Q3264080",
+      "name": "Louvre Hotels Group"
+    },
+    {
+      "qid": "Q794939",
+      "name": "B&B Hotels"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

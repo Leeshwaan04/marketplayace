@@ -1,0 +1,295 @@
+{
+  "category": "restaurants-fast-food",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q18509232",
+      "exact": true,
+      "why": "fast food restaurant chain"
+    },
+    {
+      "via": "P31",
+      "qid": "Q18534542",
+      "exact": true,
+      "why": "restaurant chain"
+    },
+    {
+      "via": "P31",
+      "qid": "Q18654742",
+      "exact": true,
+      "why": "pizzeria chain"
+    },
+    {
+      "via": "P31",
+      "qid": "Q76212517",
+      "exact": true,
+      "why": "cafe chain"
+    },
+    {
+      "via": "P452",
+      "qid": "Q1442415",
+      "exact": true,
+      "why": "industry: quick service restaurant sector"
+    },
+    {
+      "via": "P452",
+      "qid": "Q81799",
+      "exact": true,
+      "why": "industry: fast food"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865",
+    "Q18509232",
+    "Q18534542",
+    "Q18654742",
+    "Q76212517"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 350,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(McDonald's [A-Z]|Cabo Wabo|Karen's Diner)",
+  "includeQids": [
+    {
+      "qid": "Q17054442",
+      "name": "Haldiram's"
+    },
+    {
+      "qid": "Q4859568",
+      "name": "Barbeque Nation"
+    },
+    {
+      "qid": "Q8037446",
+      "name": "Wow! Momo"
+    },
+    {
+      "qid": "Q117235235",
+      "name": "Chaayos"
+    },
+    {
+      "qid": "Q132153862",
+      "name": "Burger Singh"
+    },
+    {
+      "qid": "Q16841901",
+      "name": "Bikanervala"
+    },
+    {
+      "qid": "Q5017235",
+      "name": "Café Coffee Day"
+    },
+    {
+      "qid": "Q104844971",
+      "name": "Rebel Foods"
+    },
+    {
+      "qid": "Q668737",
+      "name": "Yum! Brands"
+    },
+    {
+      "qid": "Q18619470",
+      "name": "Restaurant Brands International"
+    },
+    {
+      "qid": "Q742196",
+      "name": "Darden Restaurants"
+    },
+    {
+      "qid": "Q3045312",
+      "name": "Olive Garden"
+    },
+    {
+      "qid": "Q2759586",
+      "name": "Papa John's"
+    },
+    {
+      "qid": "Q1393809",
+      "name": "Little Caesars"
+    },
+    {
+      "qid": "Q2589409",
+      "name": "Sbarro"
+    },
+    {
+      "qid": "Q1358690",
+      "name": "Panda Express"
+    },
+    {
+      "qid": "Q1131810",
+      "name": "Five Guys"
+    },
+    {
+      "qid": "Q1192805",
+      "name": "Krispy Kreme"
+    },
+    {
+      "qid": "Q3403981",
+      "name": "Greggs"
+    },
+    {
+      "qid": "Q2109109",
+      "name": "Pret a Manger"
+    },
+    {
+      "qid": "Q608845",
+      "name": "Costa Coffee"
+    },
+    {
+      "qid": "Q3472954",
+      "name": "Nando's"
+    },
+    {
+      "qid": "Q503715",
+      "name": "Wagamama"
+    },
+    {
+      "qid": "Q776272",
+      "name": "Yoshinoya"
+    },
+    {
+      "qid": "Q6137375",
+      "name": "Sukiya"
+    },
+    {
+      "qid": "Q1204169",
+      "name": "MOS Burger"
+    },
+    {
+      "qid": "Q249525",
+      "name": "Lotteria"
+    },
+    {
+      "qid": "Q5638920",
+      "name": "Haidilao"
+    },
+    {
+      "qid": "Q107406476",
+      "name": "Mixue Ice Cream & Tea"
+    },
+    {
+      "qid": "Q56811344",
+      "name": "Luckin Coffee"
+    },
+    {
+      "qid": "Q699142",
+      "name": "Din Tai Fung"
+    },
+    {
+      "qid": "Q108131301",
+      "name": "Kung Fu Tea"
+    },
+    {
+      "qid": "Q1076816",
+      "name": "Chowking"
+    },
+    {
+      "qid": "Q6748573",
+      "name": "Mang Inasal"
+    },
+    {
+      "qid": "Q6794477",
+      "name": "Max's Restaurant"
+    },
+    {
+      "qid": "Q2504930",
+      "name": "Habib's"
+    },
+    {
+      "qid": "Q5564100",
+      "name": "Giraffas"
+    },
+    {
+      "qid": "Q175106",
+      "name": "Tim Hortons"
+    },
+    {
+      "qid": "Q1092539",
+      "name": "Cinnabon"
+    },
+    {
+      "qid": "Q584601",
+      "name": "Baskin-Robbins"
+    },
+    {
+      "qid": "Q1141226",
+      "name": "Dairy Queen"
+    },
+    {
+      "qid": "Q7707945",
+      "name": "Texas Roadhouse"
+    },
+    {
+      "qid": "Q4492609",
+      "name": "Cracker Barrel"
+    },
+    {
+      "qid": "Q621532",
+      "name": "Applebee's"
+    },
+    {
+      "qid": "Q1072948",
+      "name": "Chili's"
+    },
+    {
+      "qid": "Q1064893",
+      "name": "Outback Steakhouse"
+    },
+    {
+      "qid": "Q1025921",
+      "name": "Hooters"
+    },
+    {
+      "qid": "Q8025339",
+      "name": "Wingstop"
+    },
+    {
+      "qid": "Q7285144",
+      "name": "Raising Cane's Chicken Fingers"
+    },
+    {
+      "qid": "Q8067525",
+      "name": "Zaxby's"
+    },
+    {
+      "qid": "Q630866",
+      "name": "Arby's"
+    },
+    {
+      "qid": "Q7561808",
+      "name": "Sonic Drive-In"
+    },
+    {
+      "qid": "Q1143589",
+      "name": "Culver's"
+    },
+    {
+      "qid": "Q1183818",
+      "name": "Del Taco"
+    },
+    {
+      "qid": "Q1363885",
+      "name": "Qdoba Mexican Eats"
+    },
+    {
+      "qid": "Q6889938",
+      "name": "Moe's Southwest Grill"
+    },
+    {
+      "qid": "Q7130852",
+      "name": "Panera Bread"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

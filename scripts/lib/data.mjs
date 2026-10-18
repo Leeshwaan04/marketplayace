@@ -35,7 +35,11 @@ const COUNTRY_NAMES = {
   'Korea, South': 'South Korea',
   "Côte d'Ivoire": "Côte d'Ivoire"
 }
-export const normalizeCountry = (name) => (name ? (COUNTRY_NAMES[name] ?? name) : name)
+// Dissolved states: a company shown under one of these has no reliable current country, so show none rather than guess.
+const HISTORIC_COUNTRIES = new Set(['Soviet Union', 'Czechoslovakia', 'Yugoslavia', 'Serbia and Montenegro', 'Austria-Hungary', 'Russian Empire', 'Ottoman Empire', 'Kingdom of Yugoslavia'])
+// Unambiguous predecessors of a single modern country.
+const SUCCESSORS = { 'East Germany': 'Germany', 'West Germany': 'Germany', 'German Reich': 'Germany', 'Nazi Germany': 'Germany', 'German Empire': 'Germany', 'Weimar Republic': 'Germany', 'Kingdom of Italy': 'Italy' }
+export const normalizeCountry = (name) => (name ? (HISTORIC_COUNTRIES.has(name) ? null : (SUCCESSORS[name] ?? COUNTRY_NAMES[name] ?? name)) : name)
 
 /** Must stay identical to countrySlug() in src/data/companies.ts. */
 export const countrySlug = (name) =>
@@ -81,7 +85,10 @@ export async function writeAllCompanies(companies, generatedAt) {
     for (const k of ['revenue', 'netIncome', 'marketCap']) {
       if (c[k] && (!c[k].value?.asOf || !c[k].value?.currency)) c[k] = null
     }
-    if (c.country) c.country = { ...c.country, value: normalizeCountry(c.country.value) }
+    if (c.country) {
+      const v = normalizeCountry(c.country.value)
+      c.country = v ? { ...c.country, value: v } : null
+    }
     shards[shardOf(c.slug)][c.slug] = c
   }
   for (let i = 0; i < SHARDS; i++) await writeFile(path.join(SHARD_DIR, shardName(i)), JSON.stringify(shards[i]))

@@ -1,0 +1,190 @@
+{
+  "category": "beauty-cosmetics",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q12752882",
+      "exact": true,
+      "why": "industry: cosmetics industry"
+    },
+    {
+      "via": "P31",
+      "qid": "Q55315112",
+      "exact": true,
+      "why": "cosmetics brand"
+    },
+    {
+      "via": "P31",
+      "qid": "Q132731103",
+      "exact": true,
+      "why": "cosmetic shop chain"
+    },
+    {
+      "via": "P452",
+      "qid": "Q1601153",
+      "exact": true,
+      "why": "industry: perfumes industry"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 300,
+  "excludeLabelRegex": "^(ASOS|Hermès|Jabot Cosmetics|EVERTZ Pharma|Codex Labs|Douglas Holding)$",
+  "includeQids": [
+    {
+      "qid": "Q7739717",
+      "name": "The Himalaya Drug Company"
+    },
+    {
+      "qid": "Q65084754",
+      "name": "Forest Essentials"
+    },
+    {
+      "qid": "Q130331887",
+      "name": "Natura & Co"
+    },
+    {
+      "qid": "Q490142",
+      "name": "Amorepacific Corporation"
+    },
+    {
+      "qid": "Q16169971",
+      "name": "LG Household & Health Care"
+    },
+    {
+      "qid": "Q18857532",
+      "name": "KOSÉ Corporation"
+    },
+    {
+      "qid": "Q730893",
+      "name": "Oriflame Cosmetics"
+    },
+    {
+      "qid": "Q2408041",
+      "name": "Sephora"
+    },
+    {
+      "qid": "Q837851",
+      "name": "The Body Shop"
+    },
+    {
+      "qid": "Q23671513",
+      "name": "NYX Professional Makeup"
+    },
+    {
+      "qid": "Q2451589",
+      "name": "Neutrogena"
+    },
+    {
+      "qid": "Q2975619",
+      "name": "Clarins"
+    },
+    {
+      "qid": "Q1553251",
+      "name": "Guerlain"
+    },
+    {
+      "qid": "Q16176002",
+      "name": "Innisfree"
+    },
+    {
+      "qid": "Q16935511",
+      "name": "Laneige"
+    },
+    {
+      "qid": "Q85980775",
+      "name": "Sulwhasoo"
+    },
+    {
+      "qid": "Q4668069",
+      "name": "Missha"
+    },
+    {
+      "qid": "Q16174973",
+      "name": "Etude House"
+    },
+    {
+      "qid": "Q23671678",
+      "name": "Tarte, Inc."
+    },
+    {
+      "qid": "Q141435862",
+      "name": "Too Faced"
+    },
+    {
+      "qid": "Q2895769",
+      "name": "Benefit Cosmetics"
+    },
+    {
+      "qid": "Q4827965",
+      "name": "Aveda"
+    },
+    {
+      "qid": "Q3196447",
+      "name": "Kiehl's"
+    },
+    {
+      "qid": "Q337408",
+      "name": "Nivea"
+    },
+    {
+      "qid": "Q1356442",
+      "name": "La Roche-Posay"
+    },
+    {
+      "qid": "Q2079719",
+      "name": "Vichy"
+    },
+    {
+      "qid": "Q7535296",
+      "name": "SkinCeuticals"
+    },
+    {
+      "qid": "Q16951811",
+      "name": "Bioderma"
+    },
+    {
+      "qid": "Q11148082",
+      "name": "Caudalie"
+    },
+    {
+      "qid": "Q1477321",
+      "name": "Yves Rocher"
+    },
+    {
+      "qid": "Q126595227",
+      "name": "The Ordinary"
+    },
+    {
+      "qid": "Q85865456",
+      "name": "Glossier"
+    },
+    {
+      "qid": "Q116030556",
+      "name": "Rare Beauty"
+    },
+    {
+      "qid": "Q77659264",
+      "name": "Haus Laboratories"
+    },
+    {
+      "qid": "Q60743811",
+      "name": "Huda Beauty"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

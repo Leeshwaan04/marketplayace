@@ -1,0 +1,210 @@
+{
+  "category": "alcoholic-beverages",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q131734",
+      "exact": true,
+      "why": "brewery"
+    },
+    {
+      "via": "P31",
+      "qid": "Q156362",
+      "exact": true,
+      "why": "winery"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1251750",
+      "exact": true,
+      "why": "distillery"
+    },
+    {
+      "via": "P452",
+      "qid": "Q11644505",
+      "exact": true,
+      "why": "industry: brewing"
+    },
+    {
+      "via": "P452",
+      "qid": "Q3150593",
+      "exact": true,
+      "why": "industry: alcohol industry"
+    },
+    {
+      "via": "P452",
+      "qid": "Q29585034",
+      "exact": true,
+      "why": "industry: distilling of spirits"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865",
+    "Q131734",
+    "Q156362",
+    "Q1251750"
+  ],
+  "minSitelinks": 7,
+  "maxCount": 350,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|cultural heritage|museum|tasting room|\\bpub\\b|castle|château|wine estate|Bordeaux wine|\\bAOC\\b|\\bAOP\\b|appellation|wine in |wine of |French wine|small brewery|wine region|\\bchurch\\b|\\bmonastery\\b|vineyard|grand cru|premier cru)",
+  "excludeLabelRegex": "^(Château|Chateau|Schloss|Clos |Els Quatre Gats|Châtelard|Montrachet|Mercurey wine|Moulin-à-Vent|Bourgogne|Hospices de Beaune)",
+  "includeQids": [
+    {
+      "qid": "Q17086814",
+      "name": "United Spirits Limited"
+    },
+    {
+      "qid": "Q17077257",
+      "name": "Radico Khaitan"
+    },
+    {
+      "qid": "Q3088553",
+      "name": "United Breweries Group"
+    },
+    {
+      "qid": "Q6893560",
+      "name": "Mohan Meakin Limited"
+    },
+    {
+      "qid": "Q161140",
+      "name": "Diageo"
+    },
+    {
+      "qid": "Q685395",
+      "name": "Bacardi"
+    },
+    {
+      "qid": "Q392221",
+      "name": "Brown-Forman"
+    },
+    {
+      "qid": "Q137363738",
+      "name": "Suntory Holdings"
+    },
+    {
+      "qid": "Q2892812",
+      "name": "Suntory Global Spirits"
+    },
+    {
+      "qid": "Q1345059",
+      "name": "Rémy Cointreau"
+    },
+    {
+      "qid": "Q3319685",
+      "name": "Molson Coors Brewing Company"
+    },
+    {
+      "qid": "Q288727",
+      "name": "Sapporo Breweries"
+    },
+    {
+      "qid": "Q13403399",
+      "name": "Kirin Holdings"
+    },
+    {
+      "qid": "Q21158111",
+      "name": "China Resources Beer"
+    },
+    {
+      "qid": "Q3241775",
+      "name": "Lion"
+    },
+    {
+      "qid": "Q7836817",
+      "name": "Treasury Wine Estates"
+    },
+    {
+      "qid": "Q1128160",
+      "name": "Constellation Brands"
+    },
+    {
+      "qid": "Q1123957",
+      "name": "Concha y Toro"
+    },
+    {
+      "qid": "Q837049",
+      "name": "Pernod Ricard"
+    },
+    {
+      "qid": "Q753685",
+      "name": "Campari Group"
+    },
+    {
+      "qid": "Q2490031",
+      "name": "William Grant & Sons"
+    },
+    {
+      "qid": "Q7731591",
+      "name": "The Edrington Group"
+    },
+    {
+      "qid": "Q502268",
+      "name": "Johnnie Walker"
+    },
+    {
+      "qid": "Q332378",
+      "name": "Absolut Vodka"
+    },
+    {
+      "qid": "Q777721",
+      "name": "Smirnoff"
+    },
+    {
+      "qid": "Q194297",
+      "name": "Guinness"
+    },
+    {
+      "qid": "Q23461394",
+      "name": "Castle Lager"
+    },
+    {
+      "qid": "Q2140520",
+      "name": "Singha"
+    },
+    {
+      "qid": "Q1862698",
+      "name": "Tiger Beer"
+    },
+    {
+      "qid": "Q720479",
+      "name": "Asahi Breweries"
+    },
+    {
+      "qid": "Q180855",
+      "name": "Heineken International"
+    },
+    {
+      "qid": "Q113215",
+      "name": "Carlsberg Group"
+    },
+    {
+      "qid": "Q2729871",
+      "name": "Efes Beverage Group"
+    },
+    {
+      "qid": "Q6395366",
+      "name": "Ketel One"
+    },
+    {
+      "qid": "Q1538163",
+      "name": "Gordon's London Dry Gin"
+    },
+    {
+      "qid": "Q1399467",
+      "name": "Jose Cuervo"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

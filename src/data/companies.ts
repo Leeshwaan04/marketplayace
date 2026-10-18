@@ -1,4 +1,5 @@
 import indexData from './generated/index.json'
+import { categoryBySlug } from './taxonomy'
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -80,11 +81,42 @@ const byNotability = (a: CompanyLite, b: CompanyLite) => b.sitelinks - a.sitelin
 
 export const companyLite = (slug: string) => bySlug.get(slug) ?? null
 
-const nameCounts = new Map<string, number>()
-for (const c of INDEX) nameCounts.set(c.name.toLowerCase(), (nameCounts.get(c.name.toLowerCase()) ?? 0) + 1)
-/** Name for page titles: adds the country when two different companies share a name (for example two "Puma"s). */
-export const titleName = (c: CompanyLite) =>
-  (nameCounts.get(c.name.toLowerCase()) ?? 0) > 1 && c.country ? `${c.name} (${c.country})` : c.name
+/**
+ * Page-title names. Two different companies can share a name (two "Puma"s, a brand and its operator), so
+ * titles must be unique: add the country, then the industry, then the founding year, then the profile's own slug,
+ * only as far as needed.
+ */
+const titles = (() => {
+  const result = new Map<string, string>()
+  const level: ((c: CompanyLite) => string)[] = [
+    (c) => c.name,
+    (c) => (c.country ? `${c.name} (${c.country})` : c.name),
+    (c) => `${c.name} (${[c.country, categoryBySlug(c.categories[0])?.name].filter(Boolean).join(', ')})`,
+    (c) => `${c.name} (${[c.country, c.founded ? `founded ${c.founded}` : null].filter(Boolean).join(', ')})`,
+    (c) => `${c.name} (${c.slug})`
+  ]
+  let pending = INDEX
+  for (const make of level) {
+    const groups = new Map<string, CompanyLite[]>()
+    for (const c of pending) {
+      const key = make(c).toLowerCase()
+      groups.set(key, [...(groups.get(key) ?? []), c])
+    }
+    const next: CompanyLite[] = []
+    for (const [, members] of groups) {
+      if (members.length === 1 && !result.has(members[0].slug)) result.set(members[0].slug, make(members[0]))
+      else next.push(...members)
+    }
+    // A name that is unique in the whole index keeps its plain form; collisions move to the next, more specific form.
+    pending = next
+    if (pending.length === 0) break
+  }
+  for (const c of pending) result.set(c.slug, `${c.name} (${c.slug})`)
+  return result
+})()
+
+export const titleName = (c: CompanyLite) => titles.get(c.slug) ?? c.name
+
 export const companiesInCategory = (slug: string) => INDEX.filter((c) => c.categories.includes(slug)).sort(byNotability)
 
 /** Lowercase ASCII URL slug for a country name ("Côte d'Ivoire" -> "cote-divoire"). */

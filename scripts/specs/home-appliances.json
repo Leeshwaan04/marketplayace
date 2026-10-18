@@ -1,0 +1,217 @@
+{
+  "category": "home-appliances",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q212920",
+      "exact": true,
+      "why": "industry: home appliance"
+    },
+    {
+      "via": "P452",
+      "qid": "Q56604188",
+      "exact": true,
+      "why": "industry: home appliance industry"
+    },
+    {
+      "via": "P1056",
+      "qid": "Q212920",
+      "exact": true,
+      "why": "produces home appliances"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1631129",
+    "Q3117865"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 200,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(IKEA|The Home Depot|Lowe's|Unieuro|Elgiganten|Síragon|Multilaser|Electrolux Italy)$",
+  "includeQids": [
+    {
+      "qid": "Q2330976",
+      "name": "Voltas"
+    },
+    {
+      "qid": "Q17053670",
+      "name": "Godrej & Boyce"
+    },
+    {
+      "qid": "Q111949752",
+      "name": "Crompton Greaves Consumer Electricals"
+    },
+    {
+      "qid": "Q4848822",
+      "name": "Bajaj Electricals"
+    },
+    {
+      "qid": "Q22909498",
+      "name": "TTK Prestige"
+    },
+    {
+      "qid": "Q1471346",
+      "name": "Whirlpool Corporation"
+    },
+    {
+      "qid": "Q25303119",
+      "name": "Orient Electric"
+    },
+    {
+      "qid": "Q127417202",
+      "name": "Usha International"
+    },
+    {
+      "qid": "Q129955888",
+      "name": "Hindware Smart Appliances"
+    },
+    {
+      "qid": "Q7661472",
+      "name": "Symphony Limited"
+    },
+    {
+      "qid": "Q7905686",
+      "name": "V-Guard Industries Ltd"
+    },
+    {
+      "qid": "Q1485263",
+      "name": "GE Appliances"
+    },
+    {
+      "qid": "Q614920",
+      "name": "BSH Hausgeräte GmbH"
+    },
+    {
+      "qid": "Q1995486",
+      "name": "Smeg"
+    },
+    {
+      "qid": "Q1207494",
+      "name": "De'Longhi"
+    },
+    {
+      "qid": "Q1743850",
+      "name": "KitchenAid"
+    },
+    {
+      "qid": "Q285161",
+      "name": "iRobot"
+    },
+    {
+      "qid": "Q97164583",
+      "name": "SharkNinja"
+    },
+    {
+      "qid": "Q85846170",
+      "name": "Instant Brands"
+    },
+    {
+      "qid": "Q1544535",
+      "name": "Gree Electric"
+    },
+    {
+      "qid": "Q1157589",
+      "name": "Daikin Industries"
+    },
+    {
+      "qid": "Q731912",
+      "name": "Carrier Corporation"
+    },
+    {
+      "qid": "Q795243",
+      "name": "Rinnai"
+    },
+    {
+      "qid": "Q1101230",
+      "name": "Zojirushi Corporation"
+    },
+    {
+      "qid": "Q3072104",
+      "name": "Tiger Corporation"
+    },
+    {
+      "qid": "Q3087840",
+      "name": "Frigidaire"
+    },
+    {
+      "qid": "Q6798004",
+      "name": "Maytag"
+    },
+    {
+      "qid": "Q4918436",
+      "name": "Bissell"
+    },
+    {
+      "qid": "Q28224328",
+      "name": "Ecovacs Robotics"
+    },
+    {
+      "qid": "Q88180448",
+      "name": "Roborock"
+    },
+    {
+      "qid": "Q4962569",
+      "name": "Breville"
+    },
+    {
+      "qid": "Q4845476",
+      "name": "Cuisinart"
+    },
+    {
+      "qid": "Q301301",
+      "name": "Nespresso"
+    },
+    {
+      "qid": "Q125534837",
+      "name": "Vitamix"
+    },
+    {
+      "qid": "Q331001",
+      "name": "Thermomix"
+    },
+    {
+      "qid": "Q3051064",
+      "name": "Russell Hobbs"
+    },
+    {
+      "qid": "Q6913476",
+      "name": "Morphy Richards"
+    },
+    {
+      "qid": "Q134176292",
+      "name": "Tefal (brand)"
+    },
+    {
+      "qid": "Q1486109",
+      "name": "Moulinex"
+    },
+    {
+      "qid": "Q657394",
+      "name": "Rowenta"
+    },
+    {
+      "qid": "Q134934935",
+      "name": "KRUPS"
+    },
+    {
+      "qid": "Q1143211",
+      "name": "Haier"
+    },
+    {
+      "qid": "Q2609533",
+      "name": "Midea"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}
