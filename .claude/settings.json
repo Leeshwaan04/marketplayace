@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e 'console.log\\(require\\(\"./scripts/registry.json\"\\).companies.length\\)')",
+      "Bash(echo \"--- registry now: $\\(node -e 'console.log\\(require\\(\"./scripts/registry.json\"\\).companies.length\\)'\\)\")",
+      "Bash(git -C ~/Documents/marketplayace remote -v)",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(node scripts/apply-specs.mjs social-media)",
+      "Bash(awk '{print \"index.json KB:\", $5/1024}')",
+      "Bash(awk '{print \"JS gzip KB:\", $1/1024}')"
+    ]
+  }
+}

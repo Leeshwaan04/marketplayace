@@ -1,0 +1,238 @@
+{
+  "category": "social-media",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q3220391",
+      "exact": true,
+      "why": "social networking service"
+    },
+    {
+      "via": "P31",
+      "qid": "Q113709736",
+      "exact": true,
+      "why": "social media app"
+    },
+    {
+      "via": "P31",
+      "qid": "Q18922759",
+      "exact": true,
+      "why": "messaging app"
+    },
+    {
+      "via": "P31",
+      "qid": "Q559856",
+      "exact": true,
+      "why": "online video platform"
+    },
+    {
+      "via": "P31",
+      "qid": "Q118140435",
+      "exact": true,
+      "why": "very large online platform"
+    }
+  ],
+  "minSitelinks": 12,
+  "maxCount": 200,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b|discontinued|shut down|video game|browser game|\\bgame\\b)",
+  "excludeLabelRegex": "^(Amazon|AliExpress|Temu|Shein|booking\\.com|Microsoft Bing|GitHub|XVideos|XNXX|MyHeritage|Tinder|Google Buzz|ResearchGate|Academia\\.edu|Chess\\.com|Goodreads|Vevo|Blogger|ICQ|Flickr|last\\.fm|Truth Social|Myspace|ASKfm|9GAG|LiveJournal|Odysee|ModDB)$",
+  "includeQids": [
+    {
+      "qid": "Q380",
+      "name": "Meta Platforms"
+    },
+    {
+      "qid": "Q918",
+      "name": "X"
+    },
+    {
+      "qid": "Q209330",
+      "name": "Instagram"
+    },
+    {
+      "qid": "Q1049511",
+      "name": "WhatsApp"
+    },
+    {
+      "qid": "Q333618",
+      "name": "Snapchat"
+    },
+    {
+      "qid": "Q27022329",
+      "name": "Snap Inc."
+    },
+    {
+      "qid": "Q96095585",
+      "name": "Pinterest"
+    },
+    {
+      "qid": "Q32049814",
+      "name": "Telegram FZ-LLC"
+    },
+    {
+      "qid": "Q22907849",
+      "name": "Discord"
+    },
+    {
+      "qid": "Q384060",
+      "name": "Tumblr"
+    },
+    {
+      "qid": "Q66769115",
+      "name": "ShareChat"
+    },
+    {
+      "qid": "Q28127203",
+      "name": "Roposo"
+    },
+    {
+      "qid": "Q14927579",
+      "name": "Hike"
+    },
+    {
+      "qid": "Q17684312",
+      "name": "Kakao"
+    },
+    {
+      "qid": "Q489247",
+      "name": "Naver Corporation"
+    },
+    {
+      "qid": "Q602471",
+      "name": "LINE"
+    },
+    {
+      "qid": "Q65924658",
+      "name": "Douyin"
+    },
+    {
+      "qid": "Q55637991",
+      "name": "Xiaohongshu"
+    },
+    {
+      "qid": "Q47015540",
+      "name": "Kuaishou"
+    },
+    {
+      "qid": "Q55606242",
+      "name": "ByteDance"
+    },
+    {
+      "qid": "Q283233",
+      "name": "WeChat"
+    },
+    {
+      "qid": "Q857640",
+      "name": "Tencent QQ"
+    },
+    {
+      "qid": "Q332707",
+      "name": "Viber"
+    },
+    {
+      "qid": "Q61726101",
+      "name": "Signal Messenger"
+    },
+    {
+      "qid": "Q78194383",
+      "name": "Bluesky"
+    },
+    {
+      "qid": "Q120281745",
+      "name": "Threads"
+    },
+    {
+      "qid": "Q109001687",
+      "name": "Truth Social"
+    },
+    {
+      "qid": "Q64852796",
+      "name": "Parler"
+    },
+    {
+      "qid": "Q104101703",
+      "name": "Clubhouse"
+    },
+    {
+      "qid": "Q111947460",
+      "name": "BeReal"
+    },
+    {
+      "qid": "Q1885456",
+      "name": "VK"
+    },
+    {
+      "qid": "Q1123836",
+      "name": "Odnoklassniki"
+    },
+    {
+      "qid": "Q5281",
+      "name": "Yandex"
+    },
+    {
+      "qid": "Q111759432",
+      "name": "Reddit"
+    },
+    {
+      "qid": "Q4555537",
+      "name": "Twitch"
+    },
+    {
+      "qid": "Q7021239",
+      "name": "Nextdoor"
+    },
+    {
+      "qid": "Q21233433",
+      "name": "Bumble"
+    },
+    {
+      "qid": "Q115680335",
+      "name": "Hinge"
+    },
+    {
+      "qid": "Q15078152",
+      "name": "Tinder"
+    },
+    {
+      "qid": "Q2302402",
+      "name": "Grindr"
+    },
+    {
+      "qid": "Q799677",
+      "name": "Badoo"
+    },
+    {
+      "qid": "Q21512894",
+      "name": "Happn"
+    },
+    {
+      "qid": "Q16186120",
+      "name": "Medium"
+    },
+    {
+      "qid": "Q63435709",
+      "name": "Substack"
+    },
+    {
+      "qid": "Q15861362",
+      "name": "Patreon"
+    },
+    {
+      "qid": "Q61707579",
+      "name": "OnlyFans"
+    },
+    {
+      "qid": "Q13884156",
+      "name": "Strava"
+    },
+    {
+      "qid": "Q51709",
+      "name": "Foursquare Labs, Inc."
+    },
+    {
+      "qid": "Q355022",
+      "name": "Imgur"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

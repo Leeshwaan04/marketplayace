@@ -1,0 +1,176 @@
+{
+  "category": "lending",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q1416636",
+      "exact": true,
+      "why": "non-banking financial company"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1416636"
+  ],
+  "minSitelinks": 3,
+  "maxCount": 200,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Sampo Group|Al-Qard Al-Hasan Association|Single Settlement and Information Space)$",
+  "includeQids": [
+    {
+      "qid": "Q28173355",
+      "name": "Bajaj Finance"
+    },
+    {
+      "qid": "Q18636352",
+      "name": "Bajaj Finserv"
+    },
+    {
+      "qid": "Q6943861",
+      "name": "Muthoot Finance Ltd"
+    },
+    {
+      "qid": "Q17074288",
+      "name": "Shriram Finance Limited"
+    },
+    {
+      "qid": "Q60785563",
+      "name": "Cholamandalam Investment and Finance Company"
+    },
+    {
+      "qid": "Q6734035",
+      "name": "Mahindra & Mahindra Financial Services Limited"
+    },
+    {
+      "qid": "Q48989425",
+      "name": "Tata Capital"
+    },
+    {
+      "qid": "Q106764228",
+      "name": "Aavas Financiers"
+    },
+    {
+      "qid": "Q114608361",
+      "name": "Home First Finance"
+    },
+    {
+      "qid": "Q6458611",
+      "name": "LIC Housing Finance Limited"
+    },
+    {
+      "qid": "Q19776436",
+      "name": "PNB Housing Finance Limited"
+    },
+    {
+      "qid": "Q111951709",
+      "name": "Navi Limited"
+    },
+    {
+      "qid": "Q17020720",
+      "name": "SoFi"
+    },
+    {
+      "qid": "Q1165072",
+      "name": "Klarna"
+    },
+    {
+      "qid": "Q55639119",
+      "name": "Afterpay"
+    },
+    {
+      "qid": "Q110778747",
+      "name": "Block, Inc."
+    },
+    {
+      "qid": "Q7899307",
+      "name": "Upstart Holdings"
+    },
+    {
+      "qid": "Q2193947",
+      "name": "Prosper Marketplace"
+    },
+    {
+      "qid": "Q2524499",
+      "name": "Zopa"
+    },
+    {
+      "qid": "Q121096647",
+      "name": "Oportun"
+    },
+    {
+      "qid": "Q15845093",
+      "name": "Credit Acceptance"
+    },
+    {
+      "qid": "Q28444592",
+      "name": "OneMain Financial"
+    },
+    {
+      "qid": "Q5281775",
+      "name": "Discover Financial"
+    },
+    {
+      "qid": "Q18387139",
+      "name": "Synchrony Financial"
+    },
+    {
+      "qid": "Q1569558",
+      "name": "Sallie Mae"
+    },
+    {
+      "qid": "Q19903490",
+      "name": "Navient"
+    },
+    {
+      "qid": "Q6990264",
+      "name": "Nelnet"
+    },
+    {
+      "qid": "Q105887484",
+      "name": "Rocket Companies"
+    },
+    {
+      "qid": "Q621096",
+      "name": "Fannie Mae"
+    },
+    {
+      "qid": "Q935969",
+      "name": "Freddie Mac"
+    },
+    {
+      "qid": "Q2032800",
+      "name": "Ally Financial"
+    },
+    {
+      "qid": "Q47531795",
+      "name": "Santander Consumer USA"
+    },
+    {
+      "qid": "Q25422888",
+      "name": "Nubank"
+    },
+    {
+      "qid": "Q65160239",
+      "name": "Creditas"
+    },
+    {
+      "qid": "Q21979415",
+      "name": "Ant Group"
+    },
+    {
+      "qid": "Q114608360",
+      "name": "Akulaku"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

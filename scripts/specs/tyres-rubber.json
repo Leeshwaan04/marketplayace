@@ -1,0 +1,161 @@
+{
+  "category": "tyres-rubber",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q56604644",
+      "exact": true,
+      "why": "tyre industry"
+    },
+    {
+      "via": "P31",
+      "qid": "Q20032039",
+      "exact": true,
+      "why": "tire manufacturer"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q20032039"
+  ],
+  "minSitelinks": 3,
+  "maxCount": 120,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "includeQids": [
+    {
+      "qid": "Q151107",
+      "name": "Michelin"
+    },
+    {
+      "qid": "Q179433",
+      "name": "Bridgestone"
+    },
+    {
+      "qid": "Q620875",
+      "name": "Goodyear Tire and Rubber Company"
+    },
+    {
+      "qid": "Q207770",
+      "name": "Pirelli"
+    },
+    {
+      "qid": "Q163241",
+      "name": "Continental AG"
+    },
+    {
+      "qid": "Q168241",
+      "name": "Dunlop Tyres"
+    },
+    {
+      "qid": "Q1471756",
+      "name": "Yokohama Rubber Company"
+    },
+    {
+      "qid": "Q568406",
+      "name": "Toyo Tire Corporation"
+    },
+    {
+      "qid": "Q1648148",
+      "name": "Sumitomo Rubber Industries"
+    },
+    {
+      "qid": "Q493094",
+      "name": "Hankook Tire & Technology"
+    },
+    {
+      "qid": "Q493108",
+      "name": "Kumho Tire"
+    },
+    {
+      "qid": "Q625573",
+      "name": "Nexen Tire"
+    },
+    {
+      "qid": "Q1129847",
+      "name": "Cooper Tire & Rubber Company"
+    },
+    {
+      "qid": "Q1481634",
+      "name": "Nokian Tyres"
+    },
+    {
+      "qid": "Q4780362",
+      "name": "Apollo Tyres"
+    },
+    {
+      "qid": "Q3648653",
+      "name": "CEAT"
+    },
+    {
+      "qid": "Q19321885",
+      "name": "Balkrishna Industries"
+    },
+    {
+      "qid": "Q14915570",
+      "name": "Giti Tire"
+    },
+    {
+      "qid": "Q48802850",
+      "name": "Linglong Tire"
+    },
+    {
+      "qid": "Q5648136",
+      "name": "Hangzhou Zhongce Rubber Company"
+    },
+    {
+      "qid": "Q7840066",
+      "name": "Triangle Group"
+    },
+    {
+      "qid": "Q4215912",
+      "name": "Maxxis"
+    },
+    {
+      "qid": "Q1428298",
+      "name": "Vredestein Banden B.V."
+    },
+    {
+      "qid": "Q1703203",
+      "name": "Trelleborg AB"
+    },
+    {
+      "qid": "Q6388831",
+      "name": "Kenda Rubber Industrial Company"
+    },
+    {
+      "qid": "Q7809776",
+      "name": "Titan Tire Corporation"
+    },
+    {
+      "qid": "Q61055670",
+      "name": "Falken Tire"
+    },
+    {
+      "qid": "Q369128",
+      "name": "General Tire"
+    },
+    {
+      "qid": "Q947913",
+      "name": "BFGoodrich"
+    },
+    {
+      "qid": "Q3296074",
+      "name": "United States Rubber Company"
+    },
+    {
+      "qid": "Q420837",
+      "name": "Firestone Tire and Rubber Company"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

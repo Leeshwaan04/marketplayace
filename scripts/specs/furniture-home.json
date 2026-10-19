@@ -1,0 +1,205 @@
+{
+  "category": "furniture-home",
+  "includes": [
+    {
+      "via": "P452",
+      "qid": "Q11990434",
+      "exact": true,
+      "why": "furniture industry"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1817883",
+      "exact": true,
+      "why": "furniture manufacturer"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q1817883"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 200,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "includeQids": [
+    {
+      "qid": "Q54078",
+      "name": "IKEA"
+    },
+    {
+      "qid": "Q105821445",
+      "name": "Godrej Interio"
+    },
+    {
+      "qid": "Q7037115",
+      "name": "Nilkamal Plastics"
+    },
+    {
+      "qid": "Q7166413",
+      "name": "Pepperfry.com"
+    },
+    {
+      "qid": "Q18357397",
+      "name": "Urban Ladder"
+    },
+    {
+      "qid": "Q141457598",
+      "name": "Wakefit"
+    },
+    {
+      "qid": "Q479167",
+      "name": "Steelcase"
+    },
+    {
+      "qid": "Q489469",
+      "name": "Herman Miller"
+    },
+    {
+      "qid": "Q1624295",
+      "name": "Knoll"
+    },
+    {
+      "qid": "Q646959",
+      "name": "Vitra"
+    },
+    {
+      "qid": "Q112039777",
+      "name": "HAY"
+    },
+    {
+      "qid": "Q2262005",
+      "name": "Kartell"
+    },
+    {
+      "qid": "Q625048",
+      "name": "Cassina S.p.A."
+    },
+    {
+      "qid": "Q4833573",
+      "name": "B&B Italia"
+    },
+    {
+      "qid": "Q3873359",
+      "name": "Natuzzi"
+    },
+    {
+      "qid": "Q1477785",
+      "name": "Poltrona Frau"
+    },
+    {
+      "qid": "Q3437504",
+      "name": "Roche Bobois"
+    },
+    {
+      "qid": "Q3442586",
+      "name": "Ligne Roset"
+    },
+    {
+      "qid": "Q1466539",
+      "name": "Fritz Hansen"
+    },
+    {
+      "qid": "Q19903482",
+      "name": "Muuto"
+    },
+    {
+      "qid": "Q11961809",
+      "name": "Bolia"
+    },
+    {
+      "qid": "Q11338915",
+      "name": "BoConcept A/S"
+    },
+    {
+      "qid": "Q5402870",
+      "name": "Ethan Allen"
+    },
+    {
+      "qid": "Q6391583",
+      "name": "La-Z-Boy"
+    },
+    {
+      "qid": "Q4805437",
+      "name": "Ashley"
+    },
+    {
+      "qid": "Q4868109",
+      "name": "Bassett Furniture"
+    },
+    {
+      "qid": "Q2581220",
+      "name": "Williams-Sonoma, Inc."
+    },
+    {
+      "qid": "Q3540193",
+      "name": "Wayfair"
+    },
+    {
+      "qid": "Q5182604",
+      "name": "Crate & Barrel"
+    },
+    {
+      "qid": "Q7985021",
+      "name": "West Elm"
+    },
+    {
+      "qid": "Q3400126",
+      "name": "Pottery Barn"
+    },
+    {
+      "qid": "Q10801453",
+      "name": "Nitori"
+    },
+    {
+      "qid": "Q5479732",
+      "name": "Francfranc"
+    },
+    {
+      "qid": "Q19604577",
+      "name": "Tempur Sealy International"
+    },
+    {
+      "qid": "Q7447640",
+      "name": "Sleep Number"
+    },
+    {
+      "qid": "Q28228105",
+      "name": "Purple Innovation, Inc."
+    },
+    {
+      "qid": "Q20539294",
+      "name": "Casper"
+    },
+    {
+      "qid": "Q11060215",
+      "name": "Simmons Bedding Company"
+    },
+    {
+      "qid": "Q3917809",
+      "name": "Hästens"
+    },
+    {
+      "qid": "Q30688095",
+      "name": "Silentnight"
+    },
+    {
+      "qid": "Q3280364",
+      "name": "Maisons du Monde"
+    },
+    {
+      "qid": "Q541134",
+      "name": "Conforama"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

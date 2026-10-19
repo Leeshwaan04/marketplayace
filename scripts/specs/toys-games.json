@@ -1,0 +1,194 @@
+{
+  "category": "toys-games",
+  "includes": [
+    {
+      "via": "P1056",
+      "qid": "Q11422",
+      "exact": true,
+      "why": "produces toys"
+    },
+    {
+      "via": "P31",
+      "qid": "Q126041825",
+      "exact": true,
+      "why": "toy company"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q126041825"
+  ],
+  "minSitelinks": 3,
+  "maxCount": 200,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Hamleys|Smyths Toys|Toy Kingdom|Baby Einstein|Four Horsemen Studios|Schoenhut Piano Company|Alpha Group Company|GIANTmicrobes|Creative Playthings|Doepke Toys|Remco Industries|Play Along Toys|Chogokin|Goldie Blox|Roco|Bandai Namco Holdings)$",
+  "includeQids": [
+    {
+      "qid": "Q1063455",
+      "name": "The Lego Group"
+    },
+    {
+      "qid": "Q596139",
+      "name": "Mattel"
+    },
+    {
+      "qid": "Q7577375",
+      "name": "Spin Master"
+    },
+    {
+      "qid": "Q24906125",
+      "name": "Funskool"
+    },
+    {
+      "qid": "Q160719",
+      "name": "Playmobil"
+    },
+    {
+      "qid": "Q697136",
+      "name": "Ravensburger"
+    },
+    {
+      "qid": "Q702845",
+      "name": "Schleich"
+    },
+    {
+      "qid": "Q1335998",
+      "name": "Tomy"
+    },
+    {
+      "qid": "Q139797350",
+      "name": "Epoch"
+    },
+    {
+      "qid": "Q164484",
+      "name": "Hornby Hobbies Limited"
+    },
+    {
+      "qid": "Q6812611",
+      "name": "Melissa & Doug"
+    },
+    {
+      "qid": "Q6509896",
+      "name": "LeapFrog Enterprises"
+    },
+    {
+      "qid": "Q585537",
+      "name": "Hot Wheels"
+    },
+    {
+      "qid": "Q167447",
+      "name": "Barbie"
+    },
+    {
+      "qid": "Q1002992",
+      "name": "Build-A-Bear Workshop"
+    },
+    {
+      "qid": "Q1891883",
+      "name": "Nerf"
+    },
+    {
+      "qid": "Q1346099",
+      "name": "Play-Doh"
+    },
+    {
+      "qid": "Q501476",
+      "name": "Hasbro"
+    },
+    {
+      "qid": "Q1420671",
+      "name": "Fisher-Price"
+    },
+    {
+      "qid": "Q17034350",
+      "name": "Little Tikes"
+    },
+    {
+      "qid": "Q1746937",
+      "name": "Radio Flyer"
+    },
+    {
+      "qid": "Q1139197",
+      "name": "Crayola LLC"
+    },
+    {
+      "qid": "Q48764794",
+      "name": "BANDAI SPIRITS"
+    },
+    {
+      "qid": "Q97180096",
+      "name": "Pop Mart"
+    },
+    {
+      "qid": "Q22324956",
+      "name": "Alpha Group Company"
+    },
+    {
+      "qid": "Q1547577",
+      "name": "Smoby"
+    },
+    {
+      "qid": "Q531015",
+      "name": "Majorette"
+    },
+    {
+      "qid": "Q1132697",
+      "name": "Corgi Toys"
+    },
+    {
+      "qid": "Q1050690",
+      "name": "Matchbox"
+    },
+    {
+      "qid": "Q9060843",
+      "name": "Playskool"
+    },
+    {
+      "qid": "Q1545421",
+      "name": "Tamiya Corporation"
+    },
+    {
+      "qid": "Q702385",
+      "name": "Revell"
+    },
+    {
+      "qid": "Q408697",
+      "name": "Airfix"
+    },
+    {
+      "qid": "Q879018",
+      "name": "Simba Dickie Group"
+    },
+    {
+      "qid": "Q106370218",
+      "name": "ZURU"
+    },
+    {
+      "qid": "Q109535860",
+      "name": "Squishmallows"
+    },
+    {
+      "qid": "Q122973664",
+      "name": "Jazwares"
+    },
+    {
+      "qid": "Q6404853",
+      "name": "Kidrobot"
+    },
+    {
+      "qid": "Q151137",
+      "name": "Steiff"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

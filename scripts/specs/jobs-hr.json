@@ -1,0 +1,148 @@
+{
+  "category": "jobs-hr",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q580148",
+      "exact": true,
+      "why": "employment website"
+    },
+    {
+      "via": "P31",
+      "qid": "Q17175443",
+      "exact": true,
+      "why": "recruitment agency"
+    },
+    {
+      "via": "P31",
+      "qid": "Q59545",
+      "exact": true,
+      "why": "temporary work agency"
+    },
+    {
+      "via": "P452",
+      "qid": "Q131766571",
+      "exact": true,
+      "why": "staffing industry"
+    },
+    {
+      "via": "P452",
+      "qid": "Q63348704",
+      "exact": true,
+      "why": "employment services industry"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q580148",
+    "Q17175443",
+    "Q59545",
+    "Q35127",
+    "Q1194970"
+  ],
+  "minSitelinks": 4,
+  "maxCount": 250,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(temporary work agency|Craigslist|FINN\\.no|Alpha Tomo Global Resoures Sdn Bhd)$",
+  "includeQids": [
+    {
+      "qid": "Q96382142",
+      "name": "Info Edge"
+    },
+    {
+      "qid": "Q8072594",
+      "name": "ZipRecruiter"
+    },
+    {
+      "qid": "Q3321557",
+      "name": "Monster Worldwide"
+    },
+    {
+      "qid": "Q11310671",
+      "name": "JobStreet.com"
+    },
+    {
+      "qid": "Q102240692",
+      "name": "Boss Zhipin"
+    },
+    {
+      "qid": "Q498120",
+      "name": "The Stepstone Group"
+    },
+    {
+      "qid": "Q267840",
+      "name": "Randstad N.V."
+    },
+    {
+      "qid": "Q353494",
+      "name": "The Adecco Group"
+    },
+    {
+      "qid": "Q1538585",
+      "name": "Kelly Services"
+    },
+    {
+      "qid": "Q2157448",
+      "name": "Robert Half"
+    },
+    {
+      "qid": "Q1728446",
+      "name": "Korn Ferry"
+    },
+    {
+      "qid": "Q445858",
+      "name": "Michael Page"
+    },
+    {
+      "qid": "Q4731377",
+      "name": "Allegis Group"
+    },
+    {
+      "qid": "Q489080",
+      "name": "Automatic Data Processing"
+    },
+    {
+      "qid": "Q946080",
+      "name": "Paychex"
+    },
+    {
+      "qid": "Q17084959",
+      "name": "Paycom"
+    },
+    {
+      "qid": "Q134882419",
+      "name": "Rippling"
+    },
+    {
+      "qid": "Q3344170",
+      "name": "Upwork"
+    },
+    {
+      "qid": "Q5410132",
+      "name": "Fiverr"
+    },
+    {
+      "qid": "Q6206769",
+      "name": "Jobandtalent"
+    },
+    {
+      "qid": "Q2135836",
+      "name": "Recruit Holdings"
+    },
+    {
+      "qid": "Q11319871",
+      "name": "Persol Holdings Co., Ltd."
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

@@ -1,0 +1,218 @@
+{
+  "category": "sportswear-athleisure",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q24928712",
+      "exact": true,
+      "why": "sporting goods manufacturer"
+    },
+    {
+      "via": "P452",
+      "qid": "Q57264543",
+      "exact": true,
+      "why": "sporting goods industry"
+    },
+    {
+      "via": "P452",
+      "qid": "Q645292",
+      "exact": true,
+      "why": "sportswear"
+    },
+    {
+      "via": "P1056",
+      "qid": "Q645292",
+      "exact": true,
+      "why": "produces sportswear"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q24928712"
+  ],
+  "minSitelinks": 5,
+  "maxCount": 250,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Wilson Sporting Goods|Spalding|Mikasa Sports|Slazenger|Burton Snowboards|Andrew Christian|Powell Peralta|Intersport|Keds|etnies|Reusch|HEAD)$",
+  "includeQids": [
+    {
+      "qid": "Q483915",
+      "name": "Nike"
+    },
+    {
+      "qid": "Q3895",
+      "name": "Adidas AG"
+    },
+    {
+      "qid": "Q157064",
+      "name": "Puma"
+    },
+    {
+      "qid": "Q2031485",
+      "name": "Under Armour"
+    },
+    {
+      "qid": "Q6702957",
+      "name": "Lululemon Athletica"
+    },
+    {
+      "qid": "Q1112588",
+      "name": "Columbia Sportswear Company"
+    },
+    {
+      "qid": "Q152784",
+      "name": "The North Face, Inc."
+    },
+    {
+      "qid": "Q1660552",
+      "name": "Patagonia, Inc."
+    },
+    {
+      "qid": "Q56246099",
+      "name": "Gymshark"
+    },
+    {
+      "qid": "Q123700068",
+      "name": "Alo Yoga"
+    },
+    {
+      "qid": "Q16992933",
+      "name": "Fabletics"
+    },
+    {
+      "qid": "Q54953968",
+      "name": "Outdoor Voices"
+    },
+    {
+      "qid": "Q466183",
+      "name": "Reebok"
+    },
+    {
+      "qid": "Q7381335",
+      "name": "Russell Athletic"
+    },
+    {
+      "qid": "Q327247",
+      "name": "ASICS"
+    },
+    {
+      "qid": "Q742988",
+      "name": "New Balance"
+    },
+    {
+      "qid": "Q1156731",
+      "name": "Mizuno Corporation"
+    },
+    {
+      "qid": "Q652047",
+      "name": "Umbro"
+    },
+    {
+      "qid": "Q735873",
+      "name": "Kappa"
+    },
+    {
+      "qid": "Q850307",
+      "name": "Lotto Sport Italia"
+    },
+    {
+      "qid": "Q1208130",
+      "name": "Diadora"
+    },
+    {
+      "qid": "Q1051799",
+      "name": "Joma"
+    },
+    {
+      "qid": "Q1439645",
+      "name": "Macron"
+    },
+    {
+      "qid": "Q1353057",
+      "name": "Kelme"
+    },
+    {
+      "qid": "Q4021859",
+      "name": "Xtep"
+    },
+    {
+      "qid": "Q10846067",
+      "name": "361˚"
+    },
+    {
+      "qid": "Q11320384",
+      "name": "Descente"
+    },
+    {
+      "qid": "Q773924",
+      "name": "Yonex"
+    },
+    {
+      "qid": "Q7093962",
+      "name": "Onitsuka Tiger"
+    },
+    {
+      "qid": "Q7250716",
+      "name": "Prospecs"
+    },
+    {
+      "qid": "Q18919758",
+      "name": "Wildcraft"
+    },
+    {
+      "qid": "Q22662572",
+      "name": "Nivia Sports"
+    },
+    {
+      "qid": "Q204539",
+      "name": "Kookaburra Sport"
+    },
+    {
+      "qid": "Q3115835",
+      "name": "Gray-Nicolls"
+    },
+    {
+      "qid": "Q5618903",
+      "name": "Gunn & Moore"
+    },
+    {
+      "qid": "Q6132965",
+      "name": "Rawlings"
+    },
+    {
+      "qid": "Q1027181",
+      "name": "Callaway Golf Company"
+    },
+    {
+      "qid": "Q1380797",
+      "name": "TaylorMade Golf Company"
+    },
+    {
+      "qid": "Q609502",
+      "name": "Titleist"
+    },
+    {
+      "qid": "Q152695",
+      "name": "Amer Sports"
+    },
+    {
+      "qid": "Q2120822",
+      "name": "Salomon"
+    },
+    {
+      "qid": "Q797750",
+      "name": "Babolat"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

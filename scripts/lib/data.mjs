@@ -81,6 +81,8 @@ export async function writeAllCompanies(companies, generatedAt) {
   for (const f of await readdir(SHARD_DIR)) if (/^shard-\d+\.json$/.test(f)) await rm(path.join(SHARD_DIR, f))
   const shards = Array.from({ length: SHARDS }, () => ({}))
   for (const c of companies) {
+    // Wikidata sometimes describes an item as the page about it ("Wikipedia overview article"); that is not a description.
+    if (c.description && /^(wikipedia|wikimedia)\b.*\b(article|page|overview|disambiguation|category|list)\b|disambiguation page/i.test(c.description.value)) c.description = null
     // A financial figure without its period or currency is not trustworthy; never publish one.
     for (const k of ['revenue', 'netIncome', 'marketCap']) {
       if (c[k] && (!c[k].value?.asOf || !c[k].value?.currency)) c[k] = null

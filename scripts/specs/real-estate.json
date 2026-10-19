@@ -1,0 +1,303 @@
+{
+  "category": "real-estate",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q17487600",
+      "exact": true,
+      "why": "real estate developer"
+    },
+    {
+      "via": "P31",
+      "qid": "Q1660104",
+      "exact": true,
+      "why": "real estate company"
+    },
+    {
+      "via": "P31",
+      "qid": "Q697852",
+      "exact": true,
+      "why": "REIT"
+    },
+    {
+      "via": "P31",
+      "qid": "Q61061942",
+      "exact": true,
+      "why": "online real estate database"
+    },
+    {
+      "via": "P452",
+      "qid": "Q1660132",
+      "exact": true,
+      "why": "real estate industry"
+    },
+    {
+      "via": "P452",
+      "qid": "Q695829",
+      "exact": true,
+      "why": "real estate development"
+    },
+    {
+      "via": "P452",
+      "qid": "Q697852",
+      "exact": true,
+      "why": "REIT industry"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q17487600",
+    "Q1660104",
+    "Q697852",
+    "Q61061942"
+  ],
+  "minSitelinks": 5,
+  "maxCount": 300,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(Watch Tower Bible and Tract Society of Pennsylvania|MTR Corporation Limited|Bonnier Group|China COSCO Shipping|GEO Group|Grandi Stazioni|KOLOUR|WeWork|American Tower Corporation|Crown Castle International Corp\\.|Digital Realty Trust|Vici Properties|Realty Income Corporation)$",
+  "includeQids": [
+    {
+      "qid": "Q5576812",
+      "name": "Godrej Properties Limited"
+    },
+    {
+      "qid": "Q7241778",
+      "name": "Prestige Group"
+    },
+    {
+      "qid": "Q7074787",
+      "name": "Oberoi Realty"
+    },
+    {
+      "qid": "Q55610797",
+      "name": "Embassy Group"
+    },
+    {
+      "qid": "Q17142513",
+      "name": "Mahindra Lifespace Developers"
+    },
+    {
+      "qid": "Q118725038",
+      "name": "Puravankara Limited"
+    },
+    {
+      "qid": "Q17068076",
+      "name": "MagicBricks"
+    },
+    {
+      "qid": "Q23680035",
+      "name": "Nobroker.com"
+    },
+    {
+      "qid": "Q138011787",
+      "name": "Square Yards"
+    },
+    {
+      "qid": "Q1703389",
+      "name": "Jones Lang LaSalle"
+    },
+    {
+      "qid": "Q3197998",
+      "name": "Knight Frank"
+    },
+    {
+      "qid": "Q5147194",
+      "name": "Colliers International"
+    },
+    {
+      "qid": "Q4033689",
+      "name": "Aldar Properties"
+    },
+    {
+      "qid": "Q5204252",
+      "name": "DAMAC Properties"
+    },
+    {
+      "qid": "Q17081758",
+      "name": "Sobha Ltd."
+    },
+    {
+      "qid": "Q96397546",
+      "name": "Opendoor"
+    },
+    {
+      "qid": "Q117344280",
+      "name": "eXp Realty"
+    },
+    {
+      "qid": "Q7301358",
+      "name": "Anywhere Real Estate"
+    },
+    {
+      "qid": "Q7333751",
+      "name": "Rightmove"
+    },
+    {
+      "qid": "Q8074201",
+      "name": "Zoopla"
+    },
+    {
+      "qid": "Q110964820",
+      "name": "ImmoScout24"
+    },
+    {
+      "qid": "Q3478204",
+      "name": "SeLoger"
+    },
+    {
+      "qid": "Q5908253",
+      "name": "idealista"
+    },
+    {
+      "qid": "Q7276284",
+      "name": "REA Group"
+    },
+    {
+      "qid": "Q19872934",
+      "name": "Domain Group"
+    },
+    {
+      "qid": "Q1812986",
+      "name": "Mitsui Fudosan"
+    },
+    {
+      "qid": "Q304962",
+      "name": "Mitsubishi Estate"
+    },
+    {
+      "qid": "Q753801",
+      "name": "Hongkong Land"
+    },
+    {
+      "qid": "Q752084",
+      "name": "New World Development Company Limited"
+    },
+    {
+      "qid": "Q19985983",
+      "name": "CK Asset Holdings"
+    },
+    {
+      "qid": "Q1506638",
+      "name": "The Wharf (Holdings) Limited"
+    },
+    {
+      "qid": "Q5604606",
+      "name": "Greentown China"
+    },
+    {
+      "qid": "Q11180568",
+      "name": "Longfor Properties"
+    },
+    {
+      "qid": "Q13410248",
+      "name": "Sunac China"
+    },
+    {
+      "qid": "Q106221941",
+      "name": "Shimao Group Holdings Limited"
+    },
+    {
+      "qid": "Q105886736",
+      "name": "Beike"
+    },
+    {
+      "qid": "Q77761013",
+      "name": "Frasers Property"
+    },
+    {
+      "qid": "Q792735",
+      "name": "Ayala Land"
+    },
+    {
+      "qid": "Q7391503",
+      "name": "SM Prime"
+    },
+    {
+      "qid": "Q6808965",
+      "name": "Megaworld"
+    },
+    {
+      "qid": "Q21006091",
+      "name": "Sime Darby Property"
+    },
+    {
+      "qid": "Q591090",
+      "name": "Barratt Developments"
+    },
+    {
+      "qid": "Q1118657",
+      "name": "Persimmon plc"
+    },
+    {
+      "qid": "Q746365",
+      "name": "Taylor Wimpey"
+    },
+    {
+      "qid": "Q4892023",
+      "name": "Berkeley Group Holdings"
+    },
+    {
+      "qid": "Q5203782",
+      "name": "D. R. Horton"
+    },
+    {
+      "qid": "Q7259716",
+      "name": "PulteGroup"
+    },
+    {
+      "qid": "Q2287759",
+      "name": "Simon Property Group"
+    },
+    {
+      "qid": "Q1156045",
+      "name": "Public Storage"
+    },
+    {
+      "qid": "Q608518",
+      "name": "Unibail Rodamco Westfield"
+    },
+    {
+      "qid": "Q919646",
+      "name": "British Land"
+    },
+    {
+      "qid": "Q5593525",
+      "name": "Grainger plc"
+    },
+    {
+      "qid": "Q32788516",
+      "name": "Aroundtown SA"
+    },
+    {
+      "qid": "Q1802165",
+      "name": "LEG Immobilien"
+    },
+    {
+      "qid": "Q1202053",
+      "name": "Vonovia"
+    },
+    {
+      "qid": "Q10443590",
+      "name": "Castellum"
+    },
+    {
+      "qid": "Q10425193",
+      "name": "Balder"
+    },
+    {
+      "qid": "Q10660042",
+      "name": "Aktiebolaget Sagax"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

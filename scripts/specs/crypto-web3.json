@@ -1,0 +1,134 @@
+{
+  "category": "crypto-web3",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q25401607",
+      "exact": true,
+      "why": "cryptocurrency exchange"
+    },
+    {
+      "via": "P31",
+      "qid": "Q20107444",
+      "exact": true,
+      "why": "bitcoin exchange"
+    },
+    {
+      "via": "P31",
+      "qid": "Q3511068",
+      "exact": true,
+      "why": "digital currency exchanger"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q25401607",
+    "Q20107444",
+    "Q3511068"
+  ],
+  "minSitelinks": 3,
+  "maxCount": 150,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "excludeLabelRegex": "^(decentralized finance|pump\\.fun|World Liberty Financial)$",
+  "includeQids": [
+    {
+      "qid": "Q16972754",
+      "name": "Coinbase"
+    },
+    {
+      "qid": "Q55627184",
+      "name": "OKX"
+    },
+    {
+      "qid": "Q105659003",
+      "name": "Crypto.com"
+    },
+    {
+      "qid": "Q19892740",
+      "name": "Huobi"
+    },
+    {
+      "qid": "Q23680142",
+      "name": "Coincheck"
+    },
+    {
+      "qid": "Q28688900",
+      "name": "Bitflyer"
+    },
+    {
+      "qid": "Q16904931",
+      "name": "Ripple Labs"
+    },
+    {
+      "qid": "Q65770312",
+      "name": "Ledger"
+    },
+    {
+      "qid": "Q102265616",
+      "name": "Trezor Company"
+    },
+    {
+      "qid": "Q97175280",
+      "name": "MetaMask"
+    },
+    {
+      "qid": "Q24192769",
+      "name": "Consensys"
+    },
+    {
+      "qid": "Q111939618",
+      "name": "Chainalysis"
+    },
+    {
+      "qid": "Q141268578",
+      "name": "Solana Labs"
+    },
+    {
+      "qid": "Q15960875",
+      "name": "Blockchain.com"
+    },
+    {
+      "qid": "Q138026190",
+      "name": "Galaxy Digital LP"
+    },
+    {
+      "qid": "Q1192211",
+      "name": "Strategy"
+    },
+    {
+      "qid": "Q60749208",
+      "name": "Marathon Digital Holdings"
+    },
+    {
+      "qid": "Q113840664",
+      "name": "Riot Platforms, Inc."
+    },
+    {
+      "qid": "Q43177802",
+      "name": "Bitmain"
+    },
+    {
+      "qid": "Q114877232",
+      "name": "Grayscale Investments"
+    },
+    {
+      "qid": "Q105619603",
+      "name": "IOHK"
+    },
+    {
+      "qid": "Q141268566",
+      "name": "Ava Labs"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}

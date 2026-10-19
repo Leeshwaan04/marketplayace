@@ -35,11 +35,18 @@ async function throttle() {
 export async function sparql(query) {
   for (let attempt = 0; attempt < 5; attempt++) {
     await throttle()
-    const res = await fetch('https://query.wikidata.org/sparql?format=json', {
-      method: 'POST',
-      headers: { ...UA, 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: 'query=' + encodeURIComponent(query)
-    })
+    let res
+    try {
+      res = await fetch('https://query.wikidata.org/sparql?format=json', {
+        method: 'POST',
+        headers: { ...UA, 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'query=' + encodeURIComponent(query)
+      })
+    } catch (err) {
+      // Connection reset, DNS blip, TLS failure: transient. Back off and try again.
+      await new Promise((r) => setTimeout(r, 5000 * (attempt + 1)))
+      continue
+    }
     if (res.ok) return (await res.json()).results.bindings
     if (res.status === 429 || res.status >= 500) {
       const ra = Number(res.headers.get('retry-after')) || 10 * (attempt + 1)

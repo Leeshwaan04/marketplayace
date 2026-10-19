@@ -1,0 +1,58 @@
+WazirX
+CoinDCX
+CoinSwitch
+Mudrex
+ZebPay
+Binance
+Coinbase
+Kraken
+OKX
+Bybit
+KuCoin
+Gate.io
+Bitfinex
+Bitstamp
+Gemini
+Crypto.com
+Bitget
+Huobi
+Upbit
+Bithumb
+Coincheck
+bitFlyer
+Tether
+Circle Internet Financial
+Ripple Labs
+Ledger
+Trezor
+MetaMask
+Consensys
+Chainalysis
+Ethereum Foundation
+Solana Labs
+Polygon Technology
+Chainlink Labs
+Uniswap Labs
+Aave
+MakerDAO
+Lido
+Opensea
+Magic Eden
+Blockchain.com
+Galaxy Digital
+MicroStrategy
+Marathon Digital
+Riot Platforms
+Bitmain
+Grayscale Investments
+BlackRock iShares Bitcoin Trust
+Robinhood
+Phantom Wallet
+Rainbow Wallet
+Binance Smart Chain
+Cardano
+IOHK
+Polkadot
+Web3 Foundation
+Avalanche
+Ava Labs

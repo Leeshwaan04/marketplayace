@@ -1,0 +1,232 @@
+{
+  "category": "commercial-vehicles",
+  "includes": [
+    {
+      "via": "P31",
+      "qid": "Q108460239",
+      "exact": true,
+      "why": "truck manufacturer"
+    },
+    {
+      "via": "P31",
+      "qid": "Q4380190",
+      "exact": true,
+      "why": "bus manufacturer"
+    },
+    {
+      "via": "P452",
+      "qid": "Q108460239",
+      "exact": true,
+      "why": "industry: truck manufacturer"
+    }
+  ],
+  "requireAnyType": [
+    "Q4830453",
+    "Q891723",
+    "Q431289",
+    "Q6881511",
+    "Q783794",
+    "Q167037",
+    "Q43229",
+    "Q1589009",
+    "Q5225895",
+    "Q161726",
+    "Q658255",
+    "Q108460239",
+    "Q4380190"
+  ],
+  "minSitelinks": 5,
+  "maxCount": 150,
+  "excludeDescriptionRegex": "(\\bformerly\\b|\\bdefunct\\b|\\bhistorical\\b|\\bformer\\b)",
+  "includeQids": [
+    {
+      "qid": "Q726193",
+      "name": "Ashok Leyland"
+    },
+    {
+      "qid": "Q1436646",
+      "name": "Force Motors"
+    },
+    {
+      "qid": "Q110979589",
+      "name": "SML Isuzu"
+    },
+    {
+      "qid": "Q1107991",
+      "name": "BharatBenz"
+    },
+    {
+      "qid": "Q1157624",
+      "name": "Daimler Truck"
+    },
+    {
+      "qid": "Q28228137",
+      "name": "Traton"
+    },
+    {
+      "qid": "Q219960",
+      "name": "Scania"
+    },
+    {
+      "qid": "Q29913",
+      "name": "Iveco"
+    },
+    {
+      "qid": "Q1477661",
+      "name": "PACCAR"
+    },
+    {
+      "qid": "Q774830",
+      "name": "Kenworth"
+    },
+    {
+      "qid": "Q944640",
+      "name": "Peterbilt"
+    },
+    {
+      "qid": "Q27489",
+      "name": "DAF"
+    },
+    {
+      "qid": "Q29739",
+      "name": "International"
+    },
+    {
+      "qid": "Q1420724",
+      "name": "Freightliner Trucks"
+    },
+    {
+      "qid": "Q950650",
+      "name": "Mack Trucks"
+    },
+    {
+      "qid": "Q163810",
+      "name": "AB Volvo"
+    },
+    {
+      "qid": "Q867667",
+      "name": "Hino Motors"
+    },
+    {
+      "qid": "Q29803",
+      "name": "Isuzu"
+    },
+    {
+      "qid": "Q1190247",
+      "name": "Mitsubishi Fuso Truck and Bus Corporation"
+    },
+    {
+      "qid": "Q1241339",
+      "name": "UD Trucks"
+    },
+    {
+      "qid": "Q814825",
+      "name": "Foton Motor"
+    },
+    {
+      "qid": "Q995970",
+      "name": "Sinotruk (Hong Kong) Limited"
+    },
+    {
+      "qid": "Q5424519",
+      "name": "FAW Jie Fang"
+    },
+    {
+      "qid": "Q2276149",
+      "name": "Shaanxi Automobile Group"
+    },
+    {
+      "qid": "Q2389456",
+      "name": "Yutong"
+    },
+    {
+      "qid": "Q3273406",
+      "name": "King Long"
+    },
+    {
+      "qid": "Q197914",
+      "name": "Zhong Tong Bus"
+    },
+    {
+      "qid": "Q1617677",
+      "name": "Higer"
+    },
+    {
+      "qid": "Q4928875",
+      "name": "Blue Bird Corporation"
+    },
+    {
+      "qid": "Q105162850",
+      "name": "New Flyer"
+    },
+    {
+      "qid": "Q1524597",
+      "name": "Gillig"
+    },
+    {
+      "qid": "Q2356498",
+      "name": "Wrightbus"
+    },
+    {
+      "qid": "Q167362",
+      "name": "Alexander Dennis"
+    },
+    {
+      "qid": "Q2418054",
+      "name": "Irizar"
+    },
+    {
+      "qid": "Q838369",
+      "name": "Solaris Bus & Coach"
+    },
+    {
+      "qid": "Q1339832",
+      "name": "Van Hool"
+    },
+    {
+      "qid": "Q1848996",
+      "name": "Marcopolo"
+    },
+    {
+      "qid": "Q1017682",
+      "name": "Busscar"
+    },
+    {
+      "qid": "Q8254012",
+      "name": "CAIO Induscar"
+    },
+    {
+      "qid": "Q30378",
+      "name": "Kamaz"
+    },
+    {
+      "qid": "Q260756",
+      "name": "GAZ Group"
+    },
+    {
+      "qid": "Q1473229",
+      "name": "Ural Automotive Plant"
+    },
+    {
+      "qid": "Q45464",
+      "name": "Tatra"
+    },
+    {
+      "qid": "Q55383469",
+      "name": "Mercedes-Benz Vans"
+    },
+    {
+      "qid": "Q840045",
+      "name": "Renault Trucks"
+    },
+    {
+      "qid": "Q2235147",
+      "name": "Switch Mobility"
+    },
+    {
+      "qid": "Q24887050",
+      "name": "Nikola Corporation"
+    }
+  ],
+  "notes": "Discovered via class/industry signals plus a hand-reviewed list of regional and global leaders. Brands with no Wikidata entry cannot be covered from this source."
+}
