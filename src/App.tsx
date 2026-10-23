@@ -1,5 +1,7 @@
 import { SiteHeader } from './components/SiteHeader'
 import { Footer } from './components/Footer'
+import { IBSLBanner } from './components/IBSLBanner'
+import { Container } from './components/ui'
 import { NavProvider } from './utils/navContext'
 import { useRoute } from './utils/router'
 import { HomePage } from './pages/HomePage'
@@ -45,6 +47,11 @@ function App({ url }: { url?: string }) {
         </a>
         <SiteHeader current={route.page} />
         <main id="main" className="flex-1">{page}</main>
+        <div className="py-6">
+          <Container>
+            <IBSLBanner />
+          </Container>
+        </div>
         <Footer />
       </div>
     </NavProvider>
