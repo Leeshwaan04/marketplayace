@@ -62,3 +62,4 @@ export const IBSLBanner: React.FC<IBSLBannerProps> = ({ className = '', variant 
     </aside>
   )
 }
+

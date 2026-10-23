@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "node scripts/build-sitemap.mjs && tsc -b && vite build && vite build --config vite.ssr.config.ts && node scripts/prerender.mjs && rm -rf dist-server",
     "lint": "oxlint",
-    "test": "node tests/e2e-qa.mjs",
+    "test": "node tests/e2e-qa.mjs && node tests/sanity-e2e.mjs",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
     "data:sync": "node scripts/sync-wikidata.mjs && node scripts/build-sitemap.mjs"
